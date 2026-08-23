@@ -26,9 +26,10 @@ jobs:
         run: |
           node - <<'NODE'
           const fs=require('fs'),vm=require('vm');
-          const code=fs.readFileSync('curriculum.js','utf8')+'\nthis.__course=COURSE2;';
+          const code=fs.readFileSync('curriculum.js','utf8');
           const ctx={window:{}}; vm.createContext(ctx); vm.runInContext(code,ctx);
-          const c=ctx.window.COURSE2 || ctx.__course;
+          const c=ctx.window.COURSE2;
+          if(!Array.isArray(c)) throw new Error('COURSE2 was not loaded into window');
           const all=c.reduce((n,p)=>n+p.lessons.length,0);
           const core=c.slice(0,9).reduce((n,p)=>n+p.lessons.length,0)+c[9].lessons.filter(l=>l.id.startsWith('CAP')).length;
           if(c.length!==10) throw new Error(`Expected 10 phases, got ${c.length}`);
