@@ -1,0 +1,16 @@
+{
+  "mentor": "DA Mentor Advance",
+  "course": "Course 2 — Senior / BI Analyst",
+  "final_course_version": "2026-v1.3",
+  "phases": 10,
+  "core_lessons": 114,
+  "optional_pl300_activities": 8,
+  "video_required_dependencies": 0,
+  "recommended_visual_core_lessons": 23,
+  "recommended_visual_pl300_activities": 8,
+  "recommended_visual_total": 31,
+  "video_status_values": ["☐ Not required", "☑ Recommended visual"],
+  "storage_key_preserved": "daMentorPro.v1",
+  "canonical_archive": "COURSE_2_SENIOR_BI_ANALYST_MASTER_2026_FINAL_v1.3.zip",
+  "sync_policy": "Lesson IDs, Gate routing, C2-113 readiness, video status and release controls must match the canonical final course. Existing progress storage is preserved."
+}
