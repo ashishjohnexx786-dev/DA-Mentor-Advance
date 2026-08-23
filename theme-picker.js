@@ -1,16 +1,7 @@
 (()=>{
-  const picker=document.getElementById('proThemeSelect');
-  const settingsTheme=document.getElementById('themeInput');
-  if(!picker)return;
-  const sync=()=>{const current=(typeof state!=='undefined'&&state.theme)||document.body.dataset.theme||'midnight';picker.value=current;if(settingsTheme)settingsTheme.value=current;};
-  picker.addEventListener('change',()=>{
-    if(typeof state==='undefined')return;
-    state.theme=picker.value;
-    if(settingsTheme)settingsTheme.value=state.theme;
-    if(typeof save==='function')save();
-    sync();
-  });
-  document.getElementById('settingsBtn')?.addEventListener('click',()=>setTimeout(sync,0));
-  document.getElementById('saveSettingsBtn')?.addEventListener('click',()=>setTimeout(sync,0));
-  sync();
+ const trigger=document.getElementById('proThemeMenuBtn'),pop=document.getElementById('proThemePopover'),label=document.getElementById('proThemeCurrent'),settings=document.getElementById('themeInput');
+ const names={midnight:'Midnight',slate:'Slate',forest:'Forest',ocean:'Ocean',ember:'Ember',graphite:'Graphite'};if(!trigger||!pop)return;
+ function current(){return (typeof state!=='undefined'&&state.theme)||document.body.dataset.theme||'midnight'}
+ function sync(){const t=current();label.textContent=names[t]||t;if(settings)settings.value=t;pop.querySelectorAll('[data-pro-theme]').forEach(b=>b.classList.toggle('active',b.dataset.proTheme===t))}
+ trigger.addEventListener('click',e=>{e.stopPropagation();pop.classList.toggle('show');sync()});pop.addEventListener('click',e=>{const b=e.target.closest('[data-pro-theme]');if(!b||typeof state==='undefined')return;state.theme=b.dataset.proTheme;if(settings)settings.value=state.theme;if(typeof save==='function')save();sync();pop.classList.remove('show')});document.addEventListener('click',e=>{if(!pop.contains(e.target)&&e.target!==trigger)pop.classList.remove('show')});document.getElementById('settingsBtn')?.addEventListener('click',()=>setTimeout(sync,0));document.getElementById('saveSettingsBtn')?.addEventListener('click',()=>setTimeout(sync,0));sync();
 })();
