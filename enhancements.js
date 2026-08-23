@@ -28,7 +28,7 @@
   }
   function complete(){
     T.running=false;
-    if(T.mode==='focus') T.focusLog[todayKey()]=(T.focusLog[todayKey()]||0)+D.focus/60;
+    if(T.mode==='focus') T.focusLog[todayKey()]=(T.focusLog[todayKey()]||0)+DUR.focus/60;
     T.remaining=DUR[T.mode]; T.endAt=0; saveTimer(); renderTimer();
     if(navigator.vibrate) navigator.vibrate([140,80,140]);
     document.title='Timer complete • DA Mentor Pro'; setTimeout(()=>document.title='DA Mentor Pro — Course 2',2500);
