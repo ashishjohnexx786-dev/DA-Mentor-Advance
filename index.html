@@ -5,13 +5,13 @@
 <title>DA Mentor Pro — Course 2</title>
 <meta name="theme-color" content="#0b1020">
 <meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <div class="brand"><div class="logo">P</div><div>DA Mentor Pro <span>Course 2 • Senior/BI Analyst</span></div></div>
-  <div class="actions"><button class="btn" id="backupBtn">Backup</button><button class="btn" id="restoreBtn">Restore</button><input id="restoreFile" type="file" accept=".json,application/json" hidden><button class="btn" id="settingsBtn">Settings</button></div>
+  <div class="actions"><button class="btn themeQuick" id="themeCycleBtn">Theme</button><button class="btn" id="backupBtn">Backup</button><button class="btn" id="restoreBtn">Restore</button><input id="restoreFile" type="file" accept=".json,application/json" hidden><button class="btn" id="settingsBtn">Settings</button></div>
 </header>
 
 <section class="card hero">
@@ -53,6 +53,16 @@
 </main>
 
 <aside>
+<section class="card focusTimerCard">
+ <div class="row space"><div><div class="kick">Focus timer</div><h2>Study without leaving Mentor Pro</h2></div><span class="pill" id="proFocusToday">0m focus today</span></div>
+ <div class="timerShell">
+  <div class="timerModes"><button class="btn active" data-pro-timer-mode="focus">Focus</button><button class="btn" data-pro-timer-mode="short">Short break</button><button class="btn" data-pro-timer-mode="long">Long break</button></div>
+  <div class="focusClock" id="proTimerClock">25:00</div>
+  <div class="row timerControls"><button class="btn primary" id="proTimerStart">START</button><button class="btn" id="proTimerReset">Reset</button></div>
+  <div class="muted tiny" id="proTimerHint" style="margin-top:9px"></div>
+ </div>
+</section>
+
 <section class="card">
  <div class="kick">Career evidence vault</div><h2>Sanitized evidence only</h2>
  <div class="call">Never store confidential company/customer data, credentials, proprietary code or internal documents here.</div>
@@ -94,7 +104,7 @@
 </aside>
 </div>
 
-<footer>DA Mentor Pro v1.0.1 • offline-first local progress • backup/restore • no confidential workplace data</footer>
+<footer>DA Mentor Pro v1.1 • timer + visible themes • offline-first local progress • backup/restore • no confidential workplace data</footer>
 </div>
 
 <div class="modal" id="settingsModal"><div class="card modalCard">
@@ -105,5 +115,5 @@
  <div class="row"><button class="btn primary" id="saveSettingsBtn">Save</button><button class="btn danger" id="resetBtn">Reset all local data</button></div>
 </div></div>
 
-<script src="curriculum.js"></script><script src="app.js"></script><script src="hotfix.js"></script>
+<script src="curriculum.js"></script><script src="app.js"></script><script src="hotfix.js"></script><script src="enhancements.js"></script>
 </body></html>
