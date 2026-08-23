@@ -30,31 +30,31 @@
 <div class="grid">
 <main>
 <section class="card">
-  <div class="row space"><div><div class="kick">Current phase</div><h2 id="phaseTitle"></h2></div><span class="pill" id="phaseHours"></span></div>
+  <div class="row space"><div><div class="kick">🧭 Current phase</div><h2 id="phaseTitle"></h2></div><span class="pill" id="phaseHours"></span></div>
   <div class="progress"><i id="phaseBar"></i></div>
   <div id="nextAction" class="mentorBox"></div>
   <div class="row"><button class="btn primary" id="openLessonBtn">Open current lesson</button><button class="btn" id="markLearningBtn">Mark learning</button><button class="btn" id="markAttemptBtn">Practice attempted</button></div>
 </section>
 
 <section class="card">
- <div class="row space"><div><div class="kick">Lesson mastery</div><h2>Learn → Do → Check → Save → Pass</h2></div><select id="phaseSelect"></select></div>
+ <div class="row space"><div><div class="kick">📚 Lesson mastery</div><h2>Learn → Do → Check → Save → Pass</h2></div><select id="phaseSelect"></select></div>
  <div id="lessonList"></div>
 </section>
 
 <section class="card">
- <div class="row space"><div><div class="kick">Phase assessment</div><h2>Mini-Lab & Gate</h2></div><span class="pill" id="gateState"></span></div>
+ <div class="row space"><div><div class="kick">🧪 Phase assessment</div><h2>Mini-Lab & Gate</h2></div><span class="pill" id="gateState"></span></div>
  <div id="assessmentBox"></div>
 </section>
 
 <section class="card">
- <div class="row space"><div><div class="kick">Error & repair center</div><h2>Weakness → repair → fresh retest</h2></div><button class="btn" id="addErrorBtn">+ Add weakness</button></div>
+ <div class="row space"><div><div class="kick">🛠️ Error & repair center</div><h2>Weakness → repair → fresh retest</h2></div><button class="btn" id="addErrorBtn">+ Add weakness</button></div>
  <div id="errors"></div>
 </section>
 </main>
 
 <aside>
 <section class="card focusTimerCard">
- <div class="row space"><div><div class="kick">Focus timer</div><h2>Study without leaving Mentor Pro</h2></div><span class="pill" id="proFocusToday">0m focus today</span></div>
+ <div class="row space"><div><div class="kick">⏱️ Focus timer</div><h2>Study without leaving Mentor Pro</h2></div><span class="pill" id="proFocusToday">0m focus today</span></div>
  <div class="timerShell">
   <div class="timerModes"><button class="btn active" data-pro-timer-mode="focus">Focus</button><button class="btn" data-pro-timer-mode="short">Short break</button><button class="btn" data-pro-timer-mode="long">Long break</button></div>
   <div class="focusClock" id="proTimerClock">25:00</div>
@@ -64,7 +64,7 @@
 </section>
 
 <section class="card">
- <div class="kick">Career evidence vault</div><h2>Sanitized evidence only</h2>
+ <div class="kick">🗂️ Career evidence vault</div><h2>Sanitized evidence only</h2>
  <div class="call">Never store confidential company/customer data, credentials, proprietary code or internal documents here.</div>
  <div class="formGrid single">
   <input id="evSkill" placeholder="Skill / competency">
@@ -76,13 +76,13 @@
 </section>
 
 <section class="card">
- <div class="row space"><h2>Promotion readiness</h2><span class="pill" id="promoState">BUILDING</span></div>
+ <div class="row space"><h2>📈 Promotion readiness</h2><span class="pill" id="promoState">BUILDING</span></div>
  <div id="promoList"></div>
  <p class="muted tiny">This is internal capability readiness, not an employer promotion promise.</p>
 </section>
 
 <section class="card">
- <div class="row space"><h2>PL-300 readiness</h2><span class="pill" id="plState">NOT READY</span></div>
+ <div class="row space"><h2>🏅 PL-300 readiness</h2><span class="pill" id="plState">NOT READY</span></div>
  <div class="checkRow"><label>Prepare data <input data-pl="prepare" type="number" min="0" max="100" value="0">%</label></div>
  <div class="checkRow"><label>Model data <input data-pl="model" type="number" min="0" max="100" value="0">%</label></div>
  <div class="checkRow"><label>Visualize/analyze <input data-pl="visualize" type="number" min="0" max="100" value="0">%</label></div>
@@ -92,23 +92,23 @@
 </section>
 
 <section class="card">
- <div class="row space"><h2>Course 3 readiness</h2><span class="pill danger" id="c3Pill">LOCKED</span></div>
+ <div class="row space"><h2>🚪 Course 3 readiness</h2><span class="pill danger" id="c3Pill">LOCKED</span></div>
  <div id="deChecks"></div>
  <div class="call warn" id="deMessage"></div>
 </section>
 
 <section class="card">
- <div class="row space"><h2>Full phase map</h2><span class="muted tiny">10 phases • 114 core lessons</span></div>
+ <div class="row space"><h2>🗺️ Full phase map</h2><span class="muted tiny">10 phases • 114 core lessons</span></div>
  <div id="phaseMap"></div>
 </section>
 </aside>
 </div>
 
-<footer>DA Mentor Pro v1.1 • timer + visible themes • offline-first local progress • backup/restore • no confidential workplace data</footer>
+<footer>DA Mentor Pro v1.3 • professional icons • advanced study tools • visible themes • offline-first • full backup/restore</footer>
 </div>
 
 <div class="modal" id="settingsModal"><div class="card modalCard">
- <div class="row space"><h2>Settings</h2><button class="btn" data-close="settingsModal">×</button></div>
+ <div class="row space"><h2>⚙️ Settings</h2><button class="btn" data-close="settingsModal">×</button></div>
  <label>Name<input id="nameInput" placeholder="Your name"></label>
  <label>Course start date<input id="startDateInput" type="date"></label>
  <label>Theme<select id="themeInput"><option value="midnight">Midnight</option><option value="slate">Slate</option><option value="forest">Forest</option></select></label>
