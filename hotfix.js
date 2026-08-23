@@ -18,10 +18,10 @@ render = function(){
 render();
 
 (()=>{
-  const dateKey=()=>new Date().toISOString().slice(0,10);
+  const dateKey=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
   const download=(name,text,type)=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)};
   const backupBtn=document.getElementById('backupBtn');
-  if(backupBtn) backupBtn.onclick=()=>download(`DA_Mentor_Advance_Backup_${dateKey()}.json`,JSON.stringify(state,null,2),'application/json');
+  if(backupBtn) backupBtn.onclick=()=>{if(state.studyTools){state.studyTools.lastBackup=dateKey();localStorage.setItem(KEY,JSON.stringify(state))}download(`DA_Mentor_Advance_Backup_${dateKey()}.json`,JSON.stringify(state,null,2),'application/json')};
   const reset=document.getElementById('resetBtn');
   if(reset)reset.onclick=()=>{if(confirm('Reset all DA Mentor Advance progress on this device?')){state=fresh();save();document.getElementById('settingsModal')?.classList.remove('show')}};
 
@@ -34,7 +34,7 @@ render();
   setTimeout(()=>{
     const old=document.getElementById('proCsvBtn');
     if(old){
-      const csv=old.cloneNode(true);old.replaceWith(csv);csv.textContent='📤 CSV';
+      const csv=old.cloneNode(true);old.replaceWith(csv);csv.textContent='📤 Export';
       const q=x=>`"${String(x??'').replace(/"/g,'""')}"`;
       csv.addEventListener('click',()=>{
         const rows=[['Type','Phase','Item','Status','Date','Detail']];
@@ -49,6 +49,13 @@ render();
         download(`DA_Mentor_Advance_Progress_${dateKey()}.csv`,rows.map(r=>r.map(q).join(',')).join('\n'),'text/csv');
       });
     }
+
+    const stuck=document.getElementById('proStuck');
+    if(stuck&&!document.getElementById('proFinishToday')){
+      const finish=document.createElement('button');finish.className='btn';finish.id='proFinishToday';finish.textContent='Finish today';stuck.insertAdjacentElement('afterend',finish);
+      finish.onclick=()=>{const today=dateKey(),mins=(state.studyTools?.focusLog||[]).filter(x=>x.date===today).reduce((n,x)=>n+(+x.minutes||0),0),box=document.getElementById('nextAction');if(box){box.innerHTML=`<b>Close today:</b><br>Mark only work you genuinely completed, write a short Daily Note, leave tomorrow’s first task visible, and record any unresolved weakness in Error & Repair Center.${mins?` You logged ${mins} focus minute(s) today.`:''}`;box.scrollIntoView({behavior:'smooth',block:'center'})}};
+    }
+
     ['proTasks','proBackupInfo'].forEach(id=>{
       const root=document.getElementById(id);if(!root)return;cleanBranding(root);
       new MutationObserver(()=>cleanBranding(root)).observe(root,{childList:true,subtree:true,characterData:true});
