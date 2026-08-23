@@ -96,12 +96,12 @@ $("#markAttemptBtn").onclick=()=>{const p=phaseObj(state.currentPhase),l=current
 $("#openLessonBtn").onclick=()=>{$("#lessonList").scrollIntoView({behavior:"smooth"})};
 $("#addErrorBtn").onclick=()=>{const skill=prompt("Skill / lesson ID (example ASQL4):");if(!skill)return;const issue=prompt("What went wrong?")||"Needs repair";state.errors.push({skill,issue,repair:"Targeted repair → fresh retest",done:false});save()};
 $("#addEvidenceBtn").onclick=()=>{const skill=$("#evSkill").value.trim(),action=$("#evAction").value.trim();if(!skill||!action)return alert("Add a skill and sanitized evidence.");state.evidence.push({skill,action,strength:+$("#evStrength").value,date:new Date().toISOString().slice(0,10)});$("#evSkill").value="";$("#evAction").value="";save()};
-$("#backupBtn").onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`DA_Mentor_Pro_Backup_${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href)};
+$("#backupBtn").onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`DA_Mentor_Advance_Backup_${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href)};
 $("#restoreBtn").onclick=()=>$("#restoreFile").click();
 $("#restoreFile").onchange=async e=>{try{const obj=JSON.parse(await e.target.files[0].text());state=Object.assign(fresh(),obj);save();alert("Backup restored.")}catch(err){alert("That backup file could not be read.")}};
 $("#settingsBtn").onclick=()=>{$("#nameInput").value=state.name||"";$("#startDateInput").value=state.startDate||"";$("#themeInput").value=state.theme||"midnight";$("#settingsModal").classList.add("show")};
 $$('[data-close]').forEach(b=>b.onclick=()=>$("#"+b.dataset.close).classList.remove("show"));
 $("#saveSettingsBtn").onclick=()=>{state.name=$("#nameInput").value.trim();state.startDate=$("#startDateInput").value;state.theme=$("#themeInput").value;$("#settingsModal").classList.remove("show");save()};
-$("#resetBtn").onclick=()=>{if(confirm("Reset all Mentor Pro progress on this device?")){state=fresh();save();$("#settingsModal").classList.remove("show")}};
+$("#resetBtn").onclick=()=>{if(confirm("Reset all DA Mentor Advance progress on this device?")){state=fresh();save();$("#settingsModal").classList.remove("show")}};
 if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
 render();
