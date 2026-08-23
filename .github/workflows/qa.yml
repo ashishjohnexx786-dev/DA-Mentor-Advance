@@ -1,0 +1,48 @@
+name: DA Mentor Advance QA
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: JavaScript syntax
+        run: |
+          node --check app.js
+          node --check curriculum.js
+          node --check hotfix.js
+          node --check enhancements.js
+          node --check theme-picker.js
+          node --check service-worker.js
+      - name: Curriculum integrity
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),vm=require('vm');
+          const code=fs.readFileSync('curriculum.js','utf8')+'\nthis.__course=COURSE2;';
+          const ctx={window:{}}; vm.createContext(ctx); vm.runInContext(code,ctx);
+          const c=ctx.window.COURSE2 || ctx.__course;
+          const all=c.reduce((n,p)=>n+p.lessons.length,0);
+          const core=c.slice(0,9).reduce((n,p)=>n+p.lessons.length,0)+c[9].lessons.filter(l=>l.id.startsWith('CAP')).length;
+          if(c.length!==10) throw new Error(`Expected 10 phases, got ${c.length}`);
+          if(core!==114) throw new Error(`Expected 114 core lessons, got ${core}`);
+          if(all!==122) throw new Error(`Expected 122 tracked items including PL-300 overlay, got ${all}`);
+          if(new Set(c.flatMap(p=>p.lessons.map(l=>l.id))).size!==all) throw new Error('Lesson IDs are not unique');
+          console.log(`PASS: ${c.length} phases / ${core} core / ${all-core} optional PL-300 items`);
+          NODE
+      - name: Required static files
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f manifest.webmanifest
+          test -f icon.svg
+          grep -q 'curriculum.js' index.html
+          grep -q 'hotfix.js' index.html
+          grep -q 'theme-picker.js' index.html
