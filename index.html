@@ -11,7 +11,7 @@
 <div class="wrap">
 <header class="top">
   <div class="brand"><div class="logo">P</div><div>DA Mentor Pro <span>Course 2 • Senior/BI Analyst</span></div></div>
-  <div class="actions"><button class="btn themeQuick" id="themeCycleBtn">Theme</button><button class="btn" id="backupBtn">Backup</button><button class="btn" id="restoreBtn">Restore</button><input id="restoreFile" type="file" accept=".json,application/json" hidden><button class="btn" id="settingsBtn">Settings</button></div>
+  <div class="actions"><select class="btn themeQuick" id="proThemeSelect" aria-label="Choose theme"><option value="midnight">🎨 Midnight</option><option value="slate">🎨 Slate</option><option value="forest">🎨 Forest</option></select><button id="themeCycleBtn" hidden style="display:none!important">Theme</button><button class="btn" id="backupBtn">Backup</button><button class="btn" id="restoreBtn">Restore</button><input id="restoreFile" type="file" accept=".json,application/json" hidden><button class="btn" id="settingsBtn">Settings</button></div>
 </header>
 
 <section class="card hero">
@@ -104,7 +104,7 @@
 </aside>
 </div>
 
-<footer>DA Mentor Pro v1.3 • professional icons • advanced study tools • visible themes • offline-first • full backup/restore</footer>
+<footer>DA Mentor Pro v1.4 • direct theme picker • professional icons • advanced study tools • offline-first • full backup/restore</footer>
 </div>
 
 <div class="modal" id="settingsModal"><div class="card modalCard">
@@ -115,5 +115,5 @@
  <div class="row"><button class="btn primary" id="saveSettingsBtn">Save</button><button class="btn danger" id="resetBtn">Reset all local data</button></div>
 </div></div>
 
-<script src="curriculum.js"></script><script src="app.js"></script><script src="hotfix.js"></script><script src="enhancements.js"></script>
+<script src="curriculum.js"></script><script src="app.js"></script><script src="hotfix.js"></script><script src="enhancements.js"></script><script src="theme-picker.js"></script>
 </body></html>
