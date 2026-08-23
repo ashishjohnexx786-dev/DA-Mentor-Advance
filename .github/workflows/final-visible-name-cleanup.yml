@@ -1,0 +1,31 @@
+name: Final visible name cleanup
+on:
+  push:
+    paths:
+      - '.github/workflows/final-visible-name-cleanup.yml'
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove visible legacy Advance names
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('app.js'); s=p.read_text()
+          s=s.replace('DA_Mentor_Pro_Backup_','DA_Mentor_Advance_Backup_')
+          s=s.replace('Reset all Mentor Pro progress on this device?','Reset all DA Mentor Advance progress on this device?')
+          p.write_text(s)
+          p=Path('service-worker.js'); s=p.read_text(); s=re.sub(r'da-mentor-advance-v2\.\d+','da-mentor-advance-v2.2',s); p.write_text(s)
+          PY
+          grep -q 'DA_Mentor_Advance_Backup_' app.js
+      - name: Commit
+        run: |
+          git config user.name 'DA Mentor Sync'
+          git config user.email 'actions@users.noreply.github.com'
+          git add app.js service-worker.js
+          git diff --cached --quiet || git commit -m 'Remove visible legacy Advance names'
+          git push
