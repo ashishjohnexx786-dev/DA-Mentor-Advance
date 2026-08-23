@@ -1,4 +1,4 @@
-name: Deploy DA Mentor Pro to GitHub Pages
+name: Deploy DA Mentor Advance to GitHub Pages
 on:
   push:
     branches: ["main"]

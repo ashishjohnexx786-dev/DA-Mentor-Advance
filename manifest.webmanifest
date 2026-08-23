@@ -1,10 +1,12 @@
 {
-  "name": "DA Mentor Pro — Course 2",
-  "short_name": "Mentor Pro",
+  "name": "DA Mentor Advance — Course 2",
+  "short_name": "Mentor Advance",
+  "description": "Course 2 Senior and BI Analyst mentor with mastery tracking, career evidence, PL-300 readiness, focus tools and Course 3 readiness.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0b1020",
-  "theme_color": "#0b1020",
+  "background_color": "#000000",
+  "theme_color": "#080a10",
   "icons": [
     {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
   ]
