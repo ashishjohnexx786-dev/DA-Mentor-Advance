@@ -10,11 +10,17 @@
       row.querySelector(".grow")?.appendChild(el);
     });
   }
+  function loadOptionalVideos(){
+    if(!document.querySelector('link[data-optional-videos]')){const l=document.createElement('link');l.rel='stylesheet';l.href='./optional-videos.css';l.dataset.optionalVideos='1';document.head.appendChild(l);}
+    if(window.OPTIONAL_VIDEO_MAP){if(!document.querySelector('script[data-optional-video-ui]')){const u=document.createElement('script');u.src='./optional-videos-ui.js';u.dataset.optionalVideoUi='1';document.body.appendChild(u);}return;}
+    if(!document.querySelector('script[data-optional-video-map]')){const m=document.createElement('script');m.src='./optional-videos.js';m.dataset.optionalVideoMap='1';m.onload=()=>{if(!document.querySelector('script[data-optional-video-ui]')){const u=document.createElement('script');u.src='./optional-videos-ui.js';u.dataset.optionalVideoUi='1';document.body.appendChild(u);}};document.body.appendChild(m);}
+  }
   function install(){
     applyData();const style=document.createElement("style");style.textContent=".courseVideoStatus{margin-top:4px;font-weight:650}";document.head.appendChild(style);
     if(typeof render==="function"){const base=render;render=function(){base();decorate()};render();}
     const b=document.getElementById("backupBtn");if(b)b.onclick=()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`DA_Mentor_Advance_Backup_${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)};
     const reset=document.getElementById("resetBtn");if(reset)reset.onclick=()=>{if(confirm("Reset all DA Mentor Advance progress on this device?")){state=fresh();save();document.getElementById("settingsModal")?.classList.remove("show")}};
+    loadOptionalVideos();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",install);else install();
 })();
