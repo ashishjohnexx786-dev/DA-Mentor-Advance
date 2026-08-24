@@ -13,8 +13,12 @@
     }
     return null;
   }
+  function isRecommended(row){
+    return (row.querySelector('.courseVideoStatus')?.textContent||'').includes('Recommended visual');
+  }
   function decorate(row){
     if(row.querySelector(':scope .optionalVideoBox'))return;
+    if(!isRecommended(row))return;
     const id=lessonId(row),videos=id&&MAP[id];
     if(!videos?.length)return;
     const host=row.querySelector('.grow')||row;
