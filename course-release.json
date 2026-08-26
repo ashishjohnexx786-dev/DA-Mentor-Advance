@@ -1,6 +1,6 @@
 {
   "mentor": "DA Mentor Advance",
-  "course": "Course 2 — Senior / BI Analyst",
+  "course": "Course 2A — Senior / BI Analyst (Optional branch)",
   "final_course_version": "2026-v1.4",
   "phases": 10,
   "core_lessons": 114,
@@ -10,8 +10,12 @@
   "recommended_visual_pl300_activities": 8,
   "recommended_visual_total": 31,
   "optional_video_resources": 16,
-  "video_status_values": ["☐ Not required", "☑ Recommended visual"],
+  "video_status_values": [
+    "☐ Not required",
+    "☑ Recommended visual"
+  ],
   "storage_key_preserved": "daMentorPro.v1",
   "canonical_archive": "COURSE_2_SENIOR_BI_ANALYST_MASTER_2026_v1.4_FINAL_SYNCED.zip",
-  "sync_policy": "Lesson IDs, Gate routing, C2-113 readiness, optional-video routing, video status and release controls match the canonical final course. Videos are optional reinforcement and never gate progress. Existing progress storage is preserved."
+  "sync_policy": "Lesson IDs, Gate routing, C2-113 readiness, optional-video routing, video status and release controls match the canonical final course. Videos are optional reinforcement and never gate progress. Existing progress storage is preserved.",
+  "architecture_role": "Optional branch; primary DA-to-DE route uses Course 2B Bridge"
 }
