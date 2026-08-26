@@ -82,9 +82,9 @@ function renderPL(){
 function renderDE(){
  $("#deChecks").innerHTML=Object.keys(DE).map(k=>`<div class="promoRow"><span class="tiny">${DE_LABELS[k]} <span class="muted">(need ${DE[k]})</span></span><input data-de="${k}" type="number" min="0" max="4" value="${state.de[k]||0}"></div>`).join("");
  $$('[data-de]').forEach(i=>i.onchange=e=>{state.de[e.target.dataset.de]=Math.max(0,Math.min(4,+e.target.value||0));save()});
- const finalGate=!!state.phase["C2-09"].gate, dePass=Object.keys(DE).every(k=>(+state.de[k]||0)>=DE[k]), unlocked=finalGate&&dePass;
- $("#deStatus").textContent=unlocked?"UNLOCKED":"LOCKED"; $("#c3Pill").textContent=unlocked?"UNLOCKED":"LOCKED"; $("#c3Pill").className="pill "+(unlocked?"ok":"danger");
- $("#deMessage").innerHTML=unlocked?"C2-113 readiness floors + Final Gate are satisfied. Course 3 may begin.":`Still locked. ${!finalGate?"Final Course 2 Gate is not passed. ":""}${!dePass?"One or more C2-113 readiness floors are below requirement.":""}`;
+ const finalGate=!!state.phase["C2-09"].gate, dePass=Object.keys(DE).every(k=>(+state.de[k]||0)>=DE[k]), branchReady=finalGate&&dePass;
+ $("#deStatus").textContent=branchReady?"READY":"BUILDING"; $("#c3Pill").textContent=branchReady?"READY":"BUILDING"; $("#c3Pill").className="pill "+(branchReady?"ok":"warn");
+ $("#deMessage").innerHTML=branchReady?"Optional 2A branch readiness is satisfied. You may continue to Course 3 from this branch. The accelerated route remains Course 2B Bridge.":`2A branch readiness is still building. ${!finalGate?"Final Course 2A Gate is not passed. ":""}${!dePass?"One or more C2-113 readiness floors are below requirement.":""} The primary DA → DE route uses Course 2B Bridge.`;
 }
 function renderMap(){
  $("#phaseMap").innerHTML=COURSE2.map(p=>{const m=mastered(p), pass=state.phase[p.id].gate&&m===p.lessons.length;return `<div class="mapRow"><div class="grow"><b>${p.id}</b> ${p.name}<div class="progress"><i style="width:${pct(m,p.lessons.length)}%"></i></div><div class="muted tiny">${m}/${p.lessons.length} mastered</div></div><span class="pill ${pass?"ok":""}">${pass?"PASS":pct(m,p.lessons.length)+"%"}</span></div>`}).join("");
