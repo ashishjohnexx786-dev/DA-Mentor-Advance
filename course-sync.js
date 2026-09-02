@@ -1,5 +1,5 @@
 (()=>{
-  const RECOMMENDED=new Set(["AX5","AX6","AX7","AX8","AX9","PBM-A4","PBM-A5","PBM-A6","PBM-A7","PBM-A8","PBM-A10","DAX5","DAX11","DAX12","DAX13","DAX14","DAX15","CLD3","CLD4","CLD5","CLD6","CLD7","CLD9","PL1","PL2","PL3","PL4","PL5","PL6","PL7","PL8"]);
+  const RECOMMENDED=new Set(["ASQL1","ASQL12","ASQL3","ASQL4","ASQL6","ASQL7","AX1","AX10","AX2","AX3","AX4","AX5","AX6","AX7","AX8","AX9","CAP12","CAP13","CAP3","CAP5","DAX11","DAX12","DAX14","DWF4","PBM-A1","PBM-A8","SBA4","SBA5","SBA7"]);
   const status=id=>RECOMMENDED.has(id)?"☑ Recommended visual":"☐ Not required";
   function applyData(){if(typeof COURSE2!=="undefined")COURSE2.forEach(p=>p.lessons.forEach(l=>l.videoStatus=status(l.id)));}
   function decorate(){

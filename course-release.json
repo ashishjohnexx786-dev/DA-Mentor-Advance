@@ -1,21 +1,22 @@
 {
   "mentor": "DA Mentor Advance",
-  "course": "Course 2A — Senior / BI Analyst (Optional branch)",
-  "final_course_version": "2026-v1.4",
+  "course": "Course 2 — Senior / BI Analyst",
+  "final_course_version": "2026-v2.0",
   "phases": 10,
-  "core_lessons": 114,
-  "optional_pl300_activities": 8,
   "video_required_dependencies": 0,
-  "recommended_visual_core_lessons": 23,
-  "recommended_visual_pl300_activities": 8,
-  "recommended_visual_total": 31,
-  "optional_video_resources": 16,
   "video_status_values": [
     "☐ Not required",
     "☑ Recommended visual"
   ],
   "storage_key_preserved": "daMentorPro.v1",
-  "canonical_archive": "COURSE_2_SENIOR_BI_ANALYST_MASTER_2026_v1.4_FINAL_SYNCED.zip",
-  "sync_policy": "Lesson IDs, Gate routing, C2-113 readiness, optional-video routing, video status and release controls match the canonical final course. Videos are optional reinforcement and never gate progress. Existing progress storage is preserved.",
-  "architecture_role": "Optional branch; primary DA-to-DE route uses Course 2B Bridge"
+  "canonical_archive": "02A_COURSE_2A_SENIOR_BI_ANALYST_OPTIONAL_2026_v2.0.zip",
+  "sync_policy": "Mentor source/video status is generated from the v2.0 course source map. External media is support only. Lesson books and physical Gate/retest artifacts remain authoritative. Existing progress/backup storage schema is preserved.",
+  "teaching_standard": "FOUR_COURSE_TEACHING_STANDARD_2026_v2.0",
+  "content_control": "lesson-book-authority / visual-support / attempt-first / targeted-remediation / fresh-retest",
+  "release_date": "2026-09-02",
+  "lesson_count": 122,
+  "recommended_visual_lessons": 29,
+  "mapped_external_source_lessons": 49,
+  "book_only_lessons": 73,
+  "external_unique_urls": 17
 }

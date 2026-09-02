@@ -1,0 +1,6 @@
+C2 Mentor — 2026 v2.0
+Release date: 2026-09-02
+Teaching control: 16-stage v2.0 contract
+State migration: existing local progress/backup schema preserved
+AMOLED: true-black CSS patch included
+Sources: lesson-specific map generated from release control index
