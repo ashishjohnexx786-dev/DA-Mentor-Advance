@@ -15,22 +15,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Repair runtime from canonical registry
+      - name: Finalize runtime, storage continuity and cache
         shell: bash
         run: |
           node <<'NODE'
           const fs=require('fs');
-          const path='curriculum.js';
-          let s=fs.readFileSync(path,'utf8');
-          s=s.replace('"appName":"DA Mentor Pro - Course 2A"','"appName":"DA Mentor Advance"');
-          if(!s.includes('window.COURSE2=')){
-            s += `\n\n// Runtime adapter for the unified DE Mentor 2026 shell. Canonical data remains C2A_REGISTRY.\nwindow.COURSE2=(window.C2A_REGISTRY?.phases||[]).map(p=>({\n  id:p.id,\n  name:p.name,\n  hours:[p.minHours,p.maxHours],\n  artifacts:p.routes||{},\n  lessons:[...(p.coreLessonIds||[]),...(p.supplementIds||[])].map(id=>{\n    const l=(window.C2A_REGISTRY.lessons||[]).find(x=>x.id===id);\n    return {id,title:(l&&l.title)||id};\n  })\n}));\n`;
+          let c=fs.readFileSync('curriculum.js','utf8');
+          c=c.replace('"appName":"DA Mentor Pro - Course 2A"','"appName":"DA Mentor Advance"');
+          if(!c.includes('window.COURSE2=')){
+            c += `\n\n// Runtime adapter for the unified DE Mentor 2026 shell. Canonical data remains C2A_REGISTRY.\nwindow.COURSE2=(window.C2A_REGISTRY?.phases||[]).map(p=>({\n  id:p.id,\n  name:p.name,\n  hours:[p.minHours,p.maxHours],\n  artifacts:p.routes||{},\n  lessons:[...(p.coreLessonIds||[]),...(p.supplementIds||[])].map(id=>{\n    const l=(window.C2A_REGISTRY.lessons||[]).find(x=>x.id===id);\n    return {id,title:(l&&l.title)||id};\n  })\n}));\n`;
           }
-          fs.writeFileSync(path,s);
+          fs.writeFileSync('curriculum.js',c);
+
+          let h=fs.readFileSync('index.html','utf8');
+          h=h.replace("storageKey:'daMentorPro.v1'","storageKey:'daMentorC2A2026_iqa1'");
+          const anchor="const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];";
+          const migration=`${anchor}\n// Preserve progress from the previous unified Course 2A key while keeping the canonical C2A key.\ntry{if(!localStorage.getItem(KEY)&&localStorage.getItem('daMentorPro.v1'))localStorage.setItem(KEY,localStorage.getItem('daMentorPro.v1'));}catch{}`;
+          if(!h.includes("localStorage.getItem('daMentorPro.v1')")) h=h.replace(anchor,migration);
+          fs.writeFileSync('index.html',h);
+
+          let sw=fs.readFileSync('service-worker.js','utf8');
+          sw=sw.replace(/const CACHE='[^']+';/,"const CACHE='mentor-de2026-final-2026-09-10-c2a-v7';");
+          fs.writeFileSync('service-worker.js',sw);
           NODE
           node --check curriculum.js
+          node --check service-worker.js
+          grep -q "storageKey:'daMentorC2A2026_iqa1'" index.html
+          grep -q "window.COURSE2=" curriculum.js
+          grep -q "mentor-de2026-final-2026-09-10-c2a-v7" service-worker.js
           git config user.name "Ashish Course Finalizer"
           git config user.email "actions@users.noreply.github.com"
-          git add curriculum.js
-          git commit -m "Fix C2A canonical runtime adapter and branding" || true
+          git add curriculum.js index.html service-worker.js
+          git commit -m "Finalize C2A runtime, progress continuity and cache" || true
           git push origin main
