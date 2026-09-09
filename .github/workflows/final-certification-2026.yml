@@ -1,0 +1,75 @@
+name: Final Mentor Certification 2026
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/final-certification-2026.yml']
+permissions:
+  contents: read
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Static integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -maxdepth 1 -name '*.js' -print0 | xargs -0 -n1 node --check
+          node - <<'NODE'
+          const fs=require('fs'),vm=require('vm');const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('curriculum.js','utf8'),c);
+          const r=c.window.C2A_REGISTRY,q=c.window.COURSE2;
+          if(!r||r.phases.length!==10||r.coreLessonCount!==114)throw Error('C2A canonical registry mismatch');
+          if(!Array.isArray(q)||q.length!==10||q.reduce((n,p)=>n+p.lessons.filter(l=>!l.id.startsWith('PL')).length,0)!==114)throw Error('COURSE2 runtime adapter mismatch');
+          console.log('PASS C2A registry + runtime adapter');
+          NODE
+          python - <<'PY'
+          import json,pathlib
+          d=pathlib.Path('.');h=(d/'index.html').read_text();m=json.loads((d/'manifest.webmanifest').read_text())
+          assert m['name']=='DA Mentor Advance'; assert 'DA Mentor Advance' in h; assert 'DA Mentor Pro' not in h
+          assert "daMentorC2A2026_iqa1" in h and "daMentorPro.v1" in h
+          for s in ['START STUDY','END STUDY','Fresh retry','Skip for now',"I’m stuck",'Mark Mastered']:
+              assert s in h,s
+          low=h.lower()
+          for bad in ['25:00','pomodoro','focusmin','shortmin','longmin']:
+              assert bad not in low,bad
+          for icon in m.get('icons',[]): assert (d/icon['src']).exists(),icon['src']
+          assert 'mentor-de2026-final-2026-09-10-c2a-v7' in (d/'service-worker.js').read_text()
+          assert 'data-master' not in h
+          print('PASS C2A identity/storage/workflow/cache')
+          PY
+      - name: Phone-width native browser smoke
+        shell: bash
+        run: |
+          python -m pip install -q selenium
+          python -m http.server 8765 >/tmp/mentor-http.log 2>&1 & echo $! >/tmp/http.pid
+          sleep 2
+          python - <<'PY'
+          import time
+          from selenium import webdriver
+          from selenium.webdriver.common.by import By
+          from selenium.webdriver.support.ui import WebDriverWait
+          from selenium.webdriver.support import expected_conditions as EC
+          o=webdriver.ChromeOptions();o.add_argument('--headless=new');o.add_argument('--no-sandbox');o.add_argument('--disable-dev-shm-usage');o.add_argument('--window-size=412,915');o.set_capability('goog:loggingPrefs',{'browser':'ALL'})
+          d=webdriver.Chrome(options=o)
+          try:
+              d.get('http://127.0.0.1:8765/index.html');WebDriverWait(d,20).until(EC.title_contains('DA Mentor Advance'))
+              assert d.execute_script('return document.documentElement.scrollWidth')<=d.execute_script('return window.innerWidth')+3
+              b=WebDriverWait(d,15).until(EC.element_to_be_clickable((By.XPATH,"//button[contains(normalize-space(.),'START STUDY')]")));d.execute_script("arguments[0].scrollIntoView({block:'center',behavior:'instant'})",b);b.click();WebDriverWait(d,10).until(lambda x:'END STUDY' in b.text);b.click()
+              learn=d.find_elements(By.CSS_SELECTOR,"[data-view='learn']");
+              if learn:d.execute_script("arguments[0].scrollIntoView({block:'center',behavior:'instant'})",learn[0]);learn[0].click();time.sleep(.5)
+              assert len(d.find_elements(By.CSS_SELECTOR,'.teacherStep'))>=8
+              rev=d.find_elements(By.ID,'reviewBtn');
+              if rev:assert not rev[0].is_enabled()
+              severe=[x for x in d.get_log('browser') if x.get('level')=='SEVERE' and 'favicon' not in x.get('message','').lower()]
+              assert not severe,severe
+              print('PASS C2A phone-width native click/runtime smoke')
+          finally:d.quit()
+          PY
+          kill $(cat /tmp/http.pid)
+      - name: Build exact main artifact
+        run: zip -qr DA_MENTOR_ADVANCE_FINAL_MAIN_2026.zip . -x '.git/*' '.github/*' 'DA_MENTOR_ADVANCE_FINAL_MAIN_2026.zip'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DA_MENTOR_ADVANCE_FINAL_MAIN_2026
+          path: DA_MENTOR_ADVANCE_FINAL_MAIN_2026.zip
+          if-no-files-found: error
