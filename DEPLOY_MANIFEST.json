@@ -24,8 +24,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 72001,
-      "sha256": "bd4ad73377dd42f24de3e4d6320e9e3fededd94daf7e13a732937f1baaadb708"
+      "bytes": 72120,
+      "sha256": "f0a578acf4bc96d0cfa7c62661d743dfc2e4a3ad06ef93b97805d6fddbc8295b"
     },
     {
       "path": "manifest.webmanifest",
@@ -35,8 +35,10 @@
     {
       "path": "service-worker.js",
       "bytes": 940,
-      "sha256": "de09c49a733500dfffde5767696401158427204eed14ff0c1995eef8121c8cf3"
+      "sha256": "2d1010676a21d449fde0d79acc20d42d0d97a8bbccc8dad6b255155b6c17d3a8"
     }
   ],
-  "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09"
+  "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09",
+  "mobileMarkupFix": "TEACHER_STEP_SIBLING_FIX_2026_09_09",
+  "studyNavigation": "ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED"
 }
