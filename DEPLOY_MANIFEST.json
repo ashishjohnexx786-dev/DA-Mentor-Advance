@@ -4,13 +4,13 @@
   "files": [
     {
       "path": "assets-pack.js",
-      "bytes": 1623851,
-      "sha256": "4280c0ef10f02dcca0b0af063600f41125ee380ac8666712dfda4f1dd6c7d91d"
+      "bytes": 1608091,
+      "sha256": "4e23307e879cee0af48e9f5f2fbb15d8a6dceb30e46832000e59db930f19acd8"
     },
     {
       "path": "curriculum.js",
-      "bytes": 170385,
-      "sha256": "66a0fdf7310a96dde9064094d18b1f8b44ddc0d49112c69897062e57195dc298"
+      "bytes": 170358,
+      "sha256": "638b8e2b169c9fc6dea8f2c706a3b26ad6f96f943eb0951616e24b33b27254da"
     },
     {
       "path": "icon-192.svg",
@@ -24,8 +24,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 72965,
-      "sha256": "b7d329ffdecf323a3921e2bc103f730ee929a84ada73b170b576322ee863b5c5"
+      "bytes": 74276,
+      "sha256": "54038295e44a46f9db2a7f7cc022f788dbf74c619d065d61ff92d4ac95a00046"
     },
     {
       "path": "manifest.webmanifest",
@@ -34,13 +34,16 @@
     },
     {
       "path": "service-worker.js",
-      "bytes": 940,
-      "sha256": "2d1010676a21d449fde0d79acc20d42d0d97a8bbccc8dad6b255155b6c17d3a8"
+      "bytes": 932,
+      "sha256": "e3aaf56a08b37b15d5b5f58e4329ecf06c617d05388701ba13422e9661a6d1a4"
     }
   ],
   "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09",
-  "mobileMarkupFix": "TEACHER_STEP_SIBLING_FIX_2026_09_09",
+  "mobileMarkupFix": "8_SIBLING_STEPS_NO_OVERLAP",
   "studyNavigation": "ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED",
   "mobileFix": "FINAL_MOBILE_TAP_FIX_2026_09_09",
-  "studyAccessMode": "OPEN_ANY_LESSON_FINAL_COMPLETION_STILL_PROTECTED"
+  "studyAccessMode": "OPEN_ANY_LESSON_FINAL_COMPLETION_STILL_PROTECTED",
+  "finalRelease": "2026-09-10",
+  "reviewProtection": "GENUINE_ATTEMPT_BOOLEAN_REQUIRED",
+  "sourceLinks": "CURRENT_2026_09_10"
 }
