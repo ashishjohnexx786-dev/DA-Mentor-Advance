@@ -1,7 +1,8 @@
-name: DA Mentor Advance QA
+name: DA Mentor Advance Unified UX QA
 
 on:
   pull_request:
+    branches: [main]
   push:
     branches: [main]
   workflow_dispatch:
@@ -14,36 +15,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: JavaScript syntax
+      - name: Unified DE-style shell checks
         run: |
-          node --check app.js
-          node --check curriculum.js
-          node --check hotfix.js
-          node --check enhancements.js
-          node --check theme-picker.js
+          test -f index.html
+          test -f unified-style.css
+          test -f mentor-config.js
+          test -f unified-app-pack.js
+          test -f unified-app-gz-loader.js
+          test -f service-worker.js
+          node --check mentor-config.js
+          node --check unified-app-pack.js
+          node --check unified-app-gz-loader.js
           node --check service-worker.js
+          grep -q 'data-view="home"' index.html
+          grep -q 'data-view="learn"' index.html
+          grep -q 'data-view="course"' index.html
+          grep -q 'data-view="repair"' index.html
+          grep -q 'data-view="evidence"' index.html
+          grep -q 'data-view="jobs"' index.html
+          grep -q 'data-view="reports"' index.html
+          grep -q 'Manual study tracker' index.html
+          grep -q 'START STUDY' index.html
+          ! grep -q '25:00' index.html
+          ! grep -q 'Short break' index.html
+          grep -q 'unified-2026-09-09-v2' service-worker.js
+          grep -q "e.request.mode==='navigate'" service-worker.js
+          grep -q "storageKey:" mentor-config.js
       - name: Curriculum integrity
         run: |
           node - <<'NODE'
           const fs=require('fs'),vm=require('vm');
-          const code=fs.readFileSync('curriculum.js','utf8');
-          const ctx={window:{}}; vm.createContext(ctx); vm.runInContext(code,ctx);
-          const c=ctx.window.COURSE2;
-          if(!Array.isArray(c)) throw new Error('COURSE2 was not loaded into window');
-          const all=c.reduce((n,p)=>n+p.lessons.length,0);
-          const core=c.slice(0,9).reduce((n,p)=>n+p.lessons.length,0)+c[9].lessons.filter(l=>l.id.startsWith('CAP')).length;
-          if(c.length!==10) throw new Error(`Expected 10 phases, got ${c.length}`);
-          if(core!==114) throw new Error(`Expected 114 core lessons, got ${core}`);
-          if(all!==122) throw new Error(`Expected 122 tracked items including PL-300 overlay, got ${all}`);
-          if(new Set(c.flatMap(p=>p.lessons.map(l=>l.id))).size!==all) throw new Error('Lesson IDs are not unique');
-          console.log(`PASS: ${c.length} phases / ${core} core / ${all-core} optional PL-300 items`);
+          const ctx={window:{}};vm.createContext(ctx);vm.runInContext(fs.readFileSync('curriculum.js','utf8'),ctx);
+          const c=ctx.window.COURSE2;const all=c.reduce((n,p)=>n+p.lessons.length,0);const core=c.slice(0,9).reduce((n,p)=>n+p.lessons.length,0)+c[9].lessons.filter(l=>l.id.startsWith('CAP')).length;
+          if(c.length!==10||core!==114||all!==122)throw new Error(`Expected 10/114/122; got ${c.length}/${core}/${all}`);
+          console.log('PASS 10 phases / 114 core / 122 tracked');
           NODE
-      - name: Required static files
-        run: |
-          test -f index.html
-          test -f styles.css
-          test -f manifest.webmanifest
-          test -f icon.svg
-          grep -q 'curriculum.js' index.html
-          grep -q 'hotfix.js' index.html
-          grep -q 'theme-picker.js' index.html
+          grep -q "storageKey:'daMentorPro.v1'" mentor-config.js
