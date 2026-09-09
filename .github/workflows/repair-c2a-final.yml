@@ -1,0 +1,36 @@
+name: Repair C2A Runtime Final
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/repair-c2a-final.yml
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair runtime from canonical registry
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const path='curriculum.js';
+          let s=fs.readFileSync(path,'utf8');
+          s=s.replace('"appName":"DA Mentor Pro - Course 2A"','"appName":"DA Mentor Advance"');
+          if(!s.includes('window.COURSE2=')){
+            s += `\n\n// Runtime adapter for the unified DE Mentor 2026 shell. Canonical data remains C2A_REGISTRY.\nwindow.COURSE2=(window.C2A_REGISTRY?.phases||[]).map(p=>({\n  id:p.id,\n  name:p.name,\n  hours:[p.minHours,p.maxHours],\n  artifacts:p.routes||{},\n  lessons:[...(p.coreLessonIds||[]),...(p.supplementIds||[])].map(id=>{\n    const l=(window.C2A_REGISTRY.lessons||[]).find(x=>x.id===id);\n    return {id,title:(l&&l.title)||id};\n  })\n}));\n`;
+          }
+          fs.writeFileSync(path,s);
+          NODE
+          node --check curriculum.js
+          git config user.name "Ashish Course Finalizer"
+          git config user.email "actions@users.noreply.github.com"
+          git add curriculum.js
+          git commit -m "Fix C2A canonical runtime adapter and branding" || true
+          git push origin main
