@@ -1,8 +1,6 @@
-name: DA Mentor Advance Unified UX QA
+name: Final C2A Mentor 2026 QA
 
 on:
-  pull_request:
-    branches: [main]
   push:
     branches: [main]
   workflow_dispatch:
@@ -11,43 +9,42 @@ permissions:
   contents: read
 
 jobs:
-  validate:
+  final-qa:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Unified DE-style shell checks
+      - name: Canonical deploy manifest and file hashes
         run: |
-          test -f index.html
-          test -f unified-style.css
-          test -f mentor-config.js
-          test -f unified-app-pack.js
-          test -f unified-app-gz-loader.js
-          test -f service-worker.js
-          node --check mentor-config.js
-          node --check unified-app-pack.js
-          node --check unified-app-gz-loader.js
+          python - <<'PY'
+          import json,hashlib,pathlib
+          d=pathlib.Path('.'); m=json.loads((d/'DEPLOY_MANIFEST.json').read_text())
+          assert m['mentor']=='C2A' and m['assetCount']==109
+          for f in m['files']:
+              b=(d/f['path']).read_bytes(); assert len(b)==f['bytes']; assert hashlib.sha256(b).hexdigest()==f['sha256']
+          print('PASS canonical deploy hashes')
+          PY
+      - name: Curriculum, packed PDFs, UX and cache
+        run: |
+          node --check curriculum.js
+          node --check assets-pack.js
           node --check service-worker.js
-          grep -q 'data-view="home"' index.html
-          grep -q 'data-view="learn"' index.html
-          grep -q 'data-view="course"' index.html
-          grep -q 'data-view="repair"' index.html
-          grep -q 'data-view="evidence"' index.html
-          grep -q 'data-view="jobs"' index.html
-          grep -q 'data-view="reports"' index.html
-          grep -q 'Manual study tracker' index.html
-          grep -q 'START STUDY' index.html
-          ! grep -q '25:00' index.html
-          ! grep -q 'Short break' index.html
-          grep -q 'unified-2026-09-09-v2' service-worker.js
-          grep -q "e.request.mode==='navigate'" service-worker.js
-          grep -q "storageKey:" mentor-config.js
-      - name: Curriculum integrity
-        run: |
           node - <<'NODE'
           const fs=require('fs'),vm=require('vm');
-          const ctx={window:{}};vm.createContext(ctx);vm.runInContext(fs.readFileSync('curriculum.js','utf8'),ctx);
-          const c=ctx.window.COURSE2;const all=c.reduce((n,p)=>n+p.lessons.length,0);const core=c.slice(0,9).reduce((n,p)=>n+p.lessons.length,0)+c[9].lessons.filter(l=>l.id.startsWith('CAP')).length;
-          if(c.length!==10||core!==114||all!==122)throw new Error(`Expected 10/114/122; got ${c.length}/${core}/${all}`);
-          console.log('PASS 10 phases / 114 core / 122 tracked');
+          let c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('curriculum.js','utf8'),c);
+          const r=c.window.C2A_REGISTRY;if(r.coreLessonCount!==114||r.phaseCount!==10||r.supplementCount!==8)throw Error('C2A count mismatch');
+          c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets-pack.js','utf8'),c);
+          const a=c.window.MENTOR_ASSETS;if(Object.keys(a).length!==109)throw Error('asset count');
+          for(const [k,v] of Object.entries(a)){const b=Buffer.from(v.b,'base64');if(v.m==='application/pdf'&&b.subarray(0,4).toString()!=='%PDF')throw Error(k)}
+          const h=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('service-worker.js','utf8');
+          for(const s of ['Today','Learn','Course','Repair','Evidence','Jobs','Reports','START STUDY','END STUDY','genuine attempt','Fresh retry','Explain','Mastered','URL.createObjectURL','daMentorPro.v1']) if(!h.includes(s)) throw Error('missing '+s);
+          if(h.includes('25:00')||h.toLowerCase().includes('pomodoro'))throw Error('obsolete timer');
+          if(!sw.includes('mentor-de-ux-direct-assets-2026-09-09-c2a-v1'))throw Error('cache mismatch');
+          console.log('PASS C2A final UX/direct-open/cache');
           NODE
-          grep -q "storageKey:'daMentorPro.v1'" mentor-config.js
+      - name: HTTP serve smoke
+        run: |
+          python -m http.server 8765 >/tmp/http.log 2>&1 &
+          p=$!; trap 'kill $p' EXIT; sleep 1
+          curl -fsS http://127.0.0.1:8765/index.html >/dev/null
+          curl -fsS http://127.0.0.1:8765/service-worker.js >/dev/null
+          curl -fsS http://127.0.0.1:8765/assets-pack.js >/dev/null
