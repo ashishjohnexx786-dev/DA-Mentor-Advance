@@ -19,6 +19,7 @@ jobs:
           import json,hashlib,pathlib
           d=pathlib.Path('.'); m=json.loads((d/'DEPLOY_MANIFEST.json').read_text())
           assert m['mentor']=='C2A' and m['assetCount']==109
+          assert m.get('runtimeFix')=='LIVE_QA_STEP_RERENDER_2026_09_09'
           for f in m['files']:
               b=(d/f['path']).read_bytes(); assert len(b)==f['bytes']; assert hashlib.sha256(b).hexdigest()==f['sha256']
           print('PASS canonical deploy hashes')
@@ -38,8 +39,9 @@ jobs:
           const h=fs.readFileSync('index.html','utf8'),sw=fs.readFileSync('service-worker.js','utf8');
           for(const s of ['Today','Learn','Course','Repair','Evidence','Jobs','Reports','START STUDY','END STUDY','genuine attempt','Fresh retry','Explain','Mastered','URL.createObjectURL','daMentorPro.v1']) if(!h.includes(s)) throw Error('missing '+s);
           if(h.includes('25:00')||h.toLowerCase().includes('pomodoro'))throw Error('obsolete timer');
-          if(!sw.includes('mentor-de-ux-direct-assets-2026-09-09-c2a-v1'))throw Error('cache mismatch');
-          console.log('PASS C2A final UX/direct-open/cache');
+          if(!h.includes('save();renderLearn()}'))throw Error('lesson-step immediate rerender regression');
+          if(!sw.includes('mentor-de-ux-direct-assets-2026-09-09-c2a-v2'))throw Error('cache mismatch');
+          console.log('PASS C2A final UX/direct-open/rerender/cache');
           NODE
       - name: HTTP serve smoke
         run: |
