@@ -1,0 +1,41 @@
+{
+  "mentor": "C2A",
+  "assetCount": 109,
+  "files": [
+    {
+      "path": "assets-pack.js",
+      "bytes": 1623851,
+      "sha256": "4280c0ef10f02dcca0b0af063600f41125ee380ac8666712dfda4f1dd6c7d91d"
+    },
+    {
+      "path": "curriculum.js",
+      "bytes": 170385,
+      "sha256": "66a0fdf7310a96dde9064094d18b1f8b44ddc0d49112c69897062e57195dc298"
+    },
+    {
+      "path": "icon-192.svg",
+      "bytes": 384,
+      "sha256": "20e15e7e57523ee60cc2d6d102a56824a5a16b53c175783ae58504753edb10de"
+    },
+    {
+      "path": "icon-512.svg",
+      "bytes": 384,
+      "sha256": "efedf3206d9b6c900ef5e80831599917696ceea24462746f00a84c128d85ccc2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 71987,
+      "sha256": "04c0475fd4cc86765578a9133acdb8d172be78d1079277f038d52db5ec20f759"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 403,
+      "sha256": "a2ddc05a8ad99c841e60523ad2f3f0b8c366b4e189f17839d74bb16e0743a8b7"
+    },
+    {
+      "path": "service-worker.js",
+      "bytes": 940,
+      "sha256": "16a27acaf6ab40a76b9ffcc44524801045ef93e25144f0817cb559fd96d34d28"
+    }
+  ]
+}
