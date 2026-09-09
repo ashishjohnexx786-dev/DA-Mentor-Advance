@@ -1,0 +1,153 @@
+name: Finalize main and clean branches
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/finalize-main-and-clean-branches.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - run: python -m pip install --quiet pymupdf
+      - name: Apply final Mentor fixes
+        shell: bash
+        run: |
+          cat >/tmp/finalize.py <<'PY'
+          from pathlib import Path
+          import os,re,json,base64,hashlib
+          import fitz
+
+          repo=os.environ['GITHUB_REPOSITORY'].split('/')[-1]
+          cache={
+            'DA-Mentor-Launch':'mentor-de-ux-final-2026-09-10-c1-v5',
+            'DA-Mentor-Advance':'mentor-de-ux-final-2026-09-10-c2a-v5',
+            'DA-Mentor-Bridge':'mentor-de-ux-final-2026-09-10-c2b-v4',
+            'DA-Mentor-Engineering':'mentor-de-ux-final-2026-09-10-c3-v7',
+          }[repo]
+          repl={
+            'https://learn.microsoft.com/en-us/fabric/onelake/security/':'https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security',
+            'https://spark.apache.org/docs/latest/sql-performance-tuning/':'https://spark.apache.org/docs/latest/sql-performance-tuning.html',
+            'https://support.microsoft.com/en-us/excel/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929':'https://support.microsoft.com/en-us/excel/functions/xlookup-function',
+            'https://chandoo.org/wp/date-time-tips-ms-excel/':'https://chandoo.org/wp/excel-date-time-tips/',
+            'https://help.openai.com/en/collections/8471418-':'https://help.openai.com/en/collections/8471418-data-controls',
+          }
+          def rt(s):
+            for a,b in repl.items(): s=s.replace(a,b)
+            return s
+          def pdf(data):
+            try: d=fitz.open(stream=data,filetype='pdf')
+            except Exception: return data
+            changed=False
+            visible={
+              'https://chandoo.org/wp/date-time-tips-ms-excel/':'https://chandoo.org/wp/excel-date-time-tips/',
+              'https://help.openai.com/en/collections/8471418-':'https://help.openai.com/en/collections/8471418-data-controls',
+            }
+            for p in d:
+              for old,new in visible.items():
+                rects=p.search_for(old)
+                if rects:
+                  changed=True
+                  for r in rects: p.add_redact_annot(fitz.Rect(r.x0-.5,r.y0-.8,r.x1+.5,r.y1+.8),fill=(1,1,1))
+                  p.apply_redactions()
+                  for r in rects:
+                    box=fitz.Rect(r.x0,r.y0-1.2,min(p.rect.width-45,r.x0+330),r.y1+1.5)
+                    p.insert_textbox(box,new,fontsize=6.2,fontname='helv',color=(0,0.28,0.65))
+                    p.insert_link({'kind':fitz.LINK_URI,'from':fitz.Rect(r.x0,r.y0,min(p.rect.width-45,r.x0+230),r.y1),'uri':new})
+              for link in list(p.get_links()):
+                u=link.get('uri')
+                if u in repl:
+                  changed=True; link['uri']=repl[u]
+                  try: p.update_link(link)
+                  except Exception: p.insert_link({'kind':fitz.LINK_URI,'from':link['from'],'uri':repl[u]})
+            if not changed: d.close(); return data
+            out=d.tobytes(garbage=4,deflate=True,clean=True); d.close(); return out
+
+          ap=Path('assets-pack.js')
+          if ap.exists():
+            s=ap.read_text(errors='ignore')
+            if s.startswith('window.MENTOR_ASSETS='):
+              obj=json.loads(s[len('window.MENTOR_ASSETS='):].rstrip().rstrip(';'))
+              for k,v in obj.items():
+                try: b=base64.b64decode(v['b'])
+                except Exception: continue
+                nb=b
+                if v.get('m')=='application/pdf': nb=pdf(b)
+                elif v.get('m','').startswith('text/') or k.lower().endswith(('.txt','.md','.csv','.json','.html','.js','.py','.sql','.yml','.yaml')):
+                  try: nb=rt(b.decode()).encode()
+                  except Exception: pass
+                if nb!=b:
+                  v['b']=base64.b64encode(nb).decode()
+                  if 's' in v: v['s']=len(nb)
+                  if 'h' in v: v['h']=hashlib.sha256(nb).hexdigest()
+              ap.write_text('window.MENTOR_ASSETS='+json.dumps(obj,separators=(',',':'))+';\n')
+
+          for p in Path('.').rglob('*'):
+            if not p.is_file() or '.git' in p.parts or '.github' in p.parts or p.name=='assets-pack.js': continue
+            if p.suffix.lower() in {'.html','.js','.json','.md','.txt','.csv','.webmanifest'}:
+              try:
+                s=p.read_text(); n=rt(s)
+                if n!=s: p.write_text(n)
+              except Exception: pass
+
+          idx=Path('index.html')
+          s=idx.read_text()
+          bad='<button class="btn ghost" id="practiceBtn">🧪 Practice</button></div></div><div class="teacherStep"><span>3</span>'
+          good='<button class="btn ghost" id="practiceBtn">🧪 Practice</button></div></div></div><div class="teacherStep"><span>3</span>'
+          s=s.replace(bad,good)
+          s=s.replace('save()}\nfunction switchView','save();renderLearn()}\nfunction switchView')
+          s=re.sub(r"const phaseUnlocked=p=>\{const i=COURSE\.findIndex\(x=>x\.id===p\.id\);return i===0\|\|COURSE\.slice\(0,i\)\.every\(phaseComplete\)\};","const phaseUnlocked=p=>true;",s,count=1)
+          s=s.replace("pass?'ok':phaseUnlocked(p)?'warn':'danger'","pass?'ok':'warn'")
+          s=s.replace("pass?'PASS':phaseUnlocked(p)?'ACTIVE':'LOCKED'","pass?'PASS':'OPEN'")
+          s=s.replace('Browse anything. Mentor still protects attempts, reviews and Gates.','All lessons and phases are open for study in any order. Mentor still protects attempts, reviews, Mini-Labs and Gates.')
+          s=s.replace("$('#reviewBtn').textContent=st.attempt?'Open / record protected review':'🔒 Review locked';$('#reviewBtn').disabled=!st.attempt;$('#reviewBtn').onclick=()=>{if(!st.attempt)return;","$('#reviewBtn').textContent=st.attempt===true?'Open / record protected review':'🔒 Review locked';$('#reviewBtn').disabled=st.attempt!==true;$('#reviewBtn').onclick=()=>{if(st.attempt!==true)return;")
+          s=s.replace("function boot(){bind();render();renderLearn();","function boot(){if(!localStorage.getItem(KEY))localStorage.setItem(KEY,JSON.stringify(S));bind();render();renderLearn();")
+          css='\n/* FINAL_MOBILE_TAP_FIX_2026_09_10 */\n.teacherStep>div{min-width:0}@media(max-width:700px){.appShell{padding-top:8px}.topbar{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-items:stretch;position:relative;z-index:auto}.brandWrap{width:100%;min-width:0}.brandText span{max-width:calc(100vw - 90px)}.topActions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible}.topActions .btn{width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere}.tabs{position:relative;top:auto;z-index:5;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:4px 0 10px}.tab,.btn,.bigAction{min-height:44px;position:relative;pointer-events:auto}.teacherStep{align-items:start}.teacherStep .btn{max-width:100%;white-space:normal;overflow-wrap:anywhere}.teacherStep .actionRow,.artifactRow>.actionRow,.gateRow>.actionRow{width:100%}.teacherStep .actionRow .btn,.artifactRow>.actionRow .btn,.gateRow>.actionRow .btn{flex:1 1 140px}.stageLessonRow,.artifactRow,.gateRow{flex-wrap:wrap}.modal{padding:8px}.modalCard{max-height:calc(100dvh - 16px)}}@media(max-width:420px){.topActions{grid-template-columns:1fr}.tabs{gap:6px}.tab{padding:10px 11px}}\n'
+          if 'FINAL_MOBILE_TAP_FIX_2026_09_10' not in s: s=s.replace('</style>',css+'</style>',1)
+          idx.write_text(s)
+
+          sw=Path('service-worker.js')
+          if sw.exists():
+            s=sw.read_text(); s=re.sub(r"const CACHE='[^']+';",f"const CACHE='{cache}';",s,count=1); sw.write_text(s)
+
+          mf=Path('DEPLOY_MANIFEST.json')
+          if mf.exists():
+            try:
+              m=json.loads(mf.read_text())
+              if isinstance(m.get('files'),list):
+                for f in m['files']:
+                  p=Path(f.get('path',''))
+                  if p.is_file():
+                    b=p.read_bytes(); f['bytes']=len(b); f['sha256']=hashlib.sha256(b).hexdigest()
+              m['finalRelease']='2026-09-10'
+              m['mobileMarkupFix']='8_SIBLING_STEPS_NO_OVERLAP'
+              m['studyNavigation']='ALL_LESSONS_OPEN_ASSESSMENTS_PROTECTED'
+              m['reviewProtection']='GENUINE_ATTEMPT_BOOLEAN_REQUIRED'
+              m['sourceLinks']='CURRENT_2026_09_10'
+              mf.write_text(json.dumps(m,indent=2)+'\n')
+            except Exception as e: print('manifest warning',e)
+          PY
+          python /tmp/finalize.py
+      - name: Commit final main and delete every side branch
+        shell: bash
+        run: |
+          git config user.name "Ashish Course Finalizer"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A ':!.github/workflows/finalize-main-and-clean-branches.yml'
+          if ! git diff --cached --quiet; then
+            git commit -m "Finalize Mentor mobile UX, navigation and source links"
+            git push origin main
+          fi
+          for b in $(git ls-remote --heads origin | awk '{sub("refs/heads/","",$2); print $2}'); do
+            if [ "$b" != "main" ]; then
+              echo "Deleting side branch: $b"
+              git push origin --delete "$b"
+            fi
+          done
