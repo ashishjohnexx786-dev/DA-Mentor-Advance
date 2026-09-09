@@ -1,0 +1,37 @@
+name: Final mobile tap and open-study repair
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/final-mobile-open-study-fix.yml']
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Apply final C2A mobile and study-access repair
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('index.html'); s=p.read_text()
+          css='''\n/* FINAL_MOBILE_TAP_FIX_2026_09_09 */\n@media(max-width:700px){\n.appShell{padding-top:8px}.topbar{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-items:stretch;position:relative;z-index:auto}.brandWrap{width:100%;min-width:0}.brandText span{max-width:calc(100vw - 90px)}.topActions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible}.topActions .btn{width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere}.tabs{position:relative;top:auto;z-index:5;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:4px 0 10px}.tab,.btn,.bigAction{min-height:44px;position:relative;pointer-events:auto}.teacherStep .actionRow,.artifactRow>.actionRow,.gateRow>.actionRow{width:100%}.teacherStep .actionRow .btn,.artifactRow>.actionRow .btn,.gateRow>.actionRow .btn{flex:1 1 140px}.stageLessonRow,.artifactRow,.gateRow{flex-wrap:wrap}.modal{padding:8px}.modalCard{max-height:calc(100dvh - 16px)}}\n@media(max-width:420px){.topActions{grid-template-columns:1fr}.tabs{gap:6px}.tab{padding:10px 11px}}\n'''
+          assert 'FINAL_MOBILE_TAP_FIX_2026_09_09' not in s
+          s=s.replace('</style></head>',css+'</style></head>',1)
+          old="const phaseUnlocked=p=>{const i=COURSE.findIndex(x=>x.id===p.id);return i===0||COURSE.slice(0,i).every(phaseComplete)};"; assert old in s; s=s.replace(old,'const phaseUnlocked=p=>true;',1)
+          lock1="if(!courseUnlocked())return {kind:'locked',text:CFG.lockedMessage||'Complete the required entry readiness before beginning this course.'};"
+          lock2="if(!phaseUnlocked(p))return {kind:'locked',text:`${p.id} is locked. Pass the previous phase first.`};"; assert lock1 in s and lock2 in s; s=s.replace(lock1,'',1).replace(lock2,'',1)
+          p.write_text(s)
+          sw=Path('service-worker.js'); t=sw.read_text(); oldc='mentor-de-ux-direct-assets-2026-09-09-c2a-v2'; newc='mentor-de-ux-direct-assets-2026-09-09-c2a-v3'; assert oldc in t; sw.write_text(t.replace(oldc,newc,1))
+          m=json.loads(Path('DEPLOY_MANIFEST.json').read_text()); m['mobileFix']='FINAL_MOBILE_TAP_FIX_2026_09_09'; m['studyAccessMode']='OPEN_ANY_LESSON_FINAL_COMPLETION_STILL_PROTECTED'
+          for f in m['files']:
+              b=Path(f['path']).read_bytes(); f['bytes']=len(b); f['sha256']=hashlib.sha256(b).hexdigest()
+          Path('DEPLOY_MANIFEST.json').write_text(json.dumps(m,indent=2)+'\n')
+          PY
+          git config user.name 'Four-Course Final QA Repair'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html service-worker.js DEPLOY_MANIFEST.json
+          git commit -m 'Fix C2A mobile controls and open study access'
+          git push origin main
