@@ -1,5 +1,34 @@
-const CACHE='da-mentor-advance-v2.0';
-const ASSETS=['./v2-release.js','./v2-source-map.js','./v2-release.css',"./","./index.html","./styles.css","./enhancements.css","./curriculum.js","./app.js","./hotfix.js","./enhancements.js","./theme-picker.js","./manifest.webmanifest","./icon.svg",'./course-sync.js','./optional-videos.js','./optional-videos-ui.js','./optional-videos.css'];
-self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting();});
-self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE&&(k.startsWith("da-mentor-pro")||k.startsWith("da-mentor-advance"))).map(k=>caches.delete(k)))));self.clients.claim();});
-self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;e.respondWith(fetch(e.request).then(resp=>{const copy=resp.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return resp;}).catch(()=>caches.match(e.request).then(r=>r||caches.match("./index.html"))))});
+const CACHE='da-mentor-advance-unified-2026-09-09-v2';
+const ASSETS=[
+  './',
+  './index.html',
+  './unified-style.css',
+  './mentor-config.js',
+  './unified-app-pack.js',
+  './unified-app-gz-loader.js',
+  './curriculum.js',
+  './manifest.webmanifest',
+  './icon.svg'
+];
+self.addEventListener('install',e=>{
+  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));
+});
+self.addEventListener('activate',e=>{
+  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('fetch',e=>{
+  if(e.request.method!=='GET') return;
+  const u=new URL(e.request.url);
+  if(e.request.mode==='navigate'||u.pathname.endsWith('/index.html')){
+    e.respondWith(fetch(e.request,{cache:'no-store'}).then(r=>{
+      const x=r.clone();
+      caches.open(CACHE).then(c=>c.put('./index.html',x));
+      return r;
+    }).catch(()=>caches.match('./index.html')));
+    return;
+  }
+  e.respondWith(fetch(e.request,{cache:'no-store'}).then(r=>{
+    if(r&&r.ok){const x=r.clone();caches.open(CACHE).then(c=>c.put(e.request,x));}
+    return r;
+  }).catch(()=>caches.match(e.request)));
+});
