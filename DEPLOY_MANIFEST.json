@@ -9,8 +9,8 @@
     },
     {
       "path": "curriculum.js",
-      "bytes": 170358,
-      "sha256": "638b8e2b169c9fc6dea8f2c706a3b26ad6f96f943eb0951616e24b33b27254da"
+      "bytes": 170778,
+      "sha256": "7134aeb28a5b022e40c5025fda80ce4b0c063f7e2e1921be37dcdf01a4e976dd"
     },
     {
       "path": "icon-192.svg",
@@ -24,18 +24,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 74276,
-      "sha256": "54038295e44a46f9db2a7f7cc022f788dbf74c619d065d61ff92d4ac95a00046"
+      "bytes": 74961,
+      "sha256": "f596a634bbb0f97298a6c7af8691d27e063d671bd438e5b1b7e123a0fbb1612b"
     },
     {
       "path": "manifest.webmanifest",
-      "bytes": 403,
-      "sha256": "a2ddc05a8ad99c841e60523ad2f3f0b8c366b4e189f17839d74bb16e0743a8b7"
+      "bytes": 614,
+      "sha256": "7c57f17d9ab67eb77459c92a51f15ee9968a627b5dbd7bda45b200c493cbba40"
     },
     {
       "path": "service-worker.js",
-      "bytes": 932,
-      "sha256": "e3aaf56a08b37b15d5b5f58e4329ecf06c617d05388701ba13422e9661a6d1a4"
+      "bytes": 933,
+      "sha256": "ad46d9883a34b639e7c1c05f0aed169d63f899ff5de30e41616781447ec264d9"
     }
   ],
   "runtimeFix": "LIVE_QA_STEP_RERENDER_2026_09_09",
@@ -45,5 +45,7 @@
   "studyAccessMode": "OPEN_ANY_LESSON_FINAL_COMPLETION_STILL_PROTECTED",
   "finalRelease": "2026-09-10",
   "reviewProtection": "GENUINE_ATTEMPT_BOOLEAN_REQUIRED",
-  "sourceLinks": "CURRENT_2026_09_10"
+  "sourceLinks": "CURRENT_2026_09_10",
+  "manifestSync": "EXACT_CURRENT_MAIN",
+  "practiceAccess": "VISIBLE_ON_TODAY_LEARN_AND_COURSE_ROWS"
 }
