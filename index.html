@@ -42,7 +42,7 @@ window.MENTOR_CONFIG={id:'DA_Mentor_Advance',name:'DA Mentor Advance',subtitle:'
 (()=>{'use strict';
 const CFG=window.MENTOR_CONFIG;if(!CFG)throw new Error('MENTOR_CONFIG missing');
 const COURSE=CFG.getCourse();if(!Array.isArray(COURSE)||!COURSE.length)throw new Error('Course adapter returned no phases');
-const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$=s=>[...document.querySelectorAll(s)];
+const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 // Preserve progress from the previous unified Course 2A key while keeping the canonical C2A key.
 try{if(!localStorage.getItem(KEY)&&localStorage.getItem('daMentorPro.v1'))localStorage.setItem(KEY,localStorage.getItem('daMentorPro.v1'));}catch{}
 const now=()=>Date.now(),pad=n=>String(n).padStart(2,'0'),dateKey=(d=new Date())=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
