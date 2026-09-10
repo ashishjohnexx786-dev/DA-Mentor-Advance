@@ -2,10 +2,8 @@ name: Repair C2A Runtime Final
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/repair-c2a-final.yml
+    branches: [main]
+    paths: ['.github/workflows/repair-c2a-final.yml']
 
 permissions:
   contents: write
@@ -15,36 +13,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Finalize runtime, storage continuity and cache
+      - name: Repair click runtime and preserve progress
         shell: bash
         run: |
-          node <<'NODE'
-          const fs=require('fs');
-          let c=fs.readFileSync('curriculum.js','utf8');
-          c=c.replace('"appName":"DA Mentor Pro - Course 2A"','"appName":"DA Mentor Advance"');
-          if(!c.includes('window.COURSE2=')){
-            c += `\n\n// Runtime adapter for the unified DE Mentor 2026 shell. Canonical data remains C2A_REGISTRY.\nwindow.COURSE2=(window.C2A_REGISTRY?.phases||[]).map(p=>({\n  id:p.id,\n  name:p.name,\n  hours:[p.minHours,p.maxHours],\n  artifacts:p.routes||{},\n  lessons:[...(p.coreLessonIds||[]),...(p.supplementIds||[])].map(id=>{\n    const l=(window.C2A_REGISTRY.lessons||[]).find(x=>x.id===id);\n    return {id,title:(l&&l.title)||id};\n  })\n}));\n`;
-          }
-          fs.writeFileSync('curriculum.js',c);
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('index.html'); h=p.read_text()
+          bad="const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$=s=>[...document.querySelectorAll(s)];"
+          good="const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];"
+          h=h.replace(bad,good)
+          # Also repair any accidental one-dollar second selector declaration robustly.
+          h=re.sub(r"const KEY=CFG\.storageKey,VERSION=1,\$=s=>document\.querySelector\(s\),\$=s=>\[\.\.\.document\.querySelectorAll\(s\)\];",good,h,count=1)
+          h=h.replace("storageKey:'daMentorPro.v1'","storageKey:'daMentorC2A2026_iqa1'")
+          p.write_text(h)
 
-          let h=fs.readFileSync('index.html','utf8');
-          h=h.replace("storageKey:'daMentorPro.v1'","storageKey:'daMentorC2A2026_iqa1'");
-          const anchor="const KEY=CFG.storageKey,VERSION=1,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];";
-          const migration=`${anchor}\n// Preserve progress from the previous unified Course 2A key while keeping the canonical C2A key.\ntry{if(!localStorage.getItem(KEY)&&localStorage.getItem('daMentorPro.v1'))localStorage.setItem(KEY,localStorage.getItem('daMentorPro.v1'));}catch{}`;
-          if(!h.includes("localStorage.getItem('daMentorPro.v1')")) h=h.replace(anchor,migration);
-          fs.writeFileSync('index.html',h);
+          c=Path('curriculum.js'); s=c.read_text()
+          s=s.replace('"appName":"DA Mentor Pro - Course 2A"','"appName":"DA Mentor Advance"')
+          if 'window.COURSE2=' not in s:
+              s += '''\n\n// Runtime adapter for the unified DE Mentor 2026 shell. Canonical data remains C2A_REGISTRY.\nwindow.COURSE2=(window.C2A_REGISTRY?.phases||[]).map(p=>({\n  id:p.id,\n  name:p.name,\n  hours:[p.minHours,p.maxHours],\n  artifacts:p.routes||{},\n  lessons:[...(p.coreLessonIds||[]),...(p.supplementIds||[])].map(id=>{\n    const l=(window.C2A_REGISTRY.lessons||[]).find(x=>x.id===id);\n    return {id,title:(l&&l.title)||id};\n  })\n}));\n'''
+          c.write_text(s)
 
-          let sw=fs.readFileSync('service-worker.js','utf8');
-          sw=sw.replace(/const CACHE='[^']+';/,"const CACHE='mentor-de2026-final-2026-09-10-c2a-v7';");
-          fs.writeFileSync('service-worker.js',sw);
-          NODE
+          sw=Path('service-worker.js'); x=sw.read_text()
+          x=re.sub(r"const CACHE='[^']+';","const CACHE='mentor-de2026-final-2026-09-10-c2a-v8';",x,count=1)
+          sw.write_text(x)
+          PY
+
           node --check curriculum.js
           node --check service-worker.js
-          grep -q "storageKey:'daMentorC2A2026_iqa1'" index.html
-          grep -q "window.COURSE2=" curriculum.js
-          grep -q "mentor-de2026-final-2026-09-10-c2a-v7" service-worker.js
+          python - <<'PY'
+          from pathlib import Path
+          import re,subprocess,tempfile
+          h=Path('index.html').read_text()
+          scripts=[]
+          for m in re.finditer(r'<script([^>]*)>(.*?)</script>',h,re.S|re.I):
+              if re.search(r'\bsrc\s*=',m.group(1),re.I): continue
+              scripts.append(m.group(2))
+          assert scripts, 'No inline scripts found'
+          for i,s in enumerate(scripts):
+              f=Path(f'/tmp/c2a-inline-{i}.js'); f.write_text(s)
+              subprocess.run(['node','--check',str(f)],check=True)
+          assert ',$$=s=>[...document.querySelectorAll(s)]' in h, 'selector helper $$ missing'
+          print('PASS inline JavaScript syntax and selector helpers')
+          PY
+
           git config user.name "Ashish Course Finalizer"
           git config user.email "actions@users.noreply.github.com"
-          git add curriculum.js index.html service-worker.js
-          git commit -m "Finalize C2A runtime, progress continuity and cache" || true
+          git add index.html curriculum.js service-worker.js
+          git diff --cached --quiet || git commit -m "Fix Course 2A dead-click runtime"
           git push origin main
