@@ -1,0 +1,95 @@
+name: Repair Course 2A Practice Parity 2026
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/repair-practice-parity-2026.yml']
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch practice access parity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html'); h=p.read_text()
+          old='<div><div class="eyebrow">CURRENT LESSON</div><h2 id="homeLessonTitle"></h2></div><button class="btn" id="openCurrentBtn">Open lesson</button></div><div id="homeLessonSteps"></div>'
+          new='<div><div class="eyebrow">CURRENT LESSON</div><h2 id="homeLessonTitle"></h2></div><div class="actionRow"><button class="btn" id="openCurrentBtn">Open lesson</button><button class="btn ghost" id="homePracticeBtn">🧪 Open Practice Set</button></div></div><div id="homeLessonSteps"></div>'
+          if 'id="homePracticeBtn"' not in h:
+              assert old in h, 'home lesson target not found'
+              h=h.replace(old,new,1)
+          h=h.replace('<button class="btn ghost" id="practiceBtn">🧪 Practice</button>','<button class="btn ghost" id="practiceBtn">🧪 Open Practice Set</button>')
+          oldfn="function renderHomeLesson(){const p=curPhase(),l=curLesson(),st=lp(l.id);"
+          newfn="function renderHomeLesson(){const p=curPhase(),l=curLesson(),st=lp(l.id);$('#homePracticeBtn').onclick=()=>openArtifact('Practice Set',p.artifacts?.practice);"
+          if "$('#homePracticeBtn').onclick" not in h:
+              assert oldfn in h, 'renderHomeLesson target not found'
+              h=h.replace(oldfn,newfn,1)
+          h=h.replace("$('#practiceBtn').onclick=()=>openArtifact('Practice',a.practice);","$('#practiceBtn').onclick=()=>openArtifact('Practice Set',a.practice);")
+          oldrow='<button class="btn ghost" data-open-lesson="${esc(l.id)}" data-open-phase="${esc(p.id)}">Open</button></div>'
+          newrow='<button class="btn ghost" data-open-lesson="${esc(l.id)}" data-open-phase="${esc(p.id)}">Open</button><button class="btn" data-open-practice-phase="${esc(p.id)}">Practice Set</button></div>'
+          if 'data-open-practice-phase=' not in h:
+              assert oldrow in h, 'course lesson row target not found'
+              h=h.replace(oldrow,newrow,1)
+          oldbind="$$('[data-open-lesson]').forEach(b=>b.onclick=()=>setCurrent(b.dataset.openPhase,b.dataset.openLesson));$$('[data-phase-artifact]')"
+          newbind="$$('[data-open-lesson]').forEach(b=>b.onclick=()=>setCurrent(b.dataset.openPhase,b.dataset.openLesson));$$('[data-open-practice-phase]').forEach(b=>b.onclick=()=>openArtifact('Practice Set',phase(b.dataset.openPracticePhase).artifacts?.practice));$$('[data-phase-artifact]')"
+          if "$$('[data-open-practice-phase]')" not in h:
+              assert oldbind in h, 'course practice binding target not found'
+              h=h.replace(oldbind,newbind,1)
+          h=h.replace('>Open Practice</button>','>Open Practice Set</button>')
+          p.write_text(h)
+          sw=Path('service-worker.js'); s=sw.read_text(); s=s.replace('mentor-de2026-final-2026-09-10-c2a-v8','mentor-de2026-final-2026-09-10-c2a-v9'); sw.write_text(s)
+          for need in ['id="homePracticeBtn"','🧪 Open Practice Set','data-open-practice-phase',"openArtifact('Practice Set',a.practice)","openArtifact('Practice Set',p.artifacts?.practice)"]:
+              assert need in h, need
+          PY
+      - name: Static syntax check
+        shell: bash
+        run: |
+          set -euo pipefail
+          find . -maxdepth 1 -name '*.js' -print0 | xargs -0 -n1 node --check
+          python - <<'PY'
+          import pathlib,re,subprocess
+          h=pathlib.Path('index.html').read_text()
+          for i,x in enumerate(re.finditer(r'<script([^>]*)>(.*?)</script>',h,re.S|re.I)):
+              if re.search(r'\bsrc\s*=',x.group(1),re.I): continue
+              f=pathlib.Path(f'/tmp/inline-{i}.js'); f.write_text(x.group(2)); subprocess.run(['node','--check',str(f)],check=True)
+          PY
+      - name: Phone-width practice click smoke
+        shell: bash
+        run: |
+          python -m pip install -q selenium
+          python -m http.server 8765 >/tmp/http.log 2>&1 & echo $! >/tmp/http.pid
+          sleep 2
+          python - <<'PY'
+          import time
+          from selenium import webdriver
+          from selenium.webdriver.common.by import By
+          from selenium.webdriver.support.ui import WebDriverWait
+          from selenium.webdriver.support import expected_conditions as EC
+          o=webdriver.ChromeOptions(); o.add_argument('--headless=new'); o.add_argument('--no-sandbox'); o.add_argument('--disable-dev-shm-usage'); o.add_argument('--window-size=412,915'); o.set_capability('goog:loggingPrefs',{'browser':'ALL'})
+          d=webdriver.Chrome(options=o)
+          try:
+              d.get('http://127.0.0.1:8765/index.html'); WebDriverWait(d,20).until(EC.title_contains('DA Mentor Advance'))
+              d.execute_script("window.__openCount=0; window.open=function(){window.__openCount++; return {document:{write:function(){},close:function(){}}};};")
+              hp=WebDriverWait(d,10).until(EC.presence_of_element_located((By.ID,'homePracticeBtn'))); d.execute_script('arguments[0].click()',hp); assert d.execute_script('return window.__openCount')>0
+              d.execute_script("document.querySelector('[data-view=\"learn\"]').click()")
+              pr=WebDriverWait(d,10).until(EC.presence_of_element_located((By.ID,'practiceBtn'))); d.execute_script('arguments[0].click()',pr); assert d.execute_script('return window.__openCount')>1
+              d.execute_script("document.querySelector('[data-view=\"course\"]').click()")
+              cp=WebDriverWait(d,10).until(EC.presence_of_element_located((By.CSS_SELECTOR,'[data-open-practice-phase]'))); d.execute_script('arguments[0].click()',cp); assert d.execute_script('return window.__openCount')>2
+              severe=[x for x in d.get_log('browser') if x.get('level')=='SEVERE' and 'favicon' not in x.get('message','').lower()]
+              assert not severe,severe
+              assert d.execute_script('return document.documentElement.scrollWidth')<=d.execute_script('return window.innerWidth')+3
+          finally: d.quit()
+          PY
+          kill $(cat /tmp/http.pid)
+      - name: Commit repaired main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'Ashish Course Finalizer'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html service-worker.js
+          if git diff --cached --quiet; then echo 'Already repaired'; else git commit -m 'Unify Course 2A practice access across all learner views'; git push origin main; fi
