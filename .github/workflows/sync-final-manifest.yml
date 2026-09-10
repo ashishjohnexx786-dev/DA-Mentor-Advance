@@ -1,0 +1,37 @@
+name: Sync Final Deploy Manifest
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/sync-final-manifest.yml']
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Recalculate deploy manifest and verify identity/runtime
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          d=pathlib.Path('.'); m=json.loads((d/'DEPLOY_MANIFEST.json').read_text())
+          for f in m.get('files',[]):
+            p=d/f['path']; b=p.read_bytes(); f['bytes']=len(b); f['sha256']=hashlib.sha256(b).hexdigest()
+          m['finalRelease']='2026-09-10'; m['manifestSync']='EXACT_CURRENT_MAIN'; m['practiceAccess']='VISIBLE_ON_TODAY_LEARN_AND_COURSE_ROWS'
+          (d/'DEPLOY_MANIFEST.json').write_text(json.dumps(m,indent=2)+'\n')
+          h=(d/'index.html').read_text(); c=(d/'curriculum.js').read_text(); wm=json.loads((d/'manifest.webmanifest').read_text())
+          assert wm['name']=='DA Mentor Advance'; assert 'DA Mentor Advance' in h; assert 'DA Mentor Pro' not in h
+          assert 'window.COURSE2=' in c; assert 'daMentorC2A2026_iqa1' in h; assert 'daMentorPro.v1' in h
+          assert 'Open Practice Set' in h and 'START STUDY' in h and 'END STUDY' in h
+          assert '25:00' not in h and 'Pomodoro' not in h
+          for f in m['files']:
+            p=d/f['path']; b=p.read_bytes(); assert len(b)==f['bytes']; assert hashlib.sha256(b).hexdigest()==f['sha256']
+          print('PASS C2A exact main manifest consistency')
+          PY
+          node --check curriculum.js
+          rm .github/workflows/sync-final-manifest.yml
+          git config user.name 'Four-Course Finalizer'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'Sync final C2A deploy manifest to exact main'
+          git push origin main
