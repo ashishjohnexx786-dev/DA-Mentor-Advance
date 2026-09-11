@@ -1,0 +1,162 @@
+{
+  "core_lessons": 14,
+  "supplementary_lessons": 8,
+  "total_routes": 22,
+  "page_anchor_audit": "22/22 PASS",
+  "page_details": [
+    {
+      "lesson_id": "CAP1",
+      "page": 6,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP2",
+      "page": 10,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP3",
+      "page": 14,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP4",
+      "page": 18,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP5",
+      "page": 22,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP6",
+      "page": 26,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP7",
+      "page": 30,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP8",
+      "page": 34,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP9",
+      "page": 38,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP10",
+      "page": 42,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP11",
+      "page": 46,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP12",
+      "page": 50,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP13",
+      "page": 54,
+      "pass": true
+    },
+    {
+      "lesson_id": "CAP14",
+      "page": 58,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL1",
+      "page": 6,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL2",
+      "page": 10,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL3",
+      "page": 14,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL4",
+      "page": 18,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL5",
+      "page": 22,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL6",
+      "page": 26,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL7",
+      "page": 30,
+      "pass": true
+    },
+    {
+      "lesson_id": "PL8",
+      "page": 34,
+      "pass": true
+    }
+  ],
+  "archives": [
+    {
+      "path": "02_CAPSTONE/DATA/C2_09_MERIDIAN_CAPSTONE_DATA_RC1.zip",
+      "entries": 11,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_DATA_RC1.zip",
+      "entries": 9,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_DATA_RC1.zip",
+      "entries": 7,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_DATA_RC1.zip",
+      "entries": 8,
+      "crc": "PASS"
+    }
+  ],
+  "pl300_40q": {
+    "count": 40,
+    "unique_ids": true,
+    "valid_answers": true,
+    "domains": {
+      "Prepare": 11,
+      "Model": 11,
+      "Visualize": 11,
+      "Manage": 7
+    }
+  },
+  "pl300_20q": {
+    "count": 20,
+    "unique_ids": true,
+    "valid_answers": true,
+    "domains": {
+      "Prepare": 5,
+      "Model": 5,
+      "Visualize": 5,
+      "Manage": 5
+    }
+  }
+}

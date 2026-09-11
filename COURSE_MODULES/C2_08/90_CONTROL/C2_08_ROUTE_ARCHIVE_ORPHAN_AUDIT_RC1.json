@@ -1,0 +1,88 @@
+{
+  "canonical_routes": 12,
+  "lesson_heading_audit": "12/12 PASS",
+  "heading_details": [
+    {
+      "lesson_id": "SBA1",
+      "page": 6,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA2",
+      "page": 10,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA3",
+      "page": 14,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA4",
+      "page": 18,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA5",
+      "page": 22,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA6",
+      "page": 26,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA7",
+      "page": 30,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA8",
+      "page": 34,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA9",
+      "page": 38,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA10",
+      "page": 42,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA11",
+      "page": 46,
+      "heading_present": true
+    },
+    {
+      "lesson_id": "SBA12",
+      "page": 50,
+      "heading_present": true
+    }
+  ],
+  "practice_sheet_route_audit": "12/12 PASS",
+  "required_paths": 26,
+  "missing_required_paths": [],
+  "duplicate_basenames": {},
+  "archives": {
+    "02_PRACTICE/C2_08_PRACTICE_DATA_RC1.zip": {
+      "entries": 8,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/GATE_A/C2_08_GATE_A_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_08_GATE_C_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    }
+  }
+}

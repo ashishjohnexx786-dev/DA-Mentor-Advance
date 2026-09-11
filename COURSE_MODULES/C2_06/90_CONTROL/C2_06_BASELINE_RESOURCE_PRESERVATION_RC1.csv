@@ -1,0 +1,7 @@
+﻿resource,preserved,lesson_scope,note
+Fabric dimensional modeling overview,YES,DWF3-DWF4,Baseline resource preserved/rechecked.
+Fabric SCD Type 2,YES,DWF6,Baseline resource preserved/rechecked.
+Fabric SCD Type 1,YES,DWF6,Baseline resource preserved/rechecked.
+Fabric lakehouse overview,YES,DWF9,Baseline resource preserved/rechecked.
+Fabric storage decision guide,YES,DWF9,Baseline resource preserved/rechecked; complemented by newer architecture decision article.
+Internal ETL/ELT/layers/lineage/quality teaching,YES,DWF7-DWF12,Durable internal authority preserved and expanded into M01 grammar.

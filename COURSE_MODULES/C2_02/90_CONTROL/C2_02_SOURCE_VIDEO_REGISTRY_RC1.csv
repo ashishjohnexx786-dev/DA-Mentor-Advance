@@ -1,0 +1,20 @@
+﻿lesson_id,role,source_name,url,useful_segment,verification_status,fallback_or_note
+ASQL1,RECOMMENDED VIDEO,Alex The Analyst - Learn SQL Beginner to Advanced in Under 4 Hours,https://www.youtube.com/watch?v=OT1RErkfLNQ,51:10-1:08:03,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,MySQL visual support only; PostgreSQL reference controls syntax.
+ASQL1,CURRENT REFERENCE,PostgreSQL 18 - Joins Between Tables,https://www.postgresql.org/docs/current/tutorial-join.html,Join concepts,WEB_REACHABLE_2026-09-10,Authoritative PostgreSQL behavior.
+ASQL2,CURRENT REFERENCE,PostgreSQL 18 - SELECT,https://www.postgresql.org/docs/current/sql-select.html,Subselect/SELECT behavior,WEB_REACHABLE_2026-09-10,Book-led lesson.
+ASQL3,RECOMMENDED VIDEO,Alex The Analyst - CTE chapter,https://www.youtube.com/watch?v=OT1RErkfLNQ,1:58:55-2:09:06,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,Concept visual only.
+ASQL3,CURRENT REFERENCE,PostgreSQL 18 - WITH Queries,https://www.postgresql.org/docs/current/queries-with.html,CTE behavior,WEB_REACHABLE_2026-09-10,Authoritative PostgreSQL behavior.
+ASQL4,RECOMMENDED VIDEO,Alex The Analyst - Window Functions chapter,https://www.youtube.com/watch?v=OT1RErkfLNQ,1:45:58-1:58:54,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,Visual support; MySQL-oriented.
+ASQL4,CURRENT REFERENCE,PostgreSQL 18 - Window Functions tutorial,https://www.postgresql.org/docs/current/tutorial-window.html,Window mental model,WEB_REACHABLE_2026-09-10,Authoritative PostgreSQL behavior.
+ASQL5,CURRENT REFERENCE,PostgreSQL 18 - Window Functions,https://www.postgresql.org/docs/current/functions-window.html,Ranking/frame functions,WEB_REACHABLE_2026-09-10,Book-led.
+ASQL6,OPTIONAL VIDEO,Alex The Analyst - Window Functions chapter,https://www.youtube.com/watch?v=OT1RErkfLNQ,1:45:58-1:58:54,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,LAG/LEAD details are taught internally.
+ASQL6,CURRENT REFERENCE,PostgreSQL 18 - Window Functions,https://www.postgresql.org/docs/current/functions-window.html,LAG/LEAD,WEB_REACHABLE_2026-09-10,Authoritative PostgreSQL behavior.
+ASQL7,RECOMMENDED VIDEO,Alex The Analyst - CASE Statements chapter,https://www.youtube.com/watch?v=OT1RErkfLNQ,1:26:39-1:35:15,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,Visual support for conditional logic.
+ASQL7,CURRENT REFERENCE,PostgreSQL 18 - Aggregate Functions,https://www.postgresql.org/docs/current/functions-aggregate.html,Aggregate behavior,WEB_REACHABLE_2026-09-10,Authoritative PostgreSQL behavior.
+ASQL8,CURRENT REFERENCE,PostgreSQL 18 - Date/Time Functions and Operators,https://www.postgresql.org/docs/18/functions-datetime.html,date_trunc/date-time behavior,WEB_REACHABLE_2026-09-10,Book-led.
+ASQL9,CURRENT REFERENCE,PostgreSQL 18 - Table and Query Expressions,https://www.postgresql.org/docs/current/queries-table-expressions.html,Filtering/join expressions,WEB_REACHABLE_2026-09-10,Quality investigation is course-led.
+ASQL10,CURRENT REFERENCE,PostgreSQL 18 - SELECT,https://www.postgresql.org/docs/current/sql-select.html,Query staging/debug context,WEB_REACHABLE_2026-09-10,Validation workflow is course-led.
+ASQL11,CURRENT REFERENCE,PostgreSQL 18 - Using EXPLAIN,https://www.postgresql.org/docs/current/using-explain.html,EXPLAIN / EXPLAIN ANALYZE,WEB_REACHABLE_2026-09-10,EXPLAIN ANALYZE executes the statement.
+ASQL11,CURRENT REFERENCE,PostgreSQL 18 - Indexes,https://www.postgresql.org/docs/current/indexes.html,Index concepts/trade-offs,WEB_REACHABLE_2026-09-10,Performance comes after correctness.
+ASQL12,OPTIONAL VIDEO,Alex The Analyst - Data Cleaning / EDA project chapters,https://www.youtube.com/watch?v=OT1RErkfLNQ,2:42:46-3:32:13,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,Workflow visual only; production-style handoff is course-led.
+ASQL12,CURRENT REFERENCE,PostgreSQL 18 - Queries,https://www.postgresql.org/docs/current/queries.html,Query architecture,WEB_REACHABLE_2026-09-10,Authoritative reference.

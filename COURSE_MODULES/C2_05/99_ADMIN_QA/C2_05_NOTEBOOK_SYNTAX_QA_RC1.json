@@ -1,0 +1,27 @@
+[
+  {
+    "file": "02_PRACTICE/C2_05_PRACTICE_NOTEBOOK_RC1.ipynb",
+    "code_cells": 12,
+    "syntax": "PASS"
+  },
+  {
+    "file": "03_MINI_LAB/C2_05_MINI_LAB_WEEKLY_REPORTING_PIPELINE_RC1.ipynb",
+    "code_cells": 1,
+    "syntax": "PASS"
+  },
+  {
+    "file": "04_ASSESSMENT/GATE_A/C2_05_GATE_A_FRESH_ASSESSMENT_RC1.ipynb",
+    "code_cells": 1,
+    "syntax": "PASS"
+  },
+  {
+    "file": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_05_GATE_B_FRESH_ASSESSMENT_RC1.ipynb",
+    "code_cells": 1,
+    "syntax": "PASS"
+  },
+  {
+    "file": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_05_GATE_C_FRESH_ASSESSMENT_RC1.ipynb",
+    "code_cells": 1,
+    "syntax": "PASS"
+  }
+]

@@ -1,0 +1,7 @@
+﻿resource,baseline_status,preserved,note
+pandas User Guide,BASELINE_PRESERVED,YES,Mapped PYA3-PYA6/PYA9-PYA11
+pandas.merge,BASELINE_PRESERVED,YES,Mapped PYA3/PYA4
+Python csv module,BASELINE_PRESERVED,YES,Mapped PYA6
+Python json module,BASELINE_PRESERVED,YES,Mapped PYA6
+Python logging,BASELINE_PRESERVED,YES,Mapped PYA9/PYA10
+Legacy C2-05 registered YouTube assignments,BASELINE_COUNT_0,N/A,No registered baseline video was removed; visual companions are additive.

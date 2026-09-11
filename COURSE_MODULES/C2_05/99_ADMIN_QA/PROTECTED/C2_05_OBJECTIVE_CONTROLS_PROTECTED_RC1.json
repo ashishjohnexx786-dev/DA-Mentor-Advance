@@ -1,0 +1,12 @@
+{
+  "approved_monthly_files": 3,
+  "approved_monthly_rows": 90,
+  "customer_master_rows": 21,
+  "customer_unique_ids": 20,
+  "duplicate_customer_id": "C007",
+  "intentional_unmatched_customer": "C999",
+  "nested_order_count": 3,
+  "nested_item_count": 6,
+  "api_customer_records": 4,
+  "reference_template_sha256": "73b746b11a8dc42277732fc7e147891f39de209fef27772c76707c9f4daf5fc3"
+}

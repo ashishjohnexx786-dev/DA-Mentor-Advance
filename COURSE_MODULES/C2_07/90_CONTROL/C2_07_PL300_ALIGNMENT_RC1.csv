@@ -1,0 +1,8 @@
+﻿lesson_scope,pl300_area,current_2026_skill,alignment,boundary_note
+CLD1-CLD4,PL-300,Cloud/Fabric platform orientation beyond core exam wording,ENRICHMENT,Do not make Fabric architecture a certification prerequisite.
+CLD5,Manage and secure Power BI,Workspaces/apps/publish/distribution/subscriptions/alerts/endorsement,DIRECT,Current 2026 objective family.
+CLD6,Manage and secure Power BI,Workspace/item lifecycle supports publish/update; deployment pipelines exceed core exam,DIRECT + ENRICHMENT,Separate exam objective from professional release depth.
+CLD7,Manage and secure Power BI,Identify gateway need and configure semantic model scheduled refresh,DIRECT,Exact current objectives.
+CLD8,Manage and secure Power BI,"Workspace roles, item/model access, RLS membership, sensitivity labels",DIRECT,Exact current objective family.
+CLD9,Professional BI operations,Monitoring/incident response broader than named PL-300 objectives,ENRICHMENT,Do not overclaim exam requirement.
+CLD10,Audience profile,Analyst collaborates with analytics engineers/data engineers to identify/acquire data,SUPPORTING,Explicit current audience expectation.

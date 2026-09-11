@@ -1,0 +1,35 @@
+{
+  "A": {
+    "approved_monthly_files": 3,
+    "raw_approved_rows": 90,
+    "unique_approved_rows": 90,
+    "completed_unique_rows": 69,
+    "completed_gross_value": 243683.58,
+    "dimension_duplicate_key": "S03",
+    "intentional_unmatched_key": "S99",
+    "backup_file_must_contribute_rows": 0,
+    "drift_file_must_not_be_silently_skipped": "TRUE"
+  },
+  "B": {
+    "approved_monthly_files": 3,
+    "raw_approved_rows": 90,
+    "unique_approved_rows": 90,
+    "completed_unique_rows": 69,
+    "completed_gross_value": 243661.24,
+    "dimension_duplicate_key": "V03",
+    "intentional_unmatched_key": "V98",
+    "backup_file_must_contribute_rows": 0,
+    "drift_file_must_not_be_silently_skipped": "TRUE"
+  },
+  "C": {
+    "approved_monthly_files": 3,
+    "raw_approved_rows": 90,
+    "unique_approved_rows": 90,
+    "completed_unique_rows": 69,
+    "completed_gross_value": 243800.13,
+    "dimension_duplicate_key": "T03",
+    "intentional_unmatched_key": "T97",
+    "backup_file_must_contribute_rows": 0,
+    "drift_file_must_not_be_silently_skipped": "TRUE"
+  }
+}

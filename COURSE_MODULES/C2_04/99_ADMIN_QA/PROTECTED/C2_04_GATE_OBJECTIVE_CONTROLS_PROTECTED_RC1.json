@@ -1,0 +1,21 @@
+{
+  "A": {
+    "subscriptions": 110,
+    "billing_rows": 330,
+    "target_rows": 9,
+    "snapshot_rows": 9,
+    "multi_user_regions": 2
+  },
+  "B": {
+    "tickets": 120,
+    "targets": 28,
+    "snapshots": 28,
+    "multi_user_teams": 2
+  },
+  "C": {
+    "encounters": 100,
+    "billing_rows": 67,
+    "targets": 15,
+    "multi_user_areas": 2
+  }
+}

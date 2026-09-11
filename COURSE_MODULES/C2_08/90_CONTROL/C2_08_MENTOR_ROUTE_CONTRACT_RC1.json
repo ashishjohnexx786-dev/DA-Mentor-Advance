@@ -1,0 +1,41 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-08 Senior Business Analysis & Communication",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "lesson_count": 12,
+  "one_next_action_required": true,
+  "normal_flow": [
+    "exact teaching page",
+    "mapped visual/source if useful",
+    "matching P_SBA case",
+    "save genuine written attempt",
+    "validate evidence/decision/owner",
+    "explain back",
+    "unlock protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master SBA1-SBA12",
+    "RiverCart Management Review Simulation",
+    "Gate A",
+    "review after saved attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Hidden fresh full reassessments; never auto-open after repair.",
+  "runtime": "No software runtime is required for core competency. Optional voice role-play can be logged but does not replace written evidence.",
+  "manual_tracker": "START STUDY / END STUDY only; no countdown timer dependency.",
+  "external_required_dependencies": 0,
+  "course_position": "Optional C2A professional depth; direct DA-to-DE route remains valid."
+}

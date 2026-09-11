@@ -1,0 +1,135 @@
+{
+  "crc": "PASS",
+  "entries": 11,
+  "source_sha256": "5943516acb84c400705d14c20ca2f3f3feaa924b3484fde97130a2d501feb15e",
+  "copied_sha256": "5943516acb84c400705d14c20ca2f3f3feaa924b3484fde97130a2d501feb15e",
+  "byte_identical_to_frozen_baseline": true,
+  "control_checks": {
+    "sales_rows": {
+      "expected": 576,
+      "observed": 576,
+      "pass": true
+    },
+    "sales_net_revenue_total": {
+      "expected": 1923183.0,
+      "observed": 1923183.0,
+      "pass": true
+    },
+    "sales_cost_total": {
+      "expected": 868250.0,
+      "observed": 868250.0,
+      "pass": true
+    },
+    "sales_gross_margin_total": {
+      "expected": 1054933.0,
+      "observed": 1054933.0,
+      "pass": true
+    },
+    "customer_rows": {
+      "expected": 60,
+      "observed": 60,
+      "pass": true
+    },
+    "marketing_rows": {
+      "expected": 216,
+      "observed": 216,
+      "pass": true
+    },
+    "marketing_spend_total": {
+      "expected": 13068135,
+      "observed": 13068135.0,
+      "pass": true
+    },
+    "target_rows": {
+      "expected": 72,
+      "observed": 72,
+      "pass": true
+    },
+    "sales_target_total": {
+      "expected": 16758000,
+      "observed": 16758000.0,
+      "pass": true
+    },
+    "health_objects": {
+      "expected": 1080,
+      "observed": 1080,
+      "pass": true
+    },
+    "support_ticket_rows_raw": {
+      "expected": 271,
+      "observed": 271,
+      "pass": true
+    },
+    "support_ticket_unique_ids": {
+      "expected": 270,
+      "observed": 270,
+      "pass": true
+    },
+    "support_exact_duplicate_count_expected": {
+      "expected": 1,
+      "observed": 1,
+      "pass": true
+    },
+    "support_missing_priority_rows": {
+      "expected": 1,
+      "observed": 1,
+      "pass": true
+    }
+  },
+  "all_control_checks_pass": true,
+  "known_traps": {
+    "support_exact_duplicate_rows": 1,
+    "support_missing_priority_rows": 1,
+    "fact_grain_contracts": {
+      "sales_lines.csv": {
+        "grain": "one row per invoice line",
+        "key": "line_id",
+        "business_process": "completed/booked sales lines",
+        "critical_fields": [
+          "invoice_date",
+          "customer_id",
+          "product_id",
+          "net_revenue",
+          "cost"
+        ],
+        "notes": "Revenue and gross margin facts. Do not join marketing or target rows directly to sales-line grain."
+      },
+      "marketing_spend.csv": {
+        "grain": "one row per month-region-channel",
+        "key": "month+region+channel",
+        "business_process": "marketing spend",
+        "notes": "Acquisition-efficiency denominator at a higher grain than sales lines."
+      },
+      "regional_targets.csv": {
+        "grain": "one row per month-region",
+        "key": "month+region",
+        "business_process": "management targets",
+        "notes": "Must not be multiplied by transaction-line joins."
+      },
+      "customer_health.json": {
+        "grain": "one object per customer-month",
+        "key": "month+customer_id",
+        "business_process": "customer-success health snapshot",
+        "notes": "Semi-structured source; historical snapshot grain."
+      },
+      "support_tickets.csv": {
+        "grain": "one row per support ticket",
+        "key": "ticket_id",
+        "business_process": "support cases",
+        "known_quality_traps": [
+          "one exact duplicate ticket_id row",
+          "one missing priority"
+        ],
+        "notes": "Independent service process; avoid fact-to-fact fan-out."
+      },
+      "customers.csv": {
+        "grain": "one row per customer",
+        "key": "customer_id"
+      },
+      "products.csv": {
+        "grain": "one row per product",
+        "key": "product_id"
+      }
+    }
+  }
+}

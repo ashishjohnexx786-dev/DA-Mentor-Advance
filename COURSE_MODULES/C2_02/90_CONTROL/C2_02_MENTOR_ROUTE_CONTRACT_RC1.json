@@ -1,0 +1,46 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-02 Advanced SQL",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "one_next_action_required": true,
+  "lesson_count": 12,
+  "exact_route_registry": "90_CONTROL/C2_02_CANONICAL_LESSON_ROUTE_REGISTRY_RC1.csv",
+  "normal_lesson_flow": [
+    "open exact teaching page",
+    "read/visualize concept",
+    "write expected result grain",
+    "attempt matching P-ASQL task",
+    "save genuine attempt",
+    "run independent validation",
+    "explain back",
+    "unlock matching protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master ASQL1-ASQL12",
+    "Mini-Lab 1",
+    "Mini-Lab 2",
+    "unlock Gate A",
+    "save independent Gate A attempt",
+    "unlock Gate A review after attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Gate B/C remain hidden fresh full reassessments; targeted repair never auto-opens the next Gate.",
+  "manual_study_tracker": "START STUDY / END STUDY; no countdown-timer dependency.",
+  "runtime_marking": "Live PostgreSQL execution must be observed before runtime mastery/final certification.",
+  "external_required_dependencies": 0,
+  "dialect": "PostgreSQL 18/current authoritative; Alex video is MySQL-oriented visual support only.",
+  "course_position": "Optional C2A depth; C2B owns the direct DA-to-DE engineering-transfer path."
+}

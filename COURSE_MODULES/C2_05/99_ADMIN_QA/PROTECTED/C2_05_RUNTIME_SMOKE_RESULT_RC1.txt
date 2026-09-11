@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "pandas": "2.2.3",
+  "rows": 90,
+  "nested_items": 6
+}

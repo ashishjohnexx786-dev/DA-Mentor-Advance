@@ -1,0 +1,8 @@
+﻿issue_id,finding,severity,disposition,evidence_or_action
+C2-06-BASELINE,Older learner book was a compact 26-page two-page-per-lesson structure; earlier internal rebuild itself had rejected an even more compressed first render.,HIGH,REBUILT,New learner book is 55 pages with full M01 grammar and 4 dedicated pages per DWF lesson.
+C2-06-ROUTE,Legacy routes referenced old C2-071/C2-072/C2-073 artifact structure.,HIGH,RESOLVED,"New route registry maps all 12 lessons to exact pages, matching P_DWF sheets and protected review pages."
+C2-06-CURRENT-FABRIC,Fabric implementation guidance is time-sensitive and older baseline was verified 2026-08-23.,HIGH,REFRESHED,"Dimensional modeling, SCD Type1/2, warehouse/lakehouse storage, medallion and lineage references rechecked 2026-09-10."
+C2-06-LAYERS,Baseline layer teaching was durable but too brief for beginner-first transfer.,HIGH,EXPANDED,DWF8 distinguishes Landing/Staging/Core/Presentation from Fabric Bronze/Silver/Gold and teaches contracts/replay.
+C2-06-GATES,Assessment must not reuse FleetCare or one memorized architecture.,CRITICAL,RESOLVED,"A Logistics, B E-commerce Returns, C Clinic Appointments use distinct facts/events/targets/history changes/unmatched keys."
+C2-06-FABRIC-RUNTIME,Live Fabric workspace execution not available/required in this module build.,MEDIUM,CONTROLLED_BOUNDARY,Core mastery is vendor-neutral architecture design; Fabric is a current example. Deeper tenant/runtime behavior belongs C2-07.
+C2-06-MENTOR,Unified Course 2A Mentor not yet synchronized to RC1 routes.,CRITICAL,DEFERRED_COURSE_LEVEL,Exact module Mentor route contract frozen; actual app sync waits for complete C2A registry.

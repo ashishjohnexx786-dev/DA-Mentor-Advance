@@ -1,0 +1,26 @@
+{
+  "A": {
+    "domain": "Marketplace Sellers",
+    "stakeholders": 4,
+    "seller_rows": 5,
+    "non_negotiable": "Finance profitability + Trust risk cannot be hidden",
+    "capacity": "Seller Ops can act on 20 sellers/week",
+    "material_limitations": 3
+  },
+  "B": {
+    "domain": "Inventory Replenishment",
+    "stakeholders": 4,
+    "sku_rows": 5,
+    "non_negotiable": "12% working-capital cap",
+    "capacity": "MOQ/lead-time constraints",
+    "material_limitations": 3
+  },
+  "C": {
+    "domain": "Customer Success Renewals",
+    "stakeholders": 4,
+    "account_rows": 5,
+    "non_negotiable": "Discount budget max 4% ARR + no unapproved feature promises",
+    "capacity": "CS team can run 10 interventions/week",
+    "material_limitations": 3
+  }
+}

@@ -1,0 +1,10 @@
+﻿issue_id,finding,severity,disposition,evidence_or_action
+C2-05-BASELINE,Older internal-QA learner layer remained compressed and was explicitly not final,CRITICAL,REBUILT,11 canonical lessons rebuilt into full M01 teacher grammar; old material used only as audited source.
+C2-05-PYA9-11,PYA9-PYA11 still marked REBUILD_REQUIRED in forensic registry,HIGH,RESOLVED,"PYA9 Logging/validation, PYA10 recurring reporting and PYA11 reproducibility rebuilt with mental models, demos, fresh tasks, validation, review/retry/evidence."
+C2-05-ROUTES,Legacy one-page lesson routing not suitable for new book,HIGH,RESOLVED,Exact 4-page-per-lesson route registry; PYA1 p6 through PYA11 p46; 11/11 anchor audit PASS.
+C2-05-DATA,"Practice needed deterministic failures, not happy-path only",HIGH,RESOLVED,"Added backup/schema drift, duplicate key C007, unmatched C999, malformed numeric, nested JSON, optional missing field and offline API fixture."
+C2-05-RUNTIME-01,Floating-point 0.01 reconciliation comparison failed due binary representation,MEDIUM,RESOLVED,Validation now rounds absolute difference to cents before <= 0.01 tolerance; business values unchanged.
+C2-05-RUNTIME-02,pandas FutureWarning in QA grouping pattern,MEDIUM,RESOLVED,Created explicit channel_clean column before groupby; final smoke run passes with FutureWarning promoted to error.
+C2-05-VIDEO,Direct YouTube page fetch not reliable in QA environment,MEDIUM,CONTROLLED,Registry separates web/search metadata verification; official Python/pandas/Requests docs remain authoritative; external required dependency = 0.
+C2-05-TARGET-RUNTIME,"Build runtime is Python 3.13.5 / pandas 2.2.3, not target 3.14.7 / pandas 3.0.5",HIGH,OPEN_BOUNDARY,Backward-compatible smoke PASS only. Target-version learner/runtime certification remains pending and is not falsely marked PASS.
+C2-05-MENTOR,Unified eight-tab Course 2A Mentor not yet synchronized,CRITICAL,DEFERRED_COURSE_LEVEL,Exact module Mentor route contract frozen; actual Mentor rebuild waits for complete C2A registry to avoid stale routes.

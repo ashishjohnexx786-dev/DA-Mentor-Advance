@@ -1,0 +1,70 @@
+{
+  "artifact": "C2-01 Advanced Excel & Power Query Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/WORKBOOK QA - NOT COURSE FINAL",
+  "teaching": {
+    "lessons": 10,
+    "book_pages": 47,
+    "contents_page": 3,
+    "teacher_statement": true,
+    "option_b_cover": true,
+    "page_anchor_audit": "10/10 PASS",
+    "lesson_starts": {
+      "AX1": 6,
+      "AX2": 10,
+      "AX3": 14,
+      "AX4": 18,
+      "AX5": 22,
+      "AX6": 26,
+      "AX7": 30,
+      "AX8": 34,
+      "AX9": 38,
+      "AX10": 42
+    },
+    "full_m01_grammar": "AUTHORED ACROSS ALL 10 LESSONS"
+  },
+  "practice": {
+    "workbooks": 5,
+    "artifact_tool_import": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "representative_render_visual_qa": "PASS",
+    "practice_data_zip_entries": 21
+  },
+  "data_archives": {
+    "practice": "CRC PASS",
+    "gate_a": "CRC PASS",
+    "gate_b": "CRC PASS",
+    "gate_c": "CRC PASS"
+  },
+  "pdf_qa": {
+    "pdf_files_before_report": 8,
+    "rendered_pages_before_report": 74,
+    "dpi": 200,
+    "contact_sheets_inspected": 5,
+    "visual_result": "PASS - no clipping/overlap/broken glyph/page drift observed",
+    "preflight": "8/8 openable, unencrypted, text PDFs"
+  },
+  "sources": {
+    "registry_rows": 19,
+    "unique_external_urls": 11,
+    "verification_date": "2026-09-10",
+    "external_required_dependencies": 0,
+    "rule": "No filler; internal course sufficient if all links fail."
+  },
+  "assessments": {
+    "gate_a": "Marketplace Seller Operations",
+    "gate_b": "Healthcare Supply Replenishment",
+    "gate_c": "Field Service Parts",
+    "freshness": "Distinct domains/data/IDs; each has backup trap, schema drift, dirty dimension key and unmatched fact key.",
+    "critical_failure_aware": true,
+    "percentage_gaming": false,
+    "gate_b_c_protected": true
+  },
+  "runtime_boundaries": [
+    "Real Excel/Power Query learner-PC execution still required before FINAL runtime certification.",
+    "Unified Course 2A Mentor rebuild waits until rebuilt module registry is complete.",
+    "Real Android/PWA Mentor tests are later course-level release gates.",
+    "Shared GitHub/backup integration remains untouched during parallel course rebuilds."
+  ],
+  "next": "C2-02 Advanced SQL rebuild from canonical registry."
+}

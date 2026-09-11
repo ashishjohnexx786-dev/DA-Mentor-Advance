@@ -1,0 +1,81 @@
+{
+  "artifact": "C2-04 Advanced DAX & Reporting Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/WORKBOOK QA - LIVE POWER BI DESKTOP/SERVICE PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "lessons": 15,
+    "book_pages": 67,
+    "page_anchor_audit": "15/15 PASS",
+    "lesson_starts": {
+      "DAX1": 6,
+      "DAX2": 10,
+      "DAX3": 14,
+      "DAX4": 18,
+      "DAX5": 22,
+      "DAX6": 26,
+      "DAX7": 30,
+      "DAX8": 34,
+      "DAX9": 38,
+      "DAX10": 42,
+      "DAX11": 46,
+      "DAX12": 50,
+      "DAX13": 54,
+      "DAX14": 58,
+      "DAX15": 62
+    },
+    "m01_contract": "AUTHORED ACROSS ALL 15 LESSONS",
+    "option_b_cover": true,
+    "teacher_statement": true
+  },
+  "workbooks": {
+    "files": 5,
+    "artifact_tool_reload": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "lifecycle_sheet_structural_fix": "PASS",
+    "representative_render": "PASS"
+  },
+  "archives": {
+    "practice_data": "7 files / CRC PASS",
+    "gate_a": "6 files / CRC PASS",
+    "gate_b": "5 files / CRC PASS",
+    "gate_c": "5 files / CRC PASS"
+  },
+  "pdf_qa": {
+    "pdf_files_before_report": 8,
+    "pages_before_report": 100,
+    "dpi": 200,
+    "preflight_warnings": 0,
+    "visual_contact_sheet_review": "PASS",
+    "qa_report": "3 pages; regeneration after archive-count correction required and completed before byte freeze"
+  },
+  "sources": {
+    "rows": 24,
+    "unique_urls": 18,
+    "verification_date": "2026-09-10",
+    "external_required_dependencies": 0
+  },
+  "pl300": {
+    "skills_measured_as_of": "2026-04-20",
+    "mapping_rows": 15,
+    "current_areas": [
+      "Model",
+      "Visualize",
+      "Manage/Secure"
+    ]
+  },
+  "assessment": {
+    "gate_a": "SaaS Revenue & Customer Success",
+    "gate_b": "Support Operations",
+    "gate_c": "Healthcare Network Performance",
+    "gate_b_c_protected": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "runtime_boundaries": [
+    "Power BI Desktop engine unavailable here; live DAX/report/RLS execution not claimed.",
+    "Power BI Service/tenant execution unavailable here; workspace/app/refresh execution not claimed.",
+    "Unified Course 2A Mentor waits for full rebuilt registry.",
+    "Shared GitHub/backup remains untouched."
+  ],
+  "next": "Render/preflight corrected QA report, then freeze C2-04 package bytes and proceed to C2-05."
+}

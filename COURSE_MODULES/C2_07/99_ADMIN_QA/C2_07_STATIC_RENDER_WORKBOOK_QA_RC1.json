@@ -1,0 +1,124 @@
+{
+  "artifact": "C2-07 Cloud / Fabric / Enterprise BI Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/WORKBOOK/ARCHIVE/ROUTE QA - OPTIONAL LIVE TENANT + UNIFIED COURSE MENTOR PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "canonical_lessons": 10,
+    "teaching_book_pages": 47,
+    "page_anchor_audit": "10/10 PASS",
+    "lesson_starts": {
+      "CLD1": 6,
+      "CLD2": 10,
+      "CLD3": 14,
+      "CLD4": 18,
+      "CLD5": 22,
+      "CLD6": 26,
+      "CLD7": 30,
+      "CLD8": 34,
+      "CLD9": 38,
+      "CLD10": 42
+    },
+    "known_legacy_route_defects_fixed": [
+      "CLD1 old route mismatch",
+      "CLD10 old route mismatch"
+    ],
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "full_m01_grammar": "AUTHORED ACROSS ALL 10 LESSONS"
+  },
+  "workbooks": {
+    "files": 5,
+    "artifact_tool_reload": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "practice_sheet_route_audit": "10/10 PASS",
+    "representative_render": "PASS",
+    "visual_contact_sheet": "PASS"
+  },
+  "pdf_qa": {
+    "pre_report_pdfs": 8,
+    "pre_report_pages": 75,
+    "render_dpi": 200,
+    "preflight": "8/8 PASS; openable, unencrypted, text-based",
+    "contact_sheets_inspected": 3,
+    "visual_result": "PASS - no clipping, overlap, broken glyph or route drift observed",
+    "execution_note": "Initial monolithic render batch hit tool timeout; remaining PDFs were rendered in smaller batches. This was not a file defect."
+  },
+  "archives": {
+    "02_PRACTICE/C2_07_PRACTICE_DATA_RC1.zip": {
+      "entries": 9,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/GATE_A/C2_07_GATE_A_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_07_GATE_B_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_07_GATE_C_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    }
+  },
+  "route_orphan_duplicate": {
+    "canonical_routes": 10,
+    "route_heading_audit": "10/10 PASS",
+    "lesson_starts": {
+      "CLD1": 6,
+      "CLD2": 10,
+      "CLD3": 14,
+      "CLD4": 18,
+      "CLD5": 22,
+      "CLD6": 26,
+      "CLD7": 30,
+      "CLD8": 34,
+      "CLD9": 38,
+      "CLD10": 42
+    },
+    "practice_sheet_route_audit": "10/10 P_CLD sheets PASS via artifact_tool",
+    "required_paths": 26,
+    "missing_required_paths": [],
+    "duplicate_basenames": {},
+    "orphan_duplicate_verdict": "PASS"
+  },
+  "sources": {
+    "registry_rows": 21,
+    "unique_urls": 21,
+    "baseline_resources_preserved": 18,
+    "verification_date": "2026-09-10",
+    "external_required_dependencies": 0
+  },
+  "pl300": {
+    "alignment_rows": 7,
+    "direct_scope": [
+      "CLD5 enterprise Service/distribution",
+      "CLD7 gateway/scheduled refresh",
+      "CLD8 roles/item/model access/RLS/sensitivity"
+    ],
+    "boundary": "CLD6 release engineering and CLD9 monitoring are professional enrichment beyond core named exam objectives."
+  },
+  "assessments": {
+    "gate_a": "Fleet Maintenance",
+    "gate_b": "Education Enrollment",
+    "gate_c": "Energy Metering",
+    "gate_b_c_protected": true,
+    "distinct_sources_personas_failed_releases_incidents": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "runtime_boundary": {
+    "deterministic_fixture_path": "REQUIRED and QA prepared",
+    "live_power_bi_fabric_tenant": "OPTIONAL / not available to build environment; may be ENVIRONMENT BLOCKED",
+    "no_fake_live_pass": true
+  },
+  "course_position": "Optional C2A enterprise depth; direct Course 1 -> C2B -> C3 route remains valid.",
+  "shared_github_backup_modified": false,
+  "open_course_level_gates": [
+    "Unified Course 2A Mentor synchronization",
+    "Whole-course C2-00 through C2-09 learner-route simulation",
+    "Optional live Power BI/Fabric runtime checks where a suitable tenant is available",
+    "Final whole-course cross-course/orphan/duplicate audit"
+  ],
+  "next": "Render/preflight this QA report, freeze C2-07 bytes, then rebuild C2-08 Senior Business Analysis & Communication."
+}

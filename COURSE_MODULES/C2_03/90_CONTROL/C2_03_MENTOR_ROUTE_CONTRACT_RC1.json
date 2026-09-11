@@ -1,0 +1,41 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-03 Professional Power BI Modeling",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "lesson_count": 10,
+  "one_next_action_required": true,
+  "normal_flow": [
+    "open exact book page",
+    "watch only mapped support if useful",
+    "build model in Desktop",
+    "save genuine attempt/evidence",
+    "run key/grain/filter/total validation",
+    "explain back",
+    "unlock protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master PBM-A1..A10",
+    "Mini-Lab",
+    "Gate A",
+    "Gate A review after saved attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Hidden fresh full reassessments; never auto-open after repair.",
+  "desktop_runtime_rule": "Desktop-dependent lessons can be ENVIRONMENT BLOCKED. Static workbook/design evidence cannot be converted to runtime PASS.",
+  "manual_tracker": "START STUDY / END STUDY only; no countdown-timer dependency.",
+  "external_required_dependencies": 0,
+  "course_position": "Optional C2A depth; does not block Course 1 -> C2B -> C3."
+}

@@ -1,0 +1,10 @@
+﻿issue_id,finding,severity,disposition,evidence_or_action
+C2-07-BASELINE,Frozen v1.0 platform artifacts required critical refresh before study,CRITICAL,REFRESHED_REBUILT,Current 2026 Fabric/Power BI references rechecked and learner-facing body rebuilt.
+C2-07-M01,All 10 canonical CLD lessons remained REBUILD_REQUIRED under locked teaching grammar,CRITICAL,RESOLVED,47-page teacher-led book with four pages per lesson.
+C2-07-ROUTE-CLD1,CLD1 legacy canonical route pointed page 1 but lesson started page 2,CRITICAL,RESOLVED,New CLD1 exact start p6.
+C2-07-ROUTE-CLD10,CLD10 legacy canonical route pointed page 1 but lesson started page 20,CRITICAL,RESOLVED,New CLD10 exact start p42.
+C2-07-C2-06-DUP,Warehouse/lakehouse concepts risked duplicated teaching,HIGH,CONTROLLED,CLD4 focuses OneLake/workspace/item ownership; C2-06 remains authoritative for warehouse/lakehouse design.
+C2-07-TENANT,Learner may lack Fabric/Power BI tenant or premium features,HIGH,CONTROLLED_BOUNDARY,Deterministic workbook/Gates required; live environment optional and may be ENVIRONMENT BLOCKED.
+C2-07-PERMISSIONS,Workspace roles/RLS/item access can be confused,CRITICAL,EXPANDED,"CLD2/CLD5/CLD8 explicitly separate identity, workspace, item/model and row-level controls."
+C2-07-GATES,"Assessment must test operational decisions, not UI recall",CRITICAL,RESOLVED,"Fresh A/B/C domains retain different sources, personas, failed releases and incidents."
+C2-07-MENTOR,Unified Course 2A Mentor not yet synchronized,CRITICAL,DEFERRED_COURSE_LEVEL,Module route contract frozen; actual app sync waits for complete course registry.

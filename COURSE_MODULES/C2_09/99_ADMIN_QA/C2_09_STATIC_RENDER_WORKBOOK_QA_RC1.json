@@ -1,0 +1,101 @@
+{
+  "artifact": "C2-09 Capstone, Promotion & PL-300 Beginner-First RC1",
+  "date": "2026-09-11",
+  "status": "MODULE RC1 PASS FOR STATIC/200-DPI PDF/WORKBOOK/ARCHIVE/ROUTE/ASSESSMENT QA - UNIFIED COURSE MENTOR + WHOLE-COURSE QA PENDING - NOT COURSE FINAL",
+  "canonical": {
+    "core_CAP": 14,
+    "supplementary_PL": 8,
+    "total_routes": 22,
+    "page_anchor_audit": "22/22 PASS",
+    "core_book_pages": 63,
+    "pl_book_pages": 39
+  },
+  "pdf_qa": {
+    "pdfs": 17,
+    "pages": 187,
+    "render_dpi": 200,
+    "render_count": "187/187 PASS",
+    "visual_contact_sheet": "PASS - core, PL supplement, protected reviews, final Gates and support PDFs inspected",
+    "text_preflight_issues": [],
+    "citation_marker_defect": "Detected in pre-freeze PL draft; entire 39-page book regenerated from structured source; final scan clean"
+  },
+  "workbook_qa": {
+    "xlsx_files": 7,
+    "artifact_tool_reload": "7/7 PASS",
+    "formula_error_scan": "0 matches after DE-readiness formula repair",
+    "representative_renders": "PASS",
+    "de_readiness_logic": "Final result remains NOT ASSESSED until all 8 evidence rows are assessed and floors evaluated"
+  },
+  "archives": [
+    {
+      "path": "02_CAPSTONE/DATA/C2_09_MERIDIAN_CAPSTONE_DATA_RC1.zip",
+      "entries": 11,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_DATA_RC1.zip",
+      "entries": 9,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_DATA_RC1.zip",
+      "entries": 7,
+      "crc": "PASS"
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_DATA_RC1.zip",
+      "entries": 8,
+      "crc": "PASS"
+    }
+  ],
+  "assessment_integrity": {
+    "pl300_40q": {
+      "count": 40,
+      "unique_ids": true,
+      "valid_answers": true,
+      "domains": {
+        "Prepare": 11,
+        "Model": 11,
+        "Visualize": 11,
+        "Manage": 7
+      }
+    },
+    "pl300_20q": {
+      "count": 20,
+      "unique_ids": true,
+      "valid_answers": true,
+      "domains": {
+        "Prepare": 5,
+        "Model": 5,
+        "Visualize": 5,
+        "Manage": 5
+      }
+    },
+    "final_gate_a": "Subscription Services",
+    "final_gate_b": "Healthcare Network Operations",
+    "final_gate_c": "Logistics Marketplace",
+    "gate_b_c_protected": true,
+    "solved_meridian_answer_supplied": false
+  },
+  "sources": {
+    "registry_rows": 9,
+    "external_urls": 6,
+    "pl300_official_effective_date": "2026-04-20",
+    "verification_date": "2026-09-11",
+    "external_required_dependencies_for_core": 0
+  },
+  "integrity": {
+    "duplicate_basenames": {},
+    "baseline_meridian_zip_sha256": "5943516acb84c400705d14c20ca2f3f3feaa924b3484fde97130a2d501feb15e",
+    "baseline_meridian_byte_preserved": true
+  },
+  "course_position": "Course 2A optional; PL-300 optional; promotion/job switch evidence-only; direct DA->DE route remains Course 1 -> C2B -> C3.",
+  "shared_github_backup_modified": false,
+  "open_course_level_gates": [
+    "Unified Course 2A Mentor synchronization",
+    "Course-wide canonical registry reconciliation C2-00..C2-09",
+    "Whole-course Start-to-Finish learner route simulation",
+    "Mentor button/DOM/responsive/theme/backup-restore checks",
+    "Final cross-course/orphan/duplicate/package integrity audit"
+  ]
+}

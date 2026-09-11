@@ -1,0 +1,30 @@
+{
+  "A": {
+    "domain": "Subscription Services",
+    "customers": 30,
+    "subscriptions": 90,
+    "invoices": 90,
+    "payments_on_time": 78,
+    "payments_late": 12,
+    "health_rows": 60,
+    "target_rows": 8
+  },
+  "B": {
+    "domain": "Healthcare Network Operations",
+    "clinics": 8,
+    "appointments": 120,
+    "claims_initial": 60,
+    "claims_rerun_rows": 14,
+    "claims_rerun_overlap": 8,
+    "target_rows": 16
+  },
+  "C": {
+    "domain": "Logistics Marketplace",
+    "carriers": 9,
+    "bookings": 110,
+    "events_initial": 200,
+    "events_late": 20,
+    "invoices": 110,
+    "target_rows": 18
+  }
+}

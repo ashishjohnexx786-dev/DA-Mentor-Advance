@@ -1,0 +1,29 @@
+{
+  "A": {
+    "domain": "Fleet Maintenance",
+    "workspaces": 4,
+    "personas": 4,
+    "sources": 3,
+    "gateway_sources": 1,
+    "failed_release": "Maintenance Status logic change",
+    "incidents": 2
+  },
+  "B": {
+    "domain": "Education Enrollment",
+    "workspaces": 4,
+    "personas": 4,
+    "sources": 3,
+    "gateway_sources": 1,
+    "failed_release": "School ownership mapping",
+    "incidents": 2
+  },
+  "C": {
+    "domain": "Energy Metering",
+    "workspaces": 4,
+    "personas": 4,
+    "sources": 3,
+    "gateway_sources": 1,
+    "failed_release": "Region access rule",
+    "incidents": 2
+  }
+}

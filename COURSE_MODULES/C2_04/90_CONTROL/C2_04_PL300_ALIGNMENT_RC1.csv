@@ -1,0 +1,16 @@
+﻿lesson_id,pl300_area,current_2026_skill_objective,alignment,boundary_note
+DAX1,Model,Create model calculations using DAX,SUPPORTING,Evaluation context underpins measure correctness.
+DAX2,Model,Calculated columns/tables and measures,SUPPORTING,Explains calculation contexts.
+DAX3,Model,Use CALCULATE,DIRECT,Exact current objective.
+DAX4,Model,Create model calculations using DAX,SUPPORTING,Iterator depth exceeds minimal objective.
+DAX5,Model,Use CALCULATE / context transition,SUPPORTING,Professional context reasoning.
+DAX6,Model,Implement time intelligence measures,DIRECT,Exact current objective.
+DAX7,Model,Implement time intelligence / business measures,DIRECT,Period/rolling application.
+DAX8,Model,Create model calculations using DAX,SUPPORTING,Maintainability/performance layer.
+DAX9,Model,Basic statistical/semi-additive/calculated measures,DIRECT,Includes semi-additive and advanced business patterns.
+DAX10,Model,Identify poorly performing measures using Performance Analyzer and DAX query view,DIRECT,Debugging broader than performance.
+DAX11,Visualize,Create reports; enhance usability/storytelling,DIRECT,Decision-first professional depth.
+DAX12,Visualize,"Bookmarks, tooltips, interactions, navigation, drillthrough",DIRECT,Exact current report-usability objectives.
+DAX13,Visualize,Design/configure reports for accessibility,DIRECT,Exact current objective.
+DAX14,Manage/Secure,Implement RLS roles and configure RLS group membership,DIRECT,Exact current security area.
+DAX15,Manage/Secure,Workspaces/apps/publish/distribution/gateway/scheduled refresh/endorsement,DIRECT,Current lifecycle area; tenant/license execution may vary.

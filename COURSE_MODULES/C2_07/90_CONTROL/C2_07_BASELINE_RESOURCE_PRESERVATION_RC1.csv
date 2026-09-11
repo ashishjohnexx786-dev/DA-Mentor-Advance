@@ -1,0 +1,19 @@
+﻿baseline_resource,preserved,scope
+Fabric Data Warehouse overview,YES,CLD3-CLD10
+OneLake documentation,YES,CLD3-CLD4
+OneLake overview,YES,CLD3-CLD4
+What is Microsoft Fabric,YES,CLD1-CLD4
+Fabric workspaces,YES,CLD5-CLD6
+Workspace roles,YES,CLD6/CLD8
+Fabric CI/CD,YES,CLD6
+Deployment pipelines,YES,CLD6
+On-premises gateway,YES,CLD7
+Fabric permission model,YES,CLD8
+OneLake catalog Govern,YES,CLD8
+Purview + Fabric,YES,CLD8
+Fabric monitoring hub,YES,CLD9
+PL-300 Manage/Secure visual,YES,CLD5-CLD6
+Power BI Meets Fabric visual,YES,CLD3/CLD5
+OneLake visual,YES,CLD4
+Gateway video,YES,CLD7
+Data Factory pipelines visual,YES,CLD9

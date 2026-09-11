@@ -1,0 +1,122 @@
+[
+  {
+    "q": "R01",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Storage mode"
+  },
+  {
+    "q": "R02",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Reference queries"
+  },
+  {
+    "q": "R03",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Append"
+  },
+  {
+    "q": "R04",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Keys/data quality"
+  },
+  {
+    "q": "R05",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Semi-structured"
+  },
+  {
+    "q": "R06",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Cardinality"
+  },
+  {
+    "q": "R07",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Measures"
+  },
+  {
+    "q": "R08",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Performance"
+  },
+  {
+    "q": "R09",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Role-playing date"
+  },
+  {
+    "q": "R10",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Calculation groups"
+  },
+  {
+    "q": "R11",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Visual choice"
+  },
+  {
+    "q": "R12",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Accessibility"
+  },
+  {
+    "q": "R13",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Drillthrough"
+  },
+  {
+    "q": "R14",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Paginated"
+  },
+  {
+    "q": "R15",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Copilot verification"
+  },
+  {
+    "q": "R16",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Apps/distribution"
+  },
+  {
+    "q": "R17",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Gateway"
+  },
+  {
+    "q": "R18",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "RLS"
+  },
+  {
+    "q": "R19",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Item access"
+  },
+  {
+    "q": "R20",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Sensitivity labels"
+  }
+]

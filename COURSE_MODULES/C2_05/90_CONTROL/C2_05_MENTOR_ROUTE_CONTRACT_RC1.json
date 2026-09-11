@@ -1,0 +1,49 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-05 Python Automation for Analysts",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "lesson_count": 11,
+  "one_next_action_required": true,
+  "normal_flow": [
+    "open exact teaching page",
+    "mapped visual/source if useful",
+    "open P-PYA section",
+    "run genuine task",
+    "save validation/failure evidence",
+    "explain back",
+    "unlock protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master PYA1-PYA11",
+    "Weekly Reporting Mini-Lab",
+    "Gate A",
+    "Gate A review after saved attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Hidden fresh full reassessments; never auto-open after repair.",
+  "runtime": {
+    "python": "Required for hands-on mastery.",
+    "api": "Live external API is optional; deterministic local JSON path is required.",
+    "excel": "PYA5 Excel engine may be ENVIRONMENT BLOCKED until dependency available."
+  },
+  "manual_tracker": "START STUDY / END STUDY only; no countdown-timer dependency.",
+  "external_required_dependencies": 0,
+  "target_versions": {
+    "python": "3.14.7 docs",
+    "pandas": "3.0.5 docs"
+  },
+  "course_position": "Optional C2A depth; overlaps reliability concepts with C2B/C3 but is not required for direct DA-to-DE."
+}

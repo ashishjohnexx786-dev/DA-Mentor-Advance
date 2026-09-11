@@ -1,0 +1,9 @@
+﻿issue_id,finding,severity,disposition,evidence_or_action
+C2-08-BASELINE,Legacy generated phase was internally authoritative but learner-facing book remained compressed/legacy visual family,HIGH,REBUILT,55-page Option-B teacher-led book replaces learner-facing body; old content used only as competency source.
+C2-08-M01,All 12 canonical SBA lessons were REBUILD_REQUIRED,CRITICAL,RESOLVED,Full M01 grammar authored across SBA1-SBA12.
+C2-08-ROUTE-SBA1,SBA1 old route expected page 1 but actual page 2,CRITICAL,RESOLVED,New SBA1 start p6.
+C2-08-ROUTE-SBA12,SBA12 old route expected page 1 but actual page 24,CRITICAL,RESOLVED,New SBA12 start p50.
+C2-08-EXTERNAL,Legacy resource register required no external dependency,MEDIUM,PRESERVED,Internal cases remain authoritative; new videos/current Microsoft references are additive only.
+C2-08-JUDGMENT-QA,Module could be falsely treated like software runtime,HIGH,CONTROLLED,Mastery evidence is case reasoning/decision/ownership/changed transfer; no fake runtime requirement.
+C2-08-GATES,Gates must resist memorized corporate scripts,CRITICAL,RESOLVED,"Marketplace, Inventory and Renewals fixtures use distinct evidence/conflicts/non-negotiables/constraints."
+C2-08-MENTOR,Unified Course 2A Mentor not yet synchronized,CRITICAL,DEFERRED_COURSE_LEVEL,Exact module route contract frozen; actual app sync waits until C2-09/final course registry.

@@ -1,0 +1,51 @@
+{
+  "main_lab": {
+    "customers_raw_rows": 32,
+    "customers_unique_ids": 31,
+    "duplicate_customer_ids": [
+      7
+    ],
+    "orders_rows": 120,
+    "order_items_rows": 240,
+    "returns_rows": 32,
+    "events_rows": 312,
+    "orphan_order_customer_id": 999,
+    "orphan_return_order_id": 9999,
+    "negative_order_id": 118,
+    "completed_orders": 72,
+    "eligible_non_cancelled_orders": 96,
+    "completed_revenue": 162079.1,
+    "non_cancelled_revenue": 217684.82
+  },
+  "gate_a": {
+    "seller_raw_rows": 16,
+    "seller_unique_ids": 15,
+    "duplicate_seller_id": 5,
+    "orders_rows": 90,
+    "completed_orders": 45,
+    "completed_value": 86157.13,
+    "orphan_seller_id": 999,
+    "orphan_event_order_id": 9999
+  },
+  "gate_b": {
+    "team_raw_rows": 11,
+    "team_unique_ids": 10,
+    "duplicate_team_id": 3,
+    "tickets_rows": 100,
+    "resolved_tickets": 60,
+    "orphan_team_id": 999,
+    "orphan_event_ticket_id": 9999,
+    "events_rows": 164
+  },
+  "gate_c": {
+    "account_raw_rows": 18,
+    "account_unique_ids": 17,
+    "duplicate_account_id": 8,
+    "invoices_rows": 95,
+    "paid_invoices": 57,
+    "paid_invoice_amount": 184743.17,
+    "payments_rows": 83,
+    "orphan_account_id": 999,
+    "orphan_payment_invoice_id": 9999
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "course": "C2A Senior / BI Analyst 2026 \u2014 Optional Path",
+  "module": "C2-00 Senior Analyst Foundations",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "lesson_count": 8,
+  "lesson_route_registry": "90_CONTROL/C2_00_CANONICAL_LESSON_ROUTE_REGISTRY_RC1.csv",
+  "normal_lesson_flow": [
+    "open exact teaching page",
+    "guided understanding",
+    "independent practice",
+    "save genuine attempt",
+    "unlock matching protected review",
+    "close review",
+    "changed retry",
+    "validate",
+    "explain back",
+    "master"
+  ],
+  "module_flow": [
+    "master SAF1-SAF8",
+    "complete Mini-Lab",
+    "unlock Gate A",
+    "save independent Gate A attempt",
+    "unlock Gate A protected review only after attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Gate B/C remain hidden fresh full reassessments. A repair result never automatically opens the next Gate.",
+  "gate_files": {
+    "A": "04_ASSESSMENT/GATE_A/C2_00_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+    "B": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_00_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+    "C": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_00_GATE_C_FRESH_ASSESSMENT_RC1.xlsx"
+  },
+  "manual_study_tracker": "START STUDY / END STUDY; no fake countdown timer requirement.",
+  "external_media_required_dependencies": 0,
+  "course_positioning": "OPTIONAL. This module must not block Course 1 -> C2B -> C3 direct DA-to-DE progression."
+}

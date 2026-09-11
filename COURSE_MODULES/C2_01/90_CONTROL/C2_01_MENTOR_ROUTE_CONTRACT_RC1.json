@@ -1,0 +1,43 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-01 Advanced Excel & Power Query",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "one_next_action_required": true,
+  "lesson_count": 10,
+  "exact_route_registry": "90_CONTROL/C2_01_CANONICAL_LESSON_ROUTE_REGISTRY_RC1.csv",
+  "normal_flow": [
+    "exact book page",
+    "optional/required visual support",
+    "guided example",
+    "fresh independent task",
+    "save genuine attempt",
+    "validation",
+    "explain-back",
+    "unlock protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master AX1-AX10",
+    "Mini-Lab",
+    "Gate A independent",
+    "Gate A review after saved attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c": "Hidden fresh full reassessments; never auto-unlocked by repair.",
+  "manual_tracker": "START STUDY / END STUDY only; no broken countdown-timer dependency.",
+  "runtime_marking": "AX2/AX3/AX6-AX10 can be ENVIRONMENT BLOCKED if required Excel/Power Query feature cannot actually run.",
+  "external_required_dependencies": 0,
+  "course_position": "Optional C2A depth; not a prerequisite for C2B/C3 direct DA-to-DE route."
+}

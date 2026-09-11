@@ -1,0 +1,151 @@
+name: Master Runtime Smoke 2026
+
+on:
+  push:
+    branches:
+      - main
+      - runtime-candidate/five-course-2026-09-11
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: master-runtime-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout candidate bytes
+        uses: actions/checkout@v4
+
+      - name: Resolve app topology and static route closure
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -d MENTOR_APP ]]; then APP_PATH=MENTOR_APP; else APP_PATH=.; fi
+          echo "APP_PATH=$APP_PATH" >> "$GITHUB_ENV"
+          python - <<'PY'
+          from pathlib import Path
+          import json,re
+          root=Path('.')
+          app=root/'MENTOR_APP' if (root/'MENTOR_APP').is_dir() else root
+          assert (app/'index.html').is_file(), app
+          assert (app/'manifest.webmanifest').is_file(), app
+          assert (app/'service-worker.js').is_file() or (app/'sw.js').is_file(), app
+          m=json.loads((app/'manifest.webmanifest').read_text(encoding='utf-8-sig'))
+          for icon in m.get('icons',[]):
+              src=str(icon.get('src','')).split('?',1)[0].split('#',1)[0]
+              if src and not re.match(r'^(?:https?:|data:|/)',src):
+                  assert (app/src).is_file(), src
+          texts=[]
+          for p in app.rglob('*'):
+              if p.is_file() and p.suffix.lower() in {'.html','.js','.json'}:
+                  texts.append(p.read_text(encoding='utf-8',errors='ignore'))
+          refs=set()
+          for t in texts:
+              refs.update(x.rstrip('.,;:)}\"\'').split('#',1)[0] for x in re.findall(r'\.\./COURSE_MODULES/[A-Za-z0-9_./,()\- ]+',t))
+          for ref in refs:
+              target=(app/ref).resolve()
+              target.relative_to(root.resolve())
+              assert target.is_file(), ref
+          print(f'PASS topology app={app} module_refs={len(refs)}')
+          PY
+
+      - name: JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          find "$APP_PATH" -maxdepth 1 -type f -name '*.js' -print0 | xargs -0 -r -n1 node --check
+
+      - name: Install Selenium
+        run: python -m pip install -q selenium
+
+      - name: Browser runtime smoke - mobile and desktop
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m http.server 8765 >/tmp/five-course-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID >/dev/null 2>&1 || true' EXIT
+          sleep 2
+          python - <<'PY'
+          import os,time,json
+          from selenium import webdriver
+          from selenium.webdriver.common.by import By
+          from selenium.webdriver.support.ui import WebDriverWait
+          APP=os.environ['APP_PATH'].strip('./')
+          path=(APP+'/' if APP else '')+'index.html'
+          url='http://127.0.0.1:8765/'+path
+          o=webdriver.ChromeOptions()
+          o.add_argument('--headless=new');o.add_argument('--no-sandbox');o.add_argument('--disable-dev-shm-usage');o.add_argument('--window-size=390,844')
+          o.set_capability('goog:loggingPrefs',{'browser':'ALL'})
+          d=webdriver.Chrome(options=o); w=WebDriverWait(d,25)
+          try:
+              d.get(url)
+              w.until(lambda x: x.execute_script('return document.readyState')=='complete')
+              w.until(lambda x: len(x.find_element(By.TAG_NAME,'body').text.strip())>0)
+              assert d.title.strip(), 'empty title'
+              assert d.execute_script('return document.documentElement.scrollWidth') <= d.execute_script('return innerWidth')+4, 'mobile horizontal overflow'
+              assert d.execute_script("localStorage.setItem('__runtime_smoke','ok');return localStorage.getItem('__runtime_smoke')")=='ok'
+              # Navigate the visible primary tabs in whichever shared shell this course uses.
+              tabs=d.find_elements(By.CSS_SELECTOR,'.tab[data-view], nav button[data-view], #nav button[data-tab]')
+              seen=0
+              for b in tabs[:10]:
+                  try:
+                      if b.is_displayed() and b.is_enabled():
+                          d.execute_script("arguments[0].scrollIntoView({block:'center'})",b); b.click(); time.sleep(.08); seen+=1
+                  except Exception:
+                      pass
+              assert seen>=5, f'primary navigation smoke only clicked {seen} tabs'
+              # Return to Learn and confirm a review control, where present, begins protected on a fresh state.
+              learn=d.find_elements(By.CSS_SELECTOR,'.tab[data-view="learn"], nav button[data-view="learn"], #nav button[data-tab="Learn"]')
+              if learn:
+                  d.execute_script("arguments[0].scrollIntoView({block:'center'})",learn[0]); learn[0].click(); time.sleep(.2)
+                  review=d.find_elements(By.CSS_SELECTOR,'#reviewBtn, button[data-act="review"]')
+                  if review:
+                      assert not review[0].is_enabled(), 'review unexpectedly enabled before a fresh attempt'
+              sw=d.execute_async_script("""
+                const done=arguments[0];
+                if(!('serviceWorker' in navigator)){done(false);return;}
+                const t=setTimeout(()=>done(false),12000);
+                navigator.serviceWorker.ready.then(()=>{clearTimeout(t);done(true)}).catch(()=>{clearTimeout(t);done(false)});
+              """)
+              assert sw, 'service worker did not become ready'
+              severe=[x for x in d.get_log('browser') if x.get('level')=='SEVERE' and 'favicon' not in x.get('message','').lower()]
+              assert not severe, severe[:5]
+              d.set_window_size(1280,900); d.refresh(); w.until(lambda x:x.execute_script('return document.readyState')=='complete'); time.sleep(.3)
+              assert d.execute_script('return document.documentElement.scrollWidth') <= d.execute_script('return innerWidth')+4, 'desktop horizontal overflow'
+              print('PASS browser runtime smoke',url,'tabs',seen)
+          finally:
+              d.quit()
+          PY
+
+      - name: Live Pages critical-byte parity
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          if [[ "$APP_PATH" == "." ]]; then PREFIX=""; else PREFIX="$APP_PATH/"; fi
+          if [[ -f "${APP_PATH}/service-worker.js" ]]; then SW="service-worker.js"; else SW="sw.js"; fi
+          files=("${PREFIX}index.html" "${PREFIX}manifest.webmanifest" "${PREFIX}${SW}")
+          if [[ "$APP_PATH" != "." ]]; then files+=("index.html"); fi
+          pass=0
+          for attempt in $(seq 1 40); do
+            ok=1
+            for f in "${files[@]}"; do
+              tmp="/tmp/hosted-${attempt}-$(basename "$f")"
+              curl -fsSL --retry 2 --retry-delay 1 "${BASE}${f}?qa=${GITHUB_SHA}-${attempt}" -o "$tmp" || { ok=0; break; }
+              exp=$(sha256sum "$f" | awk '{print $1}')
+              got=$(sha256sum "$tmp" | awk '{print $1}')
+              [[ "$exp" == "$got" ]] || { ok=0; break; }
+            done
+            if [[ "$ok" == 1 ]]; then pass=1; break; fi
+            sleep 15
+          done
+          test "$pass" == 1
+          echo "PASS live Pages critical-byte parity: $BASE"

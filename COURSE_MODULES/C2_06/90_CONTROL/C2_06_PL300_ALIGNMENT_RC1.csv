@@ -1,0 +1,4 @@
+﻿lesson_scope,pl300_area,current_2026_position,alignment,boundary_note
+DWF1-DWF12,PL-300,No direct data-warehouse implementation objective in current PL-300 core skills,OPTIONAL_ENRICHMENT,Do not make C2-06 a certification prerequisite.
+DWF4,Model,Fact/dimension/star-schema reasoning supports semantic-model design,SUPPORTING,Warehouse implementation depth exceeds PL-300.
+DWF11-DWF12,Manage/Secure support,Lineage/quality improve professional ownership but are broader than named PL-300 objectives,ENRICHMENT,Keep separate from exam-only route.

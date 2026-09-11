@@ -1,0 +1,71 @@
+{
+  "artifact": "C2-03 Professional Power BI Modeling Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/WORKBOOK QA - LIVE POWER BI DESKTOP PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "lessons": 10,
+    "book_pages": 47,
+    "page_anchor_audit": "10/10 PASS",
+    "lesson_starts": {
+      "PBM-A1": 6,
+      "PBM-A2": 10,
+      "PBM-A3": 14,
+      "PBM-A4": 18,
+      "PBM-A5": 22,
+      "PBM-A6": 26,
+      "PBM-A7": 30,
+      "PBM-A8": 34,
+      "PBM-A9": 38,
+      "PBM-A10": 42
+    },
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "prerequisite_tool_map": true,
+    "m01_contract": "AUTHORED ACROSS ALL 10 LESSONS"
+  },
+  "workbooks": {
+    "files": 5,
+    "artifact_tool_reload": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "representative_visual_render": "PASS"
+  },
+  "archives": {
+    "practice_data": "11 files / CRC PASS",
+    "gate_a": "5 files / CRC PASS",
+    "gate_b": "5 files / CRC PASS",
+    "gate_c": "5 files / CRC PASS"
+  },
+  "pdf_qa": {
+    "pdf_files_before_report": 8,
+    "pages_before_report": 74,
+    "dpi": 200,
+    "preflight_warnings": 0,
+    "visual_contact_sheet_review": "PASS - no clipping/overlap/broken glyph/page-route drift observed"
+  },
+  "sources": {
+    "rows": 17,
+    "unique_urls": 12,
+    "verification_date": "2026-09-10",
+    "external_required_dependencies": 0
+  },
+  "pl300": {
+    "study_guide": "skills measured as of 2026-04-20",
+    "mapping_rows": 10,
+    "position": "alignment support, not hidden course prerequisite"
+  },
+  "assessments": {
+    "gate_a": "Retail Sales & Returns",
+    "gate_b": "Clinic Encounters & Billing",
+    "gate_c": "Logistics Shipments & Service Targets",
+    "gate_b_c_protected": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "runtime_boundaries": [
+    "No Power BI Desktop engine is available in this build environment; live relationship/filter/date/performance execution is not claimed.",
+    "Unified Course 2A Mentor rebuild waits for the rebuilt module registry.",
+    "Android/PWA Mentor tests are course-level release gates.",
+    "Shared GitHub/backup integration remains untouched during parallel rebuilds."
+  ],
+  "next": "Freeze C2-03 package bytes, then rebuild C2-04 DAX & Calculation Engineering."
+}

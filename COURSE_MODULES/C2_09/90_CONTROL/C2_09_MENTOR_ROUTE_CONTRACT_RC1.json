@@ -1,0 +1,39 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-09 Capstone, Promotion & PL-300",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "one_next_action": true,
+  "manual_study_tracker": "START STUDY / END STUDY; no timer dependency",
+  "core_route": [
+    "CAP1 exact page",
+    "matching capstone evidence sheet/artifact",
+    "save genuine attempt",
+    "validate + limitation + explain-back",
+    "protected CAP review",
+    "close review",
+    "changed retry",
+    "master",
+    "CAP14 -> Final Gate A"
+  ],
+  "final_gate": {
+    "A": "Subscription Services",
+    "B": "Healthcare Network Operations",
+    "C": "Logistics Marketplace",
+    "B_C": "protected fresh retests only after targeted repair",
+    "critical_floors": true
+  },
+  "pl300_route": "Separate OPTIONAL certification lane; never auto-fills C2A core status",
+  "de_route": "Separate OPTIONAL transfer-evidence lane; never unlocks C3 by itself",
+  "career_route": "Promotion/Job-switch evidence only; truth/privacy controls mandatory",
+  "backup_restore_required": true,
+  "shared_github_backup_modified": false
+}

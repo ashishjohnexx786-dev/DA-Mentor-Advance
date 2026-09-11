@@ -1,0 +1,12 @@
+﻿issue_id,finding,severity,disposition,evidence
+C2-09-M01,Legacy CAP1-CAP14 and PL1-PL8 did not meet locked full teaching grammar,CRITICAL,RESOLVED,63-page CAP core + 39-page PL supplement rebuilt
+C2-09-ROUTE-CAP1,Legacy CAP1 route pointed page 1 instead of actual lesson start,CRITICAL,RESOLVED,New CAP1 exact start p6
+C2-09-ROUTE-CAP14,Legacy CAP14 route pointed page 1 instead of actual p15,CRITICAL,RESOLVED,New CAP14 exact start p58
+C2-09-PL-COMPRESSED,Legacy PL1-PL8 compressed into 3 pages,HIGH,RESOLVED,Each PL unit now 4 pages + assessment/repair artifacts
+C2-09-PL-CURRENT,PL-300 scope is time-sensitive,HIGH,RESOLVED_CURRENT,Official guide and Practice Assessment rechecked 2026-09-11; version lock written
+C2-09-PL-CITATION-GLYPH,Two internal citation markers rendered as garbage in first PL RC render,CRITICAL,RESOLVED_BEFORE_FREEZE,Entire 39-page PL book regenerated from structured lesson data; 200-DPI rerender + text scan clean
+C2-09-DE-RESULT,C2A-to-DE result formula was initially placed on wrong row,CRITICAL,RESOLVED_BEFORE_FREEZE,Workbook logic corrected; final result remains NOT ASSESSED until eight rows assessed
+C2-09-CAPSTONE-LEAK,Solved capstone content could contaminate independent evidence,CRITICAL,CONTROLLED,Criterion-only review; raw controls but no solved SQL/PBIX/recommendation
+C2-09-GATES,Final Gate must be fresh and changed,CRITICAL,RESOLVED,A Subscription; B Healthcare; C Logistics with different failure/definition/privacy conditions
+C2-09-STATUS-MERGE,"Course, PL300, promotion and DE statuses could be conflated",CRITICAL,RESOLVED,Four separate records and Mentor contract
+C2-09-MENTOR,Unified Course 2A Mentor not yet synchronized,CRITICAL,DEFERRED_COURSE_LEVEL,Module route contract frozen; app integration follows course-wide registry

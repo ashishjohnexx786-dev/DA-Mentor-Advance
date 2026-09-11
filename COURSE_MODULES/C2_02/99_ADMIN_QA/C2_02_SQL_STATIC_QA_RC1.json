@@ -1,0 +1,82 @@
+[
+  {
+    "file": "C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 173,
+    "bytes": 6166
+  },
+  {
+    "file": "C2_02_GATE_A_FRESH_ADVANCED_SQL_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 287,
+    "bytes": 15133
+  },
+  {
+    "file": "C2_02_GATE_B_FRESH_ADVANCED_SQL_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 296,
+    "bytes": 14580
+  },
+  {
+    "file": "C2_02_GATE_C_FRESH_ADVANCED_SQL_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 217,
+    "bytes": 9900
+  },
+  {
+    "file": "C2_02_MINI_LAB_1_REVENUE_RELIABILITY_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 19,
+    "bytes": 775
+  },
+  {
+    "file": "C2_02_MINI_LAB_2_CUSTOMER_MOMENTUM_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 19,
+    "bytes": 865
+  },
+  {
+    "file": "C2_02_POSTGRESQL_LAB_SETUP_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 850,
+    "bytes": 33962
+  },
+  {
+    "file": "C2_02_REMEDIATION_GRAIN_JOIN_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 8,
+    "bytes": 499
+  },
+  {
+    "file": "C2_02_REMEDIATION_VALIDATION_PERFORMANCE_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 7,
+    "bytes": 406
+  },
+  {
+    "file": "C2_02_REMEDIATION_WINDOW_TIME_RC1.sql",
+    "quote_balance": "PASS",
+    "parenthesis_balance": "PASS",
+    "statement_terminator": "PASS",
+    "line_count": 7,
+    "bytes": 407
+  }
+]

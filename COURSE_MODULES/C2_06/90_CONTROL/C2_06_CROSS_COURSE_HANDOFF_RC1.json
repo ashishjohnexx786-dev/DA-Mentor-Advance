@@ -1,0 +1,24 @@
+{
+  "module": "C2-06 Data Warehousing & Platform Foundations",
+  "course_2a_position": "Optional Senior/BI path; very high Data Engineering overlap.",
+  "assumes": [
+    "Course 1 SQL/Power BI basics",
+    "C2-00 grain/validation vocabulary",
+    "C2-03 modeling concepts are helpful"
+  ],
+  "deepens": [
+    "analytical system architecture",
+    "warehouse dimensional grain",
+    "business/surrogate keys",
+    "SCD history",
+    "ETL/ELT/layers",
+    "lakehouse/store decisions",
+    "latency",
+    "lineage",
+    "pipeline quality"
+  ],
+  "overlap_with_c2b": "C2B B04 owns the fast-track DA-to-DE version of warehousing/data-quality competencies; C2-06 itself is not required.",
+  "overlap_with_c3": "C3 uses these concepts operationally in pipelines/platforms. Direct-path learners receive required prereqs through C2B.",
+  "skip_rule": "A learner following Course 1 -> C2B -> C3 may skip all of C2-06 if C2B entry/exit gates are satisfied.",
+  "c2_07_boundary": "Cloud/Fabric ecosystem, identity, workspaces/deployment, refresh/gateway, governance/monitoring belong primarily to C2-07."
+}

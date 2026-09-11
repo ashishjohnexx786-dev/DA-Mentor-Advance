@@ -1,0 +1,44 @@
+{
+  "course": "Course 2A - Senior / BI Analyst 2026 - OPTIONAL PATH",
+  "module": "C2-04 Advanced DAX & Reporting",
+  "release": "BEGINNER_FIRST_RC1",
+  "tabs_target": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "lesson_count": 15,
+  "one_next_action_required": true,
+  "normal_flow": [
+    "exact teaching page",
+    "mapped visual/reference only if useful",
+    "fresh Power BI task",
+    "save genuine attempt",
+    "detail/total/slicer or UX/security validation",
+    "explain back",
+    "unlock protected review",
+    "close review",
+    "changed retry",
+    "master"
+  ],
+  "module_flow": [
+    "master DAX1..DAX15",
+    "Executive BI Release Mini-Lab",
+    "Gate A",
+    "review only after attempt",
+    "pass or targeted repair"
+  ],
+  "gate_b_c_rule": "Hidden fresh full reassessments; never auto-opened by repair.",
+  "runtime": {
+    "desktop": "Required for DAX/report/RLS hands-on.",
+    "service": "Required only for full DAX15/service-side lifecycle verification; may be ENVIRONMENT BLOCKED."
+  },
+  "manual_tracker": "START STUDY / END STUDY; no countdown timer dependency.",
+  "external_required_dependencies": 0,
+  "course_position": "Optional C2A Senior/BI depth; does not block Course 1 -> C2B -> C3."
+}

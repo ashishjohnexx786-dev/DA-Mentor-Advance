@@ -1,0 +1,74 @@
+{
+  "artifact": "C2-02 Advanced SQL Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER QA - LIVE POSTGRESQL PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "lessons": 12,
+    "teaching_book_pages": 55,
+    "lesson_page_anchor_audit": "12/12 PASS",
+    "lesson_starts": {
+      "ASQL1": 6,
+      "ASQL2": 10,
+      "ASQL3": 14,
+      "ASQL4": 18,
+      "ASQL5": 22,
+      "ASQL6": 26,
+      "ASQL7": 30,
+      "ASQL8": 34,
+      "ASQL9": 38,
+      "ASQL10": 42,
+      "ASQL11": 46,
+      "ASQL12": 50
+    },
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "prerequisite_tool_map": true,
+    "full_m01_grammar": "AUTHORED ACROSS ALL 12 LESSONS"
+  },
+  "practice": {
+    "lab_setup": "synthetic PostgreSQL schema with deliberate duplicate/orphan/negative-value traps",
+    "lesson_practice_tasks": 12,
+    "mini_labs": 2,
+    "targeted_remediation_files": 3,
+    "protected_review_pages": 13
+  },
+  "assessment": {
+    "gate_a": "Marketplace Seller Performance",
+    "gate_b": "Support SLA / Reopen Analysis",
+    "gate_c": "Subscription Billing / Payment Reliability",
+    "gate_b_c_protected": true,
+    "freshness": "distinct schemas/domains/data and failure patterns",
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "sql_static_qa": {
+    "sql_files": 10,
+    "all_quote_balance": "PASS",
+    "all_parenthesis_balance": "PASS",
+    "all_statement_terminator": "PASS",
+    "postgresql_runtime_available": false,
+    "live_execution": "PENDING"
+  },
+  "pdf_qa": {
+    "pdf_files": 6,
+    "rendered_pages": 77,
+    "dpi": 200,
+    "contact_sheets_inspected": 5,
+    "visual_result": "PASS - no clipping, overlap, broken glyph or page-route drift observed",
+    "preflight": "6/6 openable, unencrypted, text-based"
+  },
+  "sources": {
+    "registry_rows": 19,
+    "unique_external_urls": 12,
+    "verification_date": "2026-09-10",
+    "external_required_dependencies": 0,
+    "dialect_rule": "PostgreSQL current documentation controls syntax/behavior"
+  },
+  "runtime_boundaries": [
+    "No psql/PostgreSQL runtime is available in this build environment, so live SQL execution is not claimed.",
+    "Unified Course 2A Mentor rebuild waits for the rebuilt module registry.",
+    "Real Android/PWA Mentor runtime is a later course-level release gate.",
+    "Shared GitHub/backup integration remains untouched during parallel course rebuilds."
+  ],
+  "next": "Freeze C2-02 package bytes, then proceed to C2-03 Professional Power BI Modeling."
+}

@@ -1,0 +1,5 @@
+﻿resource_or_control,baseline_status,disposition,note
+Legacy C2-08 external dependency,BASELINE_NONE_REQUIRED,PRESERVED,Legacy resource register explicitly said internal course authoritative and no external dependency required.
+Internal senior-analysis framework,BASELINE_CORE,PRESERVED_AND_EXPANDED,"Discovery, pushback, priority, evidence language, recommendation, conflict, defense, cross-functional review and mentoring retained as competencies."
+Legacy Gate domains,BASELINE_GATES,PRESERVED_WITH_FRESH_FIXTURES,Marketplace Sellers / Inventory Replenishment / Customer Success Renewals retained but fixtures and assessment evidence rebuilt.
+External visuals,ADDITIVE,NEW,Selected stakeholder/storytelling/current Microsoft references added without making them required dependencies.

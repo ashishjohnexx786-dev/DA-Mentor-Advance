@@ -1,0 +1,19 @@
+﻿lesson_id,role,source_name,url,useful_segment,verification_status,fallback_or_note
+PYA1,CURRENT REFERENCE,Python 3.14.7 Tutorial - Modules,https://docs.python.org/3.14/tutorial/modules.html,Modules/__main__,WEB_VERIFIED_2026-09-10,Python docs authoritative.
+PYA1;PYA4;PYA11,CURRENT REFERENCE,Python 3.14.7 pathlib,https://docs.python.org/3.14/library/pathlib.html,Path objects/glob/file operations,WEB_VERIFIED_2026-09-10,Python docs authoritative.
+PYA1;PYA4,RECOMMENDED VIDEO,Real Python - Understanding Python File Paths,https://realpython.com/videos/python-file-paths/,00:00-02:10,WEB_METADATA_VERIFIED_2026-09-10,Short visual mental model.
+PYA1;PYA4,OPTIONAL VIDEO,Corey Schafer - Pathlib: Modern Way to Handle File Paths,https://www.youtube.com/watch?v=yxa-DJuuTBI,No reliable chapter timestamps retrieved,SEARCH_METADATA_VERIFIED_2026-09-10,2024 visual reinforcement; docs control API.
+PYA3-PYA6;PYA9-PYA11,CURRENT REFERENCE,pandas 3.0.5 User Guide,https://pandas.pydata.org/docs/user_guide/,Current pandas behavior,WEB_VERIFIED_2026-09-10,pandas docs authoritative.
+PYA3;PYA4,CURRENT REFERENCE,pandas.merge,https://pandas.pydata.org/docs/reference/api/pandas.merge.html,validate/cardinality/null-key caveat,WEB_VERIFIED_2026-09-10,Use merge validate where contract applies.
+PYA4-PYA6,CURRENT REFERENCE,pandas IO tools,https://pandas.pydata.org/docs/user_guide/io.html,CSV/JSON/Excel IO,WEB_VERIFIED_2026-09-10,Current IO guidance.
+PYA5;PYA6,RECOMMENDED VIDEO,Corey Schafer - pandas Reading/Writing Data Sources,https://www.youtube.com/watch?v=N6hyN6BW6ao,CSV 00:56; Excel 06:15 and 10:42; JSON 12:18 and 15:41,CHAPTER_METADATA_VERIFIED_2026-09-10,Older video for visual workflow; current pandas docs govern API.
+PYA6,CURRENT REFERENCE,Python 3.14.7 csv module,https://docs.python.org/3.14/library/csv.html,CSV semantics,WEB_VERIFIED_2026-09-10,Baseline-preserved resource.
+PYA6,CURRENT REFERENCE,Python 3.14.7 json module,https://docs.python.org/3.14/library/json.html,JSON parsing/serialization,WEB_VERIFIED_2026-09-10,Baseline-preserved resource.
+PYA7,CURRENT REFERENCE,Requests 2.34.2 Quickstart,https://requests.readthedocs.io/en/latest/user/quickstart/,timeout; raise_for_status; errors,WEB_VERIFIED_2026-09-10,Current Requests docs; timeout behavior explicitly documented.
+PYA7,RECOMMENDED VIDEO,Corey Schafer - Python Requests Tutorial,https://www.youtube.com/watch?v=tb8gHvYlCFs,25-minute visual; no reliable chapter metadata retrieved,SEARCH_METADATA_VERIFIED_2026-09-10,Current Requests docs govern reliability.
+PYA8,CURRENT REFERENCE,Python 3.14.7 Errors and Exceptions,https://docs.python.org/3.14/tutorial/errors.html,specific catches; raise; chaining,WEB_VERIFIED_2026-09-10,Python docs authoritative.
+PYA9;PYA10,CURRENT REFERENCE,Python 3.14.7 logging,https://docs.python.org/3.14/library/logging.html,levels; handlers; formatters,WEB_VERIFIED_2026-09-10,Baseline-preserved resource.
+PYA9,RECOMMENDED VIDEO,Corey Schafer - Logging Basics,https://www.youtube.com/watch?v=-ARI4Cz-awo,Levels; file logging; formatting sections,SEARCH_METADATA_VERIFIED_2026-09-10,Visual companion; Python docs control API.
+PYA11,CURRENT REFERENCE,Python 3.14.7 venv tutorial,https://docs.python.org/3.14/tutorial/venv.html,environment isolation/dependency workflow,WEB_VERIFIED_2026-09-10,Official current target.
+PYA11,OPTIONAL VIDEO,Corey Schafer - VENV on Windows,https://www.youtube.com/watch?v=APOPm01BVrk,No reliable chapter timestamps retrieved,SECONDARY_METADATA_VERIFIED_2026-09-10,Windows visual; current Python docs govern commands.
+PYA2,INTERNAL_BOOK,Internal teaching book - PYA2 Functions and modular code,,"Function contracts, one responsibility, explicit parameters/returns, docstrings and deterministic assertions",INTERNAL_AUTHORITATIVE,Book-led by design; Python modules reference is sufficient. No filler video assigned.

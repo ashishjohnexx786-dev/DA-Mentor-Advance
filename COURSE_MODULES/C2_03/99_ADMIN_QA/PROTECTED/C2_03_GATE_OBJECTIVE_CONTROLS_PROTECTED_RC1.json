@@ -1,0 +1,29 @@
+{
+  "A": {
+    "sales_rows": 120,
+    "returns_rows": 6,
+    "product_rows_raw": 10,
+    "product_unique_ids": 9,
+    "duplicate_product": "P04",
+    "unknown_product": "P99",
+    "target_rows": 12
+  },
+  "B": {
+    "encounter_rows": 90,
+    "billing_rows": 60,
+    "provider_rows_raw": 9,
+    "provider_unique_ids": 8,
+    "duplicate_provider": "PR03",
+    "unknown_provider": "PR99",
+    "target_rows": 9
+  },
+  "C": {
+    "shipment_rows": 100,
+    "event_rows": 233,
+    "hub_rows_raw": 8,
+    "hub_unique_ids": 7,
+    "duplicate_hub": "H02",
+    "unknown_hub": "H99",
+    "target_rows": 21
+  }
+}

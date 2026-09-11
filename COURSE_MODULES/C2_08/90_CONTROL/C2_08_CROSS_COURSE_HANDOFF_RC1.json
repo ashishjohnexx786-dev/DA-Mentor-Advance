@@ -1,0 +1,25 @@
+{
+  "module": "C2-08 Senior Business Analysis & Communication",
+  "course_2a_position": "Optional Senior/BI professional depth.",
+  "assumes": [
+    "Course 1 business analysis/reporting basics",
+    "Prior C2A technical modules provide realistic examples but are not re-taught here"
+  ],
+  "deepens": [
+    "stakeholder discovery",
+    "professional pushback",
+    "priority/displacement",
+    "evidence vs inference",
+    "executive summaries",
+    "uncertainty",
+    "recommendations",
+    "conflict resolution",
+    "analysis defense",
+    "cross-functional ownership",
+    "review/documentation",
+    "mentoring"
+  ],
+  "overlap_with_c2b_c3": "C2B/C3 require clear engineering handoffs, documentation and evidence, but direct-route learners receive required communication in their own Gates/projects. C2-08 itself is not required.",
+  "skip_rule": "Direct Course 1 -> C2B -> C3 learners may skip all of C2-08 without losing a hidden technical prerequisite.",
+  "c2_09_handoff": "C2-09 capstone will deliberately reuse these decision/defense skills for the optional Senior/BI path."
+}

@@ -1,0 +1,108 @@
+{
+  "artifact": "C2-05 Python Automation for Analysts Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/NOTEBOOK/ARCHIVE/BACKWARD-RUNTIME QA - TARGET PYTHON/PANDAS RUNTIME + COURSE MENTOR PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "canonical_lessons": 11,
+    "teaching_book_pages": 51,
+    "lesson_page_anchor_audit": "11/11 PASS",
+    "lesson_starts": {
+      "PYA1": 6,
+      "PYA2": 10,
+      "PYA3": 14,
+      "PYA4": 18,
+      "PYA5": 22,
+      "PYA6": 26,
+      "PYA7": 30,
+      "PYA8": 34,
+      "PYA9": 38,
+      "PYA10": 42,
+      "PYA11": 46
+    },
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "full_m01_grammar": "AUTHORED ACROSS ALL 11 LESSONS"
+  },
+  "practice": {
+    "practice_data_files": 12,
+    "practice_notebook": "35 total cells / 12 code cells",
+    "mini_lab": "3 total cells / 1 code cell",
+    "gate_notebooks": 3,
+    "notebook_nbformat_parse": "5/5 PASS",
+    "notebook_python_syntax_compile": "5/5 PASS",
+    "excel_reference_template_artifact_tool_import": "PASS",
+    "excel_template_formula_error_scan": "0 matches",
+    "excel_template_visual_render": "PASS"
+  },
+  "runtime_smoke": {
+    "status": "PASS",
+    "python": "3.13.5",
+    "pandas": "2.2.3",
+    "futurewarning_as_error": "PASS",
+    "excel_round_trip": "PASS",
+    "approved_rows": 90,
+    "nested_items": 6,
+    "classification": "BACKWARD-COMPATIBLE SMOKE EVIDENCE ONLY"
+  },
+  "target_runtime": {
+    "python_docs_target": "3.14.7",
+    "pandas_docs_target": "3.0.5",
+    "target_version_live_execution": "PENDING",
+    "note": "Do not upgrade backward-compatible smoke evidence to target-version runtime certification."
+  },
+  "pdf_qa": {
+    "pre_report_pdfs": 8,
+    "pre_report_pages": 79,
+    "render_dpi": 200,
+    "preflight": "8/8 openable, unencrypted, text-based",
+    "visual_contact_sheets_inspected": 3,
+    "visual_result": "PASS - no clipping, overlap, broken glyph or route drift observed"
+  },
+  "archives": {
+    "02_PRACTICE/C2_05_PRACTICE_DATA_RC1.zip": {
+      "entries": 12,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/GATE_A/C2_05_GATE_A_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_05_GATE_B_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_05_GATE_C_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    }
+  },
+  "sources": {
+    "registry_rows": 17,
+    "unique_urls": 17,
+    "verification_date": "2026-09-10",
+    "baseline_registered_resources_preserved": "5/5",
+    "baseline_registered_video_count": 0,
+    "external_required_dependencies": 0
+  },
+  "assessments": {
+    "gate_a": "Retail Orders Automation",
+    "gate_b": "Support Ticket Automation",
+    "gate_c": "Subscription Billing Automation",
+    "distinct_fixtures": true,
+    "gate_b_c_protected": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "pl300": {
+    "position": "Python automation is optional professional enrichment; no direct current PL-300 Python automation objective is claimed."
+  },
+  "course_position": "Optional C2A Senior/BI depth; not a hidden prerequisite for Course 1 -> C2B -> C3.",
+  "shared_github_backup_modified": false,
+  "open_course_level_gates": [
+    "Unified Course 2A Mentor synchronization",
+    "Whole-course C2-00 through C2-09 learner-route simulation",
+    "Target Python 3.14.7 / pandas 3.0.5 live runtime where available",
+    "Final cross-course handoff / orphan / duplicate audit"
+  ],
+  "next": "Freeze C2-05 bytes, then rebuild C2-06 Data Warehousing & Platform Foundations."
+}

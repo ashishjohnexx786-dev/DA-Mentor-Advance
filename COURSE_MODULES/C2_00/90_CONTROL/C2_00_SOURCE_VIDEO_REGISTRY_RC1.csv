@@ -1,0 +1,9 @@
+﻿lesson_id,role,source_name,url,useful_segment,verification_status,fallback_or_note
+SAF1,INTERNAL_BOOK,Internal teaching book,,,INTERNAL_AUTHORITATIVE,No external dependency.
+SAF2,RECOMMENDED_VIDEO,How I Conduct A Requirements Gathering Interview As A Business Analyst,https://www.youtube.com/watch?v=iIAbSOvf96E,00:00-05:42,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,"Use for problem definition, gathering and refinement; not an assessment solution."
+SAF3,RECOMMENDED_VIDEO,How I Conduct A Requirements Gathering Interview As A Business Analyst,https://www.youtube.com/watch?v=iIAbSOvf96E,00:50-05:42,TITLE_AND_TIMESTAMPS_RESOLVED_WEB_2026-09-10,Use for questioning/elicitation and refinement.
+SAF4,RECOMMENDED_REFERENCE,IIBA - KPIs for Business Analysts,https://www.iiba.org/professional-development/knowledge-centre/articles/kpis-for-business-analysts/,KPI agreement/calibration framing,WEB_REACHABLE_2026-09-10,Course metric-contract fields remain authoritative for the task.
+SAF5,RECOMMENDED_CURRENT_REFERENCE,Microsoft Learn - Power BI data lineage,https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-data-lineage,Lineage-view mental model,WEB_REACHABLE_2026-09-10,Use as visual analogy; no Power BI Service access required. Microsoft notes embedded video may show earlier UI.
+SAF6,INTERNAL_BOOK,Internal teaching book,,,INTERNAL_AUTHORITATIVE,No filler video assigned.
+SAF7,RECOMMENDED_CURRENT_REFERENCE,"Microsoft Learn - Clean, transform, and load data in Power BI",https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/,Profile data in Power BI - 20 min unit,WEB_REACHABLE_2026-09-10,Use data profiling as visual reinforcement; C2-00 validation is broader.
+SAF8,INTERNAL_BOOK,Internal teaching book,,,INTERNAL_AUTHORITATIVE,No filler video assigned.

@@ -1,0 +1,29 @@
+{
+  "A": {
+    "domain": "Retail Orders",
+    "approved_rows": 90,
+    "master_rows": 17,
+    "unique_master_keys": 16,
+    "duplicate_key": "C005",
+    "unmatched_key": "C999",
+    "malformed_file": "orders_2026_09_MALFORMED.csv"
+  },
+  "B": {
+    "domain": "Support Tickets",
+    "approved_rows": 100,
+    "master_rows": 9,
+    "unique_master_keys": 8,
+    "duplicate_key": "T03",
+    "unmatched_key": "T99",
+    "malformed_file": "tickets_2026_08_MALFORMED.csv"
+  },
+  "C": {
+    "domain": "Subscription Billing",
+    "approved_rows": 95,
+    "master_rows": 15,
+    "unique_master_keys": 14,
+    "duplicate_key": "A008",
+    "unmatched_key": "A999",
+    "malformed_file": "billing_2026_07_MALFORMED.csv"
+  }
+}

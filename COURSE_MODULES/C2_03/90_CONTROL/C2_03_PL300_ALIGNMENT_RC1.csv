@@ -1,0 +1,11 @@
+﻿lesson_id,pl300_area,current_2026_skill_objective,alignment,boundary_note
+PBM-A1,Prepare/Model,Create fact/dimension tables; design and implement a data model,DIRECT,Model contract extends beyond exam wording.
+PBM-A2,Prepare/Model,Create fact and dimension tables; identify/create keys for relationships,DIRECT,Strong alignment.
+PBM-A3,Model,Design and implement a data model,DIRECT,Star-schema design is supporting guidance.
+PBM-A4,Model,Define relationship cardinality and cross-filter direction,DIRECT,Exact exam objective.
+PBM-A5,Model,Define relationship cardinality and cross-filter direction,DIRECT,Many-to-many/higher-grain risk is deeper professional practice.
+PBM-A6,Model,Implement role-playing dimensions,DIRECT,Exact exam objective.
+PBM-A7,Model,Create a common date table,DIRECT,Exact exam objective.
+PBM-A8,Prepare,Select data types; reference/duplicate queries; keys; configure data loading,DIRECT,Also adds current modular/folding practice.
+PBM-A9,Model,Design/implement and validate a data model,SUPPORTING,Validation depth exceeds exam wording.
+PBM-A10,Model,Optimize model performance; remove unnecessary rows/columns; use Performance Analyzer,DIRECT,Exact/current exam area; deeper DAX tuning belongs C2-04.

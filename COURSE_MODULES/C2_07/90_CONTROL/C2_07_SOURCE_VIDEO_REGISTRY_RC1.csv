@@ -1,0 +1,22 @@
+﻿lesson_id,role,source_name,url,useful_segment,verification_status,fallback_or_note
+CLD1-CLD4,REQUIRED CURRENT REFERENCE,What is Microsoft Fabric?,https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview,SaaS/workloads/OneLake,WEB_VERIFIED_2026-09-10,Baseline-preserved concept; current official overview.
+CLD3-CLD4,BASELINE PRESERVED,Microsoft OneLake documentation,https://learn.microsoft.com/en-us/fabric/onelake/,Security/catalog/shortcuts,WEB_VERIFIED_2026-09-10,Preserved.
+CLD4,BASELINE PRESERVED,OneLake overview,https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview,Tenant-wide logical lake,WEB_VERIFIED_2026-09-10,Preserved and refreshed.
+CLD3-CLD10,BASELINE PRESERVED,Fabric Data Warehouse overview,https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing,Fabric warehouse context,WEB_VERIFIED_2026-09-10,Preserved as professional reference; C2-06 owns dimensional depth.
+CLD5,CURRENT REFERENCE,Collaborate and share Power BI content,https://learn.microsoft.com/en-us/power-bi/collaborate-share/collaborate-share-overview,Workspace/app/share/endorsement,WEB_VERIFIED_2026-09-10,Current enterprise distribution.
+CLD5-CLD6,BASELINE PRESERVED,Fabric workspaces,https://learn.microsoft.com/en-us/fabric/fundamentals/workspaces,Workspace concept,WEB_VERIFIED_2026-09-10,Preserved.
+CLD6;CLD8,BASELINE PRESERVED,Roles in Fabric workspaces,https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces,Admin/Member/Contributor/Viewer,WEB_VERIFIED_2026-09-10,Preserved and refreshed.
+CLD6,BASELINE PRESERVED,Fabric CI/CD overview,https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview,Release/source-control concepts,WEB_VERIFIED_2026-09-10,Preserved/canonicalized.
+CLD6,BASELINE PRESERVED,Deployment pipelines overview,https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines,Managed stages,WEB_VERIFIED_2026-09-10,Preserved.
+CLD7,CURRENT REFERENCE,Configure scheduled refresh,https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh,Gateway connection/credentials/schedule,WEB_VERIFIED_2026-09-10,Current Power BI operational reference.
+CLD7,BASELINE PRESERVED,On-premises data gateway,https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem,Gateway concept,WEB_VERIFIED_2026-09-10,Preserved.
+CLD7,BASELINE VIDEO,Get started with the Power BI Gateway,https://www.youtube.com/watch?v=Vlv1tbuZNcM,Optional visual,VIDEO_METADATA_VERIFIED_2026-09-10,Official docs control behavior.
+CLD8,BASELINE PRESERVED,Fabric permission model,https://learn.microsoft.com/en-us/fabric/security/permission-model,Security model,WEB_VERIFIED_2026-09-10,Preserved.
+CLD8,BASELINE PRESERVED,Govern Fabric data with OneLake catalog,https://learn.microsoft.com/en-us/fabric/governance/onelake-catalog-govern,Governance posture/actions,WEB_VERIFIED_2026-09-10,Preserved and refreshed.
+CLD8,BASELINE PRESERVED,Microsoft Purview + Fabric,https://learn.microsoft.com/en-us/fabric/governance/microsoft-purview-fabric,Governance/security/compliance,WEB_VERIFIED_2026-09-10,Preserved.
+CLD9,BASELINE PRESERVED,Fabric monitoring hub,https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub,Job health/history/failure,WEB_VERIFIED_2026-09-10,Preserved and refreshed.
+CLD5-CLD8;CLD10,CURRENT CERTIFICATION ALIGNMENT,PL-300 study guide,https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300,Skills measured Apr 20 2026,WEB_VERIFIED_2026-09-10,Manage/Secure plus analyst-engineer collaboration.
+CLD5-CLD6,BASELINE VIDEO,Preparing for PL-300 - Manage and Secure Power BI,https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi,Optional visual,WEB_VERIFIED_2026-09-10,Preserved.
+CLD3;CLD5,BASELINE VIDEO,Power BI Meets Microsoft Fabric,https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/power-bi-meets-microsoft-fabric-whats-in-it-for-you,Optional visual,WEB_VERIFIED_2026-09-10,Preserved.
+CLD4,BASELINE VIDEO,"No Walls, Just Data - Exploring OneLake",https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/no-walls-just-data-exploring-onelake-in-microsoft-fabric,Optional visual,WEB_VERIFIED_2026-09-10,Preserved.
+CLD9,BASELINE VIDEO,Use Data Factory pipelines in Microsoft Fabric,https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep104-use-data-factory-pipelines-in-microsoft-fabric,Optional operations visual,WEB_VERIFIED_2026-09-10,Preserved.

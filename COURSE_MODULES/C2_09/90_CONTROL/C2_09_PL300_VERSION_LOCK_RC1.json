@@ -1,0 +1,13 @@
+{
+  "verified_date": "2026-09-11",
+  "official_effective_date": "2026-04-20",
+  "prepare_weight": "25-30%",
+  "model_weight": "25-30%",
+  "visualize_analyze_weight": "25-30%",
+  "manage_secure_weight": "15-20%",
+  "real_exam_pass_statement": "Microsoft states 700 or greater scaled score is required to pass",
+  "practice_assessment": "PL-300 listed; free diagnostic; rationales and score breakdown; not replacement for training/product experience",
+  "internal_readiness_heuristic": "80% overall and 70% each domain on fresh/changed internal evidence; not an official score conversion",
+  "course_completion_dependency": false,
+  "de_unlock_dependency": false
+}

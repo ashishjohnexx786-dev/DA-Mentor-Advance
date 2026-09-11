@@ -1,0 +1,24 @@
+{
+  "module": "C2-07 Cloud / Fabric / Enterprise BI",
+  "course_2a_position": "Optional Senior/BI path; very high enterprise/Data Engineering overlap.",
+  "assumes": [
+    "Course 1 Power BI basics",
+    "C2-04 RLS/lifecycle/reporting",
+    "C2-06 warehouse/lakehouse/lineage concepts"
+  ],
+  "deepens": [
+    "cloud control planes",
+    "Fabric workload topology",
+    "OneLake enterprise ownership",
+    "Power BI Service distribution",
+    "DEV/TEST/PROD deployment",
+    "gateway/refresh/freshness",
+    "permissions/governance",
+    "monitoring/incidents",
+    "analyst-engineer handoffs"
+  ],
+  "overlap_with_c2b": "C2B/C3 teach required engineering cloud/platform operations for the fast route; C2-07 itself is not required.",
+  "overlap_with_c3": "Identity, deployment, scheduling, monitoring and contracts reappear in production engineering at greater depth.",
+  "skip_rule": "Direct Course 1 -> C2B -> C3 learners may skip C2-07 when C2B requirements are satisfied.",
+  "c2_06_boundary": "C2-06 owns warehouse/lakehouse architecture, SCD, ETL/ELT, layering, lineage and quality foundations."
+}

@@ -1,0 +1,31 @@
+{
+  "module": "C2-09 Capstone, Promotion & PL-300",
+  "course_2a_position": "Optional Senior/BI Analyst path final module",
+  "core_required": [
+    "CAP1-CAP14",
+    "Meridian capstone evidence",
+    "Final Gate A or assigned fresh retest after targeted repair",
+    "truthful promotion/job-switch readiness update",
+    "no unresolved critical integrity/validation failure"
+  ],
+  "pl300": "Supplementary optional; certification readiness never blocks C2A completion",
+  "de_route": "Direct DA-to-DE route remains Course 1 -> C2B Bridge -> Course 3. C2A-to-DE readiness is transferable evidence only and cannot override the C2B/C3 handoff.",
+  "promotion": "Capability/evidence argument only; no title/salary/job guarantee",
+  "c2b_overlap": [
+    "advanced SQL",
+    "Python automation",
+    "data modeling",
+    "warehousing",
+    "data quality",
+    "cloud/platform awareness",
+    "documentation/handoff"
+  ],
+  "c3_overlap": [
+    "grain/contracts",
+    "idempotency/reproducibility",
+    "quality gates",
+    "deployment/monitoring concepts",
+    "production reflection"
+  ],
+  "shared_repo_modified": false
+}

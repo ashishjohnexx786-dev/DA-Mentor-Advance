@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Course 2A Senior BI Analyst Mentor icon">
+  <rect width="192" height="192" rx="42" fill="#1F2937"/>
+  <rect x="18" y="18" width="156" height="156" rx="34" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <path d="M41 55c17-6 32-3 46 7v62c-14-10-29-13-46-7V55Z" fill="#F8FAFC"/>
+  <path d="M87 62c13-10 28-13 45-7v62c-17-6-32-3-45 7V62Z" fill="#E2E8F0"/>
+  <path d="M87 62v62" stroke="#1F2937" stroke-width="5"/>
+  <path d="M51 68c10-2 19 0 28 6M51 82c10-2 19 0 28 6M97 73c8-5 17-7 26-5M97 87c8-5 17-7 26-5" stroke="#3B82F6" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(111 111)">
+    <rect x="0" y="24" width="12" height="28" rx="3" fill="#14B8A6"/>
+    <rect x="18" y="12" width="12" height="40" rx="3" fill="#3B82F6"/>
+    <rect x="36" y="0" width="12" height="52" rx="3" fill="#14B8A6"/>
+    <path d="M-3 55h54" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

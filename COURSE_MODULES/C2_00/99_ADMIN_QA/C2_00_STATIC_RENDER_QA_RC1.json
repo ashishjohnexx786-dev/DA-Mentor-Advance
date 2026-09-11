@@ -1,0 +1,70 @@
+{
+  "artifact": "C2-00 Senior Analyst Foundations Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER QA \u2014 NOT COURSE FINAL",
+  "baseline_authority": {
+    "archive": "COURSE_2A_SENIOR_BI_ANALYST_CANONICAL_RC_2026.zip",
+    "sha256": "2eb836cfb25c49963ec5a0aa676e25786ed2788457642850518b4ea27fe73c70",
+    "rule": "Technically useful baseline material reused only after audit; learner-facing body rebuilt, not patched."
+  },
+  "teaching": {
+    "lessons": 8,
+    "book_pages": 39,
+    "actual_index_pages": {
+      "SAF1": 6,
+      "SAF2": 10,
+      "SAF3": 14,
+      "SAF4": 18,
+      "SAF5": 22,
+      "SAF6": 26,
+      "SAF7": 30,
+      "SAF8": 34
+    },
+    "m01_contract": "PASS by authored structure: why/outcome/prereq/mental model/vocab/source/demo/expected/why/mistakes/recovery/fresh task/validate/explain/review+retry/evidence",
+    "teacher_statement": true,
+    "option_b_cover": true,
+    "prerequisite_tool_map": true,
+    "revision_quick_reference": true
+  },
+  "practice": {
+    "xlsx_files": 5,
+    "artifact_tool_reload": "PASS 5/5",
+    "formula_error_scan": "0 matches",
+    "representative_render_visual_qa": "PASS",
+    "attempt_before_review_contract": true,
+    "changed_retry": true
+  },
+  "assessment": {
+    "gate_variants": [
+      "A Food Delivery Operations",
+      "B Clinic Scheduling",
+      "C Subscription Billing"
+    ],
+    "variant_distinctness": "PASS \u2014 different domains, identifiers, ambiguity patterns, and datasets",
+    "gate_a_primary": true,
+    "gate_b_c_protected": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "pdf_qa": {
+    "pdf_files": 8,
+    "rendered_pages": 63,
+    "render_dpi": 200,
+    "visual_contact_sheet_review": "PASS \u2014 no clipping, overlap, broken glyph, or page-number drift observed",
+    "preflight_warnings": 0
+  },
+  "sources": {
+    "assigned_external_rows": 5,
+    "unique_external_urls": 4,
+    "external_required_dependencies": 0,
+    "verification_date": "2026-09-10",
+    "policy": "No filler; current/recommended support only; internal book remains sufficient."
+  },
+  "runtime_boundaries": [
+    "Course 2A Mentor has not yet been rebuilt against all C2A rebuilt modules.",
+    "Real Android/PWA persistence is not claimed at this module checkpoint.",
+    "C2-00 itself has no required Power BI/PostgreSQL/Fabric live-runtime dependency.",
+    "Shared GitHub/backup integration intentionally untouched during parallel course rebuilds."
+  ],
+  "next": "Freeze C2-00 package bytes and then rebuild C2-01 from the canonical registry."
+}

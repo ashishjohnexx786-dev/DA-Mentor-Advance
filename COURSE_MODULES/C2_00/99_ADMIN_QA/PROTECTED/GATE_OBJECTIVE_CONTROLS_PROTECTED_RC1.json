@@ -1,0 +1,22 @@
+{
+  "A": {
+    "raw_rows": 73,
+    "unique_rows": 72,
+    "completed_unique": 48,
+    "cancelled_unique": 24,
+    "completed_value": 32800.93
+  },
+  "B": {
+    "raw_rows": 79,
+    "unique_rows": 78,
+    "noshow_unique": 26,
+    "completed_unique": 26
+  },
+  "C": {
+    "raw_rows": 85,
+    "unique_rows": 84,
+    "paid_unique": 56,
+    "failed_unique": 14,
+    "paid_amount": 182829.1
+  }
+}

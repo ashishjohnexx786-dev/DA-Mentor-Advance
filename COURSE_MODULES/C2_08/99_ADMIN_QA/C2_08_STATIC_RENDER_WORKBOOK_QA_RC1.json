@@ -1,0 +1,100 @@
+{
+  "artifact": "C2-08 Senior Business Analysis & Communication Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR STATIC/RENDER/WORKBOOK/ARCHIVE/ROUTE QA - UNIFIED COURSE MENTOR PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "canonical_lessons": 12,
+    "teaching_book_pages": 55,
+    "page_anchor_audit": "12/12 PASS",
+    "lesson_starts": {
+      "SBA1": 6,
+      "SBA2": 10,
+      "SBA3": 14,
+      "SBA4": 18,
+      "SBA5": 22,
+      "SBA6": 26,
+      "SBA7": 30,
+      "SBA8": 34,
+      "SBA9": 38,
+      "SBA10": 42,
+      "SBA11": 46,
+      "SBA12": 50
+    },
+    "known_legacy_route_defects_fixed": [
+      "SBA1 old route mismatch",
+      "SBA12 old route mismatch"
+    ],
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "full_m01_grammar": "AUTHORED ACROSS ALL 12 LESSONS"
+  },
+  "workbooks": {
+    "files": 5,
+    "artifact_tool_reload": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "practice_sheet_route_audit": "12/12 PASS",
+    "representative_render": "PASS"
+  },
+  "pdf_qa": {
+    "pre_report_pdfs": 8,
+    "pre_report_pages": 85,
+    "render_dpi": 200,
+    "preflight_visual": "PASS",
+    "contact_sheets_inspected": 3,
+    "visual_result": "PASS - no visible clipping, overlap, broken glyph or route drift",
+    "execution_note": "Initial bulk render timed out due total page volume; remaining PDFs rendered successfully in smaller batches. Timeout was not a file defect."
+  },
+  "archives": {
+    "02_PRACTICE/C2_08_PRACTICE_DATA_RC1.zip": {
+      "entries": 8,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/GATE_A/C2_08_GATE_A_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_08_GATE_C_DATA_RC1.zip": {
+      "entries": 4,
+      "crc": "PASS"
+    }
+  },
+  "route_orphan_duplicate": {
+    "canonical_routes": 12,
+    "lesson_heading_audit": "12/12 PASS",
+    "practice_sheet_route_audit": "12/12 PASS",
+    "required_paths": "26/26 PASS",
+    "duplicate_basenames": "0"
+  },
+  "sources": {
+    "registry_rows": 12,
+    "unique_urls": 12,
+    "baseline_preservation_rows": 4,
+    "external_required_dependencies": 0
+  },
+  "pl300": {
+    "alignment_rows": 4,
+    "position": "Professional communication depth is broader than PL-300; only stakeholder/business-value/collaboration overlap is claimed."
+  },
+  "assessments": {
+    "gate_a": "Marketplace Sellers",
+    "gate_b": "Inventory Replenishment",
+    "gate_c": "Customer Success Renewals",
+    "gate_b_c_protected": true,
+    "distinct_conflicts_constraints_evidence": true,
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "runtime_boundary": "No software runtime is required for core competency. Optional voice/role-play never replaces written evidence.",
+  "course_position": "Optional C2A Senior/BI professional depth; direct Course 1 -> C2B -> C3 remains valid.",
+  "shared_github_backup_modified": false,
+  "open_course_level_gates": [
+    "Unified Course 2A Mentor synchronization",
+    "Whole-course C2-00 through C2-09 learner-route simulation",
+    "Final whole-course PL-300/cross-course/orphan/duplicate audit"
+  ],
+  "next": "Freeze C2-08 package bytes, then rebuild C2-09 Capstone, Promotion & PL-300."
+}

@@ -1,0 +1,95 @@
+{
+  "artifact": "C2-06 Data Warehousing & Platform Foundations Beginner-First RC1",
+  "date": "2026-09-10",
+  "status": "MODULE RC1 PASS FOR AVAILABLE STATIC/RENDER/WORKBOOK/ARCHIVE QA - UNIFIED COURSE MENTOR PENDING - NOT COURSE FINAL",
+  "teaching": {
+    "lessons": 12,
+    "teaching_book_pages": 55,
+    "page_anchor_audit": "12/12 PASS",
+    "lesson_starts": {
+      "DWF1": 6,
+      "DWF2": 10,
+      "DWF3": 14,
+      "DWF4": 18,
+      "DWF5": 22,
+      "DWF6": 26,
+      "DWF7": 30,
+      "DWF8": 34,
+      "DWF9": 38,
+      "DWF10": 42,
+      "DWF11": 46,
+      "DWF12": 50
+    },
+    "option_b_cover": true,
+    "teacher_statement": true,
+    "full_m01_grammar": "AUTHORED ACROSS ALL 12 LESSONS"
+  },
+  "practice": {
+    "practice_data_files": 8,
+    "practice_workbook": "12 P-DWF sheets + source inventory + SCD2 sandbox + quality plan + evidence/mastery",
+    "mini_lab": "FleetCare Analytics Warehouse Design",
+    "workbook_files": 5,
+    "artifact_tool_reload": "5/5 PASS",
+    "formula_error_scan": "0 matches",
+    "representative_workbook_render": "PASS"
+  },
+  "pdf_qa": {
+    "pre_report_pdfs": 8,
+    "pre_report_pages": 85,
+    "render_dpi": 200,
+    "preflight": "8/8 openable, unencrypted, text-based",
+    "visual_contact_sheets_inspected": 2,
+    "workbook_contact_sheet_inspected": 1,
+    "visual_result": "PASS - no clipping, overlap, broken glyph or page-route drift observed"
+  },
+  "archives": {
+    "02_PRACTICE/C2_06_PRACTICE_DATA_RC1.zip": {
+      "entries": 8,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/GATE_A/C2_06_GATE_A_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_06_GATE_B_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_06_GATE_C_DATA_RC1.zip": {
+      "entries": 5,
+      "crc": "PASS"
+    }
+  },
+  "sources": {
+    "registry_rows": 13,
+    "unique_urls": 12,
+    "verification_date": "2026-09-10",
+    "baseline_resource_rows_preserved": "5 external Fabric references + internal durable teaching",
+    "external_required_dependencies": 0
+  },
+  "assessments": {
+    "gate_a": "Logistics Shipments",
+    "gate_b": "E-commerce Returns",
+    "gate_c": "Clinic Appointments",
+    "gate_b_c_protected": true,
+    "freshness": "Distinct processes/schemas/target grains/history changes/unmatched keys",
+    "critical_failure_aware": true,
+    "percentage_gaming": false
+  },
+  "pl300": {
+    "position": "Warehousing implementation is optional professional enrichment; only supporting dimensional-model overlap is claimed."
+  },
+  "cross_course": {
+    "de_overlap": "VERY HIGH",
+    "direct_route": "Course 1 -> C2B -> C3 remains valid; C2B B04 owns required fast-track warehousing/data-quality transfer.",
+    "c2_07_boundary": "Cloud/Fabric operations, identity, workspaces/deployment/gateway/governance/monitoring remain primarily C2-07."
+  },
+  "runtime_boundary": "No Fabric tenant is required for C2-06 core mastery; no live Fabric workspace execution is claimed.",
+  "shared_github_backup_modified": false,
+  "open_course_level_gates": [
+    "Unified Course 2A Mentor synchronization",
+    "Whole-course route/learner simulation",
+    "Final cross-course/orphan/duplicate audit"
+  ],
+  "next": "Freeze C2-06 package bytes, then rebuild C2-07 Cloud / Fabric / Enterprise BI."
+}

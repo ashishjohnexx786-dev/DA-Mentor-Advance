@@ -1,0 +1,26 @@
+{
+  "A": {
+    "domain": "Logistics Shipments",
+    "shipments": 100,
+    "events": 200,
+    "targets": 21,
+    "history_change": "H03 hub_type on 2026-05-15",
+    "unknown_hub": "H99"
+  },
+  "B": {
+    "domain": "E-commerce Returns",
+    "orders": 110,
+    "returns": 15,
+    "targets": 9,
+    "history_change": "S05 tier on 2026-06-01",
+    "unknown_seller": "S99"
+  },
+  "C": {
+    "domain": "Clinic Appointments",
+    "appointments": 95,
+    "billing": 63,
+    "targets": 12,
+    "history_change": "P04 specialty on 2026-04-20",
+    "unknown_provider": "P99"
+  }
+}

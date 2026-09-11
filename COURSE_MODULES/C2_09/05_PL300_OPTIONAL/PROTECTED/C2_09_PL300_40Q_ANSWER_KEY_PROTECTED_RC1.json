@@ -1,0 +1,242 @@
+[
+  {
+    "q": "Q01",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Choose DirectLake/DirectQuery/Import"
+  },
+  {
+    "q": "Q02",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Change source settings/credentials"
+  },
+  {
+    "q": "Q03",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Create/modify parameters"
+  },
+  {
+    "q": "Q04",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Evaluate data/statistics/properties"
+  },
+  {
+    "q": "Q05",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Resolve inconsistencies/import errors/types"
+  },
+  {
+    "q": "Q06",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Pivot/unpivot/transpose"
+  },
+  {
+    "q": "Q07",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Semi-structured data"
+  },
+  {
+    "q": "Q08",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Create fact/dimension tables and keys"
+  },
+  {
+    "q": "Q09",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Reference vs duplicate query"
+  },
+  {
+    "q": "Q10",
+    "domain": "Prepare",
+    "answer": "B",
+    "objective": "Merge vs append"
+  },
+  {
+    "q": "Q11",
+    "domain": "Prepare",
+    "answer": "A",
+    "objective": "Configure query loading"
+  },
+  {
+    "q": "Q12",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Relationship cardinality"
+  },
+  {
+    "q": "Q13",
+    "domain": "Model",
+    "answer": "B",
+    "objective": "Role-playing dimensions"
+  },
+  {
+    "q": "Q14",
+    "domain": "Model",
+    "answer": "B",
+    "objective": "Common date table"
+  },
+  {
+    "q": "Q15",
+    "domain": "Model",
+    "answer": "B",
+    "objective": "Measures vs calculated columns"
+  },
+  {
+    "q": "Q16",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "CALCULATE"
+  },
+  {
+    "q": "Q17",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Time intelligence"
+  },
+  {
+    "q": "Q18",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Semi-additive measures"
+  },
+  {
+    "q": "Q19",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Quick measures"
+  },
+  {
+    "q": "Q20",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Calculation groups"
+  },
+  {
+    "q": "Q21",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Optimize model performance"
+  },
+  {
+    "q": "Q22",
+    "domain": "Model",
+    "answer": "A",
+    "objective": "Reduce granularity"
+  },
+  {
+    "q": "Q23",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Select appropriate visual"
+  },
+  {
+    "q": "Q24",
+    "domain": "Visualize",
+    "answer": "B",
+    "objective": "Conditional formatting/accessibility"
+  },
+  {
+    "q": "Q25",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Bookmarks/navigation"
+  },
+  {
+    "q": "Q26",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Drillthrough navigation"
+  },
+  {
+    "q": "Q27",
+    "domain": "Visualize",
+    "answer": "B",
+    "objective": "Mobile report design"
+  },
+  {
+    "q": "Q28",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Accessibility"
+  },
+  {
+    "q": "Q29",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Paginated report choice"
+  },
+  {
+    "q": "Q30",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Visual calculations"
+  },
+  {
+    "q": "Q31",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Identify patterns/trends"
+  },
+  {
+    "q": "Q32",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Reference lines/forecasting"
+  },
+  {
+    "q": "Q33",
+    "domain": "Visualize",
+    "answer": "A",
+    "objective": "Copilot narrative/report tasks"
+  },
+  {
+    "q": "Q34",
+    "domain": "Manage",
+    "answer": "B",
+    "objective": "Workspaces/apps/distribution"
+  },
+  {
+    "q": "Q35",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Identify gateway need"
+  },
+  {
+    "q": "Q36",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Scheduled refresh"
+  },
+  {
+    "q": "Q37",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Assign workspace roles"
+  },
+  {
+    "q": "Q38",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Item-level/model access"
+  },
+  {
+    "q": "Q39",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "RLS"
+  },
+  {
+    "q": "Q40",
+    "domain": "Manage",
+    "answer": "A",
+    "objective": "Sensitivity labels"
+  }
+]

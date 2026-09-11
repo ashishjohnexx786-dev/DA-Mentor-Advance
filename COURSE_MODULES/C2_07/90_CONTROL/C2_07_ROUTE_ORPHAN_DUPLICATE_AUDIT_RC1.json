@@ -1,0 +1,21 @@
+{
+  "canonical_routes": 10,
+  "route_heading_audit": "10/10 PASS",
+  "lesson_starts": {
+    "CLD1": 6,
+    "CLD2": 10,
+    "CLD3": 14,
+    "CLD4": 18,
+    "CLD5": 22,
+    "CLD6": 26,
+    "CLD7": 30,
+    "CLD8": 34,
+    "CLD9": 38,
+    "CLD10": 42
+  },
+  "practice_sheet_route_audit": "10/10 P_CLD sheets PASS via artifact_tool",
+  "required_paths": 26,
+  "missing_required_paths": [],
+  "duplicate_basenames": {},
+  "orphan_duplicate_verdict": "PASS"
+}
