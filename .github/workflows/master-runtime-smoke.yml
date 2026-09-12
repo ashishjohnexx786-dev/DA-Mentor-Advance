@@ -1,7 +1,7 @@
 name: Master Runtime Smoke 2026
 on:
   push:
-    branches: [main, runtime-candidate/five-course-2026-09-11]
+    branches: [main, runtime-candidate/semantic-rc3-rc5-2026-09-12]
   workflow_dispatch:
 permissions:
   contents: read
@@ -30,7 +30,9 @@ jobs:
           missing=[r for r in refs if not (app/r).resolve().is_file()]
           assert not missing,missing[:10]
           assert len(refs)==135,len(refs)
-          print('PASS C2A topology 135 routes')
+          p=Path('COURSE_MODULES/C2_09/01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_RC1.pdf')
+          assert p.is_file() and p.stat().st_size>100000,p
+          print('PASS C2A topology 135 routes + RC3 capstone book present')
           PY
       - name: Install Selenium
         run: python -m pip install -q selenium
@@ -72,7 +74,7 @@ jobs:
         run: |
           set -euo pipefail
           BASE="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
-          files=(MENTOR_APP/index.html MENTOR_APP/manifest.webmanifest MENTOR_APP/service-worker.js index.html)
+          files=(MENTOR_APP/index.html MENTOR_APP/manifest.webmanifest MENTOR_APP/service-worker.js index.html COURSE_MODULES/C2_09/01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_RC1.pdf)
           pass=0
           for attempt in $(seq 1 40); do
             ok=1
@@ -83,4 +85,4 @@ jobs:
             [[ "$ok" == 1 ]] && { pass=1; break; }; sleep 15
           done
           test "$pass" == 1
-          echo 'PASS C2A live Pages parity'
+          echo 'PASS C2A live Pages parity including RC3 capstone book'

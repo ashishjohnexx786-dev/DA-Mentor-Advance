@@ -1,3 +1,14 @@
+COURSE 2A - C2_05 - POST-DEPLOY SEMANTIC REPAIR RC3
+
+FILENAME COMPATIBILITY
+Existing RC1 filenames are retained so Mentor routes and page anchors do not break. The teaching-book bytes are newer RC3 semantic-repair bytes.
+
+TEACHING STANDARD
+Every learner lesson now follows the locked C2B-B01 reference grammar: Why it matters -> What you learn -> prerequisite -> Picture it in your head -> New words -> Watch/visual source or explicit internal route -> Follow with me once -> expected result -> why it worked -> mistakes -> recovery -> fresh task -> validate -> teach-back -> protected review/changed retry -> evidence/mastery + exact next route.
+
+DEPLOYMENT
+Do not treat this module as production-authoritative until the complete Course 2A RC3 candidate passes independent final-byte/package/browser checks.
+
 COURSE 2A - C2-05 PYTHON AUTOMATION FOR ANALYSTS - BEGINNER-FIRST RC1
 
 OPEN IN THIS ORDER
