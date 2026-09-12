@@ -1,7 +1,7 @@
 name: Master Runtime Smoke 2026
 on:
   push:
-    branches: [main, runtime-candidate/semantic-rc3-rc5-2026-09-12]
+    branches: [main, runtime-candidate/semantic-rc3-rc5-2026-09-12, runtime-candidate/csv-byte-parity-fix-2026-09-12]
   workflow_dispatch:
 permissions:
   contents: read
