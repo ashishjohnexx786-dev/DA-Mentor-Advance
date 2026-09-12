@@ -1,0 +1,50 @@
+name: Full Hosted Learner-File Parity
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/full-hosted-parity.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare learner-facing repository bytes with GitHub Pages
+        env:
+          BASE_URL: https://ashishjohnexx786-dev.github.io/DA-Mentor-Advance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess,hashlib,urllib.request,urllib.parse,time,os
+          from concurrent.futures import ThreadPoolExecutor,as_completed
+          base=os.environ['BASE_URL'].rstrip('/'); exts={'.html','.js','.json','.webmanifest','.css','.svg','.png','.jpg','.jpeg','.pdf','.xlsx','.xlsm','.csv','.sql','.py','.ipynb','.zip','.txt'}
+          files=[]
+          for raw in subprocess.check_output(['git','ls-files','-z']).split(b'\0'):
+              if not raw:continue
+              p=raw.decode()
+              if p.startswith('.github/') or p in {'.gitattributes','.nojekyll','CNAME'}:continue
+              if Path(p).suffix.lower() in exts:files.append(p)
+          local={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in files}
+          def one(p,a):
+              url=base+'/'+urllib.parse.quote(p,safe='/')+f'?parity={os.environ.get("GITHUB_SHA","")}-{a}'
+              req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','Pragma':'no-cache','User-Agent':'five-course-parity/1'})
+              try:
+                  with urllib.request.urlopen(req,timeout=30) as r:data=r.read()
+                  return hashlib.sha256(data).hexdigest()==local[p],len(data),None
+              except Exception as e:return False,0,repr(e)
+          remaining=list(files);detail={}
+          for a in range(1,7):
+              bad=[]
+              with ThreadPoolExecutor(max_workers=12) as pool:
+                  fut={pool.submit(one,p,a):p for p in remaining}
+                  for f in as_completed(fut):
+                      p=fut[f];ok,n,err=f.result()
+                      if not ok:bad.append(p);detail[p]=(n,err)
+              if not bad:print(f'FULL HOSTED PARITY PASS: {len(files)}/{len(files)} learner-facing files exact');raise SystemExit(0)
+              remaining=bad;print(f'attempt {a}: {len(bad)} mismatches/unavailable')
+              if a<6:time.sleep(10)
+          for p in remaining[:50]:print(p,detail.get(p))
+          raise SystemExit(1)
+          PY
