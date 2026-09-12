@@ -15,13 +15,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Selenium
         run: python -m pip install -q selenium
-      - name: Hosted browser persistence, AMOLED, protected-review, backup-restore and offline checks
+      - name: Deep hosted C2A runtime checks
         shell: bash
         env:
           BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: |
           set -euo pipefail
-          mkdir -p /tmp/deep-downloads
+          rm -rf /tmp/deep-downloads && mkdir -p /tmp/deep-downloads
           python - <<'PY'
           import json, os, time
           from pathlib import Path
@@ -29,63 +29,98 @@ jobs:
           from selenium.webdriver.common.by import By
           from selenium.webdriver.support.ui import WebDriverWait
           from selenium.webdriver.support.ui import Select
-          base=os.environ['BASE_URL']; download_dir='/tmp/deep-downloads'
+
+          base=os.environ['BASE_URL']; downloads=Path('/tmp/deep-downloads')
           o=webdriver.ChromeOptions(); o.add_argument('--headless=new'); o.add_argument('--no-sandbox'); o.add_argument('--disable-dev-shm-usage'); o.add_argument('--window-size=390,844')
-          o.add_experimental_option('prefs',{'download.default_directory':download_dir,'download.prompt_for_download':False,'download.directory_upgrade':True})
+          o.add_experimental_option('prefs',{'download.default_directory':str(downloads),'download.prompt_for_download':False,'download.directory_upgrade':True})
           o.set_capability('goog:loggingPrefs',{'browser':'ALL'})
           d=webdriver.Chrome(options=o); w=WebDriverWait(d,30)
-          def ready(): w.until(lambda x:x.execute_script('return document.readyState')=='complete'); w.until(lambda x:len(x.find_element(By.TAG_NAME,'body').text.strip())>40); time.sleep(.35)
-          def severe(): return [x for x in d.get_log('browser') if x.get('level')=='SEVERE' and 'favicon' not in x.get('message','').lower()]
+          def ready():
+              w.until(lambda x:x.execute_script('return document.readyState')=='complete')
+              w.until(lambda x:len(x.find_element(By.TAG_NAME,'body').text.strip())>40)
+              time.sleep(.25)
           def click(el): d.execute_script('arguments[0].click()',el)
+          def tab(name):
+              el=w.until(lambda x:x.find_element(By.CSS_SELECTOR,f'#nav button[data-tab="{name}"]'))
+              click(el); time.sleep(.18)
+          def severe(): return [x for x in d.get_log('browser') if x.get('level')=='SEVERE' and 'favicon' not in x.get('message','').lower()]
           def close_extras():
               main=d.current_window_handle
               for h in list(d.window_handles):
-                  if h!=main: d.switch_to.window(h); d.close()
+                  if h!=main:
+                      d.switch_to.window(h); d.close()
               d.switch_to.window(main)
           try:
-              d.get(base+'?deepqa='+os.environ.get('GITHUB_SHA','')); ready(); d.execute_script('localStorage.clear();location.reload()'); ready()
+              d.get(base+'?deepqa='+os.environ.get('GITHUB_SHA','')); ready()
+              assert '/MENTOR_APP/' in d.current_url, f'root redirect failed: {d.current_url}'
+              d.execute_script('localStorage.clear();location.reload()'); ready()
+
+              # Responsive hosted rendering.
               for width,height in [(360,800),(390,844),(412,915),(768,1024),(1280,900)]:
-                  d.set_window_size(width,height); time.sleep(.12); sw=d.execute_script('return document.documentElement.scrollWidth'); iw=d.execute_script('return innerWidth'); assert sw<=iw+4,f'overflow {width}px {sw}>{iw}'
+                  d.set_window_size(width,height); time.sleep(.1)
+                  sw=d.execute_script('return document.documentElement.scrollWidth'); iw=d.execute_script('return innerWidth')
+                  assert sw<=iw+4, f'horizontal overflow at {width}px: {sw}>{iw}'
+
+              # All 8 C2A tabs are clicked from fresh DOM nodes because each click re-renders nav.
+              expected=['Today','Learn','Course','Repair','Evidence','Jobs','Reports','Settings']
               d.set_window_size(390,844)
-              tabs=d.find_elements(By.CSS_SELECTOR,'.tab[data-view], nav button[data-view], #nav button[data-tab]'); used=0
-              for b in tabs[:12]:
-                  try:
-                      if b.is_displayed() and b.is_enabled(): click(b); time.sleep(.07); used+=1
-                  except Exception: pass
-              assert used>=5,f'only {used} nav controls usable'; assert not severe(),'severe console errors during navigation'
-              assert d.execute_script("localStorage.setItem('__deep_runtime_persist','mentor-ok');return localStorage.getItem('__deep_runtime_persist')")=='mentor-ok'; d.refresh(); ready(); assert d.execute_script("return localStorage.getItem('__deep_runtime_persist')")=='mentor-ok'
-              settings=d.find_elements(By.CSS_SELECTOR,'#settingsBtn'); theme=d.find_elements(By.CSS_SELECTOR,'#themeInput'); save=d.find_elements(By.CSS_SELECTOR,'#saveSettingsBtn'); original=None
-              if settings and theme and save:
-                  click(settings[0]); time.sleep(.15); opts=[x.get_attribute('value') for x in theme[0].find_elements(By.TAG_NAME,'option')]; assert 'amoled' in opts,'AMOLED option missing'; Select(theme[0]).select_by_value('amoled'); click(save[0]); time.sleep(.2); assert d.execute_script("return document.body.dataset.theme||document.documentElement.dataset.theme||''")=='amoled'; d.refresh(); ready(); assert d.execute_script("return document.body.dataset.theme||document.documentElement.dataset.theme||''")=='amoled'; original='amoled'
-              study=d.find_elements(By.CSS_SELECTOR,'#studyStartEnd')
-              if study:
-                  click(study[0]); time.sleep(1.25); d.refresh(); ready(); study=d.find_elements(By.CSS_SELECTOR,'#studyStartEnd'); assert study; txt=study[0].text.upper(); assert ('END' in txt or 'STOP' in txt),f'study did not persist {txt}'; click(study[0]); time.sleep(.2)
-              learn=d.find_elements(By.CSS_SELECTOR,'.tab[data-view="learn"], nav button[data-view="learn"], #nav button[data-tab="Learn"]')
-              if learn: click(learn[0]); time.sleep(.2)
-              review=d.find_elements(By.CSS_SELECTOR,'#reviewBtn, button[data-action="review"], button[data-act="review"]')
-              if review:
-                  assert not review[0].is_enabled(),'fresh review unexpectedly enabled'; learner=d.find_elements(By.CSS_SELECTOR,'#learnerPackBtn'); guided=d.find_elements(By.CSS_SELECTOR,'#guidedDoneBtn'); attempt=d.find_elements(By.CSS_SELECTOR,'#saveAttemptBtn')
-                  if learner and guided and attempt:
-                      click(learner[0]); time.sleep(.35); close_extras(); guided=d.find_elements(By.CSS_SELECTOR,'#guidedDoneBtn'); attempt=d.find_elements(By.CSS_SELECTOR,'#saveAttemptBtn'); click(guided[0]); time.sleep(.12); click(attempt[0]); time.sleep(.18); review=d.find_elements(By.CSS_SELECTOR,'#reviewBtn, button[data-action="review"], button[data-act="review"]'); assert review and review[0].is_enabled(),'review did not unlock after saved attempt'
-              export_btn=d.find_elements(By.CSS_SELECTOR,'#exportJsonBtn'); restore=d.find_elements(By.CSS_SELECTOR,'#restoreFile')
-              if export_btn and restore:
-                  for p in Path(download_dir).glob('*'): p.unlink()
-                  click(export_btn[0]); backup=None
-                  for _ in range(50):
-                      fs=[p for p in Path(download_dir).glob('*.json') if p.is_file()]
-                      if fs: backup=max(fs,key=lambda p:p.stat().st_mtime); break
-                      time.sleep(.1)
-                  assert backup and backup.stat().st_size>20,'backup missing'; parsed=json.loads(backup.read_text(encoding='utf-8')); assert isinstance(parsed,dict) and parsed
-                  if original=='amoled':
-                      d.execute_script("for(const k of Object.keys(localStorage)){try{let v=JSON.parse(localStorage.getItem(k));if(v&&typeof v==='object'&&v.theme){v.theme='light';localStorage.setItem(k,JSON.stringify(v));}}catch(e){}}")
-                      d.refresh(); ready()
-                  restore=d.find_elements(By.CSS_SELECTOR,'#restoreFile'); restore[0].send_keys(str(backup)); time.sleep(.6)
-                  if original=='amoled': assert d.execute_script("return document.body.dataset.theme||document.documentElement.dataset.theme||''")=='amoled','restore did not return AMOLED'
-              sw=d.execute_async_script("""const done=arguments[0];if(!('serviceWorker'in navigator)){done({ok:false,why:'unsupported'});return;}const t=setTimeout(()=>done({ok:false,why:'timeout'}),15000);navigator.serviceWorker.ready.then(r=>{clearTimeout(t);done({ok:!!r.active,script:r.active?r.active.scriptURL:''})}).catch(e=>{clearTimeout(t);done({ok:false,why:String(e)})});"""); assert sw.get('ok'),f'SW not active {sw}'; d.refresh(); ready(); assert d.execute_script('return !!navigator.serviceWorker.controller'),'SW not controlling page'
-              d.execute_cdp_cmd('Network.enable',{}); d.execute_cdp_cmd('Network.emulateNetworkConditions',{'offline':True,'latency':0,'downloadThroughput':0,'uploadThroughput':0}); d.refresh(); time.sleep(1); assert len(d.find_element(By.TAG_NAME,'body').text.strip())>40,'offline relaunch blank'; d.execute_cdp_cmd('Network.emulateNetworkConditions',{'offline':False,'latency':0,'downloadThroughput':-1,'uploadThroughput':-1}); d.refresh(); ready(); assert not severe(),'severe errors after reconnect'
-              print('DEEP HOSTED RUNTIME PASS',base,'nav',used,'sw',sw.get('script',''))
+              for name in expected: tab(name)
+              assert not severe(), 'severe console errors during navigation'
+
+              # AMOLED applies and persists across cold reload.
+              tab('Settings')
+              sel=w.until(lambda x:x.find_element(By.ID,'themeSel'))
+              assert 'amoled' in [o.get_attribute('value') for o in sel.find_elements(By.TAG_NAME,'option')], 'AMOLED option missing'
+              Select(sel).select_by_value('amoled'); time.sleep(.25)
+              assert d.execute_script("return document.documentElement.dataset.theme")=='amoled','AMOLED not applied'
+              d.refresh(); ready()
+              assert d.execute_script("return document.documentElement.dataset.theme")=='amoled','AMOLED not persistent'
+
+              # Study session survives reload and can be ended after reload.
+              tab('Today'); b=w.until(lambda x:x.find_element(By.ID,'sessionBtn')); assert 'START' in b.text.upper(); click(b); time.sleep(1.1)
+              d.refresh(); ready(); b=w.until(lambda x:x.find_element(By.ID,'sessionBtn')); assert 'END' in b.text.upper(),'study session did not persist'; click(b); time.sleep(.2)
+
+              # Fresh lesson review is locked until a genuine attempt is saved.
+              tab('Learn')
+              lesson=w.until(lambda x:x.find_element(By.CSS_SELECTOR,'.lesson[data-id]'))
+              rev=lesson.find_element(By.CSS_SELECTOR,'button[data-act="review"]'); assert not rev.is_enabled(),'fresh protected review unexpectedly enabled'
+              attempt=lesson.find_element(By.CSS_SELECTOR,'button[data-act="attempt"]'); click(attempt); time.sleep(.2)
+              lesson=w.until(lambda x:x.find_element(By.CSS_SELECTOR,'.lesson[data-id]'))
+              rev=lesson.find_element(By.CSS_SELECTOR,'button[data-act="review"]'); assert rev.is_enabled(),'review did not unlock after saved attempt'; click(rev); time.sleep(.3); close_extras()
+              lesson=w.until(lambda x:x.find_element(By.CSS_SELECTOR,'.lesson[data-id]'))
+              retry=lesson.find_element(By.CSS_SELECTOR,'button[data-act="retry"]'); assert retry.is_enabled(),'changed retry did not unlock after review'; click(retry); time.sleep(.15)
+              lesson=w.until(lambda x:x.find_element(By.CSS_SELECTOR,'.lesson[data-id]'))
+              explain=lesson.find_element(By.CSS_SELECTOR,'button[data-act="explain"]'); assert explain.is_enabled(); click(explain); time.sleep(.15)
+              lesson=w.until(lambda x:x.find_element(By.CSS_SELECTOR,'.lesson[data-id]'))
+              master=lesson.find_element(By.CSS_SELECTOR,'button[data-act="master"]'); assert master.is_enabled(),'mastery did not unlock after explain-back'; click(master); time.sleep(.2)
+
+              # Backup download, mutate harmless setting, restore exact saved state.
+              tab('Reports')
+              for p in downloads.glob('*'): p.unlink()
+              click(w.until(lambda x:x.find_element(By.ID,'backupBtn')))
+              backup=None
+              for _ in range(60):
+                  fs=list(downloads.glob('*.json'))
+                  if fs: backup=max(fs,key=lambda p:p.stat().st_mtime); break
+                  time.sleep(.1)
+              assert backup and backup.stat().st_size>20,'backup JSON missing'
+              obj=json.loads(backup.read_text(encoding='utf-8')); assert obj.get('theme')=='amoled','backup omitted AMOLED state'
+              tab('Settings'); Select(w.until(lambda x:x.find_element(By.ID,'themeSel'))).select_by_value('light'); time.sleep(.2)
+              assert d.execute_script("return document.documentElement.dataset.theme")=='light'
+              tab('Reports'); inp=w.until(lambda x:x.find_element(By.ID,'restoreInput')); inp.send_keys(str(backup)); time.sleep(.6)
+              assert d.execute_script("return document.documentElement.dataset.theme")=='amoled','restore did not restore saved theme'
+
+              # Service worker controls the hosted app and cached shell survives an emulated offline reload.
+              sw=d.execute_async_script("""const done=arguments[0]; if(!('serviceWorker' in navigator)){done({ok:false,why:'unsupported'});return;} const t=setTimeout(()=>done({ok:false,why:'timeout'}),15000); navigator.serviceWorker.ready.then(r=>{clearTimeout(t);done({ok:!!r.active,script:r.active?r.active.scriptURL:''})}).catch(e=>{clearTimeout(t);done({ok:false,why:String(e)})});""")
+              assert sw.get('ok'),f'service worker not active: {sw}'
+              d.refresh(); ready(); assert d.execute_script('return !!navigator.serviceWorker.controller'),'service worker not controlling reload'
+              d.execute_cdp_cmd('Network.enable',{}); d.execute_cdp_cmd('Network.emulateNetworkConditions',{'offline':True,'latency':0,'downloadThroughput':0,'uploadThroughput':0})
+              d.refresh(); time.sleep(1); assert len(d.find_element(By.TAG_NAME,'body').text.strip())>40,'offline relaunch blank'
+              d.execute_cdp_cmd('Network.emulateNetworkConditions',{'offline':False,'latency':0,'downloadThroughput':-1,'uploadThroughput':-1}); d.refresh(); ready()
+              assert not severe(),'severe console errors after reconnect'
+              print('DEEP HOSTED C2A RUNTIME PASS',d.current_url,'tabs',len(expected),'sw',sw.get('script',''))
           finally:
               try:d.execute_cdp_cmd('Network.emulateNetworkConditions',{'offline':False,'latency':0,'downloadThroughput':-1,'uploadThroughput':-1})
-              except Exception:pass
+              except Exception: pass
               d.quit()
           PY
