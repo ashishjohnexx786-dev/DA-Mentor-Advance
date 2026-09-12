@@ -1,0 +1,3 @@
+
+# Preserve byte-identical accepted course registries/manifests.
+*.csv -text
