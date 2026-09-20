@@ -18,3 +18,10 @@
 .guide-card p{color:var(--muted);font-size:14px}
 .guide-grid{grid-template-columns:1fr}
 .start-guide{margin-bottom:14px}
+
+/* Detailed course-specific study guide */
+.guide-toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;margin-top:16px}
+.guide-toc a{display:block;padding:8px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:13px}
+.guide-section{scroll-margin-top:105px;padding:34px 0 6px;border-bottom:1px solid var(--line)}
+.guide-section>h2{font-size:26px;margin-bottom:18px}
+@media(max-width:720px){.guide-toc{grid-template-columns:1fr}.guide-section{padding-top:26px}.guide-section>h2{font-size:22px}}
