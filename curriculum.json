@@ -406,6 +406,11 @@
               "name": "PostgreSQL 18 - SELECT",
               "url": "https://www.postgresql.org/docs/current/sql-select.html",
               "scope": "Subselect/SELECT behavior · Book-led lesson."
+            },
+            {
+              "name": "Alex The Analyst — subqueries",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "1:35:16–1:45:58"
             }
           ],
           "planningHours": [
@@ -467,6 +472,11 @@
               "name": "PostgreSQL 18 - Window Functions",
               "url": "https://www.postgresql.org/docs/current/functions-window.html",
               "scope": "Ranking/frame functions · Book-led."
+            },
+            {
+              "name": "Alex The Analyst — ranking/window functions",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "1:45:58–1:58:55"
             }
           ],
           "planningHours": [
@@ -528,6 +538,11 @@
               "name": "PostgreSQL 18 - Date/Time Functions and Operators",
               "url": "https://www.postgresql.org/docs/18/functions-datetime.html",
               "scope": "date_trunc/date-time behavior · Book-led."
+            },
+            {
+              "name": "Luke Barousse — Data Engineer Bootcamp (2026)",
+              "url": "https://www.youtube.com/watch?v=ol9_NnC9-cc",
+              "scope": "10:16:15 — Functions: Date, Text & NULL"
             }
           ],
           "planningHours": [
@@ -545,6 +560,11 @@
               "name": "PostgreSQL 18 - Table and Query Expressions",
               "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
               "scope": "Filtering/join expressions · Quality investigation is course-led."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — dbt Tests",
+              "url": "https://www.youtube.com/watch?v=bvZ-rJm7uMU",
+              "scope": "Whole focused tests lesson — schema/data checks"
             }
           ],
           "planningHours": [
@@ -733,6 +753,11 @@
               "name": "Microsoft Learn - Many-to-many relationship guidance",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-many-to-many",
               "scope": "Dimension M:M, fact M:M, higher-grain facts · Official guidance discourages casual fact-to-fact M:M."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — facts, dimensions, grain and star-schema reasoning"
             }
           ],
           "planningHours": [
@@ -750,6 +775,11 @@
               "name": "Microsoft Learn - Active vs inactive relationship guidance",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
               "scope": "Role-playing dimensions/active paths · Official guidance generally prefers active relationships where possible."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — facts, dimensions, grain and star-schema reasoning"
             }
           ],
           "planningHours": [
@@ -767,6 +797,11 @@
               "name": "Microsoft Learn - Set and use date tables in Power BI Desktop",
               "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-date-tables",
               "scope": "Date-table behavior · Official current date-table reference."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — facts, dimensions, grain and star-schema reasoning"
             }
           ],
           "planningHours": [
@@ -811,6 +846,11 @@
               "name": "Microsoft Learn - Relationship troubleshooting",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-troubleshoot",
               "scope": "Relationship/filter troubleshooting · Model QA remains course-led."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Revisit only the model-design parts needed before building the analytical database"
             }
           ],
           "planningHours": [
@@ -1201,7 +1241,13 @@
           "id": "PYA2",
           "title": "Functions and modular code",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Luke Barousse — Python for Data Analytics",
+              "url": "https://www.youtube.com/watch?v=wUSDVGivd-8",
+              "scope": "2:52:12–3:02:03"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1222,6 +1268,11 @@
               "name": "pandas.merge",
               "url": "https://pandas.pydata.org/docs/reference/api/pandas.merge.html",
               "scope": "validate/cardinality/null-key caveat · Use merge validate where contract applies."
+            },
+            {
+              "name": "Luke Barousse — pandas / Python mechanics refresher",
+              "url": "https://www.youtube.com/watch?v=wUSDVGivd-8",
+              "scope": "4:22:56–5:08:26"
             }
           ],
           "planningHours": [
@@ -1367,6 +1418,11 @@
               "name": "Python 3.14.7 Errors and Exceptions",
               "url": "https://docs.python.org/3.14/tutorial/errors.html",
               "scope": "specific catches; raise; chaining · Python docs authoritative."
+            },
+            {
+              "name": "Corey Schafer — Python Try/Except Error Handling",
+              "url": "https://www.youtube.com/watch?v=NIWwJbo-9_8",
+              "scope": "Full focused lesson"
             }
           ],
           "planningHours": [
@@ -1416,6 +1472,11 @@
               "name": "Python 3.14.7 logging",
               "url": "https://docs.python.org/3.14/library/logging.html",
               "scope": "levels; handlers; formatters · Baseline-preserved resource."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp 2026 — From APIs to Warehouses with dlt",
+              "url": "https://www.youtube.com/watch?v=5eMytPBgmVs",
+              "scope": "Long-form main class — incremental loading; book/lab proves safe rerun and watermark/state behavior"
             }
           ],
           "planningHours": [
@@ -1533,6 +1594,11 @@
               "name": "Microsoft Learn - Dimensional modeling in Fabric Data Warehouse",
               "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
               "scope": "Star schema / warehouse dimensional design · Baseline current-reference row preserved."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — facts, dimensions, grain and star-schema reasoning"
             }
           ],
           "planningHours": [
@@ -1550,6 +1616,11 @@
               "name": "Microsoft Learn - Dimension tables in Fabric Data Warehouse",
               "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-dimension-tables",
               "scope": "Keys/dimension history · Warehouse key/SCD reference."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — dimensional model keys/grain; Teaching Book adds surrogate-key rules"
             }
           ],
           "planningHours": [
@@ -1577,6 +1648,11 @@
               "name": "Microsoft Learn - Slowly changing dimension type 1",
               "url": "https://learn.microsoft.com/en-us/fabric/data-factory/slowly-changing-dimension-type-one",
               "scope": "Type 1 contrast · Preserved baseline row."
+            },
+            {
+              "name": "TechLake — Slowly Changing Dimensions and Types",
+              "url": "https://www.youtube.com/watch?v=-XjPvozl-So",
+              "scope": "Whole focused SCD class; concentrate on Type 1 vs Type 2 history"
             }
           ],
           "planningHours": [
@@ -1611,6 +1687,11 @@
               "name": "Microsoft Learn - Medallion lakehouse architecture for Fabric with OneLake",
               "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture",
               "scope": "Bronze/Silver/Gold and combined deployment · Current Fabric-recommended pattern; internal layer contracts remain authoritative."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — dbt Project Structure",
+              "url": "https://www.youtube.com/watch?v=2dYDS4OQbT0",
+              "scope": "Whole focused lesson — project layers/structure; map to raw → staging → intermediate → serving"
             }
           ],
           "planningHours": [
@@ -1638,6 +1719,11 @@
               "name": "Microsoft Learn - Choose an analytical data store in Microsoft Fabric",
               "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-analytical-data-stores",
               "scope": "Store selection factors · Current architecture comparison."
+            },
+            {
+              "name": "Databricks Academy — free data/lakehouse training",
+              "url": "https://docs.databricks.com/aws/en/getting-started/free-training",
+              "scope": "Choose the matching storage / Parquet / Delta module assigned by Mentor"
             }
           ],
           "planningHours": [
@@ -1750,6 +1836,11 @@
               "name": "What is Microsoft Fabric?",
               "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
               "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "2:19:27 — architecture; then Microsoft Learn OneLake unit"
             }
           ],
           "planningHours": [
@@ -1987,6 +2078,11 @@
               "name": "PL-300 study guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            },
+            {
+              "name": "Microsoft Learn Live — Microsoft Purview Data Governance",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-1-ep11-microsoft-purview-data-governance",
+              "scope": "1:46 overview; 3:26 permissions; 24:54 scanning; 40:03 lineage; 52:26 classification"
             }
           ],
           "planningHours": [
@@ -2284,6 +2380,11 @@
               "name": "GitHub - Reviewing changes in pull requests",
               "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests",
               "scope": "Review tooling · Review competency is tool-agnostic."
+            },
+            {
+              "name": "freeCodeCamp — Git & GitHub Crash Course for Beginners [2026]",
+              "url": "https://www.youtube.com/watch?v=mAFoROnOfHs",
+              "scope": "1:16:48–1:19:57"
             }
           ],
           "planningHours": [
@@ -2330,7 +2431,13 @@
           "id": "CAP1",
           "title": "Requirements: receive and clarify an ambiguous business problem",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DP-700 Full Course — Architectural Decision-Making",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "2:19:27 onward"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2341,7 +2448,13 @@
           "id": "CAP2",
           "title": "Data acquisition: determine required sources",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub — Docker/PostgreSQL data-engineering workshop",
+              "url": "https://www.youtube.com/watch?v=lP8xXebHmuE",
+              "scope": "Use matching data-ingestion / script / database chapter"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2352,7 +2465,13 @@
           "id": "CAP3",
           "title": "SQL extraction: produce and validate analytical dataset",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Revisit only the model-design parts needed before building the analytical database"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2363,7 +2482,13 @@
           "id": "CAP4",
           "title": "Transformation: choose SQL, Power Query or Python appropriately",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to Analytics Engineering",
+              "url": "https://www.youtube.com/watch?v=HxMIsPrIyGQ",
+              "scope": "Whole introduction — ETL/ELT boundary and analytics-engineering role"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2374,7 +2499,13 @@
           "id": "CAP5",
           "title": "Modeling: build the semantic/business model",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to data modeling",
+              "url": "https://www.youtube.com/watch?v=uF76d5EmdtU",
+              "scope": "Main modeling class — facts, dimensions, grain and star-schema reasoning"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2407,7 +2538,13 @@
           "id": "CAP8",
           "title": "Validation: reconcile important numbers independently",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp — dbt Sources",
+              "url": "https://www.youtube.com/watch?v=7CrrXazV_8k",
+              "scope": "Sources/freshness context; pair with our source-to-target reconciliation lab"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2429,7 +2566,13 @@
           "id": "CAP10",
           "title": "Documentation: create an inheritable analysis package",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DataTalksClub DE Zoomcamp — dbt Documentation",
+              "url": "https://www.youtube.com/watch?v=UqoWyMjcqrA",
+              "scope": "Whole focused lesson — documentation/lineage context"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2440,7 +2583,13 @@
           "id": "CAP11",
           "title": "Technical defense: explain SQL, model, DAX and validation decisions",
           "bookPage": 46,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DP-700 Full Course — Architectural Decision-Making",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "2:19:27 onward"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2462,7 +2611,13 @@
           "id": "CAP13",
           "title": "Internal promotion case",
           "bookPage": 54,
-          "watch": [],
+          "watch": [
+            {
+              "name": "DP-700 Full Course — Architectural Decision-Making",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "2:19:27 onward"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
