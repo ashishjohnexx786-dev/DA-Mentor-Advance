@@ -139,6 +139,11 @@
               "name": "Microsoft Learn - Clean, transform, and load data in Power BI",
               "url": "https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/",
               "scope": "Profile data in Power BI - 20 min unit · Use data profiling as visual reinforcement; C2-00 validation is broader."
+            },
+            {
+              "name": "End-to-end data validation strategies in Microsoft Fabric (+ 3 demos)",
+              "url": "https://www.youtube.com/watch?v=wAayC-J9TsU",
+              "scope": "02:38 why validation; 03:56 failure modes; 11:45 validation types; 31:00 semantic-model validation. Translate this into professional reconciliation evidence."
             }
           ],
           "planningHours": [
@@ -906,6 +911,11 @@
               "name": "Microsoft Learn - PL-300 study guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Optimize model performance objectives · Skills measured as of 2026-04-20."
+            },
+            {
+              "name": "DP-700 Full Course — monitoring and optimization",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "04:46:53-05:43:50 — monitoring/optimization context; use the course model-size/cardinality evidence for the actual performance task."
             }
           ],
           "planningHours": [
@@ -1023,6 +1033,11 @@
               "name": "Microsoft Learn - Modify DAX filter context",
               "url": "https://learn.microsoft.com/en-us/training/modules/dax-power-bi-modify-filter/",
               "scope": "Context transition unit · Current guided training."
+            },
+            {
+              "name": "Chandoo — Learn 80% of DAX in an Hour",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "13:39-25:11 context foundations; 34:18-46:34 CALCULATE/filter behavior. Use these pieces to visualize context transition."
             }
           ],
           "planningHours": [
@@ -1145,6 +1160,11 @@
               "name": "Microsoft Learn - PL-300 study guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Report design/storytelling objectives · Decision-first method is course-led."
+            },
+            {
+              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
+              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
+              "scope": "Use as a compact example of decision-facing visual hierarchy; the learner book owns executive storytelling and report-design judgment."
             }
           ],
           "planningHours": [
@@ -1621,6 +1641,11 @@
               "name": "Microsoft Learn - Get started with data warehouses in Fabric",
               "url": "https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/",
               "scope": "Warehouse concepts 7m; Fabric Warehouse 8m; modeling 7m · Current visual/training support; internal concepts authoritative."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "Use the warehouse/lakehouse architecture portions to contrast operational systems with analytical serving systems."
             }
           ],
           "planningHours": [
@@ -1638,6 +1663,11 @@
               "name": "Microsoft Learn - Get started with data warehouses in Fabric",
               "url": "https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/",
               "scope": "Warehouse concepts 7m; Fabric Warehouse 8m; modeling 7m · Current visual/training support; internal concepts authoritative."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "Use the warehouse/lakehouse architecture portions to visualize OLTP-vs-OLAP boundaries; the book defines the exact comparison."
             }
           ],
           "planningHours": [
@@ -1660,6 +1690,11 @@
               "name": "Microsoft Learn - Dimensional modeling in Fabric Data Warehouse",
               "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
               "scope": "Star schema / warehouse dimensional design · Baseline current-reference row preserved."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "Use the Fabric warehouse architecture portion for warehouse orientation; dimensional implementation remains course-led."
             }
           ],
           "planningHours": [
@@ -1753,6 +1788,11 @@
               "name": "Microsoft Learn - Implement a data warehouse with Microsoft Fabric",
               "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
               "scope": "Load/incremental/SCD pipeline context · Implementation context only."
+            },
+            {
+              "name": "DataTalksClub DE Zoomcamp — Introduction to Analytics Engineering",
+              "url": "https://www.youtube.com/watch?v=HxMIsPrIyGQ",
+              "scope": "Whole introduction — ETL/ELT boundary and analytics-engineering workflow. Close the video before the independent comparison task."
             }
           ],
           "planningHours": [
@@ -1863,6 +1903,11 @@
               "name": "Microsoft Learn - Implement a data warehouse with Microsoft Fabric",
               "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
               "scope": "Load/monitor/secure context · Internal quality-control framework is assessed authority."
+            },
+            {
+              "name": "End-to-end data validation strategies in Microsoft Fabric (+ 3 demos)",
+              "url": "https://www.youtube.com/watch?v=wAayC-J9TsU",
+              "scope": "11:45 validation types onward — connect pipeline checks to blocking/warning controls and reconciliation evidence."
             }
           ],
           "planningHours": [
@@ -2330,6 +2375,11 @@
               "name": "PL-300 Study Guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Business value, stakeholders, analytics/data engineer collaboration · Supporting profile alignment, not exam-only teaching."
+            },
+            {
+              "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
+              "url": "https://www.youtube.com/watch?v=fEY68ZxDT6Y",
+              "scope": "02:35 exploration; 03:05 storytelling; 03:34 communication. Use to separate observed evidence from interpretation and recommendation."
             }
           ],
           "planningHours": [
