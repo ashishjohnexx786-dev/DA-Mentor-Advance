@@ -584,6 +584,16 @@
               "name": "PostgreSQL 18 - Indexes",
               "url": "https://www.postgresql.org/docs/current/indexes.html",
               "scope": "Index concepts/trade-offs · Performance comes after correctness."
+            },
+            {
+              "name": "Lesson 3, PostgreSQL Indexes and B-Trees (and an introduction to EXPLAIN)",
+              "url": "https://www.youtube.com/watch?v=YZSHpDn7GP4&t=610s",
+              "scope": "10:10-18:00"
+            },
+            {
+              "name": "Lesson 3, PostgreSQL Indexes and B-Trees (and an introduction to EXPLAIN)",
+              "url": "https://www.youtube.com/watch?v=YZSHpDn7GP4&t=1778s",
+              "scope": "29:38-34:18"
             }
           ],
           "planningHours": [
@@ -1662,6 +1672,11 @@
               "name": "Microsoft Learn - Lineage in Fabric",
               "url": "https://learn.microsoft.com/en-us/fabric/governance/lineage",
               "scope": "Workspace/item lineage · Automated lineage complements business metadata."
+            },
+            {
+              "name": "Lineage, run metadata and auditability - retained visual",
+              "url": "https://www.youtube.com/watch?v=UqoWyMjcqrA",
+              "scope": "OPTIONAL visual support - no independently verified bounded range. Learner book + official reference + supplied project/lab are the required route."
             }
           ],
           "planningHours": [
@@ -1708,6 +1723,16 @@
               "name": "What is Microsoft Fabric?",
               "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
               "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            },
+            {
+              "name": "Learn Microsoft Fabric with Will - DP-700 Exam Full Course",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "02:19:27-02:39:20 - architectural decision-making"
+            },
+            {
+              "name": "Vijay Perepa - Microsoft Fabric Data Engineering Explained: Lakehouse, Spark and OneLake Architecture",
+              "url": "https://www.youtube.com/watch?v=vWdUjrxOYC4",
+              "scope": "Optional visual - no verified bounded range"
             }
           ],
           "planningHours": [
