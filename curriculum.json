@@ -80,9 +80,9 @@
               "scope": "KPI agreement/calibration framing · Course metric-contract fields remain authoritative for the task."
             },
             {
-              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
-              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
-              "scope": "Use the actual/target/trend demonstration to visualize why KPI definitions and ownership contracts matter."
+              "name": "How to create a KPI visual in Power BI",
+              "url": "https://www.youtube.com/watch?v=AnrGyoYsTmI",
+              "scope": "Verified visual: KPI visual setup and business-metric display. Use it to visualize actual/target/trend; the learner book owns KPI definitions and validation."
             }
           ],
           "planningHours": [
@@ -1013,9 +1013,9 @@
               "scope": "Iterator semantics · Book-led."
             },
             {
-              "name": "DAX Iterator Functions in Power BI — SUMX, COUNTX, RANKX (2026)",
-              "url": "https://www.youtube.com/watch?v=hPH_fQo1Foo",
-              "scope": "Iterator vs normal aggregation; SUMX/COUNTX/RANKX examples. Use for visual reinforcement, then solve the assigned iterator measures alone."
+              "name": "Mastering DAX Iterator Functions in Power BI",
+              "url": "https://www.youtube.com/watch?v=1OPwpRBQHAU",
+              "scope": "Verified iterator visual: SUMX, AVERAGEX, MINX and COUNTX. Close the video before solving the course iterator measures independently."
             }
           ],
           "planningHours": [
@@ -1140,9 +1140,9 @@
               "scope": "DAX Query View/Performance Analyzer objectives · Debugging workflow is course-led."
             },
             {
-              "name": "Power BI — How to use DAX Query view",
-              "url": "https://www.youtube.com/watch?v=feSCs6h06I4",
-              "scope": "Use DAX Query View to test/debug measures and inspect tabular results; pair with Performance Analyzer and the course validation checklist."
+              "name": "Multiple DAX Measure updates in DAX Query View",
+              "url": "https://www.youtube.com/watch?v=Fuk2FWYc8bs",
+              "scope": "Verified DAX Query View visual. Use it to inspect/test measures; the course debugging and validation checklist remains the required proof."
             }
           ],
           "planningHours": [
@@ -1162,9 +1162,9 @@
               "scope": "Report design/storytelling objectives · Decision-first method is course-led."
             },
             {
-              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
-              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
-              "scope": "Use as a compact example of decision-facing visual hierarchy; the learner book owns executive storytelling and report-design judgment."
+              "name": "How to create a KPI visual in Power BI",
+              "url": "https://www.youtube.com/watch?v=AnrGyoYsTmI",
+              "scope": "Verified visual: KPI visual setup and business-metric display. Use it to visualize actual/target/trend; the learner book owns KPI definitions and validation."
             }
           ],
           "planningHours": [
@@ -1197,11 +1197,6 @@
               "name": "How to Use Drill Through in Power BI Easily (2026)",
               "url": "https://www.youtube.com/watch?v=vpEFfWfscP8",
               "scope": "00:15-03:33 — current drillthrough setup, back navigation and tooltip-action route. Bookmarks/tooltips remain covered by official references."
-            },
-            {
-              "name": "Power BI bookmarks and drillthrough interaction",
-              "url": "https://www.youtube.com/watch?v=X-k9RuEdfBs",
-              "scope": "Use bookmarks/drillthrough/home-reset interaction as visual reinforcement; validate filter context after each navigation."
             }
           ],
           "planningHours": [
@@ -1224,11 +1219,6 @@
               "name": "Power BI Accessibility — accessible reports and visuals",
               "url": "https://www.youtube.com/watch?v=3jU2tqt3PRM",
               "scope": "Use accessible tables/charts/page-view/screen-reader/high-contrast guidance; official Microsoft accessibility docs remain authority."
-            },
-            {
-              "name": "Microsoft Power BI — report accessibility",
-              "url": "https://www.youtube.com/watch?v=Gjt8Rb9tTIk",
-              "scope": "Official Power BI accessibility visual; apply alt text, logical navigation and non-color-only communication."
             }
           ],
           "planningHours": [
@@ -2698,9 +2688,9 @@
           "bookPage": 30,
           "watch": [
             {
-              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
-              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
-              "scope": "Use as KPI/report visual reinforcement; capstone design must remain decision-facing and independently validated."
+              "name": "How to create a KPI visual in Power BI",
+              "url": "https://www.youtube.com/watch?v=AnrGyoYsTmI",
+              "scope": "Verified visual: KPI visual setup and business-metric display. Use it to visualize actual/target/trend; the learner book owns KPI definitions and validation."
             }
           ],
           "planningHours": [
