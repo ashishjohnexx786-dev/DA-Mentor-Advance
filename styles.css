@@ -5,21 +5,7 @@
 @media(max-width:720px){.header{min-height:67px;padding:10px 12px;gap:8px}.brand{gap:7px;font-size:13px}.brand img{width:27px;height:27px}.brand small{font-size:7px;letter-spacing:.06em}.header nav{gap:0}.header nav a{padding:8px 9px;font-size:12px}.shell{display:block}aside{height:auto;position:static;border-right:0;border-bottom:1px solid var(--line);padding:16px 19px}.eyebrow{font-size:9px}aside select{margin:8px 0 8px}aside .sidebar-foot{display:none}#lessons{max-height:290px;overflow:auto}summary{margin-bottom:0}main{padding:25px 19px 60px}.hero{padding-bottom:23px;margin-bottom:22px}.hero h1{font-size:30px}.hero p{font-size:14px}.card{padding:19px;border-radius:14px}.video-card{grid-template-columns:33px minmax(0,1fr);gap:12px}.play-icon{width:33px;height:35px;font-size:14px}.video-title{font-size:14px}.video-card p{font-size:12px}.grid{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.gate-steps{gap:6px}.gate-step{font-size:10px;padding:10px 4px}.settings-row{align-items:flex-start;flex-direction:column;gap:10px}.reading{font-size:var(--reading);line-height:1.8}.reading pre{padding:14px;font-size:12px}.next-bar{flex-wrap:wrap}.section-title{margin-top:25px}.reader-tools{gap:4px}.reader-tools button{padding:6px 9px}.actions .primary,.actions .secondary{font-size:13px;padding:10px 14px}.reading h3{font-size:19px}.next-bar>button{font-size:13px}#toast{bottom:18px;width:max-content;text-align:center}.loading h1{font-size:32px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-/* Course-specific additions layered over the Standalone DE 2026 shell. */
-.start-guide{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin:0 0 20px}
-.start-guide:hover{border-color:var(--accent)}
-.start-guide-icon{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--accentInk);display:grid;place-items:center;font-weight:800;flex:0 0 34px}
-.start-guide strong{display:block;font-size:13px;line-height:1.25}
-.start-guide small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
-.guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.guide-card{margin:0}
-.guide-num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--soft);border:1px solid var(--line);color:var(--accent);font-weight:800;font-size:12px;margin-bottom:14px}
-.guide-card h2{font-size:18px}
-.guide-card p{color:var(--muted);font-size:14px}
-.guide-grid{grid-template-columns:1fr}
-.start-guide{margin-bottom:14px}
-
-/* Detailed course-specific study guide */
+/* Detailed course-specific study guide: only additive content styling; shell stays Standalone DE 2026. */
 .guide-toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;margin-top:16px}
 .guide-toc a{display:block;padding:8px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:13px}
 .guide-section{scroll-margin-top:105px;padding:34px 0 6px;border-bottom:1px solid var(--line)}
