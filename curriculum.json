@@ -119,9 +119,14 @@
           "bookPage": 13,
           "watch": [
             {
-              "name": "Microsoft Mechanics — Azure Well-Architected Framework",
-              "url": "https://www.youtube.com/watch?v=xDhaHSK7mgM",
-              "scope": "00:34-01:57 categories; 01:57-04:32 recommendations; 04:32-07:22 workload recommendations. Use for explicit trade-off/risk reasoning."
+              "name": "Maven Analytics video — The Data Analysis Framework",
+              "url": "https://mavenanalytics.io/crash-courses/the-framework-for-data-analysis",
+              "scope": "01:25 identify the problem; 02:05 define success; 04:35 communicate findings; 05:50 advocate for action. State assumptions and limits before making the recommendation."
+            },
+            {
+              "name": "Andrew Heiss — Communicating and Visualizing Uncertainty (2026 course videos)",
+              "url": "https://datavizs26.classes.andrewheiss.com/content/06-content.html",
+              "scope": "Use the embedded 'Communicating uncertainty' and 'Visualizing uncertainty' sections; the course task requires explicit assumptions, risks and limitations."
             }
           ],
           "planningHours": [
@@ -363,9 +368,14 @@
           "bookPage": 19,
           "watch": [
             {
-              "name": "Microsoft Learn - Best Practices When Working with Power Query",
+              "name": "Microsoft Learn — Best Practices When Working with Power Query",
               "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
-              "scope": "Use parameters / reusable functions · Parameter guidance retained."
+              "scope": "Use parameters + reusable functions — current official guidance."
+            },
+            {
+              "name": "Miss Microsoft — Power Query Parameters for reusable queries",
+              "url": "https://www.youtube.com/watch?v=3Kn0ALFEdFc",
+              "scope": "00:36-06:00 — create parameters and make queries flexible/reusable for collaboration."
             }
           ],
           "planningHours": [
@@ -2313,14 +2323,14 @@
           "bookPage": 10,
           "watch": [
             {
-              "name": "Fabric adoption roadmap - Business alignment",
+              "name": "Fabric adoption roadmap — Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
-              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+              "scope": "Requirements, cross-functional communication, feedback and priorities — current BI business-alignment reference."
             },
             {
-              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
-              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
-              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Use the requirement/trade-off questioning pattern to challenge a weak request professionally."
+              "name": "Invensis Learning — What is Stakeholder Management?",
+              "url": "https://www.youtube.com/watch?v=hWwo_C3oNLw",
+              "scope": "04:30 identify stakeholders; 05:06-06:39 engagement; 10:13 mapping; 12:10 best practices. Use to challenge a bad request without losing alignment."
             }
           ],
           "planningHours": [
@@ -2335,19 +2345,19 @@
           "bookPage": 14,
           "watch": [
             {
-              "name": "Fabric adoption roadmap - Business alignment",
+              "name": "Fabric adoption roadmap — Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
-              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+              "scope": "Requirements, cross-functional communication, feedback and priorities — current BI business-alignment reference."
             },
             {
-              "name": "Power BI implementation planning - BI strategic planning",
+              "name": "Power BI implementation planning — BI strategic planning",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning",
-              "scope": "Stakeholders, information gathering, priorities, executive summary · Current planning support."
+              "scope": "Stakeholders, information gathering, priorities and executive summary."
             },
             {
-              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
-              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
-              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Translate impact/risk/constraint thinking into analytical prioritization."
+              "name": "Invensis Learning — What is Stakeholder Management?",
+              "url": "https://www.youtube.com/watch?v=hWwo_C3oNLw",
+              "scope": "10:13 stakeholder mapping + 12:10 best practices. Use stakeholder importance and decision need as inputs to the course prioritization rubric."
             }
           ],
           "planningHours": [
@@ -2362,14 +2372,9 @@
           "bookPage": 18,
           "watch": [
             {
-              "name": "PL-300 Study Guide",
-              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
-              "scope": "Business value, stakeholders, analytics/data engineer collaboration · Supporting profile alignment, not exam-only teaching."
-            },
-            {
-              "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
-              "url": "https://www.youtube.com/watch?v=fEY68ZxDT6Y",
-              "scope": "02:35 exploration; 03:05 storytelling; 03:34 communication. Use to separate observed evidence from interpretation and recommendation."
+              "name": "Maven Analytics video — The Data Analysis Framework",
+              "url": "https://mavenanalytics.io/crash-courses/the-framework-for-data-analysis",
+              "scope": "03:55 analyze/explore; 04:35 communicate findings; 05:50 advocate for action. Label observed evidence separately from interpretation and recommendation."
             }
           ],
           "planningHours": [
@@ -2429,7 +2434,13 @@
           "id": "SBA6",
           "title": "Presenting uncertainty",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Andrew Heiss — Communicating and Visualizing Uncertainty (2026 course videos)",
+              "url": "https://datavizs26.classes.andrewheiss.com/content/06-content.html",
+              "scope": "Watch the embedded 'Communicating uncertainty' section, then use the course scenario to state uncertainty without hiding the decision implication."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2459,14 +2470,14 @@
           "bookPage": 34,
           "watch": [
             {
-              "name": "Fabric adoption roadmap - Business alignment",
+              "name": "Fabric adoption roadmap — Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
-              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+              "scope": "Requirements, cross-functional communication, feedback and priorities — current BI business-alignment reference."
             },
             {
-              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
-              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
-              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Use conflicting constraints as the visual case; the learner task owns stakeholder resolution."
+              "name": "Invensis Learning — What is Stakeholder Management?",
+              "url": "https://www.youtube.com/watch?v=hWwo_C3oNLw",
+              "scope": "05:06-07:50 stakeholder engagement/monitoring + 10:13 mapping. Apply to contradictory requirements; the course task owns the resolution decision."
             }
           ],
           "planningHours": [
@@ -2547,19 +2558,14 @@
           "bookPage": 50,
           "watch": [
             {
-              "name": "Fabric adoption roadmap - Business alignment",
+              "name": "Fabric adoption roadmap — Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
-              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+              "scope": "Requirements, cross-functional communication, feedback and priorities."
             },
             {
-              "name": "Fabric adoption roadmap - Data culture",
+              "name": "Fabric adoption roadmap — Data culture",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-data-culture",
-              "scope": "Mentoring, enablement, common analytical vocabulary · Professional enablement context."
-            },
-            {
-              "name": "freeCodeCamp — Git & GitHub Crash Course for Beginners (2026)",
-              "url": "https://www.youtube.com/watch?v=mAFoROnOfHs",
-              "scope": "Use review/pull-request/repository context as a concrete feedback workflow; apply the course senior-review rubric to junior analyst work."
+              "scope": "Mentoring, enablement and common analytical vocabulary. Use the course review rubric for actual junior-work feedback."
             }
           ],
           "planningHours": [
@@ -2722,9 +2728,9 @@
           "bookPage": 38,
           "watch": [
             {
-              "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
-              "url": "https://www.youtube.com/watch?v=fEY68ZxDT6Y",
-              "scope": "03:05 storytelling; 03:34 communication — turn analysis into concise recommendations and explicit limitations."
+              "name": "Maven Analytics video — Data Storytelling: How To Bring Data to Life",
+              "url": "https://mavenanalytics.io/crash-courses/data-storytelling-how-to-tell-a-story-with-data",
+              "scope": "04:00 purpose; 05:00 metrics; 06:30 present data; 08:10 eliminate clutter; 11:55 tell the story. Capstone communication must include recommendation and limitation."
             }
           ],
           "planningHours": [
@@ -2773,9 +2779,9 @@
           "bookPage": 50,
           "watch": [
             {
-              "name": "Afaque Ahmad — Data Engineering System Design Interview Framework",
-              "url": "https://www.youtube.com/watch?v=r58Cf_kc_bY",
-              "scope": "04:19-13:21 structured interview framework; adapt the explain-requirements-trade-offs discipline to senior analyst case discussion."
+              "name": "Junaid Ahmed — Data Analyst Interview Questions and Answers (Senior Analyst explains)",
+              "url": "https://www.youtube.com/watch?v=92zO28a1UDo",
+              "scope": "00:31-11:47 — real-world analyst questions covering SQL/Excel/stakeholder/problem-solving plus answer framing."
             },
             {
               "name": "Indeed — Behavioral Interview Questions and STAR Technique",
