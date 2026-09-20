@@ -22,7 +22,13 @@
           "id": "SAF1",
           "title": "Junior analyst vs senior analyst responsibility",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
+              "url": "https://www.youtube.com/watch?v=fEY68ZxDT6Y",
+              "scope": "00:19 role; 01:11 lifecycle; 01:41 planning; 03:34 communication. Use as baseline analyst workflow, then contrast junior execution with senior ownership in the learner book."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -72,6 +78,11 @@
               "name": "IIBA - KPIs for Business Analysts",
               "url": "https://www.iiba.org/professional-development/knowledge-centre/articles/kpis-for-business-analysts/",
               "scope": "KPI agreement/calibration framing · Course metric-contract fields remain authoritative for the task."
+            },
+            {
+              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
+              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
+              "scope": "Use the actual/target/trend demonstration to visualize why KPI definitions and ownership contracts matter."
             }
           ],
           "planningHours": [
@@ -89,6 +100,11 @@
               "name": "Microsoft Learn - Power BI data lineage",
               "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-data-lineage",
               "scope": "Lineage-view mental model · Use as visual analogy; no Power BI Service access required. Microsoft notes embedded video may show earlier UI."
+            },
+            {
+              "name": "Microsoft Purview Learn Live — lineage and governance",
+              "url": "https://www.youtube.com/watch?v=Sb9uJLtXDGo",
+              "scope": "40:21-52:44 lineage; 52:44-1:05:22 classification. Use lineage as evidence for source-of-truth decisions."
             }
           ],
           "planningHours": [
@@ -101,7 +117,13 @@
           "id": "SAF6",
           "title": "Assumptions, risks, limitations and analytical judgment",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Mechanics — Azure Well-Architected Framework",
+              "url": "https://www.youtube.com/watch?v=xDhaHSK7mgM",
+              "scope": "00:34-01:57 categories; 01:57-04:32 recommendations; 04:32-07:22 workload recommendations. Use for explicit trade-off/risk reasoning."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -129,7 +151,13 @@
           "id": "SAF8",
           "title": "Documentation another analyst can inherit",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "freeCodeCamp — Git & GitHub Crash Course for Beginners (2026)",
+              "url": "https://www.youtube.com/watch?v=mAFoROnOfHs",
+              "scope": "Use repository/README/handoff context only; the learner book defines the analyst documentation standard."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -582,6 +610,11 @@
               "name": "PostgreSQL 18 - SELECT",
               "url": "https://www.postgresql.org/docs/current/sql-select.html",
               "scope": "Query staging/debug context · Validation workflow is course-led."
+            },
+            {
+              "name": "SQL for Data Analytics — debugging and validation workflow",
+              "url": "https://www.youtube.com/watch?v=7mz73uXD9DA&t=4815s",
+              "scope": "01:20:15-01:22:35 — debugging/validation workflow; then validate the course query independently."
             }
           ],
           "planningHours": [
@@ -968,6 +1001,11 @@
               "name": "Microsoft Learn - SUMX",
               "url": "https://learn.microsoft.com/en-us/dax/sumx-function-dax",
               "scope": "Iterator semantics · Book-led."
+            },
+            {
+              "name": "DAX Iterator Functions in Power BI — SUMX, COUNTX, RANKX (2026)",
+              "url": "https://www.youtube.com/watch?v=hPH_fQo1Foo",
+              "scope": "Iterator vs normal aggregation; SUMX/COUNTX/RANKX examples. Use for visual reinforcement, then solve the assigned iterator measures alone."
             }
           ],
           "planningHours": [
@@ -1002,6 +1040,11 @@
               "name": "Microsoft Learn - Implement time-based calculations in Power BI",
               "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-time-intelligence",
               "scope": "Date-table/time intelligence · Current guidance."
+            },
+            {
+              "name": "Master Time Intelligence DAX in Power BI — YTD, YoY & Rolling 12 Months",
+              "url": "https://www.youtube.com/watch?v=9_msWS_jAUA",
+              "scope": "Date table; TOTALYTD/SAMEPERIODLASTYEAR/DATEADD/DATESINPERIOD; YTD/YoY/rolling-12 concepts."
             }
           ],
           "planningHours": [
@@ -1019,6 +1062,11 @@
               "name": "Microsoft Learn - DATEADD function",
               "url": "https://learn.microsoft.com/en-us/dax/dateadd-function-dax",
               "scope": "Date shift behavior · Current DATEADD semantics."
+            },
+            {
+              "name": "Master Time Intelligence DAX in Power BI — YTD, YoY & Rolling 12 Months",
+              "url": "https://www.youtube.com/watch?v=9_msWS_jAUA",
+              "scope": "Focus period comparison, YoY and rolling-12-month sections; current Microsoft docs remain syntax authority."
             }
           ],
           "planningHours": [
@@ -1075,6 +1123,11 @@
               "name": "Microsoft Learn - PL-300 study guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "DAX Query View/Performance Analyzer objectives · Debugging workflow is course-led."
+            },
+            {
+              "name": "Power BI — How to use DAX Query view",
+              "url": "https://www.youtube.com/watch?v=feSCs6h06I4",
+              "scope": "Use DAX Query View to test/debug measures and inspect tabular results; pair with Performance Analyzer and the course validation checklist."
             }
           ],
           "planningHours": [
@@ -1119,6 +1172,16 @@
               "name": "Microsoft Learn - Drillthrough guidance",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/report-drillthrough",
               "scope": "Drillthrough/back/discovery · Official guidance."
+            },
+            {
+              "name": "How to Use Drill Through in Power BI Easily (2026)",
+              "url": "https://www.youtube.com/watch?v=vpEFfWfscP8",
+              "scope": "00:15-03:33 — current drillthrough setup, back navigation and tooltip-action route. Bookmarks/tooltips remain covered by official references."
+            },
+            {
+              "name": "Power BI bookmarks and drillthrough interaction",
+              "url": "https://www.youtube.com/watch?v=X-k9RuEdfBs",
+              "scope": "Use bookmarks/drillthrough/home-reset interaction as visual reinforcement; validate filter context after each navigation."
             }
           ],
           "planningHours": [
@@ -1136,6 +1199,16 @@
               "name": "Microsoft Learn - Design Power BI reports for accessibility",
               "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-accessibility-creating-reports",
               "scope": "Alt text/keyboard/tooltips · Critical information must not depend only on tooltip."
+            },
+            {
+              "name": "Power BI Accessibility — accessible reports and visuals",
+              "url": "https://www.youtube.com/watch?v=3jU2tqt3PRM",
+              "scope": "Use accessible tables/charts/page-view/screen-reader/high-contrast guidance; official Microsoft accessibility docs remain authority."
+            },
+            {
+              "name": "Microsoft Power BI — report accessibility",
+              "url": "https://www.youtube.com/watch?v=Gjt8Rb9tTIk",
+              "scope": "Official Power BI accessibility visual; apply alt text, logical navigation and non-color-only communication."
             }
           ],
           "planningHours": [
@@ -1153,6 +1226,11 @@
               "name": "Microsoft Learn - Row-level security with Power BI",
               "url": "https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security",
               "scope": "Static/dynamic RLS · Includes USERPRINCIPALNAME and role validation."
+            },
+            {
+              "name": "Power BI Row Level Security (RLS) Made Easy (2026)",
+              "url": "https://www.youtube.com/watch?v=9_vGzVUBQdY",
+              "scope": "00:00-12:05 concepts; 15:58 static RLS; 22:05 dynamic RLS; 28:47 recap. Validate role behavior with the course task."
             }
           ],
           "planningHours": [
@@ -1185,6 +1263,11 @@
               "name": "Microsoft Learn - Publish from Power BI Desktop",
               "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files",
               "scope": "Republish impact/refresh behavior · Impact analysis/change control."
+            },
+            {
+              "name": "How To Use Workspaces in Power BI (2026)",
+              "url": "https://www.youtube.com/watch?v=qKxhxORX2_U",
+              "scope": "Workspace organization, roles, collaboration, publishing to apps and common access issues; official Microsoft docs control exact tenant behavior."
             }
           ],
           "planningHours": [
@@ -2132,6 +2215,11 @@
               "name": "PL-300 study guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "02:19:27-02:39:20 — architectural decision-making. Use to see analyst/analytics-engineer/data-engineer handoff boundaries in a platform context."
             }
           ],
           "planningHours": [
@@ -2193,6 +2281,11 @@
               "name": "Fabric adoption roadmap - Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
               "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Use the requirement/trade-off questioning pattern to challenge a weak request professionally."
             }
           ],
           "planningHours": [
@@ -2215,6 +2308,11 @@
               "name": "Power BI implementation planning - BI strategic planning",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning",
               "scope": "Stakeholders, information gathering, priorities, executive summary · Current planning support."
+            },
+            {
+              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Translate impact/risk/constraint thinking into analytical prioritization."
             }
           ],
           "planningHours": [
@@ -2324,6 +2422,11 @@
               "name": "Fabric adoption roadmap - Business alignment",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
               "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "Microsoft Learn — Apply Well-Architected Framework to your solution design",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/fasttrack-for-azure-season-2-ep07-apply-well-architected-framework-to-your-solution-design",
+              "scope": "02:35-07:53 requirements; 09:16-11:41 trade-offs. Use conflicting constraints as the visual case; the learner task owns stakeholder resolution."
             }
           ],
           "planningHours": [
@@ -2363,6 +2466,11 @@
               "name": "PL-300 Study Guide",
               "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
               "scope": "Business value, stakeholders, analytics/data engineer collaboration · Supporting profile alignment, not exam-only teaching."
+            },
+            {
+              "name": "DP-700 Full Course — Microsoft Fabric Data Engineer",
+              "url": "https://www.youtube.com/watch?v=KiB4eAeFRsw",
+              "scope": "02:19:27-02:39:20 — architectural decision-making and cross-role platform context."
             }
           ],
           "planningHours": [
@@ -2407,6 +2515,11 @@
               "name": "Fabric adoption roadmap - Data culture",
               "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-data-culture",
               "scope": "Mentoring, enablement, common analytical vocabulary · Professional enablement context."
+            },
+            {
+              "name": "freeCodeCamp — Git & GitHub Crash Course for Beginners (2026)",
+              "url": "https://www.youtube.com/watch?v=mAFoROnOfHs",
+              "scope": "Use review/pull-request/repository context as a concrete feedback workflow; apply the course senior-review rubric to junior analyst work."
             }
           ],
           "planningHours": [
@@ -2516,7 +2629,13 @@
           "id": "CAP6",
           "title": "Analysis: calculate and investigate",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "End-to-end data validation strategies in Microsoft Fabric (+ 3 demos)",
+              "url": "https://www.youtube.com/watch?v=wAayC-J9TsU",
+              "scope": "02:38 why validation; 03:56 failure modes; 11:45 validation types. Use as validation reinforcement during capstone investigation."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2527,7 +2646,13 @@
           "id": "CAP7",
           "title": "Power BI: create the decision-facing report",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "KPI Visual in Power BI — actual vs target and trend (2026)",
+              "url": "https://www.youtube.com/watch?v=k4OAKbW6Mj0",
+              "scope": "Use as KPI/report visual reinforcement; capstone design must remain decision-facing and independently validated."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2555,7 +2680,13 @@
           "id": "CAP9",
           "title": "Executive communication: recommendations and limitations",
           "bookPage": 38,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
+              "url": "https://www.youtube.com/watch?v=fEY68ZxDT6Y",
+              "scope": "03:05 storytelling; 03:34 communication — turn analysis into concise recommendations and explicit limitations."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2600,7 +2731,18 @@
           "id": "CAP12",
           "title": "Senior Analyst interview preparation",
           "bookPage": 50,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Afaque Ahmad — Data Engineering System Design Interview Framework",
+              "url": "https://www.youtube.com/watch?v=r58Cf_kc_bY",
+              "scope": "04:19-13:21 structured interview framework; adapt the explain-requirements-trade-offs discipline to senior analyst case discussion."
+            },
+            {
+              "name": "Indeed — Behavioral Interview Questions and STAR Technique",
+              "url": "https://www.youtube.com/watch?v=zoGZQatkqKg",
+              "scope": "00:23-01:24 behavioral questions; 01:25-03:09 STAR; 05:04-06:09 worked answer; 06:10-08:24 best practices."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -2628,7 +2770,13 @@
           "id": "CAP14",
           "title": "External job-switch preparation",
           "bookPage": 58,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Google India — organise job applications and prepare for interviews",
+              "url": "https://www.youtube.com/watch?v=aHnGoMDUu8A",
+              "scope": "Use as application-tracking/job-prep orientation; course evidence and role-fit rules control the external job-switch plan."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
