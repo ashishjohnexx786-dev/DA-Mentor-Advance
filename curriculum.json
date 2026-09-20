@@ -21,7 +21,7 @@
         {
           "id": "SAF1",
           "title": "Junior analyst vs senior analyst responsibility",
-          "bookPage": 6,
+          "bookPage": 3,
           "watch": [
             {
               "name": "What does a Data Analyst do? | Explained in 5 minutes (2026)",
@@ -38,7 +38,7 @@
         {
           "id": "SAF2",
           "title": "Turning vague stakeholder requests into scoped analysis",
-          "bookPage": 10,
+          "bookPage": 5,
           "watch": [
             {
               "name": "How I Conduct A Requirements Gathering Interview As A Business Analyst",
@@ -55,7 +55,7 @@
         {
           "id": "SAF3",
           "title": "Requirements gathering and clarification meetings",
-          "bookPage": 14,
+          "bookPage": 7,
           "watch": [
             {
               "name": "How I Conduct A Requirements Gathering Interview As A Business Analyst",
@@ -72,7 +72,7 @@
         {
           "id": "SAF4",
           "title": "KPI ownership, metric contracts and definitions",
-          "bookPage": 18,
+          "bookPage": 9,
           "watch": [
             {
               "name": "IIBA - KPIs for Business Analysts",
@@ -94,7 +94,7 @@
         {
           "id": "SAF5",
           "title": "Grain, lineage and source-of-truth decisions",
-          "bookPage": 22,
+          "bookPage": 11,
           "watch": [
             {
               "name": "Microsoft Learn - Power BI data lineage",
@@ -116,7 +116,7 @@
         {
           "id": "SAF6",
           "title": "Assumptions, risks, limitations and analytical judgment",
-          "bookPage": 26,
+          "bookPage": 13,
           "watch": [
             {
               "name": "Microsoft Mechanics — Azure Well-Architected Framework",
@@ -133,7 +133,7 @@
         {
           "id": "SAF7",
           "title": "Professional validation and reconciliation",
-          "bookPage": 30,
+          "bookPage": 15,
           "watch": [
             {
               "name": "Microsoft Learn - Clean, transform, and load data in Power BI",
@@ -150,7 +150,7 @@
         {
           "id": "SAF8",
           "title": "Documentation another analyst can inherit",
-          "bookPage": 34,
+          "bookPage": 17,
           "watch": [
             {
               "name": "freeCodeCamp — Git & GitHub Crash Course for Beginners (2026)",
@@ -179,7 +179,7 @@
         {
           "id": "AX1",
           "title": "Advanced formulas without formula spaghetti",
-          "bookPage": 6,
+          "bookPage": 3,
           "watch": [
             {
               "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
@@ -196,7 +196,7 @@
         {
           "id": "AX2",
           "title": "XLOOKUP, INDEX/MATCH and lookup design",
-          "bookPage": 10,
+          "bookPage": 5,
           "watch": [
             {
               "name": "Chandoo - 10 Advanced XLOOKUP Tips & Tricks",
@@ -218,7 +218,7 @@
         {
           "id": "AX3",
           "title": "Dynamic arrays: FILTER, UNIQUE, SORT and spill-safe workflows",
-          "bookPage": 14,
+          "bookPage": 7,
           "watch": [
             {
               "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
@@ -245,7 +245,7 @@
         {
           "id": "AX4",
           "title": "SUMIFS, COUNTIFS and auditable conditional KPIs",
-          "bookPage": 18,
+          "bookPage": 9,
           "watch": [
             {
               "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
@@ -262,7 +262,7 @@
         {
           "id": "AX5",
           "title": "Advanced PivotTables and business summaries",
-          "bookPage": 22,
+          "bookPage": 11,
           "watch": [
             {
               "name": "Chandoo - Excel Pivot Tables - Master Data Analysis in just 45 minutes",
@@ -279,7 +279,7 @@
         {
           "id": "AX6",
           "title": "Power Query architecture and repeatable imports",
-          "bookPage": 26,
+          "bookPage": 13,
           "watch": [
             {
               "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
@@ -306,7 +306,7 @@
         {
           "id": "AX7",
           "title": "Cleaning and transforming multiple files",
-          "bookPage": 30,
+          "bookPage": 15,
           "watch": [
             {
               "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
@@ -328,7 +328,7 @@
         {
           "id": "AX8",
           "title": "Merge vs append and relationship/grain mistakes",
-          "bookPage": 34,
+          "bookPage": 17,
           "watch": [
             {
               "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
@@ -355,7 +355,7 @@
         {
           "id": "AX9",
           "title": "Parameters and reusable query design",
-          "bookPage": 38,
+          "bookPage": 19,
           "watch": [
             {
               "name": "Microsoft Learn - Best Practices When Working with Power Query",
@@ -372,7 +372,7 @@
         {
           "id": "AX10",
           "title": "Refreshable monthly reporting workflow",
-          "bookPage": 42,
+          "bookPage": 21,
           "watch": [
             {
               "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
@@ -406,7 +406,7 @@
         {
           "id": "ASQL1",
           "title": "Advanced joins and grain control",
-          "bookPage": 6,
+          "bookPage": 3,
           "watch": [
             {
               "name": "Alex The Analyst - Learn SQL Beginner to Advanced in Under 4 Hours",
@@ -428,7 +428,7 @@
         {
           "id": "ASQL2",
           "title": "Subqueries and derived tables",
-          "bookPage": 10,
+          "bookPage": 5,
           "watch": [
             {
               "name": "PostgreSQL 18 - SELECT",
@@ -450,7 +450,7 @@
         {
           "id": "ASQL3",
           "title": "CTEs and readable query architecture",
-          "bookPage": 14,
+          "bookPage": 7,
           "watch": [
             {
               "name": "Alex The Analyst - CTE chapter",
@@ -472,7 +472,7 @@
         {
           "id": "ASQL4",
           "title": "Window functions fundamentals",
-          "bookPage": 18,
+          "bookPage": 9,
           "watch": [
             {
               "name": "Alex The Analyst - Window Functions chapter",
@@ -494,7 +494,7 @@
         {
           "id": "ASQL5",
           "title": "Ranking, partitions and running calculations",
-          "bookPage": 22,
+          "bookPage": 11,
           "watch": [
             {
               "name": "PostgreSQL 18 - Window Functions",
@@ -516,7 +516,7 @@
         {
           "id": "ASQL6",
           "title": "LAG, LEAD and time-based comparisons",
-          "bookPage": 26,
+          "bookPage": 13,
           "watch": [
             {
               "name": "Alex The Analyst - Window Functions chapter",
@@ -538,7 +538,7 @@
         {
           "id": "ASQL7",
           "title": "Conditional aggregation and advanced KPI queries",
-          "bookPage": 30,
+          "bookPage": 15,
           "watch": [
             {
               "name": "Alex The Analyst - CASE Statements chapter",
@@ -560,7 +560,7 @@
         {
           "id": "ASQL8",
           "title": "Date and time analysis",
-          "bookPage": 34,
+          "bookPage": 17,
           "watch": [
             {
               "name": "PostgreSQL 18 - Date/Time Functions and Operators",
@@ -582,7 +582,7 @@
         {
           "id": "ASQL9",
           "title": "Data-quality investigation with SQL",
-          "bookPage": 38,
+          "bookPage": 19,
           "watch": [
             {
               "name": "PostgreSQL 18 - Table and Query Expressions",
@@ -604,7 +604,7 @@
         {
           "id": "ASQL10",
           "title": "Query debugging and validation",
-          "bookPage": 42,
+          "bookPage": 21,
           "watch": [
             {
               "name": "PostgreSQL 18 - SELECT",
@@ -626,7 +626,7 @@
         {
           "id": "ASQL11",
           "title": "Performance concepts: indexes, scans and EXPLAIN",
-          "bookPage": 46,
+          "bookPage": 23,
           "watch": [
             {
               "name": "PostgreSQL 18 - Using EXPLAIN",
@@ -658,7 +658,7 @@
         {
           "id": "ASQL12",
           "title": "Maintainable production-style analytical SQL",
-          "bookPage": 50,
+          "bookPage": 25,
           "watch": [
             {
               "name": "Alex The Analyst - Data Cleaning / EDA project chapters",
@@ -2803,8 +2803,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL2",
@@ -2826,8 +2825,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL3",
@@ -2849,8 +2847,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL4",
@@ -2872,8 +2869,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL5",
@@ -2895,8 +2891,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL6",
@@ -2923,8 +2918,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL7",
@@ -2951,8 +2945,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         },
         {
           "id": "PL8",
@@ -2979,8 +2972,7 @@
             2.5,
             4.5
           ],
-          "optional": true,
-          "bookPath": "COURSE_MODULES/C2_09/05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf"
+          "optional": true
         }
       ],
       "bookPath": "COURSE_MODULES/C2_09/01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_RC1.pdf"
