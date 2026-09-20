@@ -1,0 +1,1761 @@
+{
+  "courseId": "COURSE_2A_SENIOR_BI_ANALYST_2026",
+  "title": "Senior / BI Analyst 2026",
+  "shortTitle": "Senior BI Mentor",
+  "edition": "ASTRA-2026",
+  "unitCount": 122,
+  "requiredUnitCount": 114,
+  "storageKey": "course2a-senior-bi-2026-study-astra-v2",
+  "backupName": "Course2A_BI_Mentor_Progress",
+  "downloadUrl": "https://github.com/ashishjohnexx786-dev/DA-Mentor-Advance/archive/refs/heads/main.zip",
+  "modules": [
+    {
+      "id": "C2_00",
+      "title": "Senior Analyst Foundations",
+      "practicePath": "COURSE_MODULES/C2_00/02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        4,
+        8
+      ],
+      "units": [
+        {
+          "id": "SAF1",
+          "title": "Junior analyst vs senior analyst responsibility",
+          "bookPage": 3,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF2",
+          "title": "Turning vague stakeholder requests into scoped analysis",
+          "bookPage": 5,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=iIAbSOvf96E",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF3",
+          "title": "Requirements gathering and clarification meetings",
+          "bookPage": 7,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=iIAbSOvf96E",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF4",
+          "title": "KPI ownership, metric contracts and definitions",
+          "bookPage": 9,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF5",
+          "title": "Grain, lineage and source-of-truth decisions",
+          "bookPage": 11,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF6",
+          "title": "Assumptions, risks, limitations and analytical judgment",
+          "bookPage": 13,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF7",
+          "title": "Professional validation and reconciliation",
+          "bookPage": 15,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SAF8",
+          "title": "Documentation another analyst can inherit",
+          "bookPage": 17,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_00/01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_01",
+      "title": "Advanced Excel & Power Query",
+      "practicePath": "COURSE_MODULES/C2_01/02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        5,
+        10
+      ],
+      "units": [
+        {
+          "id": "AX1",
+          "title": "Advanced formulas without formula spaghetti",
+          "bookPage": 3,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX2",
+          "title": "XLOOKUP, INDEX/MATCH and lookup design",
+          "bookPage": 5,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=YyhJe5tMq58",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX3",
+          "title": "Dynamic arrays: FILTER, UNIQUE, SORT and spill-safe workflows",
+          "bookPage": 7,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX4",
+          "title": "SUMIFS, COUNTIFS and auditable conditional KPIs",
+          "bookPage": 9,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX5",
+          "title": "Advanced PivotTables and business summaries",
+          "bookPage": 11,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=zuSNd1ZMfBI",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX6",
+          "title": "Power Query architecture and repeatable imports",
+          "bookPage": 13,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX7",
+          "title": "Cleaning and transforming multiple files",
+          "bookPage": 15,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX8",
+          "title": "Merge vs append and relationship/grain mistakes",
+          "bookPage": 17,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX9",
+          "title": "Parameters and reusable query design",
+          "bookPage": 19,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "AX10",
+          "title": "Refreshable monthly reporting workflow",
+          "bookPage": 21,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_01/01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_02",
+      "title": "Advanced SQL",
+      "practicePath": "COURSE_MODULES/C2_02/02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "studyDays": [
+        6,
+        12
+      ],
+      "units": [
+        {
+          "id": "ASQL1",
+          "title": "Advanced joins and grain control",
+          "bookPage": 3,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL2",
+          "title": "Subqueries and derived tables",
+          "bookPage": 5,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL3",
+          "title": "CTEs and readable query architecture",
+          "bookPage": 7,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL4",
+          "title": "Window functions fundamentals",
+          "bookPage": 9,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL5",
+          "title": "Ranking, partitions and running calculations",
+          "bookPage": 11,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL6",
+          "title": "LAG, LEAD and time-based comparisons",
+          "bookPage": 13,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL7",
+          "title": "Conditional aggregation and advanced KPI queries",
+          "bookPage": 15,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL8",
+          "title": "Date and time analysis",
+          "bookPage": 17,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL9",
+          "title": "Data-quality investigation with SQL",
+          "bookPage": 19,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL10",
+          "title": "Query debugging and validation",
+          "bookPage": 21,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL11",
+          "title": "Performance concepts: indexes, scans and EXPLAIN",
+          "bookPage": 23,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "ASQL12",
+          "title": "Maintainable production-style analytical SQL",
+          "bookPage": 25,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_02/01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_03",
+      "title": "Professional Power BI Modeling",
+      "practicePath": "COURSE_MODULES/C2_03/02_PRACTICE/C2_03_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        5,
+        10
+      ],
+      "units": [
+        {
+          "id": "PBM-A1",
+          "title": "Semantic-model thinking",
+          "bookPage": 6,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A2",
+          "title": "Fact and dimension tables",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A3",
+          "title": "Star schema in professional BI",
+          "bookPage": 14,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A4",
+          "title": "Relationships and filter propagation",
+          "bookPage": 18,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A5",
+          "title": "Cardinality and many-to-many risks",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A6",
+          "title": "Role-playing dimensions",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A7",
+          "title": "Date dimensions",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A8",
+          "title": "Power Query architecture for BI models",
+          "bookPage": 34,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A9",
+          "title": "Model validation and reconciliation",
+          "bookPage": 38,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PBM-A10",
+          "title": "Model performance fundamentals",
+          "bookPage": 42,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_03/01_TEACH/C2_03_PROFESSIONAL_POWERBI_MODELING_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_04",
+      "title": "Advanced DAX & Reporting",
+      "practicePath": "COURSE_MODULES/C2_04/02_PRACTICE/C2_04_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        7,
+        15
+      ],
+      "units": [
+        {
+          "id": "DAX1",
+          "title": "Evaluation context properly understood",
+          "bookPage": 6,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX2",
+          "title": "Row context vs filter context",
+          "bookPage": 10,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX3",
+          "title": "CALCULATE deeply understood",
+          "bookPage": 14,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX4",
+          "title": "Iterator functions",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX5",
+          "title": "Context transition",
+          "bookPage": 22,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX6",
+          "title": "Time intelligence",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX7",
+          "title": "Period comparison and rolling metrics",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX8",
+          "title": "Variables and readable DAX",
+          "bookPage": 34,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX9",
+          "title": "Advanced business measures",
+          "bookPage": 38,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX10",
+          "title": "Debugging incorrect measures",
+          "bookPage": 42,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX11",
+          "title": "Report storytelling and executive design",
+          "bookPage": 46,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX12",
+          "title": "Drillthrough, tooltips, bookmarks and interaction",
+          "bookPage": 50,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX13",
+          "title": "Accessibility and usability",
+          "bookPage": 54,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX14",
+          "title": "Row-level security",
+          "bookPage": 58,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DAX15",
+          "title": "Workspaces, sharing and lifecycle basics",
+          "bookPage": 62,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_04/01_TEACH/C2_04_ADVANCED_DAX_REPORTING_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_05",
+      "title": "Python Automation for Analysts",
+      "practicePath": "COURSE_MODULES/C2_05/02_PRACTICE/C2_05_PRACTICE_NOTEBOOK_RC1.ipynb",
+      "studyDays": [
+        5,
+        11
+      ],
+      "units": [
+        {
+          "id": "PYA1",
+          "title": "Writing reusable analyst scripts",
+          "bookPage": 6,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA2",
+          "title": "Functions and modular code",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA3",
+          "title": "Robust pandas transformations",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA4",
+          "title": "Multi-file processing",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA5",
+          "title": "Excel automation workflows",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA6",
+          "title": "CSV and JSON handling",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA7",
+          "title": "APIs for analysts",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA8",
+          "title": "Error handling and defensive scripts",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA9",
+          "title": "Logging and validation checks",
+          "bookPage": 38,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA10",
+          "title": "Automated recurring reporting",
+          "bookPage": 42,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PYA11",
+          "title": "Reproducible analytical pipelines",
+          "bookPage": 46,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_05/01_TEACH/C2_05_PYTHON_AUTOMATION_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_06",
+      "title": "Data Warehousing & Platform Foundations",
+      "practicePath": "COURSE_MODULES/C2_06/02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        6,
+        12
+      ],
+      "units": [
+        {
+          "id": "DWF1",
+          "title": "Operational databases vs analytical systems",
+          "bookPage": 6,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF2",
+          "title": "OLTP vs OLAP",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF3",
+          "title": "Data warehouses",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF4",
+          "title": "Facts, dimensions and dimensional modeling",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF5",
+          "title": "Surrogate keys and business keys",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF6",
+          "title": "Slowly changing dimensions",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF7",
+          "title": "ETL vs ELT",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF8",
+          "title": "Staging, transformation and presentation layers",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF9",
+          "title": "Data lakes and lakehouses",
+          "bookPage": 38,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF10",
+          "title": "Batch vs streaming concepts",
+          "bookPage": 42,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=fJEadN7_U6g",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF11",
+          "title": "Data lineage and metadata",
+          "bookPage": 46,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "DWF12",
+          "title": "Quality controls across a pipeline",
+          "bookPage": 50,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_06/01_TEACH/C2_06_DATA_WAREHOUSING_PLATFORM_FOUNDATIONS_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_07",
+      "title": "Cloud / Fabric / Enterprise BI",
+      "practicePath": "COURSE_MODULES/C2_07/02_PRACTICE/C2_07_ENTERPRISE_OPERATIONS_PRACTICE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        5,
+        10
+      ],
+      "units": [
+        {
+          "id": "CLD1",
+          "title": "Cloud data fundamentals",
+          "bookPage": 6,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD2",
+          "title": "Compute, storage and identity concepts",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD3",
+          "title": "Microsoft Fabric ecosystem",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD4",
+          "title": "OneLake, lakehouse and warehouse concepts",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD5",
+          "title": "Power BI Service in enterprise environments",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD6",
+          "title": "Workspaces and deployment concepts",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD7",
+          "title": "Refresh, gateways and scheduled operations",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD8",
+          "title": "Permissions and governance",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD9",
+          "title": "Monitoring and failure awareness",
+          "bookPage": 38,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CLD10",
+          "title": "Analyst - analytics engineer - data engineer collaboration",
+          "bookPage": 42,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_07/01_TEACH/C2_07_CLOUD_FABRIC_ENTERPRISE_BI_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_08",
+      "title": "Senior Business Analysis & Communication",
+      "practicePath": "COURSE_MODULES/C2_08/02_PRACTICE/C2_08_CASE_AND_EVIDENCE_PRACTICE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        6,
+        12
+      ],
+      "units": [
+        {
+          "id": "SBA1",
+          "title": "Running a stakeholder discovery conversation",
+          "bookPage": 6,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=TAhivp4Iu-o",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA2",
+          "title": "Challenging a bad request professionally",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA3",
+          "title": "Prioritizing analytical work",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA4",
+          "title": "Separating observation, inference and recommendation",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA5",
+          "title": "Executive summaries",
+          "bookPage": 22,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA6",
+          "title": "Presenting uncertainty",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA7",
+          "title": "Recommendations tied to business decisions",
+          "bookPage": 30,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA8",
+          "title": "Handling contradictory stakeholder requirements",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA9",
+          "title": "Defending your analysis under questioning",
+          "bookPage": 38,
+          "watch": [
+            {
+              "name": "Instructor / official source 1",
+              "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
+              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+            }
+          ],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA10",
+          "title": "Working with engineers, finance, product and operations",
+          "bookPage": 42,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA11",
+          "title": "Code, review and documentation habits",
+          "bookPage": 46,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "SBA12",
+          "title": "Mentoring and reviewing junior analyst work",
+          "bookPage": 50,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_08/01_TEACH/C2_08_SENIOR_BUSINESS_ANALYSIS_COMMUNICATION_TEACHING_BOOK_RC1.pdf"
+    },
+    {
+      "id": "C2_09",
+      "title": "Capstone, Promotion & PL-300",
+      "practicePath": "COURSE_MODULES/C2_09/02_CAPSTONE/WORK/C2_09_CAPSTONE_EVIDENCE_WORKBOOK_RC1.xlsx",
+      "studyDays": [
+        11,
+        22
+      ],
+      "units": [
+        {
+          "id": "CAP1",
+          "title": "Requirements: receive and clarify an ambiguous business problem",
+          "bookPage": 6,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP2",
+          "title": "Data acquisition: determine required sources",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP3",
+          "title": "SQL extraction: produce and validate analytical dataset",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP4",
+          "title": "Transformation: choose SQL, Power Query or Python appropriately",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP5",
+          "title": "Modeling: build the semantic/business model",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP6",
+          "title": "Analysis: calculate and investigate",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP7",
+          "title": "Power BI: create the decision-facing report",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP8",
+          "title": "Validation: reconcile important numbers independently",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP9",
+          "title": "Executive communication: recommendations and limitations",
+          "bookPage": 38,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP10",
+          "title": "Documentation: create an inheritable analysis package",
+          "bookPage": 42,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP11",
+          "title": "Technical defense: explain SQL, model, DAX and validation decisions",
+          "bookPage": 46,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP12",
+          "title": "Senior Analyst interview preparation",
+          "bookPage": 50,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP13",
+          "title": "Internal promotion case",
+          "bookPage": 54,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "CAP14",
+          "title": "External job-switch preparation",
+          "bookPage": 58,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": false
+        },
+        {
+          "id": "PL1",
+          "title": "Current exam objectives audit",
+          "bookPage": 6,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL2",
+          "title": "Prepare Data assessment",
+          "bookPage": 10,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL3",
+          "title": "Model Data assessment",
+          "bookPage": 14,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL4",
+          "title": "Visualize & Analyze assessment",
+          "bookPage": 18,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL5",
+          "title": "Manage & Secure assessment",
+          "bookPage": 22,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL6",
+          "title": "Microsoft-style internal practice assessment",
+          "bookPage": 26,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL7",
+          "title": "Weak-area repair",
+          "bookPage": 30,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        },
+        {
+          "id": "PL8",
+          "title": "Certification readiness Gate",
+          "bookPage": 34,
+          "watch": [],
+          "planningHours": [
+            2.5,
+            4.5
+          ],
+          "optional": true
+        }
+      ],
+      "bookPath": "COURSE_MODULES/C2_09/01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_RC1.pdf"
+    }
+  ],
+  "gates": [
+    {
+      "id": "G00",
+      "after": "C2_00",
+      "title": "Senior Analyst Foundations",
+      "aPath": "COURSE_MODULES/C2_00/04_ASSESSMENT/GATE_A/C2_00_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_00/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_00_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_00/02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G01",
+      "after": "C2_01",
+      "title": "Advanced Excel & Power Query",
+      "aPath": "COURSE_MODULES/C2_01/04_ASSESSMENT/GATE_A/C2_01_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_01/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_01/02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G02",
+      "after": "C2_02",
+      "title": "Advanced SQL",
+      "aPath": "COURSE_MODULES/C2_02/04_ASSESSMENT/GATE_A/C2_02_GATE_A_FRESH_ADVANCED_SQL_RC1.sql",
+      "bPath": "COURSE_MODULES/C2_02/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_02_GATE_B_FRESH_ADVANCED_SQL_RC1.sql",
+      "practicePath": "COURSE_MODULES/C2_02/02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql"
+    },
+    {
+      "id": "G03",
+      "after": "C2_03",
+      "title": "Professional Power BI Modeling",
+      "aPath": "COURSE_MODULES/C2_03/04_ASSESSMENT/GATE_A/C2_03_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_03/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_03_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_03/02_PRACTICE/C2_03_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G04",
+      "after": "C2_04",
+      "title": "Advanced DAX & Reporting",
+      "aPath": "COURSE_MODULES/C2_04/04_ASSESSMENT/GATE_A/C2_04_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_04/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_04/02_PRACTICE/C2_04_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G05",
+      "after": "C2_05",
+      "title": "Python Automation for Analysts",
+      "aPath": "COURSE_MODULES/C2_05/04_ASSESSMENT/GATE_A/C2_05_GATE_A_FRESH_ASSESSMENT_RC1.ipynb",
+      "bPath": "COURSE_MODULES/C2_05/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_05_GATE_B_FRESH_ASSESSMENT_RC1.ipynb",
+      "practicePath": "COURSE_MODULES/C2_05/02_PRACTICE/C2_05_PRACTICE_NOTEBOOK_RC1.ipynb"
+    },
+    {
+      "id": "G06",
+      "after": "C2_06",
+      "title": "Data Warehousing & Platform Foundations",
+      "aPath": "COURSE_MODULES/C2_06/04_ASSESSMENT/GATE_A/C2_06_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_06/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_06_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_06/02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G07",
+      "after": "C2_07",
+      "title": "Cloud / Fabric / Enterprise BI",
+      "aPath": "COURSE_MODULES/C2_07/04_ASSESSMENT/GATE_A/C2_07_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_07/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_07_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_07/02_PRACTICE/C2_07_ENTERPRISE_OPERATIONS_PRACTICE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G08",
+      "after": "C2_08",
+      "title": "Senior Business Analysis & Communication",
+      "aPath": "COURSE_MODULES/C2_08/04_ASSESSMENT/GATE_A/C2_08_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_08/04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_08/02_PRACTICE/C2_08_CASE_AND_EVIDENCE_PRACTICE_WORKBOOK_RC1.xlsx"
+    },
+    {
+      "id": "G09",
+      "after": "C2_09",
+      "title": "Capstone, Promotion & PL-300",
+      "aPath": "COURSE_MODULES/C2_09/03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_ASSESSMENT_RC1.xlsx",
+      "bPath": "COURSE_MODULES/C2_09/03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_ASSESSMENT_RC1.xlsx",
+      "practicePath": "COURSE_MODULES/C2_09/02_CAPSTONE/WORK/C2_09_CAPSTONE_EVIDENCE_WORKBOOK_RC1.xlsx"
+    }
+  ]
+}
