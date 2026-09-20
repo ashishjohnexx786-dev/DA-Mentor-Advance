@@ -35,9 +35,9 @@
           "bookPage": 5,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "How I Conduct A Requirements Gathering Interview As A Business Analyst",
               "url": "https://www.youtube.com/watch?v=iIAbSOvf96E",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "00:00-05:42 · Use for problem definition, gathering and refinement; not an assessment solution."
             }
           ],
           "planningHours": [
@@ -52,9 +52,9 @@
           "bookPage": 7,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "How I Conduct A Requirements Gathering Interview As A Business Analyst",
               "url": "https://www.youtube.com/watch?v=iIAbSOvf96E",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "00:50-05:42 · Use for questioning/elicitation and refinement."
             }
           ],
           "planningHours": [
@@ -67,7 +67,13 @@
           "id": "SAF4",
           "title": "KPI ownership, metric contracts and definitions",
           "bookPage": 9,
-          "watch": [],
+          "watch": [
+            {
+              "name": "IIBA - KPIs for Business Analysts",
+              "url": "https://www.iiba.org/professional-development/knowledge-centre/articles/kpis-for-business-analysts/",
+              "scope": "KPI agreement/calibration framing · Course metric-contract fields remain authoritative for the task."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -78,7 +84,13 @@
           "id": "SAF5",
           "title": "Grain, lineage and source-of-truth decisions",
           "bookPage": 11,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Power BI data lineage",
+              "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-data-lineage",
+              "scope": "Lineage-view mental model · Use as visual analogy; no Power BI Service access required. Microsoft notes embedded video may show earlier UI."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -100,7 +112,13 @@
           "id": "SAF7",
           "title": "Professional validation and reconciliation",
           "bookPage": 15,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Clean, transform, and load data in Power BI",
+              "url": "https://learn.microsoft.com/en-us/training/modules/clean-data-power-bi/",
+              "scope": "Profile data in Power BI - 20 min unit · Use data profiling as visual reinforcement; C2-00 validation is broader."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -136,9 +154,9 @@
           "bookPage": 3,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
               "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "01:01:41-01:09:09 · Formula-built report context; internal book controls architecture."
             }
           ],
           "planningHours": [
@@ -153,9 +171,14 @@
           "bookPage": 5,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - 10 Advanced XLOOKUP Tips & Tricks",
               "url": "https://www.youtube.com/watch?v=YyhJe5tMq58",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "01:15-04:18 · Basic XLOOKUP + multi-column/wildcard orientation; Gate answers not sourced here."
+            },
+            {
+              "name": "Microsoft Support - XLOOKUP function",
+              "url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+              "scope": "Syntax/version support · Current page notes XLOOKUP is not available in Excel 2016/2019."
             }
           ],
           "planningHours": [
@@ -170,9 +193,19 @@
           "bookPage": 7,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
               "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "08:28-12:21; 33:44-37:03 · FILTER + UNIQUE/# visual reinforcement."
+            },
+            {
+              "name": "Microsoft Support - UNIQUE function",
+              "url": "https://support.microsoft.com/en-us/excel/functions/unique-function",
+              "scope": "Dynamic array / spill behavior · Includes spill behavior and cross-workbook limitation."
+            },
+            {
+              "name": "Microsoft Support - SORT function",
+              "url": "https://support.microsoft.com/en-US/Excel/sort-function",
+              "scope": "Dynamic array / spill behavior · Current SORT syntax and spill notes."
             }
           ],
           "planningHours": [
@@ -187,9 +220,9 @@
           "bookPage": 9,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Best Excel Formulas in an hour - Beginner to PRO Masterclass",
               "url": "https://www.youtube.com/watch?v=dVJFyqI_Nw4",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "01:51-08:28 · COUNTIFS/SUMIFS/AVERAGEIFS business summaries."
             }
           ],
           "planningHours": [
@@ -204,9 +237,9 @@
           "bookPage": 11,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Excel Pivot Tables - Master Data Analysis in just 45 minutes",
               "url": "https://www.youtube.com/watch?v=zuSNd1ZMfBI",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "00:51-24:40 · Core Pivot build, aggregation, filters/slicers, date trends."
             }
           ],
           "planningHours": [
@@ -221,9 +254,19 @@
           "bookPage": 13,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
               "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "04:54-13:36; 17:50-33:35 · Editor, cleaning, types/transforms, load/refresh."
+            },
+            {
+              "name": "Microsoft Learn - Use Power Query to transform data",
+              "url": "https://learn.microsoft.com/en-us/power-query/power-query-ui",
+              "scope": "Editor/Applied Steps/merge/data profiling · Current UI concept reference."
+            },
+            {
+              "name": "Microsoft Learn - Best Practices When Working with Power Query",
+              "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
+              "scope": "Types, documentation, modular queries · Current best-practice reference."
             }
           ],
           "planningHours": [
@@ -238,9 +281,14 @@
           "bookPage": 15,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
               "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "04:54-13:36 · Editor flow only; folder controls are course-led."
+            },
+            {
+              "name": "Microsoft Learn - Combine CSV files",
+              "url": "https://learn.microsoft.com/en-us/power-query/combine-files-csv",
+              "scope": "Folder combine / Source.Name verification · Official combine-files workflow."
             }
           ],
           "planningHours": [
@@ -255,9 +303,19 @@
           "bookPage": 17,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
               "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "04:54-13:36 · Editor reinforcement only."
+            },
+            {
+              "name": "Microsoft Learn - Append queries",
+              "url": "https://learn.microsoft.com/en-us/power-query/append-queries",
+              "scope": "Append semantics · Append stacks rows and unions headers; unmatched headers become null."
+            },
+            {
+              "name": "Microsoft Learn - Use Power Query to transform data",
+              "url": "https://learn.microsoft.com/en-us/power-query/power-query-ui",
+              "scope": "Merge semantics · Current page explicitly demonstrates merge queries."
             }
           ],
           "planningHours": [
@@ -272,9 +330,9 @@
           "bookPage": 19,
           "watch": [
             {
-              "name": "Instructor / official source 1",
-              "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "name": "Microsoft Learn - Best Practices When Working with Power Query",
+              "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
+              "scope": "Use parameters / reusable functions · Parameter guidance retained."
             }
           ],
           "planningHours": [
@@ -289,9 +347,14 @@
           "bookPage": 21,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Power Query - Beginner to PRO Masterclass in 30 minutes",
               "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "33:35-35:17 · Load and refresh visual context."
+            },
+            {
+              "name": "Microsoft Learn - Best Practices When Working with Power Query",
+              "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
+              "scope": "Future-proof, types, parameters, documentation · Release controls themselves remain course-authored."
             }
           ],
           "planningHours": [
@@ -318,9 +381,14 @@
           "bookPage": 3,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - Learn SQL Beginner to Advanced in Under 4 Hours",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "51:10-1:08:03 · MySQL visual support only; PostgreSQL reference controls syntax."
+            },
+            {
+              "name": "PostgreSQL 18 - Joins Between Tables",
+              "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
+              "scope": "Join concepts · Authoritative PostgreSQL behavior."
             }
           ],
           "planningHours": [
@@ -333,7 +401,13 @@
           "id": "ASQL2",
           "title": "Subqueries and derived tables",
           "bookPage": 5,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - SELECT",
+              "url": "https://www.postgresql.org/docs/current/sql-select.html",
+              "scope": "Subselect/SELECT behavior · Book-led lesson."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -346,9 +420,14 @@
           "bookPage": 7,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - CTE chapter",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "1:58:55-2:09:06 · Concept visual only."
+            },
+            {
+              "name": "PostgreSQL 18 - WITH Queries",
+              "url": "https://www.postgresql.org/docs/current/queries-with.html",
+              "scope": "CTE behavior · Authoritative PostgreSQL behavior."
             }
           ],
           "planningHours": [
@@ -363,9 +442,14 @@
           "bookPage": 9,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - Window Functions chapter",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "1:45:58-1:58:54 · Visual support; MySQL-oriented."
+            },
+            {
+              "name": "PostgreSQL 18 - Window Functions tutorial",
+              "url": "https://www.postgresql.org/docs/current/tutorial-window.html",
+              "scope": "Window mental model · Authoritative PostgreSQL behavior."
             }
           ],
           "planningHours": [
@@ -378,7 +462,13 @@
           "id": "ASQL5",
           "title": "Ranking, partitions and running calculations",
           "bookPage": 11,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - Window Functions",
+              "url": "https://www.postgresql.org/docs/current/functions-window.html",
+              "scope": "Ranking/frame functions · Book-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -391,9 +481,14 @@
           "bookPage": 13,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - Window Functions chapter",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "1:45:58-1:58:54 · LAG/LEAD details are taught internally."
+            },
+            {
+              "name": "PostgreSQL 18 - Window Functions",
+              "url": "https://www.postgresql.org/docs/current/functions-window.html",
+              "scope": "LAG/LEAD · Authoritative PostgreSQL behavior."
             }
           ],
           "planningHours": [
@@ -408,9 +503,14 @@
           "bookPage": 15,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - CASE Statements chapter",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "1:26:39-1:35:15 · Visual support for conditional logic."
+            },
+            {
+              "name": "PostgreSQL 18 - Aggregate Functions",
+              "url": "https://www.postgresql.org/docs/current/functions-aggregate.html",
+              "scope": "Aggregate behavior · Authoritative PostgreSQL behavior."
             }
           ],
           "planningHours": [
@@ -423,7 +523,13 @@
           "id": "ASQL8",
           "title": "Date and time analysis",
           "bookPage": 17,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - Date/Time Functions and Operators",
+              "url": "https://www.postgresql.org/docs/18/functions-datetime.html",
+              "scope": "date_trunc/date-time behavior · Book-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -434,7 +540,13 @@
           "id": "ASQL9",
           "title": "Data-quality investigation with SQL",
           "bookPage": 19,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - Table and Query Expressions",
+              "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+              "scope": "Filtering/join expressions · Quality investigation is course-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -445,7 +557,13 @@
           "id": "ASQL10",
           "title": "Query debugging and validation",
           "bookPage": 21,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - SELECT",
+              "url": "https://www.postgresql.org/docs/current/sql-select.html",
+              "scope": "Query staging/debug context · Validation workflow is course-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -456,7 +574,18 @@
           "id": "ASQL11",
           "title": "Performance concepts: indexes, scans and EXPLAIN",
           "bookPage": 23,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PostgreSQL 18 - Using EXPLAIN",
+              "url": "https://www.postgresql.org/docs/current/using-explain.html",
+              "scope": "EXPLAIN / EXPLAIN ANALYZE · EXPLAIN ANALYZE executes the statement."
+            },
+            {
+              "name": "PostgreSQL 18 - Indexes",
+              "url": "https://www.postgresql.org/docs/current/indexes.html",
+              "scope": "Index concepts/trade-offs · Performance comes after correctness."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -469,9 +598,14 @@
           "bookPage": 25,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Alex The Analyst - Data Cleaning / EDA project chapters",
               "url": "https://www.youtube.com/watch?v=OT1RErkfLNQ",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "2:42:46-3:32:13 · Workflow visual only; production-style handoff is course-led."
+            },
+            {
+              "name": "PostgreSQL 18 - Queries",
+              "url": "https://www.postgresql.org/docs/current/queries.html",
+              "scope": "Query architecture · Authoritative reference."
             }
           ],
           "planningHours": [
@@ -498,9 +632,14 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn Data Modelling & Star Schema for Power BI in 20 minutes",
               "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "00:00-02:17 · Semantic/data-model mental model."
+            },
+            {
+              "name": "Microsoft Learn - Understand star schema and importance for Power BI",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+              "scope": "Semantic model + fact/dimension/grain · Authoritative current modeling guidance."
             }
           ],
           "planningHours": [
@@ -513,7 +652,18 @@
           "id": "PBM-A2",
           "title": "Fact and dimension tables",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Chandoo - Learn Data Modelling & Star Schema for Power BI in 20 minutes",
+              "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
+              "scope": "02:18-05:45 · Fact/dimension and relationship setup."
+            },
+            {
+              "name": "Microsoft Learn - Star schema guidance",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+              "scope": "Fact/dimension role and keys · Official guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -526,9 +676,14 @@
           "bookPage": 14,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn Data Modelling & Star Schema for Power BI in 20 minutes",
               "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "02:18-09:39 · Star schema and model example."
+            },
+            {
+              "name": "Microsoft Learn - Star schema guidance",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+              "scope": "Conformed dimensions/fact grain · Official guidance."
             }
           ],
           "planningHours": [
@@ -543,9 +698,14 @@
           "bookPage": 18,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn Data Modelling & Star Schema for Power BI in 20 minutes",
               "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "11:50-20:18 · Relationships, filter direction, evaluation context."
+            },
+            {
+              "name": "Microsoft Learn - Model relationships in Power BI Desktop",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-relationships-understand",
+              "scope": "Cardinality/filter propagation · Official relationship behavior."
             }
           ],
           "planningHours": [
@@ -558,7 +718,13 @@
           "id": "PBM-A5",
           "title": "Cardinality and many-to-many risks",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Many-to-many relationship guidance",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-many-to-many",
+              "scope": "Dimension M:M, fact M:M, higher-grain facts · Official guidance discourages casual fact-to-fact M:M."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -569,7 +735,13 @@
           "id": "PBM-A6",
           "title": "Role-playing dimensions",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Active vs inactive relationship guidance",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+              "scope": "Role-playing dimensions/active paths · Official guidance generally prefers active relationships where possible."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -580,7 +752,13 @@
           "id": "PBM-A7",
           "title": "Date dimensions",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Set and use date tables in Power BI Desktop",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-date-tables",
+              "scope": "Date-table behavior · Official current date-table reference."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -593,9 +771,19 @@
           "bookPage": 34,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Power Query Beginner to PRO Masterclass in 30 minutes",
               "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "04:54-13:36; 17:50-28:25; 33:35-35:17 · Editor, transformations, load/refresh."
+            },
+            {
+              "name": "Microsoft Learn - Best Practices When Working with Power Query",
+              "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
+              "scope": "Types, modules, documentation, parameters · Current best-practice page."
+            },
+            {
+              "name": "Microsoft Learn - Understanding Query Evaluation and Query Folding",
+              "url": "https://learn.microsoft.com/en-us/power-query/query-folding-basics",
+              "scope": "Connector-aware folding · Do not claim folding for file sources that cannot fold."
             }
           ],
           "planningHours": [
@@ -608,7 +796,13 @@
           "id": "PBM-A9",
           "title": "Model validation and reconciliation",
           "bookPage": 38,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Relationship troubleshooting",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-troubleshoot",
+              "scope": "Relationship/filter troubleshooting · Model QA remains course-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -619,7 +813,18 @@
           "id": "PBM-A10",
           "title": "Model performance fundamentals",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Optimize semantic model performance",
+              "url": "https://learn.microsoft.com/en-us/training/modules/optimize-semantic-model-performance/",
+              "scope": "Performance Analyzer/cardinality/optimization · Measure first; model optimization evidence."
+            },
+            {
+              "name": "Microsoft Learn - PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Optimize model performance objectives · Skills measured as of 2026-04-20."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -644,9 +849,14 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn 80% of DAX in an Hour",
               "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "19:24-25:11 · Evaluation context visual."
+            },
+            {
+              "name": "Microsoft Learn - DAX overview",
+              "url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+              "scope": "Context · Authoritative context reference."
             }
           ],
           "planningHours": [
@@ -661,9 +871,14 @@
           "bookPage": 10,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn 80% of DAX in an Hour",
               "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "13:39-25:11 · Measure vs column + context."
+            },
+            {
+              "name": "Microsoft Learn - DAX overview",
+              "url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+              "scope": "Row/filter context · Authoritative reference."
             }
           ],
           "planningHours": [
@@ -678,9 +893,14 @@
           "bookPage": 14,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn 80% of DAX in an Hour",
               "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "34:18-46:34 · CALCULATE + multiple filters."
+            },
+            {
+              "name": "Microsoft Learn - CALCULATE function",
+              "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+              "scope": "Filter modification · Includes context transition remarks."
             }
           ],
           "planningHours": [
@@ -693,7 +913,13 @@
           "id": "DAX4",
           "title": "Iterator functions",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - SUMX",
+              "url": "https://learn.microsoft.com/en-us/dax/sumx-function-dax",
+              "scope": "Iterator semantics · Book-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -706,9 +932,9 @@
           "bookPage": 22,
           "watch": [
             {
-              "name": "Instructor / official source 1",
-              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "name": "Microsoft Learn - Modify DAX filter context",
+              "url": "https://learn.microsoft.com/en-us/training/modules/dax-power-bi-modify-filter/",
+              "scope": "Context transition unit · Current guided training."
             }
           ],
           "planningHours": [
@@ -721,7 +947,13 @@
           "id": "DAX6",
           "title": "Time intelligence",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Implement time-based calculations in Power BI",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-time-intelligence",
+              "scope": "Date-table/time intelligence · Current guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -732,7 +964,13 @@
           "id": "DAX7",
           "title": "Period comparison and rolling metrics",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - DATEADD function",
+              "url": "https://learn.microsoft.com/en-us/dax/dateadd-function-dax",
+              "scope": "Date shift behavior · Current DATEADD semantics."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -745,9 +983,14 @@
           "bookPage": 34,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn 80% of DAX in an Hour",
               "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "25:12-34:17 · Measure reuse/DIVIDE context."
+            },
+            {
+              "name": "Microsoft Learn - Use variables to improve DAX formulas",
+              "url": "https://learn.microsoft.com/en-us/dax/best-practices/dax-variables",
+              "scope": "VAR/RETURN · Readability/performance guidance."
             }
           ],
           "planningHours": [
@@ -762,9 +1005,9 @@
           "bookPage": 38,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Chandoo - Learn 80% of DAX in an Hour",
               "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "30:56-55:28 · DIVIDE/CALCULATE/IF patterns."
             }
           ],
           "planningHours": [
@@ -779,9 +1022,9 @@
           "bookPage": 42,
           "watch": [
             {
-              "name": "Instructor / official source 1",
-              "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "name": "Microsoft Learn - PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "DAX Query View/Performance Analyzer objectives · Debugging workflow is course-led."
             }
           ],
           "planningHours": [
@@ -794,7 +1037,13 @@
           "id": "DAX11",
           "title": "Report storytelling and executive design",
           "bookPage": 46,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Report design/storytelling objectives · Decision-first method is course-led."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -805,7 +1054,23 @@
           "id": "DAX12",
           "title": "Drillthrough, tooltips, bookmarks and interaction",
           "bookPage": 50,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Create report bookmarks",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-bookmarks",
+              "scope": "Bookmark state · Official current reference."
+            },
+            {
+              "name": "Microsoft Learn - Visual tooltips",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-custom-tooltips",
+              "scope": "Tooltips/drill actions · Official current reference."
+            },
+            {
+              "name": "Microsoft Learn - Drillthrough guidance",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/report-drillthrough",
+              "scope": "Drillthrough/back/discovery · Official guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -816,7 +1081,13 @@
           "id": "DAX13",
           "title": "Accessibility and usability",
           "bookPage": 54,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Design Power BI reports for accessibility",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-accessibility-creating-reports",
+              "scope": "Alt text/keyboard/tooltips · Critical information must not depend only on tooltip."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -827,7 +1098,13 @@
           "id": "DAX14",
           "title": "Row-level security",
           "bookPage": 58,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Row-level security with Power BI",
+              "url": "https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security",
+              "scope": "Static/dynamic RLS · Includes USERPRINCIPALNAME and role validation."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -838,7 +1115,28 @@
           "id": "DAX15",
           "title": "Workspaces, sharing and lifecycle basics",
           "bookPage": 62,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Collaborate and share Power BI content",
+              "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/collaborate-share-overview",
+              "scope": "Workspace/share/app · Official overview."
+            },
+            {
+              "name": "Microsoft Learn - Roles in Power BI workspaces",
+              "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-roles-new-workspaces",
+              "scope": "Admin/Member/Contributor/Viewer · Tenant/license conditions apply."
+            },
+            {
+              "name": "Microsoft Learn - Configure scheduled refresh",
+              "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+              "scope": "Refresh/gateway basics · Operational reference."
+            },
+            {
+              "name": "Microsoft Learn - Publish from Power BI Desktop",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files",
+              "scope": "Republish impact/refresh behavior · Impact analysis/change control."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -861,7 +1159,28 @@
           "id": "PYA1",
           "title": "Writing reusable analyst scripts",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 Tutorial - Modules",
+              "url": "https://docs.python.org/3.14/tutorial/modules.html",
+              "scope": "Modules/__main__ · Python docs authoritative."
+            },
+            {
+              "name": "Python 3.14.7 pathlib",
+              "url": "https://docs.python.org/3.14/library/pathlib.html",
+              "scope": "Path objects/glob/file operations · Python docs authoritative."
+            },
+            {
+              "name": "Real Python - Understanding Python File Paths",
+              "url": "https://realpython.com/videos/python-file-paths/",
+              "scope": "00:00-02:10 · Short visual mental model."
+            },
+            {
+              "name": "Corey Schafer - Pathlib: Modern Way to Handle File Paths",
+              "url": "https://www.youtube.com/watch?v=yxa-DJuuTBI",
+              "scope": "No reliable chapter timestamps retrieved · 2024 visual reinforcement; docs control API."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -883,7 +1202,18 @@
           "id": "PYA3",
           "title": "Robust pandas transformations",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "pandas.merge",
+              "url": "https://pandas.pydata.org/docs/reference/api/pandas.merge.html",
+              "scope": "validate/cardinality/null-key caveat · Use merge validate where contract applies."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -894,7 +1224,38 @@
           "id": "PYA4",
           "title": "Multi-file processing",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 pathlib",
+              "url": "https://docs.python.org/3.14/library/pathlib.html",
+              "scope": "Path objects/glob/file operations · Python docs authoritative."
+            },
+            {
+              "name": "Real Python - Understanding Python File Paths",
+              "url": "https://realpython.com/videos/python-file-paths/",
+              "scope": "00:00-02:10 · Short visual mental model."
+            },
+            {
+              "name": "Corey Schafer - Pathlib: Modern Way to Handle File Paths",
+              "url": "https://www.youtube.com/watch?v=yxa-DJuuTBI",
+              "scope": "No reliable chapter timestamps retrieved · 2024 visual reinforcement; docs control API."
+            },
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "pandas.merge",
+              "url": "https://pandas.pydata.org/docs/reference/api/pandas.merge.html",
+              "scope": "validate/cardinality/null-key caveat · Use merge validate where contract applies."
+            },
+            {
+              "name": "pandas IO tools",
+              "url": "https://pandas.pydata.org/docs/user_guide/io.html",
+              "scope": "CSV/JSON/Excel IO · Current IO guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -905,7 +1266,23 @@
           "id": "PYA5",
           "title": "Excel automation workflows",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "pandas IO tools",
+              "url": "https://pandas.pydata.org/docs/user_guide/io.html",
+              "scope": "CSV/JSON/Excel IO · Current IO guidance."
+            },
+            {
+              "name": "Corey Schafer - pandas Reading/Writing Data Sources",
+              "url": "https://www.youtube.com/watch?v=N6hyN6BW6ao",
+              "scope": "CSV 00:56; Excel 06:15 and 10:42; JSON 12:18 and 15:41 · Older video for visual workflow; current pandas docs govern API."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -916,7 +1293,33 @@
           "id": "PYA6",
           "title": "CSV and JSON handling",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "pandas IO tools",
+              "url": "https://pandas.pydata.org/docs/user_guide/io.html",
+              "scope": "CSV/JSON/Excel IO · Current IO guidance."
+            },
+            {
+              "name": "Corey Schafer - pandas Reading/Writing Data Sources",
+              "url": "https://www.youtube.com/watch?v=N6hyN6BW6ao",
+              "scope": "CSV 00:56; Excel 06:15 and 10:42; JSON 12:18 and 15:41 · Older video for visual workflow; current pandas docs govern API."
+            },
+            {
+              "name": "Python 3.14.7 csv module",
+              "url": "https://docs.python.org/3.14/library/csv.html",
+              "scope": "CSV semantics · Baseline-preserved resource."
+            },
+            {
+              "name": "Python 3.14.7 json module",
+              "url": "https://docs.python.org/3.14/library/json.html",
+              "scope": "JSON parsing/serialization · Baseline-preserved resource."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -927,7 +1330,18 @@
           "id": "PYA7",
           "title": "APIs for analysts",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Requests 2.34.2 Quickstart",
+              "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+              "scope": "timeout; raise_for_status; errors · Current Requests docs; timeout behavior explicitly documented."
+            },
+            {
+              "name": "Corey Schafer - Python Requests Tutorial",
+              "url": "https://www.youtube.com/watch?v=tb8gHvYlCFs",
+              "scope": "25-minute visual; no reliable chapter metadata retrieved · Current Requests docs govern reliability."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -938,7 +1352,13 @@
           "id": "PYA8",
           "title": "Error handling and defensive scripts",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 Errors and Exceptions",
+              "url": "https://docs.python.org/3.14/tutorial/errors.html",
+              "scope": "specific catches; raise; chaining · Python docs authoritative."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -949,7 +1369,23 @@
           "id": "PYA9",
           "title": "Logging and validation checks",
           "bookPage": 38,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "Python 3.14.7 logging",
+              "url": "https://docs.python.org/3.14/library/logging.html",
+              "scope": "levels; handlers; formatters · Baseline-preserved resource."
+            },
+            {
+              "name": "Corey Schafer - Logging Basics",
+              "url": "https://www.youtube.com/watch?v=-ARI4Cz-awo",
+              "scope": "Levels; file logging; formatting sections · Visual companion; Python docs control API."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -960,7 +1396,18 @@
           "id": "PYA10",
           "title": "Automated recurring reporting",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "Python 3.14.7 logging",
+              "url": "https://docs.python.org/3.14/library/logging.html",
+              "scope": "levels; handlers; formatters · Baseline-preserved resource."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -971,7 +1418,28 @@
           "id": "PYA11",
           "title": "Reproducible analytical pipelines",
           "bookPage": 46,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Python 3.14.7 pathlib",
+              "url": "https://docs.python.org/3.14/library/pathlib.html",
+              "scope": "Path objects/glob/file operations · Python docs authoritative."
+            },
+            {
+              "name": "pandas 3.0.5 User Guide",
+              "url": "https://pandas.pydata.org/docs/user_guide/",
+              "scope": "Current pandas behavior · pandas docs authoritative."
+            },
+            {
+              "name": "Python 3.14.7 venv tutorial",
+              "url": "https://docs.python.org/3.14/tutorial/venv.html",
+              "scope": "environment isolation/dependency workflow · Official current target."
+            },
+            {
+              "name": "Corey Schafer - VENV on Windows",
+              "url": "https://www.youtube.com/watch?v=APOPm01BVrk",
+              "scope": "No reliable chapter timestamps retrieved · Windows visual; current Python docs govern commands."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -994,7 +1462,13 @@
           "id": "DWF1",
           "title": "Operational databases vs analytical systems",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Get started with data warehouses in Fabric",
+              "url": "https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/",
+              "scope": "Warehouse concepts 7m; Fabric Warehouse 8m; modeling 7m · Current visual/training support; internal concepts authoritative."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1005,7 +1479,13 @@
           "id": "DWF2",
           "title": "OLTP vs OLAP",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Get started with data warehouses in Fabric",
+              "url": "https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/",
+              "scope": "Warehouse concepts 7m; Fabric Warehouse 8m; modeling 7m · Current visual/training support; internal concepts authoritative."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1016,7 +1496,18 @@
           "id": "DWF3",
           "title": "Data warehouses",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Get started with data warehouses in Fabric",
+              "url": "https://learn.microsoft.com/en-us/training/modules/get-started-data-warehouse/",
+              "scope": "Warehouse concepts 7m; Fabric Warehouse 8m; modeling 7m · Current visual/training support; internal concepts authoritative."
+            },
+            {
+              "name": "Microsoft Learn - Dimensional modeling in Fabric Data Warehouse",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
+              "scope": "Star schema / warehouse dimensional design · Baseline current-reference row preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1027,7 +1518,13 @@
           "id": "DWF4",
           "title": "Facts, dimensions and dimensional modeling",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Dimensional modeling in Fabric Data Warehouse",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview",
+              "scope": "Star schema / warehouse dimensional design · Baseline current-reference row preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1038,7 +1535,13 @@
           "id": "DWF5",
           "title": "Surrogate keys and business keys",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Dimension tables in Fabric Data Warehouse",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-dimension-tables",
+              "scope": "Keys/dimension history · Warehouse key/SCD reference."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1049,7 +1552,23 @@
           "id": "DWF6",
           "title": "Slowly changing dimensions",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Dimension tables in Fabric Data Warehouse",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-dimension-tables",
+              "scope": "Keys/dimension history · Warehouse key/SCD reference."
+            },
+            {
+              "name": "Microsoft Learn - Slowly changing dimension type 2",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/slowly-changing-dimension-type-two",
+              "scope": "Type 2 implementation visual · Concept is vendor-neutral; implementation example only."
+            },
+            {
+              "name": "Microsoft Learn - Slowly changing dimension type 1",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/slowly-changing-dimension-type-one",
+              "scope": "Type 1 contrast · Preserved baseline row."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1060,7 +1579,13 @@
           "id": "DWF7",
           "title": "ETL vs ELT",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Implement a data warehouse with Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+              "scope": "Load/incremental/SCD pipeline context · Implementation context only."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1071,7 +1596,13 @@
           "id": "DWF8",
           "title": "Staging, transformation and presentation layers",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Medallion lakehouse architecture for Fabric with OneLake",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture",
+              "scope": "Bronze/Silver/Gold and combined deployment · Current Fabric-recommended pattern; internal layer contracts remain authoritative."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1082,7 +1613,23 @@
           "id": "DWF9",
           "title": "Data lakes and lakehouses",
           "bookPage": 38,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - What is a lakehouse in Microsoft Fabric?",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-overview",
+              "scope": "Warehouse vs lakehouse capabilities · Preserved baseline row."
+            },
+            {
+              "name": "Microsoft Learn - Store data in Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+              "scope": "Current store choice · Preserved baseline storage-decision row."
+            },
+            {
+              "name": "Microsoft Learn - Choose an analytical data store in Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/fabric-analytical-data-stores",
+              "scope": "Store selection factors · Current architecture comparison."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1095,9 +1642,9 @@
           "bookPage": 42,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Harsha Guggilla - Batch vs Streaming Data Pipelines Explained",
               "url": "https://www.youtube.com/watch?v=fJEadN7_U6g",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "00:39 example; 07:12 batch; 20:31 streaming; 29:18 decision; 36:40 trade-offs · Visual support; internal lesson sufficient."
             }
           ],
           "planningHours": [
@@ -1110,7 +1657,13 @@
           "id": "DWF11",
           "title": "Data lineage and metadata",
           "bookPage": 46,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Lineage in Fabric",
+              "url": "https://learn.microsoft.com/en-us/fabric/governance/lineage",
+              "scope": "Workspace/item lineage · Automated lineage complements business metadata."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1121,7 +1674,13 @@
           "id": "DWF12",
           "title": "Quality controls across a pipeline",
           "bookPage": 50,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Microsoft Learn - Implement a data warehouse with Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+              "scope": "Load/monitor/secure context · Internal quality-control framework is assessed authority."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1144,7 +1703,13 @@
           "id": "CLD1",
           "title": "Cloud data fundamentals",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What is Microsoft Fabric?",
+              "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+              "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1155,7 +1720,13 @@
           "id": "CLD2",
           "title": "Compute, storage and identity concepts",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What is Microsoft Fabric?",
+              "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+              "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1166,7 +1737,28 @@
           "id": "CLD3",
           "title": "Microsoft Fabric ecosystem",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What is Microsoft Fabric?",
+              "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+              "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            },
+            {
+              "name": "Microsoft OneLake documentation",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/",
+              "scope": "Security/catalog/shortcuts · Preserved."
+            },
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Power BI Meets Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/power-bi-meets-microsoft-fabric-whats-in-it-for-you",
+              "scope": "Optional visual · Preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1177,7 +1769,33 @@
           "id": "CLD4",
           "title": "OneLake, lakehouse and warehouse concepts",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "What is Microsoft Fabric?",
+              "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+              "scope": "SaaS/workloads/OneLake · Baseline-preserved concept; current official overview."
+            },
+            {
+              "name": "Microsoft OneLake documentation",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/",
+              "scope": "Security/catalog/shortcuts · Preserved."
+            },
+            {
+              "name": "OneLake overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-overview",
+              "scope": "Tenant-wide logical lake · Preserved and refreshed."
+            },
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "No Walls, Just Data - Exploring OneLake",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/no-walls-just-data-exploring-onelake-in-microsoft-fabric",
+              "scope": "Optional visual · Preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1188,7 +1806,38 @@
           "id": "CLD5",
           "title": "Power BI Service in enterprise environments",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Collaborate and share Power BI content",
+              "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/collaborate-share-overview",
+              "scope": "Workspace/app/share/endorsement · Current enterprise distribution."
+            },
+            {
+              "name": "Fabric workspaces",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/workspaces",
+              "scope": "Workspace concept · Preserved."
+            },
+            {
+              "name": "PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            },
+            {
+              "name": "Preparing for PL-300 - Manage and Secure Power BI",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "Optional visual · Preserved."
+            },
+            {
+              "name": "Power BI Meets Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/shows/fabric-tech-talk-fridays/power-bi-meets-microsoft-fabric-whats-in-it-for-you",
+              "scope": "Optional visual · Preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1199,7 +1848,43 @@
           "id": "CLD6",
           "title": "Workspaces and deployment concepts",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Fabric workspaces",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/workspaces",
+              "scope": "Workspace concept · Preserved."
+            },
+            {
+              "name": "Roles in Fabric workspaces",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces",
+              "scope": "Admin/Member/Contributor/Viewer · Preserved and refreshed."
+            },
+            {
+              "name": "Fabric CI/CD overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+              "scope": "Release/source-control concepts · Preserved/canonicalized."
+            },
+            {
+              "name": "Deployment pipelines overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+              "scope": "Managed stages · Preserved."
+            },
+            {
+              "name": "PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            },
+            {
+              "name": "Preparing for PL-300 - Manage and Secure Power BI",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "Optional visual · Preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1210,7 +1895,33 @@
           "id": "CLD7",
           "title": "Refresh, gateways and scheduled operations",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Configure scheduled refresh",
+              "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+              "scope": "Gateway connection/credentials/schedule · Current Power BI operational reference."
+            },
+            {
+              "name": "On-premises data gateway",
+              "url": "https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem",
+              "scope": "Gateway concept · Preserved."
+            },
+            {
+              "name": "Get started with the Power BI Gateway",
+              "url": "https://www.youtube.com/watch?v=Vlv1tbuZNcM",
+              "scope": "Optional visual · Official docs control behavior."
+            },
+            {
+              "name": "PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1221,7 +1932,38 @@
           "id": "CLD8",
           "title": "Permissions and governance",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Roles in Fabric workspaces",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces",
+              "scope": "Admin/Member/Contributor/Viewer · Preserved and refreshed."
+            },
+            {
+              "name": "Fabric permission model",
+              "url": "https://learn.microsoft.com/en-us/fabric/security/permission-model",
+              "scope": "Security model · Preserved."
+            },
+            {
+              "name": "Govern Fabric data with OneLake catalog",
+              "url": "https://learn.microsoft.com/en-us/fabric/governance/onelake-catalog-govern",
+              "scope": "Governance posture/actions · Preserved and refreshed."
+            },
+            {
+              "name": "Microsoft Purview + Fabric",
+              "url": "https://learn.microsoft.com/en-us/fabric/governance/microsoft-purview-fabric",
+              "scope": "Governance/security/compliance · Preserved."
+            },
+            {
+              "name": "PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1232,7 +1974,23 @@
           "id": "CLD9",
           "title": "Monitoring and failure awareness",
           "bookPage": 38,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "Fabric monitoring hub",
+              "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+              "scope": "Job health/history/failure · Preserved and refreshed."
+            },
+            {
+              "name": "Use Data Factory pipelines in Microsoft Fabric",
+              "url": "https://learn.microsoft.com/en-us/shows/learn-live/learn-together-microsoft-fabric-wave-1-ep104-use-data-factory-pipelines-in-microsoft-fabric",
+              "scope": "Optional operations visual · Preserved."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1243,7 +2001,18 @@
           "id": "CLD10",
           "title": "Analyst - analytics engineer - data engineer collaboration",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric Data Warehouse overview",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing",
+              "scope": "Fabric warehouse context · Preserved as professional reference; C2-06 owns dimensional depth."
+            },
+            {
+              "name": "PL-300 study guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured Apr 20 2026 · Manage/Secure plus analyst-engineer collaboration."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1268,9 +2037,24 @@
           "bookPage": 6,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Passionate Business Analyst - Stakeholder Interview",
               "url": "https://www.youtube.com/watch?v=TAhivp4Iu-o",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "0:00 interview; 1:56 three steps; 8:23 pro tips · Visual support; internal question framework assessed."
+            },
+            {
+              "name": "Microsoft Learn - Scope report design requirements",
+              "url": "https://learn.microsoft.com/en-us/training/modules/power-bi-effective-requirements/",
+              "scope": "29 min; audience/business goals/report requirements · Useful requirements/report-audience alignment."
+            },
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "Power BI implementation planning - BI strategic planning",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning",
+              "scope": "Stakeholders, information gathering, priorities, executive summary · Current planning support."
             }
           ],
           "planningHours": [
@@ -1283,7 +2067,13 @@
           "id": "SBA2",
           "title": "Challenging a bad request professionally",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1294,7 +2084,18 @@
           "id": "SBA3",
           "title": "Prioritizing analytical work",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "Power BI implementation planning - BI strategic planning",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning",
+              "scope": "Stakeholders, information gathering, priorities, executive summary · Current planning support."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1305,7 +2106,13 @@
           "id": "SBA4",
           "title": "Separating observation, inference and recommendation",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Business value, stakeholders, analytics/data engineer collaboration · Supporting profile alignment, not exam-only teaching."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1318,9 +2125,39 @@
           "bookPage": 22,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "Microsoft Learn - Scope report design requirements",
+              "url": "https://learn.microsoft.com/en-us/training/modules/power-bi-effective-requirements/",
+              "scope": "29 min; audience/business goals/report requirements · Useful requirements/report-audience alignment."
+            },
+            {
+              "name": "Power BI implementation planning - BI strategic planning",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-bi-strategy-bi-strategic-planning",
+              "scope": "Stakeholders, information gathering, priorities, executive summary · Current planning support."
+            },
+            {
+              "name": "storytelling with data - celebrating a decade of data storytelling",
               "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "2025 session; no reliable chapter timestamps retrieved · No filler; internal executive-summary method remains sufficient."
+            },
+            {
+              "name": "Microsoft Learn - Design effective reports in Power BI",
+              "url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+              "scope": "5h07 path; use only relevant storytelling/report-design modules · Optional broader learning path."
+            },
+            {
+              "name": "Power BI Smart Narrative",
+              "url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-smart-narrative",
+              "scope": "Narrative summaries; current 2026 behavior · Draft support only; analyst verifies facts/decision."
+            },
+            {
+              "name": "Copilot Explore Data / executive summary tutorial",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/tutorial-copilot-power-bi-explore-data",
+              "scope": "Executive summary example · Optional; no dependency."
+            },
+            {
+              "name": "Copilot narrative prompts",
+              "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-prompts-narratives",
+              "scope": "Focused/refined narrative prompts · Current tenant/capacity restrictions may apply."
             }
           ],
           "planningHours": [
@@ -1346,9 +2183,9 @@
           "bookPage": 30,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "storytelling with data - celebrating a decade of data storytelling",
               "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "2025 session; no reliable chapter timestamps retrieved · No filler; internal executive-summary method remains sufficient."
             }
           ],
           "planningHours": [
@@ -1361,7 +2198,13 @@
           "id": "SBA8",
           "title": "Handling contradictory stakeholder requirements",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1374,9 +2217,9 @@
           "bookPage": 38,
           "watch": [
             {
-              "name": "Instructor / official source 1",
+              "name": "storytelling with data - celebrating a decade of data storytelling",
               "url": "https://www.youtube.com/watch?v=99zlHv1fNdw",
-              "scope": "Mapped source for this lesson; use the range or purpose stated in the final book."
+              "scope": "2025 session; no reliable chapter timestamps retrieved · No filler; internal executive-summary method remains sufficient."
             }
           ],
           "planningHours": [
@@ -1389,7 +2232,18 @@
           "id": "SBA10",
           "title": "Working with engineers, finance, product and operations",
           "bookPage": 42,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Business value, stakeholders, analytics/data engineer collaboration · Supporting profile alignment, not exam-only teaching."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1400,7 +2254,13 @@
           "id": "SBA11",
           "title": "Code, review and documentation habits",
           "bookPage": 46,
-          "watch": [],
+          "watch": [
+            {
+              "name": "GitHub - Reviewing changes in pull requests",
+              "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests",
+              "scope": "Review tooling · Review competency is tool-agnostic."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1411,7 +2271,18 @@
           "id": "SBA12",
           "title": "Mentoring and reviewing junior analyst work",
           "bookPage": 50,
-          "watch": [],
+          "watch": [
+            {
+              "name": "Fabric adoption roadmap - Business alignment",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+              "scope": "Requirements, cross-functional communication, feedback, priorities · Current BI business-alignment guidance."
+            },
+            {
+              "name": "Fabric adoption roadmap - Data culture",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-data-culture",
+              "scope": "Mentoring, enablement, common analytical vocabulary · Professional enablement context."
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1588,7 +2459,18 @@
           "id": "PL1",
           "title": "Current exam objectives audit",
           "bookPage": 6,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Prepare the Data - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-prepare-the-data",
+              "scope": "02:56 Prepare; 03:45 connect; 05:04 profile/clean; 05:53 transform/load; 10:09 recap · Preserved baseline video; current guide controls scope"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1599,7 +2481,18 @@
           "id": "PL2",
           "title": "Prepare Data assessment",
           "bookPage": 10,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Prepare the Data - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-prepare-the-data",
+              "scope": "02:56 Prepare; 03:45 connect; 05:04 profile/clean; 05:53 transform/load; 10:09 recap · Preserved baseline video; current guide controls scope"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1610,7 +2503,18 @@
           "id": "PL3",
           "title": "Model Data assessment",
           "bookPage": 14,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Model the Data - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-model-the-data",
+              "scope": "00:15 Model; 00:53 semantic model; 01:54 DAX; 04:14 performance; 07:00 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1621,7 +2525,18 @@
           "id": "PL4",
           "title": "Visualize & Analyze assessment",
           "bookPage": 18,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Visualize and Analyze - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-visualize-and-analyze-the-data",
+              "scope": "00:15 domain; 00:55 reports; 03:08 usability/storytelling; 07:39 patterns/trends; 13:02 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1632,7 +2547,18 @@
           "id": "PL5",
           "title": "Manage & Secure assessment",
           "bookPage": 22,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Manage and Secure Power BI - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "00:19 domain; 00:54 workspaces/items; 06:03 secure/govern; 08:36 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1643,7 +2569,23 @@
           "id": "PL6",
           "title": "Microsoft-style internal practice assessment",
           "bookPage": 26,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Microsoft Certification Practice Assessments",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+              "scope": "Free; PL-300 listed; rationales and score breakdown; repeatable · Diagnostic; not replacement for training/product experience"
+            },
+            {
+              "name": "Manage and Secure Power BI - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "00:19 domain; 00:54 workspaces/items; 06:03 secure/govern; 08:36 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1654,7 +2596,23 @@
           "id": "PL7",
           "title": "Weak-area repair",
           "bookPage": 30,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Microsoft Certification Practice Assessments",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+              "scope": "Free; PL-300 listed; rationales and score breakdown; repeatable · Diagnostic; not replacement for training/product experience"
+            },
+            {
+              "name": "Manage and Secure Power BI - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "00:19 domain; 00:54 workspaces/items; 06:03 secure/govern; 08:36 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
@@ -1665,7 +2623,23 @@
           "id": "PL8",
           "title": "Certification readiness Gate",
           "bookPage": 34,
-          "watch": [],
+          "watch": [
+            {
+              "name": "PL-300 Study Guide",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "scope": "Skills measured as of Apr 20 2026; Prepare 25-30; Model 25-30; Visualize/Analyze 25-30; Manage/Secure 15-20 · Official objective source; recheck before exam"
+            },
+            {
+              "name": "Microsoft Certification Practice Assessments",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+              "scope": "Free; PL-300 listed; rationales and score breakdown; repeatable · Diagnostic; not replacement for training/product experience"
+            },
+            {
+              "name": "Manage and Secure Power BI - Exam Readiness",
+              "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+              "scope": "00:19 domain; 00:54 workspaces/items; 06:03 secure/govern; 08:36 recap · Preserved baseline video"
+            }
+          ],
           "planningHours": [
             2.5,
             4.5
