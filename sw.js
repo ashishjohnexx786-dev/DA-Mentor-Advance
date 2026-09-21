@@ -1,5 +1,8 @@
-const CACHE='senior-bi-mentor-2026-fullshell-candidate-v1';
-const ASSETS=['./','index.html','styles.css','app.js','curriculum.js','curriculum.json','manifest.webmanifest','icon.svg','icon-192.png','icon-512.png','icon-maskable-512.png'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(hit=>hit||fetch(e.request).then(resp=>{const copy=resp.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return resp}).catch(()=>caches.match('index.html'))))});
+'use strict';
+const CACHE='fourcourse-c2a-astra-2026-r3';
+const OWN_PREFIX='fourcourse-c2a-';
+const LEGACY=["c1-da-mentor-astra-de-parity-2026-09-21", "senior-bi-mentor-2026-fullshell-candidate-v1", "c2b-bridge-astra-de-parity-2026-09-21", "c3-de-mentor-astra-2026-v4"];
+const SHELL=['./','index.html','styles.css?v=C2A-ASTRA-DE-PARITY-R3-2026-09-21','app.js?v=C2A-ASTRA-DE-PARITY-R3-2026-09-21','curriculum.json?v=C2A-ASTRA-DE-PARITY-R3-2026-09-21','icon.svg','manifest.webmanifest','data/study_guide.json?v=C2A-ASTRA-DE-PARITY-R3-2026-09-21'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith(OWN_PREFIX)&&k!==CACHE)||LEGACY.includes(k)).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{if(event.request.method!=='GET')return;const url=new URL(event.request.url),scopePath=new URL(self.registration.scope).pathname;if(url.origin!==self.location.origin||!url.pathname.startsWith(scopePath))return;if(url.pathname.endsWith('.zip'))return;event.respondWith(fetch(event.request,{cache:'no-store'}).then(async response=>{if(response.ok){try{const cache=await caches.open(CACHE);await cache.put(event.request,response.clone())}catch{}}return response;}).catch(async()=>{const cache=await caches.open(CACHE),saved=await cache.match(event.request);if(saved)return saved;if(event.request.mode==='navigate')return await cache.match('index.html')||await cache.match('./')||new Response('Offline item unavailable',{status:503});return new Response('This item is not saved offline. Reconnect and open it once.',{status:503,headers:{'Content-Type':'text/plain'}});}));});
