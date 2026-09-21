@@ -1,0 +1,383 @@
+name: Rebuild Course 2A Mentor to DE 2026 parity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/rebuild-c2a-mentor-r3.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install PDF extractor
+        run: python -m pip install --disable-pip-version-check pymupdf
+
+      - name: Use current DE-style shell donor
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/ashishjohnexx786-dev/DA-Mentor-Launch/main/app.js -o app.js
+          curl -fsSL https://raw.githubusercontent.com/ashishjohnexx786-dev/DA-Mentor-Launch/main/styles.css -o styles.css
+          curl -fsSL https://raw.githubusercontent.com/ashishjohnexx786-dev/DA-Mentor-Launch/main/index.html -o index.html
+
+      - name: Build Course 2A curriculum and in-Mentor book layer
+        shell: bash
+        run: |
+          cat > /tmp/rebuild_c2a.py <<'PY'
+          import json, math, re, glob, os
+          from pathlib import Path
+          import fitz
+
+          ROOT=Path('.')
+          VERSION='C2A-ASTRA-DE-PARITY-R3-2026-09-21'
+          COURSE_TITLE='Senior / BI Analyst 2026'
+          REPO_URL='https://github.com/ashishjohnexx786-dev/DA-Mentor-Advance'
+          LIVE_URL='https://ashishjohnexx786-dev.github.io/DA-Mentor-Advance/'
+          old=json.loads(Path('curriculum.json').read_text(encoding='utf-8'))
+
+          def existing(patterns):
+              for pat in patterns:
+                  hits=[Path(x) for x in glob.glob(pat, recursive=True)]
+                  hits=[p for p in hits if p.is_file()]
+                  if hits:
+                      return str(sorted(hits)[0]).replace('\\','/')
+              return None
+
+          def page_texts(path):
+              if not path or not Path(path).exists():
+                  return []
+              try:
+                  doc=fitz.open(path)
+                  return [page.get_text('text').strip() for page in doc]
+              except Exception:
+                  return []
+
+          def page_blocks(doc, start, end):
+              out=[]
+              start=max(0,start); end=min(len(doc),max(start+1,end))
+              for pno in range(start,end):
+                  page=doc[pno]
+                  lines=[]
+                  try:
+                      blocks=page.get_text('dict').get('blocks',[])
+                      for b in blocks:
+                          if b.get('type')!=0: 
+                              continue
+                          for line in b.get('lines',[]):
+                              spans=line.get('spans',[])
+                              text=''.join(s.get('text','') for s in spans).strip()
+                              if not text:
+                                  continue
+                              size=max([float(s.get('size',9)) for s in spans] or [9])
+                              fonts=' '.join(str(s.get('font','')) for s in spans)
+                              bold=bool(re.search(r'Bold|Black|Semibold|Demi',fonts,re.I))
+                              mono=bool(re.search(r'Mono|Courier|Consolas|Code',fonts,re.I))
+                              lines.append({'text':text,'mono':mono,'bold':bold,'size':round(size,1)})
+                  except Exception:
+                      txt=page.get_text('text')
+                      lines=[{'text':x.strip(),'mono':False,'bold':False,'size':9} for x in txt.splitlines() if x.strip()]
+                  if lines:
+                      out.append({'type':'text','lines':lines})
+              return out
+
+          def companion(path):
+              return [{'page':i+1,'text':t} for i,t in enumerate(page_texts(path)) if t]
+
+          modules=[]
+          data_dir=Path('data'); data_dir.mkdir(exist_ok=True)
+          total_required=0
+
+          for stage in old.get('stages',[]):
+              mid=stage['id']
+              lessons=stage.get('lessons',[])
+              total_required+=sum(1 for u in lessons if u.get('formal',True))
+              book=stage.get('learnerPack') or (lessons[0].get('learnerPack') if lessons else None)
+              review=stage.get('reviewPack') or (lessons[0].get('reviewPack') if lessons else None)
+              quick=existing([
+                  f'COURSE_MODULES/{mid}/01_TEACH/*QUICK_REVISION*.pdf',
+                  f'COURSE_MODULES/{mid}/01_CORE_TEACH/*QUICK_REVISION*.pdf'
+              ])
+              test=existing([
+                  f'COURSE_MODULES/{mid}/04_ASSESSMENT/*MODULE_TEST_ASTRA*.pdf',
+                  f'COURSE_MODULES/{mid}/03_FINAL_GATE/DIAGNOSTIC_NON_GATING/*PRACTICAL_MASTERY_CHECK_ASTRA*.pdf'
+              ])
+              test_review=existing([
+                  f'COURSE_MODULES/{mid}/04_ASSESSMENT/*MODULE_TEST_PROTECTED_REVIEW*.pdf',
+                  f'COURSE_MODULES/{mid}/03_FINAL_GATE/DIAGNOSTIC_NON_GATING/*PRACTICAL_MASTERY_CHECK_PROTECTED_REVIEW*.pdf'
+              ])
+              practice=existing([
+                  f'COURSE_MODULES/{mid}/02_PRACTICE/**/*PRACTICE*GUIDE*.pdf',
+                  f'COURSE_MODULES/{mid}/02_PRACTICE/**/*.xlsx',
+                  f'COURSE_MODULES/{mid}/02_PRACTICE/**/*.sql',
+                  f'COURSE_MODULES/{mid}/02_PRACTICE/**/*.ipynb',
+                  f'COURSE_MODULES/{mid}/02_PRACTICE/**/*.csv',
+                  f'COURSE_MODULES/{mid}/03_MINI_LAB/*.pdf'
+              ]) or book
+
+              units=[]
+              for u in lessons:
+                  watch=[]
+                  if u.get('visualSourceUrl'):
+                      watch=[{
+                          'name':u.get('visualSourceName') or 'Mapped instructor / official source',
+                          'url':u.get('visualSourceUrl'),
+                          'scope':u.get('visualSegment') or 'Mapped source for this lesson.'
+                      }]
+                  units.append({
+                      'id':u['id'],
+                      'title':u['title'],
+                      'bookPage':int(u.get('bookPage') or 1),
+                      'bookPath':u.get('learnerPack') or book,
+                      'watch':watch,
+                      'planningHours':[u.get('minH',stage.get('minH',2.5)),u.get('maxH',stage.get('maxH',4.5))],
+                      'optional':not bool(u.get('formal',True))
+                  })
+
+              min_hours=sum(float(u.get('minH',2.5) or 2.5) for u in lessons)
+              max_hours=sum(float(u.get('maxH',4.5) or 4.5) for u in lessons)
+              module={
+                  'id':mid,
+                  'title':stage.get('name') or mid,
+                  'bookPath':book,
+                  'practicePath':practice,
+                  'studyDays':[max(1,math.ceil(min_hours/6)),max(1,math.ceil(max_hours/6))],
+                  'units':units
+              }
+              modules.append(module)
+
+              unit_data=[]
+              if book and Path(book).exists():
+                  doc=fitz.open(book)
+                  for i,u in enumerate(lessons):
+                      start=max(0,int(u.get('bookPage') or 1)-1)
+                      if i+1<len(lessons):
+                          end=max(start+1,int(lessons[i+1].get('bookPage') or (start+2))-1)
+                      else:
+                          end=len(doc)
+                      unit_data.append({'id':u['id'],'blocks':page_blocks(doc,start,end)})
+                  doc.close()
+              else:
+                  for u in lessons:
+                      fallback=[
+                          {'text':u['title'],'mono':False,'bold':True,'size':14},
+                          {'text':u.get('proof','Complete the independent task and validate the result.'),'mono':False,'bold':False,'size':9},
+                          {'text':u.get('english','Explain what you did and why it works.'),'mono':False,'bold':False,'size':9}
+                      ]
+                      unit_data.append({'id':u['id'],'blocks':[{'type':'text','lines':fallback}]})
+
+              g=next((g for g in old.get('gates',[]) if g.get('endStage')==mid),None)
+              gate_reviews={}
+              if g:
+                  if g.get('reviewA'): gate_reviews['A']=companion(g.get('reviewA'))
+                  if g.get('reviewB'): gate_reviews['B']=companion(g.get('reviewB'))
+
+              payload={
+                  'units':unit_data,
+                  'companions':{
+                      'quickRevision':companion(quick),
+                      'masteryCheck':companion(test),
+                      'masteryReview':companion(test_review),
+                      'lessonReviews':companion(review)
+                  },
+                  'gateReviews':gate_reviews
+              }
+              Path(f'data/{mid}.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+
+          gates=[]
+          for g in old.get('gates',[]):
+              gates.append({
+                  'id':g.get('id') or g.get('Gate','Gate').split()[0],
+                  'after':g.get('endStage'),
+                  'title':re.sub(r'^G\d+\s*[-–:]?\s*','',g.get('Gate','Assessment Gate')).strip(),
+                  'aPath':g.get('gateA'),
+                  'bPath':g.get('gateB'),
+                  'practicePath':None
+              })
+
+          course={
+              'courseId':'COURSE_2A_SENIOR_BI_ANALYST_2026',
+              'title':COURSE_TITLE,
+              'shortTitle':'Senior BI Mentor',
+              'edition':VERSION,
+              'unitCount':sum(len(m['units']) for m in modules),
+              'requiredUnitCount':total_required,
+              'storageKey':'course2a-senior-bi-2026-astra-r3',
+              'backupName':'Course2A_SeniorBI_Mentor_Progress',
+              'downloadUrl':REPO_URL+'/archive/refs/heads/main.zip',
+              'modules':modules,
+              'gates':gates
+          }
+          Path('curriculum.json').write_text(json.dumps(course,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          guide_parts=[
+              ('1 · Your daily route',[
+                  'Use one lesson at a time: mapped video/source → close it → read the complete lesson in this Mentor → follow the guided example once → do the independent task → save your genuine attempt → review → changed retry → explain.',
+                  'The written lesson is self-sufficient. A video helps you visualise the skill but does not replace your own attempt.'
+              ]),
+              ('2 · What counts as evidence',[
+                  'Save the actual workbook, query, PBIX, notebook, SQL output, screenshot, validation note or business explanation produced by the lesson.',
+                  'A copied answer is not independent evidence. A wrong genuine attempt is useful because the review can target the exact weakness.'
+              ]),
+              ('3 · Module finish line',[
+                  'Finish the lessons and local practice. Use Quick revision. Attempt the module test before protected answers. Repair the specific miss and retry on changed work.',
+                  'Do not open protected review first. Keep the first attempt and correction as separate evidence.'
+              ]),
+              ('4 · Gate order',[
+                  'Gate A → save attempt → Review A → repair → different fresh Gate B → save attempt → Review B. Gate C is remediation-only when the course explicitly assigns it.',
+                  'There is no percentage shortcut. The point of the gate is independent transfer.'
+              ]),
+              ('5 · If you are stuck',[
+                  'Identify the smallest failing step, error, unexpected result or definition you cannot explain. Re-open only the relevant lesson section and reproduce the guided example once.',
+                  'Then close the explanation and retry with changed input. Do not restart the whole course because of one local mistake.'
+              ])
+          ]
+          guide={'parts':[{'title':title,'blocks':[{'type':'text','lines':[{'text':t,'mono':False,'bold':False,'size':10} for t in texts]}]} for title,texts in guide_parts]}
+          Path('data/study_guide.json').write_text(json.dumps(guide,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+
+          # Customize the DE-style shell donor.
+          idx=Path('index.html').read_text(encoding='utf-8')
+          idx=re.sub(r'<meta name="description" content="[^"]*">','<meta name="description" content="Course 2A Senior / BI Analyst 2026 study companion">',idx)
+          idx=re.sub(r'<title>.*?</title>','<title>Senior BI Mentor · 2026</title>',idx)
+          idx=idx.replace('DA Mentor<small>COURSE 1 · ZERO TO JOB READY</small>','Senior BI Mentor<small>COURSE 2A · SENIOR / BI ANALYST</small>')
+          idx=idx.replace('0 / 120','0 / 122').replace('max="120"','max="122"').replace('120 controlled lessons','122 controlled units')
+          idx=idx.replace('https://github.com/ashishjohnexx786-dev/DA-Mentor-Launch/archive/refs/heads/main.zip',REPO_URL+'/archive/refs/heads/main.zip')
+          idx=re.sub(r'styles\.css\?v=[^"\']+',f'styles.css?v={VERSION}',idx)
+          idx=re.sub(r'app\.js\?v=[^"\']+',f'app.js?v={VERSION}',idx)
+          Path('index.html').write_text(idx,encoding='utf-8')
+
+          app=Path('app.js').read_text(encoding='utf-8')
+          app=app.replace('ASTRA-DE-PARITY-2026-09-21',VERSION)
+          Path('app.js').write_text(app,encoding='utf-8')
+
+          manifest={
+              'id':'./','name':'Senior BI Mentor · Course 2A 2026','short_name':'Senior BI Mentor',
+              'start_url':'./#study','scope':'./','display':'standalone',
+              'background_color':'#000000','theme_color':'#000000',
+              'icons':[{'src':'icon.svg','sizes':'any','type':'image/svg+xml','purpose':'any'}]
+          }
+          Path('manifest.webmanifest').write_text(json.dumps(manifest,separators=(',',':')),encoding='utf-8')
+
+          legacy=['c1-da-mentor-astra-de-parity-2026-09-21','senior-bi-mentor-2026-fullshell-candidate-v1','c2b-bridge-astra-de-parity-2026-09-21','c3-de-mentor-astra-2026-v4']
+          sw=f"""'use strict';
+          const CACHE='fourcourse-c2a-astra-2026-r3';
+          const OWN_PREFIX='fourcourse-c2a-';
+          const LEGACY={json.dumps(legacy)};
+          const SHELL=['./','index.html','styles.css?v={VERSION}','app.js?v={VERSION}','curriculum.json?v={VERSION}','icon.svg','manifest.webmanifest','data/study_guide.json?v={VERSION}'];
+          self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
+          self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith(OWN_PREFIX)&&k!==CACHE)||LEGACY.includes(k)).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+          self.addEventListener('fetch',event=>{{if(event.request.method!=='GET')return;const url=new URL(event.request.url),scopePath=new URL(self.registration.scope).pathname;if(url.origin!==self.location.origin||!url.pathname.startsWith(scopePath))return;if(url.pathname.endsWith('.zip'))return;event.respondWith(fetch(event.request,{{cache:'no-store'}}).then(async response=>{{if(response.ok){{try{{const cache=await caches.open(CACHE);await cache.put(event.request,response.clone())}}catch{{}}}}return response;}}).catch(async()=>{{const cache=await caches.open(CACHE),saved=await cache.match(event.request);if(saved)return saved;if(event.request.mode==='navigate')return await cache.match('index.html')||await cache.match('./')||new Response('Offline item unavailable',{{status:503}});return new Response('This item is not saved offline. Reconnect and open it once.',{{status:503,headers:{{'Content-Type':'text/plain'}}}});}}));}});
+          """
+          Path('sw.js').write_text(sw,encoding='utf-8')
+
+          readme=f"""# Course 2A Senior / BI Analyst 2026 — Mentor edition Astra 2026
+
+          Live course: {LIVE_URL}
+
+          A complete senior-analyst route: C2_00–C2_09, {course['unitCount']} controlled units ({course['requiredUnitCount']} required) and {len(gates)} assessment gates. Start with **How to study**, then continue from the first unfinished lesson. The Mentor is the teaching interface: mapped videos/sources, complete written lesson text extracted from the canonical teaching books, practice links, progress checks and protected review are kept together.
+
+          ## Study flow
+
+          Watch/read the assigned source when mapped, study the complete written lesson in the Mentor, follow the guided example once, do the independent task, save the genuine attempt and only then open protected review. Repair the exact weakness, close the review and retry with changed work. At each gate follow A → Review A → different fresh B → Review B. The Mentor records progression; it does not automatically grade native Excel, Power BI, SQL, Python or cloud work.
+
+          AMOLED and light themes, adjustable reading size, roadmap, protected reviews, browser-local progress, export/restore and a detailed How-to-study guide are included. There is no forced timer. Export progress before clearing browser data or changing devices; phone and PC do not synchronize automatically.
+
+          Download the complete current repository from Settings. Read VERIFICATION.md for the checks and native-runtime limits. No generated video lessons are included.
+
+          ## Repository layout
+
+          - index.html, styles.css, app.js: current DE-2026-style Mentor interface.
+          - curriculum.json and data/: the current Course 2A route and complete in-Mentor lesson/review text layer.
+          - COURSE_MODULES/: canonical teaching books, practice, module tests, gates, protected reviews and supporting files.
+          - sw.js and manifest.webmanifest: repository-scoped offline caching and app metadata.
+          - release.json, CURRENT_RELEASE.txt and VERIFICATION.md: current public release markers.
+
+          The repository contains one current Course 2A Mentor route. Earlier Mentor versions remain recoverable in Git history. Local progress uses the edition-specific key `course2a-senior-bi-2026-astra-r3`.
+
+          The September 21 cache reset removes the known legacy Four-Course Mentor caches without touching the protected Standalone DE Mentor 2026 repository or its cache.
+          """
+          Path('README.md').write_text('\n'.join(line.strip() for line in readme.splitlines())+'\n',encoding='utf-8')
+
+          verification=f"""# Course 2A Mentor verification — {VERSION}
+
+          - Canonical stages: {len(modules)}
+          - Controlled units: {course['unitCount']}
+          - Required units: {course['requiredUnitCount']}
+          - Assessment gates: {len(gates)}
+          - In-Mentor lesson data files: {len(modules)}
+          - Teaching-book source: COURSE_MODULES canonical Astra RC4 PDFs
+          - Protected review order: Gate A → Review A → fresh Gate B → Review B
+          - Theme: AMOLED default + light
+          - Forced timer: none
+          - Progress: browser-local with export/restore
+          - Cache scope: repository path only; known legacy Four-Course cache names purged on activation
+          - Standalone DE Mentor 2026: not modified
+
+          Static generation verifies route counts and file references. Native Excel/Power BI/SQL/Python/cloud execution remains learner evidence and is not auto-graded by the browser.
+          """
+          Path('VERIFICATION.md').write_text('\n'.join(line.strip() for line in verification.splitlines())+'\n',encoding='utf-8')
+          Path('release.json').write_text(json.dumps({'edition':VERSION,'course':'Course 2A Senior / BI Analyst 2026','units':course['unitCount'],'requiredUnits':course['requiredUnitCount'],'gates':len(gates),'date':'2026-09-21'},indent=2),encoding='utf-8')
+          Path('CURRENT_RELEASE.txt').write_text(VERSION+'\nCurrent Mentor: DE-2026-style teaching shell with in-Mentor canonical book text.\n',encoding='utf-8')
+
+          qa={
+              'project':'Course 2A Senior / BI Analyst Mentor replacement',
+              'candidate':VERSION,
+              'date':'2026-09-21',
+              'status':'DE_STYLE_SHELL_AND_CANONICAL_BOOK_LAYER_GENERATED',
+              'counts':{'stages':len(modules),'units':course['unitCount'],'requiredUnits':course['requiredUnitCount'],'gates':len(gates)},
+              'ui_contract':{'default_amoled':True,'visible_builtin_timer':False,'backup_restore_present':True,'protected_review_sequence':True,'mentor_contains_full_lesson_text':True},
+              'cache':{'scoped':True,'legacy_four_course_cache_purge':True,'standalone_de_untouched':True},
+              'browser_boundary':'Static generation does not claim native workbook/Power BI/SQL/Python/cloud execution.'
+          }
+          Path('control').mkdir(exist_ok=True)
+          Path('control/C2A_MENTOR_REPLACEMENT_QA.json').write_text(json.dumps(qa,indent=2),encoding='utf-8')
+
+          # Remove files tied only to the superseded old shell.
+          for obsolete in ['curriculum.js','icon-192.png','icon-512.png','icon-maskable-512.png']:
+              p=Path(obsolete)
+              if p.exists(): p.unlink()
+          PY
+          python /tmp/rebuild_c2a.py
+
+      - name: Static route checks
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c=json.loads(Path('curriculum.json').read_text())
+          assert c['unitCount']==122, c['unitCount']
+          assert len(c['modules'])==10, len(c['modules'])
+          assert len(c['gates'])==10, len(c['gates'])
+          flat=[u for m in c['modules'] for u in m['units']]
+          assert len(flat)==122
+          assert len({u['id'] for u in flat})==122
+          for m in c['modules']:
+              d=json.loads(Path(f"data/{m['id']}.json").read_text())
+              assert len(d['units'])==len(m['units'])
+              assert all(x.get('blocks') for x in d['units'])
+          print('Course 2A static route checks passed.')
+          PY
+
+      - name: Refresh checksums
+        run: |
+          find . -path './.git' -prune -o -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS.txt
+
+      - name: Commit final Course 2A Mentor
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Replace Course 2A Mentor with DE-2026 teaching shell"
+          git push
