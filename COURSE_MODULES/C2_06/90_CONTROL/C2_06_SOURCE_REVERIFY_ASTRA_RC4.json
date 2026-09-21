@@ -1,0 +1,24 @@
+{
+  "module": "C2_06",
+  "date": "2026-09-20",
+  "status": "MICROSOFT_LEARN_RECHECKED_VIDEO_MAPPING_PRESERVED",
+  "preserved_registry": "90_CONTROL/C2_06_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-load-tables",
+      "observed": "Current Fabric dimensional load guidance includes business-key matching and SCD1/SCD2 history logic",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/slowly-changing-dimension-type-two",
+      "observed": "Current SCD2 tutorial uses new row/version with effective dates/current flag",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/databases/architecture/dataops-mdw",
+      "observed": "Current medallion/warehouse architecture guidance emphasizes curated gold/star schemas and stable surrogate keys",
+      "status": "CURRENT_OFFICIAL"
+    }
+  ],
+  "note": "No mapped URL intentionally removed. External vendor UI/capacity can change; internal modeling contract controls assessment."
+}

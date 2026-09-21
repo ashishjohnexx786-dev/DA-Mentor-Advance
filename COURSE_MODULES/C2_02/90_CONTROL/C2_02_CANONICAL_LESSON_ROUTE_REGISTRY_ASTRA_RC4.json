@@ -1,0 +1,137 @@
+{
+  "module": "C2_02",
+  "lessons": [
+    {
+      "lesson_id": "ASQL1",
+      "title": "Advanced joins and grain control",
+      "start_page": 3,
+      "end_page": 4,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL1",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "2"
+    },
+    {
+      "lesson_id": "ASQL2",
+      "title": "Subqueries and derived tables",
+      "start_page": 5,
+      "end_page": 6,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL2",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "3"
+    },
+    {
+      "lesson_id": "ASQL3",
+      "title": "CTEs and readable query architecture",
+      "start_page": 7,
+      "end_page": 8,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL3",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "4"
+    },
+    {
+      "lesson_id": "ASQL4",
+      "title": "Window functions fundamentals",
+      "start_page": 9,
+      "end_page": 10,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL4",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "5"
+    },
+    {
+      "lesson_id": "ASQL5",
+      "title": "Ranking, partitions and running calculations",
+      "start_page": 11,
+      "end_page": 12,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL5",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "6"
+    },
+    {
+      "lesson_id": "ASQL6",
+      "title": "LAG, LEAD and time-based comparisons",
+      "start_page": 13,
+      "end_page": 14,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL6",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "7"
+    },
+    {
+      "lesson_id": "ASQL7",
+      "title": "Conditional aggregation and advanced KPI queries",
+      "start_page": 15,
+      "end_page": 16,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL7",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "8"
+    },
+    {
+      "lesson_id": "ASQL8",
+      "title": "Date and time analysis",
+      "start_page": 17,
+      "end_page": 18,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL8",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "9"
+    },
+    {
+      "lesson_id": "ASQL9",
+      "title": "Data-quality investigation with SQL",
+      "start_page": 19,
+      "end_page": 20,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL9",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "10"
+    },
+    {
+      "lesson_id": "ASQL10",
+      "title": "Query debugging and validation",
+      "start_page": 21,
+      "end_page": 22,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL10",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "11"
+    },
+    {
+      "lesson_id": "ASQL11",
+      "title": "Performance concepts: indexes, scans and EXPLAIN",
+      "start_page": 23,
+      "end_page": 24,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL11",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "12"
+    },
+    {
+      "lesson_id": "ASQL12",
+      "title": "Maintainable production-style analytical SQL",
+      "start_page": 25,
+      "end_page": 26,
+      "teaching_file": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "P-ASQL12",
+      "practice_file": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_02_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "13"
+    }
+  ]
+}

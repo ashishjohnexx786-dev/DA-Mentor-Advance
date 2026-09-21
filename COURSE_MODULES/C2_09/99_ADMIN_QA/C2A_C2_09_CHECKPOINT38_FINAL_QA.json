@@ -1,0 +1,408 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_09 Capstone, Promotion & PL-300",
+  "checkpoint": 38,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_RUNTIME_BOUNDARY",
+  "curriculum_change": "NONE",
+  "controlled_units": 22,
+  "core_units": 14,
+  "optional_pl300_units": 8,
+  "teaching_contract": {
+    "stage_counts": {
+      "1. Why it matters": 22,
+      "2. What you are learning": 22,
+      "3. Prerequisite / what you already know": 22,
+      "4. Picture it in your head": 22,
+      "5. New words before we use them": 22,
+      "6. Watch / visual source": 22,
+      "7. Follow with me once": 22,
+      "8. What you should see / be able to say": 22,
+      "9. Why it worked": 22,
+      "10. Common beginner mistakes": 22,
+      "11. If you get stuck - recovery ladder": 22,
+      "12. Now you do a small version alone": 22,
+      "13. Validate your result": 22,
+      "14. Teach it back in your own words": 22,
+      "15. Protected review + changed fresh retry": 22,
+      "16. Evidence / mastery + exact next route": 22
+    },
+    "all_22_units_all_16_stages": true,
+    "generic_shared_recovery_phrase_count": 0,
+    "lesson_specific_core_mental_models": 14,
+    "route_checks": [
+      {
+        "lesson_id": "CAP1",
+        "start_page": 6,
+        "end_page": 9,
+        "title": "Requirements: receive and clarify an ambiguous business problem",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP2",
+        "start_page": 10,
+        "end_page": 13,
+        "title": "Data acquisition: determine required sources",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP3",
+        "start_page": 14,
+        "end_page": 17,
+        "title": "SQL extraction: produce and validate analytical dataset",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP4",
+        "start_page": 18,
+        "end_page": 21,
+        "title": "Transformation: choose SQL, Power Query or Python appropriately",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP5",
+        "start_page": 22,
+        "end_page": 25,
+        "title": "Modeling: build the semantic/business model",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP6",
+        "start_page": 26,
+        "end_page": 29,
+        "title": "Analysis: calculate and investigate",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP7",
+        "start_page": 30,
+        "end_page": 33,
+        "title": "Power BI: create the decision-facing report",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP8",
+        "start_page": 34,
+        "end_page": 37,
+        "title": "Validation: reconcile important numbers independently",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP9",
+        "start_page": 38,
+        "end_page": 41,
+        "title": "Executive communication: recommendations and limitations",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP10",
+        "start_page": 42,
+        "end_page": 45,
+        "title": "Documentation: create an inheritable analysis package",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP11",
+        "start_page": 46,
+        "end_page": 49,
+        "title": "Technical defense: explain SQL, model, DAX and validation decisions",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP12",
+        "start_page": 50,
+        "end_page": 53,
+        "title": "Senior Analyst interview preparation",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP13",
+        "start_page": 54,
+        "end_page": 57,
+        "title": "Internal promotion case",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "CAP14",
+        "start_page": 58,
+        "end_page": 61,
+        "title": "External job-switch preparation",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL1",
+        "start_page": 6,
+        "end_page": 9,
+        "title": "Current exam objectives audit",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL2",
+        "start_page": 10,
+        "end_page": 13,
+        "title": "Prepare Data assessment",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL3",
+        "start_page": 14,
+        "end_page": 17,
+        "title": "Model Data assessment",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL4",
+        "start_page": 18,
+        "end_page": 21,
+        "title": "Visualize & Analyze assessment",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL5",
+        "start_page": 22,
+        "end_page": 25,
+        "title": "Manage & Secure assessment",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL6",
+        "start_page": 26,
+        "end_page": 29,
+        "title": "Microsoft-style internal practice assessment",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL7",
+        "start_page": 30,
+        "end_page": 33,
+        "title": "Weak-area repair",
+        "exact_title_on_start_page": true
+      },
+      {
+        "lesson_id": "PL8",
+        "start_page": 34,
+        "end_page": 37,
+        "title": "Certification readiness Gate",
+        "exact_title_on_start_page": true
+      }
+    ],
+    "all_route_titles_exact": true
+  },
+  "source_preservation": {
+    "pl300_clickable_link_annotations": 22,
+    "pl300_unique_urls": 6,
+    "urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-manage-and-secure-power-bi",
+      "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-model-the-data",
+      "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-prepare-the-data",
+      "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-300-visualize-and-analyze-the-data"
+    ],
+    "official_study_guide_reverified": "2026-09-20",
+    "skills_effective_date": "2026-04-20",
+    "practice_assessment_reverified": "2026-09-20",
+    "exam_readiness_video_urls_reverified": "2026-09-20"
+  },
+  "assessment_layer": {
+    "quick_revision": true,
+    "non_gating_core_mastery_check": true,
+    "core_mastery_protected_review": true,
+    "capstone_protected_review_preserved": true,
+    "final_gate_reviews": [
+      {
+        "path": "03_FINAL_GATE/REVIEWS_PROTECTED/C2_09_FINAL_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "critical_floors": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "critical_floors": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "critical_floors": true
+      }
+    ],
+    "gate_state_machine_changed": false,
+    "gate_A_clean_pass_terminal": true,
+    "gate_B_C_remediation_only": true
+  },
+  "preservation": {
+    "checked_files": 20,
+    "all_byte_identity_pass": true,
+    "files": [
+      {
+        "path": "02_CAPSTONE/DATA/C2_09_MERIDIAN_CAPSTONE_DATA_RC1.zip",
+        "baseline_sha256": "5943516acb84c400705d14c20ca2f3f3feaa924b3484fde97130a2d501feb15e",
+        "checkpoint_sha256": "5943516acb84c400705d14c20ca2f3f3feaa924b3484fde97130a2d501feb15e",
+        "pass": true
+      },
+      {
+        "path": "02_CAPSTONE/WORK/C2_09_CAPSTONE_EVIDENCE_WORKBOOK_RC1.xlsx",
+        "baseline_sha256": "57e3f0afcb736fd8f835266f88dab477d160e672e4dbe0319b000de9fa95fed1",
+        "checkpoint_sha256": "57e3f0afcb736fd8f835266f88dab477d160e672e4dbe0319b000de9fa95fed1",
+        "pass": true
+      },
+      {
+        "path": "02_CAPSTONE/WORK/C2_09_CAPSTONE_SUBMISSION_AND_EVALUATION_RUBRIC_RC1.pdf",
+        "baseline_sha256": "44763c9f3bc88cea235f25cb31a3ba4d8a5061e88e99bbf4c735bdc06cb26f0a",
+        "checkpoint_sha256": "44763c9f3bc88cea235f25cb31a3ba4d8a5061e88e99bbf4c735bdc06cb26f0a",
+        "pass": true
+      },
+      {
+        "path": "02_CAPSTONE/WORK/C2_09_MERIDIAN_CAPSTONE_PROJECT_BRIEF_RC1.pdf",
+        "baseline_sha256": "b94351d37af6a74788c4b779880ca6519f343c402a3ad116212c40faa852d40d",
+        "checkpoint_sha256": "b94351d37af6a74788c4b779880ca6519f343c402a3ad116212c40faa852d40d",
+        "pass": true
+      },
+      {
+        "path": "02_CAPSTONE/REVIEW_PROTECTED/C2_09_CAPSTONE_REVIEW_PROTECTED_RC1.pdf",
+        "baseline_sha256": "e37a3fecf74e77f0998232887f3e79b9fe48d7d886a5bfa70c1a46e05688c1d9",
+        "checkpoint_sha256": "e37a3fecf74e77f0998232887f3e79b9fe48d7d886a5bfa70c1a46e05688c1d9",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_DATA_RC1.zip",
+        "baseline_sha256": "3e7a07829b53be190c9a913b67ce7a29a3c90d435694db9003450102c97ea7d0",
+        "checkpoint_sha256": "3e7a07829b53be190c9a913b67ce7a29a3c90d435694db9003450102c97ea7d0",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_ASSESSMENT_RC1.xlsx",
+        "baseline_sha256": "87885aceb22b89dd6df98765ae993258fc8e84817b5e74f8af925215823200ec",
+        "checkpoint_sha256": "87885aceb22b89dd6df98765ae993258fc8e84817b5e74f8af925215823200ec",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_BRIEF_RC1.pdf",
+        "baseline_sha256": "db315cf0f3689f5ce26b5c6a37e56e8132a6576772886b3e9f29d53576ef652f",
+        "checkpoint_sha256": "db315cf0f3689f5ce26b5c6a37e56e8132a6576772886b3e9f29d53576ef652f",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_DATA_RC1.zip",
+        "baseline_sha256": "9ebb58d691812b2b30025ec1beeca8f054fc9014d507199b1b843ab1d6530441",
+        "checkpoint_sha256": "9ebb58d691812b2b30025ec1beeca8f054fc9014d507199b1b843ab1d6530441",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_ASSESSMENT_RC1.xlsx",
+        "baseline_sha256": "dff75a29b79dc17d3557bb7c8d80b8c1b349b6d4fabd22f75ee750a83d5de636",
+        "checkpoint_sha256": "dff75a29b79dc17d3557bb7c8d80b8c1b349b6d4fabd22f75ee750a83d5de636",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_BRIEF_RC1.pdf",
+        "baseline_sha256": "8ab2f690af05ed5606648391cefc086ef64539b6e8dd1739cacf8d93a144a40d",
+        "checkpoint_sha256": "8ab2f690af05ed5606648391cefc086ef64539b6e8dd1739cacf8d93a144a40d",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_DATA_RC1.zip",
+        "baseline_sha256": "cc422b417dd3a4a320ecab1fcb145c91a845ba071915720a09c0e5fcdd1bfc12",
+        "checkpoint_sha256": "cc422b417dd3a4a320ecab1fcb145c91a845ba071915720a09c0e5fcdd1bfc12",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_ASSESSMENT_RC1.xlsx",
+        "baseline_sha256": "2f80e9736166028ad54e3206432f8e6db2f1c69abbc9939baa47483a824cd13f",
+        "checkpoint_sha256": "2f80e9736166028ad54e3206432f8e6db2f1c69abbc9939baa47483a824cd13f",
+        "pass": true
+      },
+      {
+        "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_BRIEF_RC1.pdf",
+        "baseline_sha256": "92ec0c771e9f54158f6bcc52a8d00aae99ab03516af44a6f5e5d99eaa4021c94",
+        "checkpoint_sha256": "92ec0c771e9f54158f6bcc52a8d00aae99ab03516af44a6f5e5d99eaa4021c94",
+        "pass": true
+      },
+      {
+        "path": "04_CAREER/C2_09_PROMOTION_AND_JOB_SWITCH_READINESS_WORKBOOK_RC1.xlsx",
+        "baseline_sha256": "7d0257912a2e110ccfd8204225e1faf5b68d4945de10c9609bfaee4f884fdf65",
+        "checkpoint_sha256": "7d0257912a2e110ccfd8204225e1faf5b68d4945de10c9609bfaee4f884fdf65",
+        "pass": true
+      },
+      {
+        "path": "05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf",
+        "baseline_sha256": "54ac2dc1c43aaccb20518b62dac87457ffc86d85dcdd8110011921e742e71700",
+        "checkpoint_sha256": "54ac2dc1c43aaccb20518b62dac87457ffc86d85dcdd8110011921e742e71700",
+        "pass": true
+      },
+      {
+        "path": "05_PL300_OPTIONAL/C2_09_PL300_ASSESSMENT_AND_REPAIR_WORKBOOK_RC1.xlsx",
+        "baseline_sha256": "150ada5fdd93a6a660054a851c3c47bf230c7494f6909a33435210ecca7d5457",
+        "checkpoint_sha256": "150ada5fdd93a6a660054a851c3c47bf230c7494f6909a33435210ecca7d5457",
+        "pass": true
+      },
+      {
+        "path": "05_PL300_OPTIONAL/PROTECTED/C2_09_PL300_40Q_REVIEW_PROTECTED_RC1.pdf",
+        "baseline_sha256": "8b7b261169f12501007a068238750e782c0f5a97b69e4e7603c0d859bcdc0dbc",
+        "checkpoint_sha256": "8b7b261169f12501007a068238750e782c0f5a97b69e4e7603c0d859bcdc0dbc",
+        "pass": true
+      },
+      {
+        "path": "05_PL300_OPTIONAL/PROTECTED/C2_09_PL300_CHANGED_RETEST_REVIEW_PROTECTED_RC1.pdf",
+        "baseline_sha256": "2a9fad9d353aae327ccd2cde376555f2592dee666f3406c5dc0fbca701fd9899",
+        "checkpoint_sha256": "2a9fad9d353aae327ccd2cde376555f2592dee666f3406c5dc0fbca701fd9899",
+        "pass": true
+      },
+      {
+        "path": "06_DE_TRANSITION_OPTIONAL/C2_09_C2A_TO_DE_READINESS_EVIDENCE_WORKBOOK_RC1.xlsx",
+        "baseline_sha256": "e06e86526211fec960f440cf3c1f6f3cbf5d5e0729f55888bc3c2bc8cbbc2291",
+        "checkpoint_sha256": "e06e86526211fec960f440cf3c1f6f3cbf5d5e0729f55888bc3c2bc8cbbc2291",
+        "pass": true
+      }
+    ]
+  },
+  "stale_active_surfaces_absent": true,
+  "stale_paths_checked": [
+    "01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_RC1.pdf",
+    "03_FINAL_GATE/REVIEWS_PROTECTED/C2_09_FINAL_GATE_A_REVIEW_PROTECTED_RC1.pdf",
+    "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_REVIEW_PROTECTED_RC1.pdf",
+    "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_REVIEW_PROTECTED_RC1.pdf",
+    "00_START/C2_09_START_HERE_TEACHING_RC1.pdf"
+  ],
+  "pdf_qa": {
+    "pdf_count": 20,
+    "total_pages": 191,
+    "parse_failures": [],
+    "all_parse_pass": true,
+    "changed_new_rendered_pages": 76,
+    "visual_contact_sheet": "C2_09_CHECKPOINT38_CONTACT.jpg",
+    "visual_result": "PASS - no clipping/overlap/black-square defect observed on generated/changed learner surfaces"
+  },
+  "nested_zip_crc": [
+    {
+      "path": "03_FINAL_GATE/GATE_A/C2_09_FINAL_GATE_A_DATA_RC1.zip",
+      "crc_pass": true,
+      "bad_member": null
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_09_FINAL_GATE_B_DATA_RC1.zip",
+      "crc_pass": true,
+      "bad_member": null
+    },
+    {
+      "path": "03_FINAL_GATE/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_09_FINAL_GATE_C_DATA_RC1.zip",
+      "crc_pass": true,
+      "bad_member": null
+    },
+    {
+      "path": "02_CAPSTONE/DATA/C2_09_MERIDIAN_CAPSTONE_DATA_RC1.zip",
+      "crc_pass": true,
+      "bad_member": null
+    }
+  ],
+  "all_nested_zip_crc_pass": true,
+  "native_runtime_boundary": "Static/package/render QA does not claim native PostgreSQL, Power BI Desktop/Service/Fabric tenant execution on the learner machine. Those remain evidence tasks.",
+  "pl300_boundary": "PL-300 remains supplementary and does not block C2A completion or unlock C3.",
+  "verdict": "PASS_CHECKPOINT38_MODULE_CLOSURE"
+}

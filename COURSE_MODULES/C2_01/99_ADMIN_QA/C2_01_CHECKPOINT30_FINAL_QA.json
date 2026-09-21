@@ -1,0 +1,209 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_01 Advanced Excel & Power Query",
+  "checkpoint": 30,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_EXCEL_POWERQUERY_BOUNDARY",
+  "curriculum_change": "NONE",
+  "lesson_count": 10,
+  "teaching_book": {
+    "file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "pages": 22,
+    "lesson_title_counts": {
+      "AX1": 1,
+      "AX2": 1,
+      "AX3": 1,
+      "AX4": 1,
+      "AX5": 1,
+      "AX6": 1,
+      "AX7": 1,
+      "AX8": 1,
+      "AX9": 1,
+      "AX10": 1
+    },
+    "sixteen_stage_counts": {
+      "1. Why it matters": 10,
+      "2. What you are learning": 10,
+      "3. Prerequisite / what you already know": 10,
+      "4. Picture it in your head": 10,
+      "5. New words before we use them": 10,
+      "6. Watch / visual source": 10,
+      "7. Follow with me once": 10,
+      "8. What you should see / be able to say": 10,
+      "9. Why it worked": 10,
+      "10. Common beginner mistakes": 10,
+      "11. If you get stuck - recovery ladder": 10,
+      "12. Now you do a small version alone": 10,
+      "13. Validate your result": 10,
+      "14. Teach it back in your own words": 10,
+      "15. Protected review + changed fresh retry": 10,
+      "16. Evidence / mastery + exact next route": 10
+    },
+    "generic_visible_path_phrase_count": 0,
+    "lesson_specific_mental_models": {
+      "Calculation layers": true,
+      "Key-to-value map": true,
+      "Spill zone": true,
+      "Filter gates": true,
+      "Summary cube": true,
+      "Query assembly line": true,
+      "Folder intake dock": true,
+      "Stack vs enrich": true,
+      "Control knob": true,
+      "Month-end conveyor": true
+    },
+    "external_uri_annotations": 10,
+    "external_unique_uris": 4,
+    "rc3_external_uri_annotations": 10,
+    "rc3_external_unique_uris": 4,
+    "external_link_annotation_parity": true
+  },
+  "preserved_byte_identity": [
+    {
+      "path": "02_PRACTICE/C2_01_PRACTICE_DATA_RC1.zip",
+      "baseline_path": "02_PRACTICE/C2_01_PRACTICE_DATA_RC1.zip",
+      "sha256": "a75528db04ef3ad698889f7c56c1174aa9dcd9a0beaeacfffcbb13f2818e85cb",
+      "baseline_sha256": "a75528db04ef3ad698889f7c56c1174aa9dcd9a0beaeacfffcbb13f2818e85cb",
+      "pass": true
+    },
+    {
+      "path": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "baseline_path": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "sha256": "c6271d4bbddc3702f30a885b70df6a31c745f31286f77f50bd7def7367559994",
+      "baseline_sha256": "c6271d4bbddc3702f30a885b70df6a31c745f31286f77f50bd7def7367559994",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_01_MINI_LAB_MONTH_END_REFRESH_BRIEF_RC1.pdf",
+      "baseline_path": "03_MINI_LAB/C2_01_MINI_LAB_MONTH_END_REFRESH_BRIEF_RC1.pdf",
+      "sha256": "c75b9b3d6ec6765f08eec012d28239bc9e0b21aef834565ccbe88f69a6722050",
+      "baseline_sha256": "c75b9b3d6ec6765f08eec012d28239bc9e0b21aef834565ccbe88f69a6722050",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_01_MINI_LAB_MONTH_END_REFRESH_RC1.xlsx",
+      "baseline_path": "03_MINI_LAB/C2_01_MINI_LAB_MONTH_END_REFRESH_RC1.xlsx",
+      "sha256": "956e433e48de9130e778a098710c5ec58ebbb04fe37619124307a16f134d4314",
+      "baseline_sha256": "956e433e48de9130e778a098710c5ec58ebbb04fe37619124307a16f134d4314",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_01_GATE_A_DATA_RC1.zip",
+      "baseline_path": "04_ASSESSMENT/GATE_A/C2_01_GATE_A_DATA_RC1.zip",
+      "sha256": "d8711413b74ef77f5c4fa11eb6b9a3191f8cceb3af4cc062020bba84b9e5e135",
+      "baseline_sha256": "d8711413b74ef77f5c4fa11eb6b9a3191f8cceb3af4cc062020bba84b9e5e135",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_01_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "baseline_path": "04_ASSESSMENT/GATE_A/C2_01_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "08b3507a336425c1a3714bb1e429726e8a405d077967d640040bc5498c3048da",
+      "baseline_sha256": "08b3507a336425c1a3714bb1e429726e8a405d077967d640040bc5498c3048da",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_DATA_RC1.zip",
+      "baseline_path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_DATA_RC1.zip",
+      "sha256": "dd767290ce36d2adec1c7e4ae1908f2d5370a9d203bcbcd5c17f075c60f5379d",
+      "baseline_sha256": "dd767290ce36d2adec1c7e4ae1908f2d5370a9d203bcbcd5c17f075c60f5379d",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "baseline_path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "0bd42455ab1ddda620fe8d5e56e860e3524c5d47ef908f6c0bb56deb3544bd17",
+      "baseline_sha256": "0bd42455ab1ddda620fe8d5e56e860e3524c5d47ef908f6c0bb56deb3544bd17",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_01_GATE_C_DATA_RC1.zip",
+      "baseline_path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_01_GATE_C_DATA_RC1.zip",
+      "sha256": "6a3bd361388a93fe9ba5aeb82e71e8116fbe0b64625455f187e7bf132dd4e64d",
+      "baseline_sha256": "6a3bd361388a93fe9ba5aeb82e71e8116fbe0b64625455f187e7bf132dd4e64d",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_01_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "baseline_path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_01_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "dc2f758a134cbda1c163d15c9b260a03e9f4c06fb181fff3eb47d9bfca49bc1c",
+      "baseline_sha256": "dc2f758a134cbda1c163d15c9b260a03e9f4c06fb181fff3eb47d9bfca49bc1c",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "baseline_path": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "sha256": "0033c8ff39e0a14b73f5aeb7e11e2b68c61c5f2a55d84c8fce75a71b02dc334e",
+      "baseline_sha256": "0033c8ff39e0a14b73f5aeb7e11e2b68c61c5f2a55d84c8fce75a71b02dc334e",
+      "pass": true
+    },
+    {
+      "path": "05_REPAIR/C2_01_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "baseline_path": "05_REPAIR/C2_01_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "sha256": "59557ea79c0c7425acbd1b2eb35bb1ac3401c0f77bc2ccfe172e7b8b7a51bc90",
+      "baseline_sha256": "59557ea79c0c7425acbd1b2eb35bb1ac3401c0f77bc2ccfe172e7b8b7a51bc90",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_01_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "baseline_path": "90_CONTROL/C2_01_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "sha256": "0c7dbe4cc2350069723a5abdbf7b2337ee022c7e50fc3882326bcd539d1a8d2a",
+      "baseline_sha256": "0c7dbe4cc2350069723a5abdbf7b2337ee022c7e50fc3882326bcd539d1a8d2a",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/PROTECTED/C2_01_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "baseline_path": "99_ADMIN_QA/PROTECTED/C2_01_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "sha256": "469653eac5255d07f9999285872bc30cecca42d8a1ef42c365789ae52f0c4bff",
+      "baseline_sha256": "469653eac5255d07f9999285872bc30cecca42d8a1ef42c365789ae52f0c4bff",
+      "pass": true
+    }
+  ],
+  "preserved_byte_identity_all_pass": true,
+  "stale_authoritative_route_references": [],
+  "stale_authoritative_route_references_zero": true,
+  "assessment_layer": {
+    "quick_revision_present": true,
+    "module_test_present": true,
+    "module_test_protected_review_present": true,
+    "module_test_gating": false,
+    "gate_state_machine_changed": false,
+    "gate_review_pages": {
+      "A": 3,
+      "B": 3,
+      "C": 3
+    },
+    "deep_controls": "99_ADMIN_QA/PROTECTED/C2_01_GATE_DEEP_CONTROLS_ASTRA_RC4.json",
+    "gate_data_and_workbooks_preserved": true
+  },
+  "render_qa": {
+    "status": "PASS_VISUAL_INSPECTION",
+    "dpi": 120,
+    "rendered_pdf_page_counts": {
+      "C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4": 22,
+      "C2_01_GATE_A_REVIEW_PROTECTED_ASTRA_RC4": 3,
+      "C2_01_GATE_B_REVIEW_PROTECTED_ASTRA_RC4": 3,
+      "C2_01_GATE_C_REVIEW_PROTECTED_ASTRA_RC4": 3,
+      "C2_01_MODULE_TEST_ASTRA_RC4": 1,
+      "C2_01_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4": 2,
+      "C2_01_QUICK_REVISION_ASTRA_RC4": 1,
+      "C2_01_START_HERE_ASTRA_RC4": 2
+    },
+    "contact_sheet": "/mnt/data/c2a_work/C2_01_CHECKPOINT30_RENDER_CONTACT.png",
+    "observed": "No clipping, overlapping content, broken glyphs, or table overflow in representative full-module contact inspection."
+  },
+  "native_runtime_boundary": {
+    "status": "EXTERNAL_SMOKE_REQUIRED_NONBLOCKING_FOR_STATIC_CHECKPOINT",
+    "environment_not_available_here": [
+      "Microsoft Excel Desktop",
+      "Power Query UI/runtime"
+    ],
+    "must_verify_on_learner_machine": [
+      "formula/table behavior",
+      "Power Query Folder.Combine/schema-drift handling",
+      "refresh after source change",
+      "join row-count reconciliation",
+      "PivotTable/slicer refresh where assigned"
+    ],
+    "claim": "No native Excel/Power Query runtime PASS is asserted by this checkpoint."
+  }
+}

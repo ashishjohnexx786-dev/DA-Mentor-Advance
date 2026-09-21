@@ -1,0 +1,16 @@
+{
+  "module": "C2_09",
+  "storage_state_change": "NONE",
+  "core_route": [
+    "CAP1-CAP14 evidence",
+    "Quick Revision",
+    "optional non-gating Practical Mastery Check",
+    "Final Gate A"
+  ],
+  "protected_rule": "saved genuine attempt -> protected review -> close -> changed fresh retry -> save retry evidence",
+  "gate_A": "normal and terminal on clean pass",
+  "gate_B_C": "remediation-only, fresh, explicit assignment",
+  "PL300": "separate optional lane; never auto-fills core status",
+  "career": "truth/privacy evidence only",
+  "DE_transition": "evidence summary only; does not unlock C3"
+}

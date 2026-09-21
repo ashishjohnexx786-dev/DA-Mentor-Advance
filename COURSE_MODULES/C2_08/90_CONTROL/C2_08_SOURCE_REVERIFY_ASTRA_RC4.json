@@ -1,0 +1,29 @@
+{
+  "module": "C2_08",
+  "date": "2026-09-20",
+  "status": "CURRENT_REFERENCE_RECHECKED_BASELINE_MAPPING_PRESERVED",
+  "preserved_registry": "90_CONTROL/C2_08_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-business-alignment",
+      "status": "CURRENT_OFFICIAL",
+      "observed": "Current Fabric adoption guidance emphasizes measurable business alignment and stakeholder/business-goal connection."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/fabric-adoption-roadmap-data-culture",
+      "status": "CURRENT_OFFICIAL",
+      "observed": "Current data-culture guidance includes stakeholder engagement, trusted data, enablement and mentoring."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "status": "CURRENT_OFFICIAL",
+      "observed": "Current PL-300 profile (skills as of Apr 20 2026) explicitly includes working with business stakeholders and collaborating with analytics/data engineers."
+    },
+    {
+      "url": "https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request",
+      "status": "CURRENT_OFFICIAL",
+      "observed": "Current GitHub PR review guidance covers file-by-file review, comments, approvals/requested changes and review purpose."
+    }
+  ],
+  "note": "No mapped baseline URL intentionally removed. Internal decision-quality framework is assessment-authoritative."
+}

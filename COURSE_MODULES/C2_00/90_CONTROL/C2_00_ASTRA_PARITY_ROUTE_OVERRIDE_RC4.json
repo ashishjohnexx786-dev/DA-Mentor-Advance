@@ -1,0 +1,18 @@
+{
+  "module": "C2_00",
+  "version": "ASTRA_PARITY_RC4",
+  "non_gating_module_test": true,
+  "routes": {
+    "start": "00_START/C2_00_START_HERE_ASTRA_RC4.pdf",
+    "teaching": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "01_TEACH/C2_00_QUICK_REVISION_ASTRA_RC4.pdf",
+    "practice": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+    "mini_lab": "03_MINI_LAB/C2_00_MINI_LAB_METRIC_DISAGREEMENT_TEACHING_RC1.pdf",
+    "module_test": "04_ASSESSMENT/C2_00_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "04_ASSESSMENT/C2_00_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_a_review": "04_ASSESSMENT/REVIEWS/C2_00_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_b_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_00_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_c_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_00_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf"
+  },
+  "state_machine": "practice/mini-lab -> optional diagnostic module test -> Gate A; Gate B/C only explicit fresh retest. Module test does not unlock/block Gate progression."
+}

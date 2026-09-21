@@ -1,0 +1,84 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_08 Senior Business Analysis & Communication",
+  "checkpoint": 37,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED",
+  "curriculum_change": "NONE",
+  "lesson_count": 12,
+  "teaching_book": {
+    "pages": 55,
+    "all_12_lessons_all_16_stages": true,
+    "stage_counts": {
+      "1. Why it matters": 12,
+      "2. What you are learning": 12,
+      "3. Prerequisite / what you already know": 12,
+      "4. Picture it in your head": 12,
+      "5. New words before we use them": 12,
+      "6. Watch / visual source": 12,
+      "7. Follow with me once": 12,
+      "8. What you should see / be able to say": 12,
+      "9. Why it worked": 12,
+      "10. Common beginner mistakes": 12,
+      "11. If you get stuck - recovery ladder": 12,
+      "12. Now you do a small version alone": 12,
+      "13. Validate your result": 12,
+      "14. Teach it back in your own words": 12,
+      "15. Protected review + changed fresh retry": 12,
+      "16. Evidence / mastery + exact next route": 12
+    },
+    "route_title_exact_pass": true,
+    "lesson_specific_mental_models": 12,
+    "baseline_unique_urls": 12,
+    "current_unique_urls": 12,
+    "all_baseline_url_targets_retained": true
+  },
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "module_test_protected_review": true,
+    "gate_state_machine_changed": false,
+    "gate_reviews": {
+      "A": {
+        "pages": 3,
+        "saved_genuine": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      },
+      "B": {
+        "pages": 3,
+        "saved_genuine": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      },
+      "C": {
+        "pages": 3,
+        "saved_genuine": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      }
+    }
+  },
+  "preservation": {
+    "byte_identity_all_pass": true,
+    "preserved_file_count": 19
+  },
+  "pdf_qa": {
+    "pdf_count": 11,
+    "page_count": 89,
+    "all_parse": true,
+    "rendered_png_count": 89,
+    "visual_contact_sheet_inspected": true,
+    "clipping_overlap_black_square_observed": false
+  },
+  "source_reverification": {
+    "official_current_references_rechecked": [
+      "Fabric adoption roadmap business alignment",
+      "Fabric adoption roadmap data culture",
+      "PL-300 study guide",
+      "GitHub pull-request review"
+    ],
+    "mapped_baseline_urls_removed": 0
+  },
+  "pass": true
+}

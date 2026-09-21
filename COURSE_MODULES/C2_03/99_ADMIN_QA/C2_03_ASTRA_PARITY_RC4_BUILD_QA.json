@@ -1,0 +1,122 @@
+{
+  "module": "C2_03",
+  "checkpoint": 32,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_POWERBI_BOUNDARY",
+  "curriculum_lessons": 10,
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "preserved_byte_identity": [
+    {
+      "path": "02_PRACTICE/C2_03_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx",
+      "sha256": "d248c445cdec7a0d7fd9c83baf3a35f89f08f05f35b8019c6e4a6b9229dcb457",
+      "baseline_sha256": "d248c445cdec7a0d7fd9c83baf3a35f89f08f05f35b8019c6e4a6b9229dcb457",
+      "pass": true
+    },
+    {
+      "path": "02_PRACTICE/C2_03_PRACTICE_DATA_RC1.zip",
+      "sha256": "3dc2d710ca7c26555721c997063b11d191e64ef45e1fbffaa4efd72ec101bbff",
+      "baseline_sha256": "3dc2d710ca7c26555721c997063b11d191e64ef45e1fbffaa4efd72ec101bbff",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_03_MINI_LAB_PARCEL_MODEL_BRIEF_RC1.pdf",
+      "sha256": "ead2616e44a8777b9688c6dda36f7419507fb5be91e7a3e3e61fc27add7fb3b3",
+      "baseline_sha256": "ead2616e44a8777b9688c6dda36f7419507fb5be91e7a3e3e61fc27add7fb3b3",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_03_MINI_LAB_PARCEL_MODEL_EVIDENCE_RC1.xlsx",
+      "sha256": "881c054d831cbbfdc7aa191c7714df3659fac5480258ed1c040190387ec8107e",
+      "baseline_sha256": "881c054d831cbbfdc7aa191c7714df3659fac5480258ed1c040190387ec8107e",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_03_GATE_A_DATA_RC1.zip",
+      "sha256": "d2618936106a79fa9fca8af1400f1232af8ab76794da0008d7cd0663ec7df2de",
+      "baseline_sha256": "d2618936106a79fa9fca8af1400f1232af8ab76794da0008d7cd0663ec7df2de",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_03_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "56ae457284baf83b010dc8ec4ba7ba3563c9472c4bf4a306d411b7344af3d812",
+      "baseline_sha256": "56ae457284baf83b010dc8ec4ba7ba3563c9472c4bf4a306d411b7344af3d812",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_03_GATE_B_DATA_RC1.zip",
+      "sha256": "d1e28675d9fbd5385ae925367dd9b5cde98283f583fe3a998b78f8cf34425768",
+      "baseline_sha256": "d1e28675d9fbd5385ae925367dd9b5cde98283f583fe3a998b78f8cf34425768",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_03_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "c4669c68c224accbd9a02778c72cfd89082547844965039869171dc44953fbbb",
+      "baseline_sha256": "c4669c68c224accbd9a02778c72cfd89082547844965039869171dc44953fbbb",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_03_GATE_C_DATA_RC1.zip",
+      "sha256": "74e4d75364e0aecb861ac5eefafab7a76012149e4ff09f3972c280b5bbc2e9fd",
+      "baseline_sha256": "74e4d75364e0aecb861ac5eefafab7a76012149e4ff09f3972c280b5bbc2e9fd",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_03_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "a6122cbb48fc426e0943a424ee631c61b86930f819866149799ef64de799bb6e",
+      "baseline_sha256": "a6122cbb48fc426e0943a424ee631c61b86930f819866149799ef64de799bb6e",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/REVIEWS/C2_03_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "sha256": "10e2dfc7cc99aa4faac1f8f0d9a3e712a45bd099cdc5e0395155a75e888c6b74",
+      "baseline_sha256": "10e2dfc7cc99aa4faac1f8f0d9a3e712a45bd099cdc5e0395155a75e888c6b74",
+      "pass": true
+    },
+    {
+      "path": "05_REPAIR/C2_03_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "sha256": "c265ba01ec41b69520c4a454cc3b92d11991d4ec7cf6d9e85dab0da7adff5bf1",
+      "baseline_sha256": "c265ba01ec41b69520c4a454cc3b92d11991d4ec7cf6d9e85dab0da7adff5bf1",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_03_PL300_ALIGNMENT_RC1.csv",
+      "sha256": "e6d6110afa7be23af1a9f560357e952b7dc8ad7992dbcbb3d5ea343027f79f25",
+      "baseline_sha256": "e6d6110afa7be23af1a9f560357e952b7dc8ad7992dbcbb3d5ea343027f79f25",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_03_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "sha256": "693f23c1370a0cf8ba16524f424815bde2496f9326a816bb84ca6653be1e021f",
+      "baseline_sha256": "693f23c1370a0cf8ba16524f424815bde2496f9326a816bb84ca6653be1e021f",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/PROTECTED/C2_03_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "sha256": "efe2c707cb4ce653283a5d9173217ff5e38dd638485a59267ff1fad1971cc418",
+      "baseline_sha256": "efe2c707cb4ce653283a5d9173217ff5e38dd638485a59267ff1fad1971cc418",
+      "pass": true
+    }
+  ],
+  "teaching": {
+    "sixteen_stage_units": 10,
+    "lesson_specific_mental_models": 10,
+    "teaching_pages": 47,
+    "source_registry_preserved": true,
+    "source_reverified": true
+  },
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  },
+  "native_powerbi_runtime": "EXTERNAL_SMOKE_REQUIRED_NONBLOCKING_FOR_STATIC_CHECKPOINT",
+  "render_qa": "PASS_VISUAL_INSPECTION",
+  "final_qa": "C2_03_CHECKPOINT32_FINAL_QA.json"
+}

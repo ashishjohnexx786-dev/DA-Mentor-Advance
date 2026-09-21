@@ -1,0 +1,29 @@
+{
+  "module": "C2_07",
+  "date": "2026-09-20",
+  "status": "MICROSOFT_LEARN_RECHECKED_BASELINE_MAPPING_PRESERVED",
+  "preserved_registry": "90_CONTROL/C2_07_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview",
+      "observed": "Current Fabric overview: SaaS analytics platform with integrated workloads over shared OneLake/storage and governance",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-roles-new-workspaces",
+      "observed": "Current Power BI workspace role documentation: Admin/Member/Contributor/Viewer and group assignment behavior",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/fabric/governance/governance-compliance-overview",
+      "observed": "Current governance guidance includes monitoring hub, capacity/admin monitoring and governance controls",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+      "observed": "Current Monitoring hub guidance separates job execution status/history from broader business validation",
+      "status": "CURRENT_OFFICIAL"
+    }
+  ],
+  "note": "No mapped baseline URL intentionally removed. Cloud product UI, licensing and tenant capability may change; internal course reasoning controls assessment."
+}

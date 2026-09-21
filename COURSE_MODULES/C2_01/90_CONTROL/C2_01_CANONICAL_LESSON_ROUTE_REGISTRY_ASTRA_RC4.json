@@ -1,0 +1,115 @@
+{
+  "module": "C2_01",
+  "lessons": [
+    {
+      "lesson_id": "AX1",
+      "title": "Advanced formulas without formula spaghetti",
+      "start_page": 3,
+      "end_page": 4,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX1_Formulas",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "2"
+    },
+    {
+      "lesson_id": "AX2",
+      "title": "XLOOKUP, INDEX/MATCH and lookup design",
+      "start_page": 5,
+      "end_page": 6,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX2_Lookups",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "3"
+    },
+    {
+      "lesson_id": "AX3",
+      "title": "Dynamic arrays: FILTER, UNIQUE, SORT and spill-safe workflows",
+      "start_page": 7,
+      "end_page": 8,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX3_Dynamic_Arrays",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "4"
+    },
+    {
+      "lesson_id": "AX4",
+      "title": "SUMIFS, COUNTIFS and auditable conditional KPIs",
+      "start_page": 9,
+      "end_page": 10,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX4_Conditional_KPIs",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "5"
+    },
+    {
+      "lesson_id": "AX5",
+      "title": "Advanced PivotTables and business summaries",
+      "start_page": 11,
+      "end_page": 12,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX5_Pivots",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "6"
+    },
+    {
+      "lesson_id": "AX6",
+      "title": "Power Query architecture and repeatable imports",
+      "start_page": 13,
+      "end_page": 14,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX6_PQ_Architecture",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "7"
+    },
+    {
+      "lesson_id": "AX7",
+      "title": "Cleaning and transforming multiple files",
+      "start_page": 15,
+      "end_page": 16,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX7_PQ_Folder",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "8"
+    },
+    {
+      "lesson_id": "AX8",
+      "title": "Merge vs append and relationship/grain mistakes",
+      "start_page": 17,
+      "end_page": 18,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX8_Merge_Append",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "9"
+    },
+    {
+      "lesson_id": "AX9",
+      "title": "Parameters and reusable query design",
+      "start_page": 19,
+      "end_page": 20,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX9_Parameters",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "10"
+    },
+    {
+      "lesson_id": "AX10",
+      "title": "Refreshable monthly reporting workflow",
+      "start_page": 21,
+      "end_page": 22,
+      "teaching_file": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "practice_id": "AX10_Month_End",
+      "practice_file": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_01_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "11"
+    }
+  ]
+}

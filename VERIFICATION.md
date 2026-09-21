@@ -1,1 +1,0 @@
-Static route, JS syntax, PWA shell, final lesson text, protected-review state and current-branch legacy-file removal are verified before deployment. Native desktop/cloud execution remains learner evidence.

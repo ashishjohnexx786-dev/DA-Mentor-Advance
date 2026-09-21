@@ -1,0 +1,372 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_04 Advanced DAX & Reporting",
+  "checkpoint": 33,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_POWERBI_SERVICE_BOUNDARY",
+  "curriculum_change": "NONE",
+  "lesson_count": 15,
+  "teaching_book": {
+    "pages": 67,
+    "stage_counts": {
+      "1. Why it matters": 15,
+      "2. What you are learning": 15,
+      "3. Prerequisite / what you already know": 15,
+      "4. Picture it in your head": 15,
+      "5. New words before we use them": 15,
+      "6. Watch / visual source": 15,
+      "7. Follow with me once": 15,
+      "8. What you should see / be able to say": 15,
+      "9. Why it worked": 15,
+      "10. Common beginner mistakes": 15,
+      "11. If you get stuck - recovery ladder": 15,
+      "12. Now you do a small version alone": 15,
+      "13. Validate your result": 15,
+      "14. Teach it back in your own words": 15,
+      "15. Protected review + changed fresh retry": 15,
+      "16. Evidence / mastery + exact next route": 15
+    },
+    "all_16_stages_15_each": true,
+    "rc1_label_count": 0,
+    "lesson_specific_mental_models": 15,
+    "route_title_checks": [
+      {
+        "lesson_id": "DAX1",
+        "start_page": 6,
+        "title": "Evaluation context properly understood",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX2",
+        "start_page": 10,
+        "title": "Row context vs filter context",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX3",
+        "start_page": 14,
+        "title": "CALCULATE deeply understood",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX4",
+        "start_page": 18,
+        "title": "Iterator functions",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX5",
+        "start_page": 22,
+        "title": "Context transition",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX6",
+        "start_page": 26,
+        "title": "Time intelligence",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX7",
+        "start_page": 30,
+        "title": "Period comparison and rolling metrics",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX8",
+        "start_page": 34,
+        "title": "Variables and readable DAX",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX9",
+        "start_page": 38,
+        "title": "Advanced business measures",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX10",
+        "start_page": 42,
+        "title": "Debugging incorrect measures",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX11",
+        "start_page": 46,
+        "title": "Report storytelling and executive design",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX12",
+        "start_page": 50,
+        "title": "Drillthrough, tooltips, bookmarks and interaction",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX13",
+        "start_page": 54,
+        "title": "Accessibility and usability",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX14",
+        "start_page": 58,
+        "title": "Row-level security",
+        "pass": true
+      },
+      {
+        "lesson_id": "DAX15",
+        "start_page": 62,
+        "title": "Workspaces, sharing and lifecycle basics",
+        "pass": true
+      }
+    ],
+    "route_title_all_pass": true,
+    "external_unique_uris": 16,
+    "baseline_unique_uris": 16,
+    "all_baseline_uri_targets_retained": true
+  },
+  "assessment_layer": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "module_test_protected_review": true,
+    "gate_state_machine_changed": false,
+    "gate_reviews": {
+      "A": {
+        "pages": 3,
+        "words": 601,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "protected_review": true
+      },
+      "B": {
+        "pages": 3,
+        "words": 551,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "protected_review": true
+      },
+      "C": {
+        "pages": 3,
+        "words": 513,
+        "saved_genuine_attempt": true,
+        "changed_fresh_retry": true,
+        "protected_review": true
+      }
+    },
+    "all_gate_reviews_3_pages": true,
+    "saved_attempt_changed_retry_all_pass": true
+  },
+  "preservation": {
+    "preserved_file_count": 15,
+    "preserved_byte_identity_all_pass": true,
+    "preserved_byte_identity": [
+      {
+        "path": "02_PRACTICE/C2_04_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx",
+        "sha256": "3cbf504f2f719e581431c9106a3638e7ccd9c41587f990291698f79142023672",
+        "baseline_sha256": "3cbf504f2f719e581431c9106a3638e7ccd9c41587f990291698f79142023672",
+        "pass": true
+      },
+      {
+        "path": "02_PRACTICE/C2_04_PRACTICE_DATA_RC1.zip",
+        "sha256": "58f0b4a66df96a01b2c2b092aab5d9055f819b6044773575d653d38831817365",
+        "baseline_sha256": "58f0b4a66df96a01b2c2b092aab5d9055f819b6044773575d653d38831817365",
+        "pass": true
+      },
+      {
+        "path": "03_MINI_LAB/C2_04_MINI_LAB_EXECUTIVE_BI_RELEASE_BRIEF_RC1.pdf",
+        "sha256": "308b9ebfee4c01ff20bc8cf6c0265e4d03463aaf01dffacca2e8a428db191b20",
+        "baseline_sha256": "308b9ebfee4c01ff20bc8cf6c0265e4d03463aaf01dffacca2e8a428db191b20",
+        "pass": true
+      },
+      {
+        "path": "03_MINI_LAB/C2_04_MINI_LAB_EXECUTIVE_BI_RELEASE_EVIDENCE_RC1.xlsx",
+        "sha256": "391f125ac244e2a65b35788e3c268bcc7299f496874a760d261058ae2b737157",
+        "baseline_sha256": "391f125ac244e2a65b35788e3c268bcc7299f496874a760d261058ae2b737157",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/GATE_A/C2_04_GATE_A_DATA_RC1.zip",
+        "sha256": "4675e42001576a94f823b39e451979d8b6ab8ef15dc188d41927464ad75157b8",
+        "baseline_sha256": "4675e42001576a94f823b39e451979d8b6ab8ef15dc188d41927464ad75157b8",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/GATE_A/C2_04_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+        "sha256": "86800b3a39a8b9657f508ad9ba227c7382448185720c372e0f0905adf9840b70",
+        "baseline_sha256": "86800b3a39a8b9657f508ad9ba227c7382448185720c372e0f0905adf9840b70",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_DATA_RC1.zip",
+        "sha256": "f938c5179882e922de7e4f72f12d39aabbd203ec735512b7ac34e3f762695166",
+        "baseline_sha256": "f938c5179882e922de7e4f72f12d39aabbd203ec735512b7ac34e3f762695166",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+        "sha256": "8f9e1eed3c2a8e8392060fdda156bb1f873b112b05ccbe71258a6633449ce1ee",
+        "baseline_sha256": "8f9e1eed3c2a8e8392060fdda156bb1f873b112b05ccbe71258a6633449ce1ee",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_04_GATE_C_DATA_RC1.zip",
+        "sha256": "4de8f0ecbae6dfa3a92776d6d64d8b526ba9f0be5eb70b7576ff14fd919a2746",
+        "baseline_sha256": "4de8f0ecbae6dfa3a92776d6d64d8b526ba9f0be5eb70b7576ff14fd919a2746",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_04_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+        "sha256": "aa332649262f896af44d701c3468783be02bf2c7a6d4698a393c24c8665f5108",
+        "baseline_sha256": "aa332649262f896af44d701c3468783be02bf2c7a6d4698a393c24c8665f5108",
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/REVIEWS/C2_04_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+        "sha256": "494e0e216fb37b062132eace635cb446672a5f022b87a710be34c6710710009b",
+        "baseline_sha256": "494e0e216fb37b062132eace635cb446672a5f022b87a710be34c6710710009b",
+        "pass": true
+      },
+      {
+        "path": "05_REPAIR/C2_04_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+        "sha256": "02aa02fec89d85a086b807861a2dd54853bc7e0621f55b42926a7570ecd8bbff",
+        "baseline_sha256": "02aa02fec89d85a086b807861a2dd54853bc7e0621f55b42926a7570ecd8bbff",
+        "pass": true
+      },
+      {
+        "path": "90_CONTROL/C2_04_PL300_ALIGNMENT_RC1.csv",
+        "sha256": "8158ece22cb2d1e3b9d2520cd3d46bfbaa18b69d050d25a259eefdeee42c2c51",
+        "baseline_sha256": "8158ece22cb2d1e3b9d2520cd3d46bfbaa18b69d050d25a259eefdeee42c2c51",
+        "pass": true
+      },
+      {
+        "path": "90_CONTROL/C2_04_SOURCE_VIDEO_REGISTRY_RC1.csv",
+        "sha256": "64c996b43869288ffd2a9be4612e348622149e5ffa98034724267c4e980824de",
+        "baseline_sha256": "64c996b43869288ffd2a9be4612e348622149e5ffa98034724267c4e980824de",
+        "pass": true
+      },
+      {
+        "path": "99_ADMIN_QA/PROTECTED/C2_04_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+        "sha256": "fe1aa181e2bab10fad028256ccd0699fa6c6ed12287a9469d4aa1b8d4d243d22",
+        "baseline_sha256": "fe1aa181e2bab10fad028256ccd0699fa6c6ed12287a9469d4aa1b8d4d243d22",
+        "pass": true
+      }
+    ],
+    "stale_active_files": [],
+    "stale_active_zero": true
+  },
+  "pdf_qa": {
+    "pdf_count": 11,
+    "all_parse_nonzero": true,
+    "bad_glyph_hits": [],
+    "pdfs": [
+      {
+        "path": "00_START/C2_04_START_HERE_ASTRA_RC4.pdf",
+        "pages": 1,
+        "words": 196,
+        "pass": true
+      },
+      {
+        "path": "01_TEACH/C2_04_ADVANCED_DAX_REPORTING_TEACHING_BOOK_ASTRA_RC4.pdf",
+        "pages": 67,
+        "words": 10645,
+        "pass": true
+      },
+      {
+        "path": "01_TEACH/C2_04_QUICK_REVISION_ASTRA_RC4.pdf",
+        "pages": 1,
+        "words": 241,
+        "pass": true
+      },
+      {
+        "path": "03_MINI_LAB/C2_04_MINI_LAB_EXECUTIVE_BI_RELEASE_BRIEF_RC1.pdf",
+        "pages": 2,
+        "words": 273,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/C2_04_MODULE_TEST_ASTRA_RC4.pdf",
+        "pages": 1,
+        "words": 275,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/C2_04_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+        "pages": 3,
+        "words": 515,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "words": 551,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_04_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "words": 513,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/REVIEWS/C2_04_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "words": 601,
+        "pass": true
+      },
+      {
+        "path": "04_ASSESSMENT/REVIEWS/C2_04_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+        "pages": 16,
+        "words": 1178,
+        "pass": true
+      },
+      {
+        "path": "05_REPAIR/C2_04_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+        "pages": 6,
+        "words": 405,
+        "pass": true
+      }
+    ]
+  },
+  "render_qa": {
+    "rendered_pngs": 82,
+    "contact_sheet": "/mnt/data/c2a_c204_work/C2_04_CHECKPOINT33_CONTACT.jpg",
+    "representative_visual_review": "PASS_NO_CLIPPING_OVERLAP_BLACK_SQUARES_OBSERVED"
+  },
+  "source_reverification": {
+    "module": "C2_04",
+    "date": "2026-09-20",
+    "status": "RECHECKED_CURRENT_REFERENCES",
+    "preserved_registry": "90_CONTROL/C2_04_SOURCE_VIDEO_REGISTRY_RC1.csv",
+    "checks": [
+      {
+        "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+        "identity": "Chandoo - Learn 80% of DAX in an Hour",
+        "timestamps": "19:24 evaluation context; 25:12 measure reuse; 30:56 DIVIDE; 34:18 CALCULATE; 42:21 multiple filters; 49:22 IF",
+        "status": "CURRENT_RESULT_VERIFIED"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+        "status": "CURRENT_MICROSOFT_LEARN"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/dax/sumx-function-dax",
+        "status": "CURRENT_MICROSOFT_LEARN"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "status": "CURRENT_MICROSOFT_LEARN"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough",
+        "status": "CURRENT_MICROSOFT_LEARN"
+      }
+    ]
+  },
+  "native_runtime_boundary": "Power BI Desktop DAX/report/RLS execution and Power BI Service workspace/sharing/refresh/licensing behavior were not certified in this static environment; learner-device/native tenant evidence remains required.",
+  "route_files": {
+    "route_count": 11,
+    "missing": [],
+    "all_exist": true
+  }
+}

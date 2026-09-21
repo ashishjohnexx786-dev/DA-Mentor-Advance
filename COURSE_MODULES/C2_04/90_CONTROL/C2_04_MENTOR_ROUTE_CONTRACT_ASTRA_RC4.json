@@ -1,0 +1,11 @@
+{
+  "course": "C2A Senior / BI Analyst 2026 - Optional Path",
+  "module": "C2_04 Advanced DAX & Reporting",
+  "release": "ASTRA_PARITY_RC4",
+  "lesson_count": 15,
+  "lesson_registry": "90_CONTROL/C2_04_CANONICAL_LESSON_ROUTE_REGISTRY_ASTRA_RC4.json",
+  "module_test_rule": "diagnostic only; does not unlock/block Gate A",
+  "gate_b_c_rule": "fresh hidden retests only when explicitly assigned",
+  "runtime_marking": "Power BI Desktop DAX/report/RLS and Service lifecycle behavior require native evidence",
+  "course_level_sync": "deferred until all C2A module checkpoints close; preserve learner storage/state keys"
+}

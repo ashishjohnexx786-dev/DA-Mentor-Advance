@@ -1,0 +1,18 @@
+{
+  "module": "C2_02",
+  "version": "ASTRA_PARITY_RC4",
+  "non_gating_module_test": true,
+  "routes": {
+    "start": "00_START/C2_02_START_HERE_ASTRA_RC4.pdf",
+    "teaching": "01_TEACH/C2_02_ADVANCED_SQL_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "01_TEACH/C2_02_QUICK_REVISION_ASTRA_RC4.pdf",
+    "practice": "02_PRACTICE/C2_02_ADVANCED_SQL_PRACTICE_TASKS_RC1.sql",
+    "lab_setup": "02_PRACTICE/C2_02_POSTGRESQL_LAB_SETUP_RC1.sql",
+    "module_test": "04_ASSESSMENT/C2_02_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "04_ASSESSMENT/C2_02_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_a_review": "04_ASSESSMENT/REVIEWS/C2_02_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_b_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_02_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_c_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_02_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf"
+  },
+  "state_machine": "ASQL1-ASQL12 mastery + Mini-Lab1 + Mini-Lab2 -> optional diagnostic Module Test -> Gate A; B/C explicit fresh retest only"
+}

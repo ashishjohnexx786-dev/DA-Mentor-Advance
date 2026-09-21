@@ -1,0 +1,103 @@
+{
+  "A": {
+    "domain": "Fleet Maintenance",
+    "workspaces": [
+      "Fleet DEV",
+      "Fleet TEST",
+      "Fleet PROD",
+      "Fleet Data Platform PROD"
+    ],
+    "personas": [
+      "fleet-bi-builders: build/edit Fleet DEV/TEST",
+      "fleet-managers: consume Fleet App",
+      "fleet-vendor: one report, temporary, Fleet PROD item only",
+      "spn-fleet-deploy: deploy DEV/TEST/PROD"
+    ],
+    "sources": [
+      "Telemetry API: cloud, no gateway, expected 05:30",
+      "OnPremMaintenanceSQL: on-prem, gateway required, expected 05:15",
+      "Excel Targets: SharePoint cloud, no gateway, expected 05:45"
+    ],
+    "failed": "Maintenance Status logic change: FAIL, TEST -> PROD - must block",
+    "passed": "New downtime measure: PASS, TEST -> PROD",
+    "incidents": [
+      "I-A1 High: stale report - Gateway service unavailable",
+      "I-A2 High: pipeline green but vehicle count low - late telemetry partition"
+    ],
+    "reason": [
+      "Fleet PROD is a consumer production boundary; Fleet Data Platform PROD is a separate platform-owned production workspace.",
+      "The report cannot be certified fresh earlier than every required input satisfies its own availability/freshness rule; Excel Targets is latest at 05:45 if all three are required.",
+      "Only OnPremMaintenanceSQL requires the on-premises gateway in this fixture.",
+      "The failed Maintenance Status logic change blocks promotion even though the downtime measure passed.",
+      "A green pipeline plus low vehicle count proves execution status and business completeness are different controls.",
+      "fleet-vendor should not receive broad workspace build rights for a temporary single-report need."
+    ]
+  },
+  "B": {
+    "domain": "Education Enrollment",
+    "workspaces": [
+      "Enrollment DEV",
+      "Enrollment TEST",
+      "Enrollment PROD",
+      "Student Data Platform PROD"
+    ],
+    "personas": [
+      "edu-builders: build/edit DEV/TEST",
+      "school-leads: consume PROD app",
+      "district-auditor: item/model access only",
+      "spn-edu-deploy: deployment pipeline"
+    ],
+    "sources": [
+      "Student SaaS: cloud, no gateway, expected 04:30",
+      "LegacyAdmissionsDB: on-prem, gateway required, expected 04:00",
+      "Budget Targets: cloud, no gateway, expected 05:00"
+    ],
+    "failed": "School ownership mapping: FAIL, TEST -> PROD - must block",
+    "passed": "New enrollment segment: PASS, DEV -> TEST",
+    "incidents": [
+      "I-B1 Medium: app inaccessible - group removed from audience",
+      "I-B2 High: model refresh failed - Legacy DB credential expired"
+    ],
+    "reason": [
+      "A passed segment change may move DEV -> TEST, but the failed school ownership mapping blocks TEST -> PROD.",
+      "LegacyAdmissionsDB needs the gateway and valid credentials; an expired credential is a different failure from an app audience group removal.",
+      "district-auditor needs specific item/model access, not broad workspace editing rights.",
+      "Student SaaS can be current at 04:30 while Budget Targets is only expected by 05:00; freshness is source-specific.",
+      "Audience configuration can make an otherwise healthy report inaccessible; troubleshoot identity/audience separately from refresh."
+    ]
+  },
+  "C": {
+    "domain": "Energy Metering",
+    "workspaces": [
+      "Energy DEV",
+      "Energy TEST",
+      "Energy PROD",
+      "Meter Data Platform PROD"
+    ],
+    "personas": [
+      "energy-builders: build/edit DEV/TEST",
+      "ops-supervisors: consume PROD app with RLS",
+      "regulator-guest: one certified report item only",
+      "spn-energy-deploy: deployment pipeline"
+    ],
+    "sources": [
+      "Meter Stream: cloud/stream, no gateway, near-real-time",
+      "OnPremAssetSQL: on-prem, gateway required, hourly",
+      "Tariff Master: cloud, no gateway, daily"
+    ],
+    "failed": "Region access rule: FAIL (security test), TEST -> PROD - must block",
+    "passed": "New outage page: PASS, TEST -> PROD",
+    "incidents": [
+      "I-C1 Critical: regional app shows all regions - RLS group mapping error",
+      "I-C2 High: monitor ingestion delay - upstream meter backlog"
+    ],
+    "reason": [
+      "A failed Region access security test blocks the release regardless of the passed outage page.",
+      "The RLS exposure is a Critical security incident: contain access, fix group/identity mapping, validate View-as/effective access, then re-release.",
+      "Meter Stream, OnPremAssetSQL and Tariff Master have intentionally different freshness patterns; one universal SLA is wrong.",
+      "Only OnPremAssetSQL needs the on-premises gateway.",
+      "regulator-guest is one certified-report item only; broad workspace access violates least privilege.",
+      "Upstream meter backlog and RLS mapping error have different owners/recovery paths even if both make a dashboard untrustworthy."
+    ]
+  }
+}

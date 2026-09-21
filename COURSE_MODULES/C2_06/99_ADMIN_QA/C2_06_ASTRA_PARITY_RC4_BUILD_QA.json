@@ -1,0 +1,149 @@
+{
+  "module": "C2_06",
+  "checkpoint": 35,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_FABRIC_BOUNDARY",
+  "curriculum_lessons": 12,
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "preserved_byte_identity": [
+    {
+      "path": "02_PRACTICE/C2_06_PRACTICE_DATA_RC1.zip",
+      "sha256": "747deb0a35e9b503fb91bb012116c55c8dfc40f7a25070dd3e69094824295a0f",
+      "baseline_sha256": "747deb0a35e9b503fb91bb012116c55c8dfc40f7a25070dd3e69094824295a0f",
+      "pass": true
+    },
+    {
+      "path": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "sha256": "fb0104fd890a998190e887f1ffb1452c6a603ad477cc58035a4676f24f0bac4f",
+      "baseline_sha256": "fb0104fd890a998190e887f1ffb1452c6a603ad477cc58035a4676f24f0bac4f",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_06_MINI_LAB_FLEETCARE_WAREHOUSE_DESIGN_BRIEF_RC1.pdf",
+      "sha256": "73554eb1679ecdfd3116bc9810432189fe4a0985210ae94e4dd5873548cb7e29",
+      "baseline_sha256": "73554eb1679ecdfd3116bc9810432189fe4a0985210ae94e4dd5873548cb7e29",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_06_MINI_LAB_FLEETCARE_WAREHOUSE_DESIGN_RC1.xlsx",
+      "sha256": "688e67feb46f90158778a6e563b5146a017ff342a867d5d661f894096d34ee88",
+      "baseline_sha256": "688e67feb46f90158778a6e563b5146a017ff342a867d5d661f894096d34ee88",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_06_GATE_A_DATA_RC1.zip",
+      "sha256": "c35c064ff0b94abca87bf26cec4a0afaff9d42b531763c7c64cfc82c70ee04ef",
+      "baseline_sha256": "c35c064ff0b94abca87bf26cec4a0afaff9d42b531763c7c64cfc82c70ee04ef",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_06_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "1190aba39840654c642e0adbde279bddc60a6a32e18da335ba70aceea714ec9d",
+      "baseline_sha256": "1190aba39840654c642e0adbde279bddc60a6a32e18da335ba70aceea714ec9d",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_06_GATE_B_DATA_RC1.zip",
+      "sha256": "96fed090b7b90257e0b7d711b45c9952a294831633984bf557e0e56998e52576",
+      "baseline_sha256": "96fed090b7b90257e0b7d711b45c9952a294831633984bf557e0e56998e52576",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_06_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "c6f350774443f5e9bdb2182acfcfb45d14d6ea002e608a9450fbc2e9244a5fb9",
+      "baseline_sha256": "c6f350774443f5e9bdb2182acfcfb45d14d6ea002e608a9450fbc2e9244a5fb9",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_06_GATE_C_DATA_RC1.zip",
+      "sha256": "58d883eed77fd54ec12ed78ffebc1714400216c80487c9e5c527d5540f64148e",
+      "baseline_sha256": "58d883eed77fd54ec12ed78ffebc1714400216c80487c9e5c527d5540f64148e",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_06_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "c8b8692e29015e2715e23da935f8058965a9d562909010116d9d190cbd854162",
+      "baseline_sha256": "c8b8692e29015e2715e23da935f8058965a9d562909010116d9d190cbd854162",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "sha256": "5fff74ebf11f7613bfdf4e5f934d0e0eff4d86fb5303e66dc1df30d3b72064ea",
+      "baseline_sha256": "5fff74ebf11f7613bfdf4e5f934d0e0eff4d86fb5303e66dc1df30d3b72064ea",
+      "pass": true
+    },
+    {
+      "path": "05_REPAIR/C2_06_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "sha256": "358766f12030596ffbfaffa9a45bea39d2ae47f2d8d0a5aa0454f08b9e781a99",
+      "baseline_sha256": "358766f12030596ffbfaffa9a45bea39d2ae47f2d8d0a5aa0454f08b9e781a99",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_06_BASELINE_RESOURCE_PRESERVATION_RC1.csv",
+      "sha256": "a89878f188d24e967a5df6340f5edc08f4be676f39e3acf0f38252df92726b14",
+      "baseline_sha256": "a89878f188d24e967a5df6340f5edc08f4be676f39e3acf0f38252df92726b14",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_06_CROSS_COURSE_HANDOFF_RC1.json",
+      "sha256": "5c7d0af48361c26e05a9e3e5974210a5f236c5a36001c361d276640acd47c07c",
+      "baseline_sha256": "5c7d0af48361c26e05a9e3e5974210a5f236c5a36001c361d276640acd47c07c",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_06_MODULE_AUDIT_LEDGER_RC1.csv",
+      "sha256": "7a8d6c3873186e4558da54a891fc30357f08f9f7e773c684845bdda34c26fd3e",
+      "baseline_sha256": "7a8d6c3873186e4558da54a891fc30357f08f9f7e773c684845bdda34c26fd3e",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_06_PL300_ALIGNMENT_RC1.csv",
+      "sha256": "f97da661a58048cd15dc6bd6b14d29cd57ad4ce0a26e73ba0d7baacf461d7391",
+      "baseline_sha256": "f97da661a58048cd15dc6bd6b14d29cd57ad4ce0a26e73ba0d7baacf461d7391",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_06_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "sha256": "5d78e75eb900e4e9b8d5e591e7ecb6ab1959628ac37fd7fb110697a502fdf1bc",
+      "baseline_sha256": "5d78e75eb900e4e9b8d5e591e7ecb6ab1959628ac37fd7fb110697a502fdf1bc",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/C2_06_ORPHAN_ROUTE_DUPLICATE_AUDIT_RC1.json",
+      "sha256": "d25df71ac4976e60f7e9deaa7c18a09ac0c5f9c0b85e3f186b85cd49aeebcf04",
+      "baseline_sha256": "d25df71ac4976e60f7e9deaa7c18a09ac0c5f9c0b85e3f186b85cd49aeebcf04",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/PROTECTED/C2_06_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "sha256": "7403ead7697edf1d254ff800184887a3e51cad789580e76addd99a2e5fb69895",
+      "baseline_sha256": "7403ead7697edf1d254ff800184887a3e51cad789580e76addd99a2e5fb69895",
+      "pass": true
+    }
+  ],
+  "teaching": {
+    "sixteen_stage_units": 12,
+    "lesson_specific_mental_models": 12,
+    "teaching_pages": 55,
+    "source_registry_preserved": true
+  },
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  },
+  "native_runtime": "Fabric/cloud behaviors require learner tenant evidence",
+  "render_qa": {
+    "rendered_pngs": 70,
+    "contact_sheet": "/mnt/data/c2a_c206_work/C2_06_CHECKPOINT35_CONTACT.jpg",
+    "representative_visual_review": "PASS_NO_CLIPPING_OVERLAP_BLACK_SQUARES_OBSERVED"
+  },
+  "final_qa_file": "99_ADMIN_QA/C2A_C2_06_CHECKPOINT35_FINAL_QA.json"
+}

@@ -1,0 +1,18 @@
+{
+  "module": "C2_08",
+  "version": "ASTRA_PARITY_RC4",
+  "non_gating_module_test": true,
+  "routes": {
+    "start": "00_START/C2_08_START_HERE_ASTRA_RC4.pdf",
+    "teaching": "01_TEACH/C2_08_SENIOR_BUSINESS_ANALYSIS_COMMUNICATION_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "01_TEACH/C2_08_QUICK_REVISION_ASTRA_RC4.pdf",
+    "practice": "02_PRACTICE/C2_08_CASE_AND_EVIDENCE_PRACTICE_WORKBOOK_RC1.xlsx",
+    "mini_lab": "03_MINI_LAB/C2_08_MINI_LAB_MANAGEMENT_REVIEW_SIMULATION_BRIEF_RC1.pdf",
+    "module_test": "04_ASSESSMENT/C2_08_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "04_ASSESSMENT/C2_08_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_a_review": "04_ASSESSMENT/REVIEWS/C2_08_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_b_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_c_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_08_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf"
+  },
+  "state_machine": "SBA1-SBA12 mastery + Mini-Lab -> optional Module Test -> Gate A; Gate B/C only after targeted repair"
+}

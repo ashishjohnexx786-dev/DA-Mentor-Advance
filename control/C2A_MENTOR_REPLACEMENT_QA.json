@@ -1,0 +1,39 @@
+{
+  "project": "Course 2A Senior / BI Analyst Mentor replacement",
+  "candidate": "full-shell-1",
+  "date": "2026-09-21",
+  "status": "STATIC_QA_PASS_BROWSER_AUTOMATION_UNAVAILABLE_IN_THIS_RUNTIME",
+  "source_shell": "Standalone-DE full shell inherited via verified C2B replacement donor",
+  "counts": {
+    "stages": 10,
+    "units": 122,
+    "gates": 10,
+    "unique_units": 122
+  },
+  "full_shell_views": [
+    "Today",
+    "Learn",
+    "Course",
+    "Repair",
+    "Evidence",
+    "Jobs",
+    "Reports",
+    "Settings"
+  ],
+  "route_refs_checked": 304,
+  "missing_route_refs": 0,
+  "ui_contract": {
+    "default_amoled": true,
+    "visible_builtin_timer": false,
+    "disabled_or_dimmed_progression_controls": false,
+    "backup_restore_present": true,
+    "protected_review_sequence": true
+  },
+  "pwa": {
+    "manifest_icons": 3,
+    "service_worker_assets": 10
+  },
+  "external_mapped_source_assignments": 34,
+  "errors": [],
+  "browser_boundary": "Local browser navigation is blocked by the managed runtime; static QA does not claim hosted/device interaction."
+}

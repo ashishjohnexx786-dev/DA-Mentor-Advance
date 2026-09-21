@@ -1,0 +1,128 @@
+{
+  "module": "C2_06",
+  "version": "ASTRA_PARITY_RC4",
+  "lesson_count": 12,
+  "teaching": "01_TEACH/C2_06_DATA_WAREHOUSING_PLATFORM_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+  "lessons": [
+    {
+      "lesson_id": "DWF1",
+      "lesson_title": "Operational databases vs analytical systems",
+      "teaching_start_page": "6",
+      "teaching_end_page": "9",
+      "practice_sheet": "P_DWF1",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "2"
+    },
+    {
+      "lesson_id": "DWF2",
+      "lesson_title": "OLTP vs OLAP",
+      "teaching_start_page": "10",
+      "teaching_end_page": "13",
+      "practice_sheet": "P_DWF2",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "3"
+    },
+    {
+      "lesson_id": "DWF3",
+      "lesson_title": "Data warehouses",
+      "teaching_start_page": "14",
+      "teaching_end_page": "17",
+      "practice_sheet": "P_DWF3",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "4"
+    },
+    {
+      "lesson_id": "DWF4",
+      "lesson_title": "Facts, dimensions and dimensional modeling",
+      "teaching_start_page": "18",
+      "teaching_end_page": "21",
+      "practice_sheet": "P_DWF4",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "5"
+    },
+    {
+      "lesson_id": "DWF5",
+      "lesson_title": "Surrogate keys and business keys",
+      "teaching_start_page": "22",
+      "teaching_end_page": "25",
+      "practice_sheet": "P_DWF5",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "6"
+    },
+    {
+      "lesson_id": "DWF6",
+      "lesson_title": "Slowly changing dimensions",
+      "teaching_start_page": "26",
+      "teaching_end_page": "29",
+      "practice_sheet": "P_DWF6",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "7"
+    },
+    {
+      "lesson_id": "DWF7",
+      "lesson_title": "ETL vs ELT",
+      "teaching_start_page": "30",
+      "teaching_end_page": "33",
+      "practice_sheet": "P_DWF7",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "8"
+    },
+    {
+      "lesson_id": "DWF8",
+      "lesson_title": "Staging, transformation and presentation layers",
+      "teaching_start_page": "34",
+      "teaching_end_page": "37",
+      "practice_sheet": "P_DWF8",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "9"
+    },
+    {
+      "lesson_id": "DWF9",
+      "lesson_title": "Data lakes and lakehouses",
+      "teaching_start_page": "38",
+      "teaching_end_page": "41",
+      "practice_sheet": "P_DWF9",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "10"
+    },
+    {
+      "lesson_id": "DWF10",
+      "lesson_title": "Batch vs streaming concepts",
+      "teaching_start_page": "42",
+      "teaching_end_page": "45",
+      "practice_sheet": "P_DWF10",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "11"
+    },
+    {
+      "lesson_id": "DWF11",
+      "lesson_title": "Data lineage and metadata",
+      "teaching_start_page": "46",
+      "teaching_end_page": "49",
+      "practice_sheet": "P_DWF11",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "12"
+    },
+    {
+      "lesson_id": "DWF12",
+      "lesson_title": "Quality controls across a pipeline",
+      "teaching_start_page": "50",
+      "teaching_end_page": "53",
+      "practice_sheet": "P_DWF12",
+      "practice_workbook": "02_PRACTICE/C2_06_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review": "04_ASSESSMENT/REVIEWS/C2_06_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "review_page": "13"
+    }
+  ]
+}

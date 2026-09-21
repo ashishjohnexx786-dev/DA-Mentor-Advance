@@ -1,0 +1,9 @@
+{
+  "course": "C2A Senior / BI Analyst 2026 - Optional Path",
+  "module": "C2_08 Senior Business Analysis & Communication",
+  "release": "ASTRA_PARITY_RC4",
+  "lesson_count": 12,
+  "module_test_rule": "diagnostic only",
+  "gate_b_c_rule": "fresh hidden retests only when explicitly assigned after repair",
+  "course_level_sync": "deferred until all C2A checkpoints close"
+}

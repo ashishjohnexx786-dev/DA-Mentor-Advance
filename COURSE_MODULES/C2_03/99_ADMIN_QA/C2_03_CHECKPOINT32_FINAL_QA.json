@@ -1,0 +1,126 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_03 Professional Power BI Modeling",
+  "checkpoint": 32,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_POWERBI_BOUNDARY",
+  "curriculum_change": "NONE",
+  "lesson_count": 10,
+  "standalone_de_astra_parity_contract": {
+    "sixteen_stage_counts": {
+      "1. Why it matters": 10,
+      "2. What you are learning": 10,
+      "3. Prerequisite / what you already know": 10,
+      "4. Picture it in your head": 10,
+      "5. New words before we use them": 10,
+      "6. Watch / visual source": 10,
+      "7. Follow with me once": 10,
+      "8. What you should see / be able to say": 10,
+      "9. Why it worked": 10,
+      "10. Common beginner mistakes": 10,
+      "11. If you get stuck - recovery ladder": 10,
+      "12. Now you do a small version alone": 10,
+      "13. Validate your result": 10,
+      "14. Teach it back in your own words": 10,
+      "15. Protected review + changed fresh retry": 10,
+      "16. Evidence / mastery + exact next route": 10
+    },
+    "all_10_lessons_all_16_stages": true,
+    "lesson_specific_mental_models": 10,
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "protected_review_rule": "saved genuine attempt -> review -> close review -> changed retry -> evidence/mastery",
+    "gate_state_machine_changed": false,
+    "gate_a_terminal_on_clean_pass": true,
+    "gate_b_c_fresh_explicit_retests_only": true
+  },
+  "source_preservation": {
+    "old_unique_urls": 11,
+    "new_unique_urls": 11,
+    "all_old_urls_retained": true,
+    "current_reverification": "90_CONTROL/C2_03_SOURCE_REVERIFY_ASTRA_RC4.json"
+  },
+  "deep_gate_reviews": {
+    "A": {
+      "pages": 3,
+      "key_control": "P99 gross 3248.52; gross drops 301151.13 -> 297902.61 if lost"
+    },
+    "B": {
+      "pages": 3,
+      "key_control": "PR99 is on a cancelled encounter; completed-only KPI can conceal the model defect"
+    },
+    "C": {
+      "pages": 3,
+      "key_control": "233 events over 100 shipments; naive event join inflates shipment charge 102950 -> 239400"
+    }
+  },
+  "preserved_byte_identity_all_pass": true,
+  "preserved_file_count": 15,
+  "route_targets_all_exist": true,
+  "stale_rc1_teaching_or_gate_reviews_active": false,
+  "pdf_parse": {
+    "pdf_count": 11,
+    "all_nonzero_pages": true,
+    "details": [
+      {
+        "path": "00_START/C2_03_START_HERE_ASTRA_RC4.pdf",
+        "pages": 1,
+        "text_chars": 1461
+      },
+      {
+        "path": "01_TEACH/C2_03_PROFESSIONAL_POWERBI_MODELING_TEACHING_BOOK_ASTRA_RC4.pdf",
+        "pages": 47,
+        "text_chars": 51736
+      },
+      {
+        "path": "01_TEACH/C2_03_QUICK_REVISION_ASTRA_RC4.pdf",
+        "pages": 1,
+        "text_chars": 1304
+      },
+      {
+        "path": "03_MINI_LAB/C2_03_MINI_LAB_PARCEL_MODEL_BRIEF_RC1.pdf",
+        "pages": 2,
+        "text_chars": 2090
+      },
+      {
+        "path": "04_ASSESSMENT/C2_03_MODULE_TEST_ASTRA_RC4.pdf",
+        "pages": 1,
+        "text_chars": 1405
+      },
+      {
+        "path": "04_ASSESSMENT/C2_03_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+        "pages": 2,
+        "text_chars": 2971
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_03_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "text_chars": 3469
+      },
+      {
+        "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_03_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "text_chars": 3406
+      },
+      {
+        "path": "04_ASSESSMENT/REVIEWS/C2_03_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+        "pages": 3,
+        "text_chars": 3584
+      },
+      {
+        "path": "04_ASSESSMENT/REVIEWS/C2_03_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+        "pages": 11,
+        "text_chars": 6244
+      },
+      {
+        "path": "05_REPAIR/C2_03_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+        "pages": 5,
+        "text_chars": 2384
+      }
+    ]
+  },
+  "render_qa": "PASS_VISUAL_INSPECTION_NO_CLIPPING_OVERLAP_BROKEN_GLYPHS",
+  "native_powerbi_runtime": "EXTERNAL_SMOKE_REQUIRED_NONBLOCKING_FOR_STATIC_CHECKPOINT",
+  "source_limit": "Static source recheck confirms current identities/pages; no claim of universal future UI/licensing or learner-machine runtime."
+}

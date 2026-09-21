@@ -1,0 +1,87 @@
+{
+  "method": "Parsed immutable SQL fixture INSERT statements + protected RC1 objective controls. These are static expected controls; native PostgreSQL execution remains separate.",
+  "gate_a": {
+    "raw_sellers": 16,
+    "unique_seller_ids": 15,
+    "duplicate_key": 5,
+    "duplicate_conflict": "seller_id 5 maps to Bronze/North and Bronze/West; no Gate A order currently uses seller_id 5, so current fact metrics are unaffected but the master key is not safe to auto-resolve.",
+    "orders": 90,
+    "completed_orders": 45,
+    "completed_value": 86157.13,
+    "orphan_seller_order": "order_id 88 seller_id 999 completed value 3253.11",
+    "orphan_event": "order_id 9999 closed event",
+    "trusted_segment_controls": [
+      {
+        "tier": "Bronze",
+        "region": "West",
+        "orders": 30,
+        "completed": 15,
+        "eligible_non_cancelled": 22,
+        "completed_value": 28889.96,
+        "completion_rate": 0.681818
+      },
+      {
+        "tier": "Gold",
+        "region": "South",
+        "orders": 29,
+        "completed": 15,
+        "eligible_non_cancelled": 22,
+        "completed_value": 25659.46,
+        "completion_rate": 0.681818
+      },
+      {
+        "tier": "Silver",
+        "region": "North",
+        "orders": 30,
+        "completed": 14,
+        "eligible_non_cancelled": 22,
+        "completed_value": 28354.6,
+        "completion_rate": 0.636364
+      }
+    ]
+  },
+  "gate_b": {
+    "raw_teams": 11,
+    "unique_team_ids": 10,
+    "duplicate_key": 3,
+    "duplicate_conflict": "team_id 3 maps to Tier1 and Escalations; tickets use team_id 3, so team_type aggregation is unsafe until mapping is resolved.",
+    "tickets": 100,
+    "resolved_ticket_status": 60,
+    "events": 164,
+    "resolved_events_including_orphan": 61,
+    "orphan_team_ticket": "ticket_id 97 team_id 999",
+    "orphan_event": "ticket_id 9999 resolved event",
+    "reopened_within_48h_total": 3,
+    "reopened_tickets": [
+      {
+        "ticket_id": 51,
+        "team_id": 4
+      },
+      {
+        "ticket_id": 68,
+        "team_id": 5
+      },
+      {
+        "ticket_id": 85,
+        "team_id": 6
+      }
+    ],
+    "team_id_reopen_note": "Teams 4,5,6 each have 10 resolved tickets and one reopened-within-48h ticket = 10%; no unique worst team at team_id grain."
+  },
+  "gate_c": {
+    "raw_accounts": 18,
+    "unique_account_ids": 17,
+    "duplicate_key": 8,
+    "duplicate_conflict": "account_id 8 maps to Enterprise/East and Pro/South; five invoices use account 8, so plan/region metrics are unsafe until resolved.",
+    "invoices": 95,
+    "invoice_status_paid_count": 57,
+    "invoice_status_paid_amount": 184743.17,
+    "payments": 83,
+    "payment_success_events": 64,
+    "successful_payment_invoices": 63,
+    "successful_payment_invoice_amount_once_per_invoice": 202098.12,
+    "orphan_account_invoice": "invoice_id 94 account_id 999 cancelled",
+    "orphan_payment": "payment_id 83 invoice_id 9999 success amount 650",
+    "metric_contract_note": "Invoice status=paid and has-successful-payment-event are different valid questions in this fixture. State which one the KPI uses; payment retries must not duplicate invoice amount."
+  }
+}

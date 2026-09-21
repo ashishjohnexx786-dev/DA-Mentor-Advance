@@ -1,0 +1,142 @@
+{
+  "module": "C2_08",
+  "checkpoint": 37,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_PENDING_RENDER",
+  "curriculum_lessons": 12,
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "preserved_byte_identity": [
+    {
+      "path": "02_PRACTICE/C2_08_CASE_AND_EVIDENCE_PRACTICE_WORKBOOK_RC1.xlsx",
+      "sha256": "1d2b619dbb285909736e27b5d799204b2888ded768eba07de0b9d97362fff527",
+      "baseline_sha256": "1d2b619dbb285909736e27b5d799204b2888ded768eba07de0b9d97362fff527",
+      "pass": true
+    },
+    {
+      "path": "02_PRACTICE/C2_08_PRACTICE_DATA_RC1.zip",
+      "sha256": "8a167ec792ce47397190d5895a6972fb25878a00a5a1691ba423afc91808193e",
+      "baseline_sha256": "8a167ec792ce47397190d5895a6972fb25878a00a5a1691ba423afc91808193e",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_08_MINI_LAB_MANAGEMENT_REVIEW_SIMULATION_BRIEF_RC1.pdf",
+      "sha256": "a246dea6dbaf8f48a7c877b800c7b6d7c99639e25258193bc78ecd039f0bf191",
+      "baseline_sha256": "a246dea6dbaf8f48a7c877b800c7b6d7c99639e25258193bc78ecd039f0bf191",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_08_MINI_LAB_MANAGEMENT_REVIEW_SIMULATION_RC1.xlsx",
+      "sha256": "228df8cfe6f8c709a372fe44e3df5865327911115efb154f524b7d43ccede0a7",
+      "baseline_sha256": "228df8cfe6f8c709a372fe44e3df5865327911115efb154f524b7d43ccede0a7",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_08_GATE_A_DATA_RC1.zip",
+      "sha256": "df5a0979162c0ca747f3087d4ebee099cf48e40b209b2a1763ecb9a50e1b237c",
+      "baseline_sha256": "df5a0979162c0ca747f3087d4ebee099cf48e40b209b2a1763ecb9a50e1b237c",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_08_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "ccd678d9fefeffe5330dc81c6ce4532dd6e98cfdbd505bcf93f5bc76adadf86d",
+      "baseline_sha256": "ccd678d9fefeffe5330dc81c6ce4532dd6e98cfdbd505bcf93f5bc76adadf86d",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_DATA_RC1.zip",
+      "sha256": "a990a7164f6daba9a6fa55480a63e12fd0e0e8876cce059b44c71ada89410c87",
+      "baseline_sha256": "a990a7164f6daba9a6fa55480a63e12fd0e0e8876cce059b44c71ada89410c87",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_08_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "e8fe0e586a5079bcbdb0bf12b3735dedd051d203eae00e66c446cfa9f63ded0a",
+      "baseline_sha256": "e8fe0e586a5079bcbdb0bf12b3735dedd051d203eae00e66c446cfa9f63ded0a",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_08_GATE_C_DATA_RC1.zip",
+      "sha256": "1364b4cd4042341a6a6c3e32bd4e1300adca187fab396b81d15c2e4cdfdf199d",
+      "baseline_sha256": "1364b4cd4042341a6a6c3e32bd4e1300adca187fab396b81d15c2e4cdfdf199d",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_08_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "4c12835a1ab5039b3069e8e186cb7365cd486db383f598632ceaa2023f5ed318",
+      "baseline_sha256": "4c12835a1ab5039b3069e8e186cb7365cd486db383f598632ceaa2023f5ed318",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/REVIEWS/C2_08_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "sha256": "209b17f48908070bc91b884ee217900435b140b6457a443b94380bab60e122a3",
+      "baseline_sha256": "209b17f48908070bc91b884ee217900435b140b6457a443b94380bab60e122a3",
+      "pass": true
+    },
+    {
+      "path": "05_REPAIR/C2_08_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "sha256": "ed0442daca998900a19067db61a3091d3e1cf918a42378c72f209fb7106e8964",
+      "baseline_sha256": "ed0442daca998900a19067db61a3091d3e1cf918a42378c72f209fb7106e8964",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_BASELINE_RESOURCE_PRESERVATION_RC1.csv",
+      "sha256": "a70454381d298345ecd5954393f8fbbd98add52091cad5e671b705f4a3700f1a",
+      "baseline_sha256": "a70454381d298345ecd5954393f8fbbd98add52091cad5e671b705f4a3700f1a",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_CROSS_COURSE_HANDOFF_RC1.json",
+      "sha256": "24566ef00c792ae04bba57cbbd013a7d69b44fcb7c2573251bbc461a6950f8b6",
+      "baseline_sha256": "24566ef00c792ae04bba57cbbd013a7d69b44fcb7c2573251bbc461a6950f8b6",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_MODULE_AUDIT_LEDGER_RC1.csv",
+      "sha256": "ff8ba27590907346a38b5103e595d1253024bfcee6d9e21b87dbd733475186e0",
+      "baseline_sha256": "ff8ba27590907346a38b5103e595d1253024bfcee6d9e21b87dbd733475186e0",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_PL300_ALIGNMENT_RC1.csv",
+      "sha256": "0a52de9b5c8b8057249008a0d4861053f22e2cfcf2976e26d3191b5621bc4458",
+      "baseline_sha256": "0a52de9b5c8b8057249008a0d4861053f22e2cfcf2976e26d3191b5621bc4458",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_ROUTE_ARCHIVE_ORPHAN_AUDIT_RC1.json",
+      "sha256": "3487a2a9a40096bcd24f847079e7d2f84cf6883dbead7a080afae1ecde9cdfbf",
+      "baseline_sha256": "3487a2a9a40096bcd24f847079e7d2f84cf6883dbead7a080afae1ecde9cdfbf",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_08_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "sha256": "4443ceb6eaffdf2dc0202ba8ac9fe8077ddbfad05813aaa08f956cbd4087e197",
+      "baseline_sha256": "4443ceb6eaffdf2dc0202ba8ac9fe8077ddbfad05813aaa08f956cbd4087e197",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/PROTECTED/C2_08_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "sha256": "32bc755204874b920de8ad7ae74808cb4ee4b13211959a21246181c195fb2520",
+      "baseline_sha256": "32bc755204874b920de8ad7ae74808cb4ee4b13211959a21246181c195fb2520",
+      "pass": true
+    }
+  ],
+  "teaching": {
+    "sixteen_stage_units": 12,
+    "lesson_specific_mental_models": 12,
+    "teaching_pages": 55,
+    "source_registry_preserved": true
+  },
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  }
+}

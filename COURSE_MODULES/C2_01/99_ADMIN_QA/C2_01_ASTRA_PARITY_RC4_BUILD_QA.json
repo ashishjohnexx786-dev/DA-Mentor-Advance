@@ -1,0 +1,39 @@
+{
+  "module": "C2_01",
+  "checkpoint": 30,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_EXCEL_POWERQUERY_BOUNDARY",
+  "curriculum_lessons": 10,
+  "lesson_ids": [
+    "AX1",
+    "AX2",
+    "AX3",
+    "AX4",
+    "AX5",
+    "AX6",
+    "AX7",
+    "AX8",
+    "AX9",
+    "AX10"
+  ],
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "stale_route_references_zero": true,
+  "lesson_specific_mental_models": 10,
+  "sixteen_stage_units": 10,
+  "external_link_annotation_parity_to_rc3": true,
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  },
+  "render_qa": "PASS_VISUAL_INSPECTION",
+  "native_excel_powerquery_runtime": "EXTERNAL_SMOKE_REQUIRED_NONBLOCKING_FOR_STATIC_CHECKPOINT",
+  "final_qa": "C2_01_CHECKPOINT30_FINAL_QA.json"
+}

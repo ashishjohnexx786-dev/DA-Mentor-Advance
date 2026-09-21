@@ -1,0 +1,126 @@
+{
+  "module": "C2_04",
+  "checkpoint": 33,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_POWERBI_SERVICE_BOUNDARY",
+  "curriculum_lessons": 15,
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "preserved_byte_identity": [
+    {
+      "path": "02_PRACTICE/C2_04_PRACTICE_AND_EVIDENCE_WORKBOOK_RC1.xlsx",
+      "sha256": "3cbf504f2f719e581431c9106a3638e7ccd9c41587f990291698f79142023672",
+      "baseline_sha256": "3cbf504f2f719e581431c9106a3638e7ccd9c41587f990291698f79142023672",
+      "pass": true
+    },
+    {
+      "path": "02_PRACTICE/C2_04_PRACTICE_DATA_RC1.zip",
+      "sha256": "58f0b4a66df96a01b2c2b092aab5d9055f819b6044773575d653d38831817365",
+      "baseline_sha256": "58f0b4a66df96a01b2c2b092aab5d9055f819b6044773575d653d38831817365",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_04_MINI_LAB_EXECUTIVE_BI_RELEASE_BRIEF_RC1.pdf",
+      "sha256": "308b9ebfee4c01ff20bc8cf6c0265e4d03463aaf01dffacca2e8a428db191b20",
+      "baseline_sha256": "308b9ebfee4c01ff20bc8cf6c0265e4d03463aaf01dffacca2e8a428db191b20",
+      "pass": true
+    },
+    {
+      "path": "03_MINI_LAB/C2_04_MINI_LAB_EXECUTIVE_BI_RELEASE_EVIDENCE_RC1.xlsx",
+      "sha256": "391f125ac244e2a65b35788e3c268bcc7299f496874a760d261058ae2b737157",
+      "baseline_sha256": "391f125ac244e2a65b35788e3c268bcc7299f496874a760d261058ae2b737157",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_04_GATE_A_DATA_RC1.zip",
+      "sha256": "4675e42001576a94f823b39e451979d8b6ab8ef15dc188d41927464ad75157b8",
+      "baseline_sha256": "4675e42001576a94f823b39e451979d8b6ab8ef15dc188d41927464ad75157b8",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/GATE_A/C2_04_GATE_A_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "86800b3a39a8b9657f508ad9ba227c7382448185720c372e0f0905adf9840b70",
+      "baseline_sha256": "86800b3a39a8b9657f508ad9ba227c7382448185720c372e0f0905adf9840b70",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_DATA_RC1.zip",
+      "sha256": "f938c5179882e922de7e4f72f12d39aabbd203ec735512b7ac34e3f762695166",
+      "baseline_sha256": "f938c5179882e922de7e4f72f12d39aabbd203ec735512b7ac34e3f762695166",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_04_GATE_B_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "8f9e1eed3c2a8e8392060fdda156bb1f873b112b05ccbe71258a6633449ce1ee",
+      "baseline_sha256": "8f9e1eed3c2a8e8392060fdda156bb1f873b112b05ccbe71258a6633449ce1ee",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_04_GATE_C_DATA_RC1.zip",
+      "sha256": "4de8f0ecbae6dfa3a92776d6d64d8b526ba9f0be5eb70b7576ff14fd919a2746",
+      "baseline_sha256": "4de8f0ecbae6dfa3a92776d6d64d8b526ba9f0be5eb70b7576ff14fd919a2746",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_04_GATE_C_FRESH_ASSESSMENT_RC1.xlsx",
+      "sha256": "aa332649262f896af44d701c3468783be02bf2c7a6d4698a393c24c8665f5108",
+      "baseline_sha256": "aa332649262f896af44d701c3468783be02bf2c7a6d4698a393c24c8665f5108",
+      "pass": true
+    },
+    {
+      "path": "04_ASSESSMENT/REVIEWS/C2_04_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "sha256": "494e0e216fb37b062132eace635cb446672a5f022b87a710be34c6710710009b",
+      "baseline_sha256": "494e0e216fb37b062132eace635cb446672a5f022b87a710be34c6710710009b",
+      "pass": true
+    },
+    {
+      "path": "05_REPAIR/C2_04_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf",
+      "sha256": "02aa02fec89d85a086b807861a2dd54853bc7e0621f55b42926a7570ecd8bbff",
+      "baseline_sha256": "02aa02fec89d85a086b807861a2dd54853bc7e0621f55b42926a7570ecd8bbff",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_04_PL300_ALIGNMENT_RC1.csv",
+      "sha256": "8158ece22cb2d1e3b9d2520cd3d46bfbaa18b69d050d25a259eefdeee42c2c51",
+      "baseline_sha256": "8158ece22cb2d1e3b9d2520cd3d46bfbaa18b69d050d25a259eefdeee42c2c51",
+      "pass": true
+    },
+    {
+      "path": "90_CONTROL/C2_04_SOURCE_VIDEO_REGISTRY_RC1.csv",
+      "sha256": "64c996b43869288ffd2a9be4612e348622149e5ffa98034724267c4e980824de",
+      "baseline_sha256": "64c996b43869288ffd2a9be4612e348622149e5ffa98034724267c4e980824de",
+      "pass": true
+    },
+    {
+      "path": "99_ADMIN_QA/PROTECTED/C2_04_GATE_OBJECTIVE_CONTROLS_PROTECTED_RC1.json",
+      "sha256": "fe1aa181e2bab10fad028256ccd0699fa6c6ed12287a9469d4aa1b8d4d243d22",
+      "baseline_sha256": "fe1aa181e2bab10fad028256ccd0699fa6c6ed12287a9469d4aa1b8d4d243d22",
+      "pass": true
+    }
+  ],
+  "teaching": {
+    "sixteen_stage_units": 15,
+    "lesson_specific_mental_models": 15,
+    "teaching_pages": 67,
+    "source_registry_preserved": true,
+    "source_reverified": true
+  },
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  },
+  "native_runtime": "Power BI Desktop + optional Service external smoke required",
+  "render_qa": {
+    "rendered_pngs": 82,
+    "contact_sheet": "/mnt/data/c2a_c204_work/C2_04_CHECKPOINT33_CONTACT.jpg",
+    "representative_visual_review": "PASS_NO_CLIPPING_OVERLAP_BLACK_SQUARES_OBSERVED"
+  },
+  "final_qa_file": "99_ADMIN_QA/C2A_C2_04_CHECKPOINT33_FINAL_QA.json"
+}

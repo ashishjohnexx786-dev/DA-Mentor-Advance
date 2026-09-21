@@ -1,0 +1,101 @@
+{
+  "module": "C2_00",
+  "lessons": [
+    {
+      "lesson_id": "SAF1",
+      "title": "Junior analyst vs senior analyst responsibility",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 3,
+      "end_page": 4,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF1_Ownership",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "2"
+    },
+    {
+      "lesson_id": "SAF2",
+      "title": "Turning vague stakeholder requests into scoped analysis",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 5,
+      "end_page": 6,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF2_Scoping",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "3"
+    },
+    {
+      "lesson_id": "SAF3",
+      "title": "Requirements gathering and clarification meetings",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 7,
+      "end_page": 8,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF3_Clarification",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "4"
+    },
+    {
+      "lesson_id": "SAF4",
+      "title": "KPI ownership, metric contracts and definitions",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 9,
+      "end_page": 10,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF4_Metric_Contract",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "5"
+    },
+    {
+      "lesson_id": "SAF5",
+      "title": "Grain, lineage and source-of-truth decisions",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 11,
+      "end_page": 12,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF5_Grain_Lineage",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "6"
+    },
+    {
+      "lesson_id": "SAF6",
+      "title": "Assumptions, risks, limitations and analytical judgment",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 13,
+      "end_page": 14,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF6_Judgment",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "7"
+    },
+    {
+      "lesson_id": "SAF7",
+      "title": "Professional validation and reconciliation",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 15,
+      "end_page": 16,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF7_Validation",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "8"
+    },
+    {
+      "lesson_id": "SAF8",
+      "title": "Documentation another analyst can inherit",
+      "teaching_file": "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+      "start_page": 17,
+      "end_page": 18,
+      "requirement": "CORE_REQUIRED",
+      "practice_id": "SAF8_Handoff",
+      "practice_file": "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx",
+      "protected_review_file": "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf",
+      "protected_review_page": "9"
+    }
+  ]
+}

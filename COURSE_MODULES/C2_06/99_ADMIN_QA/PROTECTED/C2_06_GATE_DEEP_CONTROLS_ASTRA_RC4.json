@@ -1,0 +1,139 @@
+{
+  "A": {
+    "shipments": 100,
+    "events": 200,
+    "events_per_shipment": {
+      "2": 100
+    },
+    "shipment_charge_total": 113006.49,
+    "naive_join_charge_total": 226012.98,
+    "event_join_inflation": 113006.49,
+    "status_counts": {
+      "Delayed": 50,
+      "Delivered": 50
+    },
+    "unknown_hub_rows": 1,
+    "unknown_hub_charge": 1795.87,
+    "target_rows": 21,
+    "target_total": 3255,
+    "target_grain_unique": true,
+    "h03_change": {
+      "hub_id": "H03",
+      "attribute": "hub_type",
+      "old_value": "Metro",
+      "new_value": "Regional",
+      "effective_date": "2026-05-15"
+    },
+    "h03_before_rows": 8,
+    "h03_after_rows": 7,
+    "h03_before_charge": 10303.66,
+    "h03_after_charge": 7038.77,
+    "hub_counts": {
+      "H02": 15,
+      "H03": 15,
+      "H04": 14,
+      "H05": 14,
+      "H06": 14,
+      "H07": 13,
+      "H01": 14,
+      "H99": 1
+    }
+  },
+  "B": {
+    "orders": 110,
+    "order_sales_total": 158337.64,
+    "returns": 15,
+    "return_amount_total": 8318.27,
+    "return_order_unique": 15,
+    "return_orphans": 0,
+    "unknown_seller_rows": 1,
+    "unknown_seller_sales": 1770.47,
+    "target_rows": 9,
+    "target_grain_unique": true,
+    "targets_by_month": {
+      "2026-05-01": {
+        "Gold": 0.08,
+        "Silver": 0.09,
+        "Bronze": 0.1
+      },
+      "2026-06-01": {
+        "Gold": 0.08,
+        "Silver": 0.09,
+        "Bronze": 0.1
+      },
+      "2026-07-01": {
+        "Gold": 0.08,
+        "Silver": 0.09,
+        "Bronze": 0.1
+      }
+    },
+    "s05_change": {
+      "seller_id": "S05",
+      "attribute": "tier",
+      "old_value": "Silver",
+      "new_value": "Gold",
+      "effective_date": "2026-06-01"
+    },
+    "s05_before_rows": 6,
+    "s05_after_rows": 8,
+    "s05_before_sales": 5366.45,
+    "s05_after_sales": 14206.17,
+    "order_month_counts": {
+      "2026-05": 46,
+      "2026-06": 40,
+      "2026-07": 24
+    },
+    "return_month_counts": {
+      "2026-05": 4,
+      "2026-06": 7,
+      "2026-07": 4
+    }
+  },
+  "C": {
+    "appointments": 95,
+    "status_counts": {
+      "Completed": 63,
+      "Cancelled": 32
+    },
+    "billing_rows": 63,
+    "billing_appointment_unique": 63,
+    "billing_orphans": 0,
+    "billing_amount_total": 76728.69,
+    "unknown_provider_rows": 1,
+    "unknown_provider_status": {
+      "Completed": 1
+    },
+    "target_rows": 12,
+    "target_total": 1242,
+    "target_grain_unique": true,
+    "p04_change": {
+      "provider_id": "P04",
+      "attribute": "specialty",
+      "old_value": "General",
+      "new_value": "Specialist",
+      "effective_date": "2026-04-20"
+    },
+    "p04_before_rows": 7,
+    "p04_after_rows": 7,
+    "p04_before_status": {
+      "Completed": 5,
+      "Cancelled": 2
+    },
+    "p04_after_status": {
+      "Cancelled": 2,
+      "Completed": 5
+    },
+    "appointment_month_counts": {
+      "2026-03": 30,
+      "2026-04": 30,
+      "2026-05": 23,
+      "2026-06": 12
+    },
+    "billing_month_counts": {
+      "2026-03": 19,
+      "2026-04": 20,
+      "2026-05": 15,
+      "2026-06": 9
+    }
+  }
+}

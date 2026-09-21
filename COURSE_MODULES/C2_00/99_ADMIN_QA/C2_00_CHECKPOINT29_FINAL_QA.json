@@ -1,0 +1,136 @@
+{
+  "zip_crc_pass": true,
+  "zip_entries": 27,
+  "internal_sha_errors": [],
+  "internal_sha_entries": 25,
+  "stale_authoritative_route_refs": [],
+  "lesson_routes": [
+    [
+      "SAF1",
+      3,
+      4
+    ],
+    [
+      "SAF2",
+      5,
+      6
+    ],
+    [
+      "SAF3",
+      7,
+      8
+    ],
+    [
+      "SAF4",
+      9,
+      10
+    ],
+    [
+      "SAF5",
+      11,
+      12
+    ],
+    [
+      "SAF6",
+      13,
+      14
+    ],
+    [
+      "SAF7",
+      15,
+      16
+    ],
+    [
+      "SAF8",
+      17,
+      18
+    ]
+  ],
+  "lesson_count": 8,
+  "teaching_16_stage_counts": {
+    "1": 24,
+    "2": 24,
+    "3": 21,
+    "4": 23,
+    "5": 16,
+    "6": 16,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8,
+    "11": 8,
+    "12": 8,
+    "13": 8,
+    "14": 8,
+    "15": 8,
+    "16": 8
+  },
+  "generic_old_mental_phrase_count": 0,
+  "lesson_specific_models_present": true,
+  "pdfs": {
+    "05_REPAIR/C2_00_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf": {
+      "pages": 4,
+      "annotations": 0
+    },
+    "00_START/C2_00_START_HERE_ASTRA_RC4.pdf": {
+      "pages": 2,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/C2_00_MODULE_TEST_ASTRA_RC4.pdf": {
+      "pages": 2,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/C2_00_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf": {
+      "pages": 2,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_00_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf": {
+      "pages": 3,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_00_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf": {
+      "pages": 3,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/REVIEWS/C2_00_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf": {
+      "pages": 3,
+      "annotations": 0
+    },
+    "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf": {
+      "pages": 9,
+      "annotations": 0
+    },
+    "03_MINI_LAB/C2_00_MINI_LAB_METRIC_DISAGREEMENT_TEACHING_RC1.pdf": {
+      "pages": 2,
+      "annotations": 0
+    },
+    "01_TEACH/C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf": {
+      "pages": 18,
+      "annotations": 5
+    },
+    "01_TEACH/C2_00_QUICK_REVISION_ASTRA_RC4.pdf": {
+      "pages": 1,
+      "annotations": 0
+    }
+  },
+  "preserved_byte_identity": {
+    "02_PRACTICE/C2_00_PRACTICE_WORKBOOK_RC1.xlsx": true,
+    "03_MINI_LAB/C2_00_MINI_LAB_METRIC_DISAGREEMENT_TEACHING_RC1.pdf": true,
+    "03_MINI_LAB/C2_00_MINI_LAB_WORKSPACE_RC1.xlsx": true,
+    "04_ASSESSMENT/GATE_A/C2_00_GATE_A_FRESH_ASSESSMENT_RC1.xlsx": true,
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_00_GATE_B_FRESH_ASSESSMENT_RC1.xlsx": true,
+    "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_00_GATE_C_FRESH_ASSESSMENT_RC1.xlsx": true,
+    "04_ASSESSMENT/REVIEWS/C2_00_PRACTICE_REVIEW_PROTECTED_RC1.pdf": true,
+    "05_REPAIR/C2_00_TARGETED_REMEDIATION_CARDS_PROTECTED_RC1.pdf": true,
+    "90_CONTROL/C2_00_SOURCE_VIDEO_REGISTRY_RC1.csv": true
+  },
+  "all_preserved_byte_identical": true,
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_SPREADSHEET_BOUNDARY",
+  "render_qa": {
+    "status": "PASS",
+    "contact_sheet": "C2_00_CHECKPOINT29_FINAL_RENDER_CONTACT.png",
+    "inspected": "Start Here; Learner Book cover/SAF1/middle/final pages; Quick Revision; Module Test; protected Module Test review; Gate A/B/C all pages",
+    "issues": []
+  },
+  "native_runtime_boundary": "Gate workbooks and spreadsheet formulas/interactions require native spreadsheet execution on learner device; source workbook bytes are preserved unchanged from verified RC3."
+}

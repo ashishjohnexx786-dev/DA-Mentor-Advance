@@ -1,0 +1,134 @@
+{
+  "A": {
+    "unique_rows": 72,
+    "metrics_by_city": {
+      "Bhubaneswar": {
+        "orders": 18,
+        "cancelled": 12,
+        "cancel_rate_all": 0.6667,
+        "accepted": 17,
+        "cancelled_accepted": 11,
+        "cancel_rate_accepted": 0.6471,
+        "actionable_cancelled": 6,
+        "actionable_rate_all": 0.3333,
+        "completed_value": 3498.21,
+        "avg_delay_completed": 7.0
+      },
+      "Kolkata": {
+        "orders": 18,
+        "cancelled": 0,
+        "cancel_rate_all": 0.0,
+        "accepted": 16,
+        "cancelled_accepted": 0,
+        "cancel_rate_accepted": 0.0,
+        "actionable_cancelled": 0,
+        "actionable_rate_all": 0.0,
+        "completed_value": 12855.53,
+        "avg_delay_completed": 9.67
+      },
+      "Patna": {
+        "orders": 18,
+        "cancelled": 12,
+        "cancel_rate_all": 0.6667,
+        "accepted": 16,
+        "cancelled_accepted": 11,
+        "cancel_rate_accepted": 0.6875,
+        "actionable_cancelled": 6,
+        "actionable_rate_all": 0.3333,
+        "completed_value": 4509.92,
+        "avg_delay_completed": 10.0
+      },
+      "Ranchi": {
+        "orders": 18,
+        "cancelled": 0,
+        "cancel_rate_all": 0.0,
+        "accepted": 17,
+        "cancelled_accepted": 0,
+        "cancel_rate_accepted": 0.0,
+        "actionable_cancelled": 0,
+        "actionable_rate_all": 0.0,
+        "completed_value": 11937.27,
+        "avg_delay_completed": 6.33
+      }
+    },
+    "duplicate_exact_rows": 1
+  },
+  "B": {
+    "unique_rows": 78,
+    "metrics_by_clinic": {
+      "Central Clinic": {
+        "appointments": 26,
+        "noshow": 26,
+        "noshow_rate_all": 1.0,
+        "completed": 0,
+        "cancelled": 0,
+        "noshow_rate_completed_plus_noshow": 1.0,
+        "rescheduled": 0,
+        "noshow_rate_excl_rescheduled": 1.0,
+        "avg_days_ahead": 8.65
+      },
+      "East Clinic": {
+        "appointments": 26,
+        "noshow": 0,
+        "noshow_rate_all": 0.0,
+        "completed": 0,
+        "cancelled": 26,
+        "noshow_rate_completed_plus_noshow": null,
+        "rescheduled": 0,
+        "noshow_rate_excl_rescheduled": null,
+        "avg_days_ahead": 8.88
+      },
+      "North Clinic": {
+        "appointments": 26,
+        "noshow": 0,
+        "noshow_rate_all": 0.0,
+        "completed": 26,
+        "cancelled": 0,
+        "noshow_rate_completed_plus_noshow": 0.0,
+        "rescheduled": 8,
+        "noshow_rate_excl_rescheduled": 0.0,
+        "avg_days_ahead": 9.23
+      }
+    },
+    "duplicate_exact_rows": 1
+  },
+  "C": {
+    "unique_rows": 84,
+    "metrics_by_plan": {
+      "Basic": {
+        "billing_events": 28,
+        "paid": 28,
+        "paid_rate_events": 1.0,
+        "failed": 0,
+        "cancelled": 0,
+        "retry_events": 7,
+        "paid_amount": 88818.88,
+        "monthly": 14,
+        "annual": 14
+      },
+      "Pro": {
+        "billing_events": 28,
+        "paid": 14,
+        "paid_rate_events": 0.5,
+        "failed": 14,
+        "cancelled": 0,
+        "retry_events": 7,
+        "paid_amount": 42143.59,
+        "monthly": 14,
+        "annual": 14
+      },
+      "Team": {
+        "billing_events": 28,
+        "paid": 14,
+        "paid_rate_events": 0.5,
+        "failed": 0,
+        "cancelled": 14,
+        "retry_events": 7,
+        "paid_amount": 51866.63,
+        "monthly": 14,
+        "annual": 14
+      }
+    },
+    "duplicate_exact_rows": 1
+  }
+}

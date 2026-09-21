@@ -1,0 +1,11 @@
+{
+  "course": "C2A Senior / BI Analyst 2026 - Optional Path",
+  "module": "C2_07 Cloud / Fabric / Enterprise BI",
+  "release": "ASTRA_PARITY_RC4",
+  "lesson_count": 10,
+  "lesson_registry": "90_CONTROL/C2_07_CANONICAL_LESSON_ROUTE_REGISTRY_ASTRA_RC4.json",
+  "module_test_rule": "diagnostic only; does not unlock/block Gate A",
+  "gate_b_c_rule": "fresh hidden retests only when explicitly assigned after repair",
+  "runtime_marking": "Fabric/Power BI Service/gateway/capacity/licensing behavior requires learner tenant evidence",
+  "course_level_sync": "deferred until all C2A checkpoints close"
+}

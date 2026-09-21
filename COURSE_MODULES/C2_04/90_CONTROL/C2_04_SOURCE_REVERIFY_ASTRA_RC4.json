@@ -1,0 +1,30 @@
+{
+  "module": "C2_04",
+  "date": "2026-09-20",
+  "status": "RECHECKED_CURRENT_REFERENCES",
+  "preserved_registry": "90_CONTROL/C2_04_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://www.youtube.com/watch?v=lD7TvkoQ6rY",
+      "identity": "Chandoo - Learn 80% of DAX in an Hour",
+      "timestamps": "19:24 evaluation context; 25:12 measure reuse; 30:56 DIVIDE; 34:18 CALCULATE; 42:21 multiple filters; 49:22 IF",
+      "status": "CURRENT_RESULT_VERIFIED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dax/dax-overview",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dax/sumx-function-dax",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    }
+  ]
+}

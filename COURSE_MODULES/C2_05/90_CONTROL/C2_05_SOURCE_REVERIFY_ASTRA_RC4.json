@@ -1,0 +1,29 @@
+{
+  "module": "C2_05",
+  "date": "2026-09-20",
+  "status": "OFFICIAL_DOCS_RECHECKED_VIDEO_MAPPINGS_PRESERVED",
+  "preserved_registry": "90_CONTROL/C2_05_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://docs.python.org/3.14/",
+      "observed": "Python 3.14.7 documentation current",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://pandas.pydata.org/docs/",
+      "observed": "pandas 3.0.6 docs current; preserved registry naming 3.0.5 is historical metadata only",
+      "status": "CURRENT_OFFICIAL_URL"
+    },
+    {
+      "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+      "observed": "Requests 2.34.2 Quickstart; timeout and raise_for_status documented",
+      "status": "CURRENT_OFFICIAL"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=N6hyN6BW6ao",
+      "observed": "Corey Schafer pandas IO video identity/timestamps returned current metadata",
+      "status": "CURRENT_VIDEO_METADATA"
+    }
+  ],
+  "note": "No mapped source/video URL intentionally removed. Not every optional video was replayed end-to-end."
+}

@@ -1,0 +1,12 @@
+{
+  "course": "C2A Senior / BI Analyst 2026 - Optional Path",
+  "module": "C2_02 Advanced SQL",
+  "release": "ASTRA_PARITY_RC4",
+  "lesson_count": 12,
+  "lesson_registry": "90_CONTROL/C2_02_CANONICAL_LESSON_ROUTE_REGISTRY_ASTRA_RC4.json",
+  "module_test_rule": "diagnostic only; does not unlock/block Gate A",
+  "gate_b_c_rule": "fresh hidden retests only when explicitly assigned",
+  "dialect": "PostgreSQL current authoritative; external visual companions are optional support",
+  "runtime_marking": "live PostgreSQL execution/EXPLAIN must be observed before runtime mastery",
+  "course_level_sync": "deferred until all C2A module checkpoints close; preserve learner storage/state keys"
+}

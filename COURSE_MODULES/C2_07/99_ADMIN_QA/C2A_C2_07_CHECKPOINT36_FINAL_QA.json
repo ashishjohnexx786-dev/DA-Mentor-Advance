@@ -1,0 +1,89 @@
+{
+  "project": "Course 2A Senior / BI Analyst 2026 Optional",
+  "module": "C2_07 Cloud / Fabric / Enterprise BI",
+  "checkpoint": 36,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_FABRIC_BOUNDARY",
+  "curriculum_change": "NONE",
+  "lesson_count": 10,
+  "teaching_book": {
+    "pages": 47,
+    "sixteen_stage_counts": {
+      "1. Why it matters": 10,
+      "2. What you are learning": 10,
+      "3. Prerequisite / what you already know": 10,
+      "4. Picture it in your head": 10,
+      "5. New words before we use them": 10,
+      "6. Watch / visual source": 10,
+      "7. Follow with me once": 10,
+      "8. What you should see / be able to say": 10,
+      "9. Why it worked": 10,
+      "10. Common beginner mistakes": 10,
+      "11. If you get stuck - recovery ladder": 10,
+      "12. Now you do a small version alone": 10,
+      "13. Validate your result": 10,
+      "14. Teach it back in your own words": 10,
+      "15. Protected review + changed fresh retry": 10,
+      "16. Evidence / mastery + exact next route": 10
+    },
+    "all_10_lessons_all_16_stages": true,
+    "route_title_exact_pass": true,
+    "lesson_specific_mental_models": 10,
+    "baseline_unique_urls": 18,
+    "current_unique_urls": 18,
+    "all_baseline_url_targets_retained": true
+  },
+  "assessment_layer": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "module_test_protected_review": true,
+    "gate_state_machine_changed": false,
+    "gate_reviews": {
+      "A": {
+        "pages": 3,
+        "saved_attempt": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      },
+      "B": {
+        "pages": 3,
+        "saved_attempt": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      },
+      "C": {
+        "pages": 3,
+        "saved_attempt": true,
+        "changed_fresh_retry": true,
+        "close_review": true
+      }
+    }
+  },
+  "preservation": {
+    "byte_identity_all_pass": true,
+    "preserved_file_count": 19
+  },
+  "pdf_qa": {
+    "pdf_count": 11,
+    "page_count": 79,
+    "all_parse": true,
+    "rendered_png_count": 79,
+    "visual_contact_sheet_inspected": true,
+    "clipping_overlap_black_square_observed": false
+  },
+  "source_reverification": {
+    "current_official_references_rechecked": [
+      "Microsoft Fabric overview",
+      "Power BI workspace roles/workspaces",
+      "Fabric governance/compliance",
+      "Fabric Monitoring hub"
+    ],
+    "mapped_baseline_urls_removed": 0
+  },
+  "manifest": {
+    "errors": [],
+    "pass": true
+  },
+  "native_runtime_boundary": "No claim of live Fabric/Power BI Service/gateway/capacity/license execution in this static environment. Learner-tenant runtime evidence remains required.",
+  "pass": true
+}

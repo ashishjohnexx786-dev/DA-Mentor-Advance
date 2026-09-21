@@ -1,0 +1,170 @@
+{
+  "A": {
+    "objective": {
+      "approved_monthly_files": 3,
+      "raw_approved_rows": 90,
+      "unique_approved_rows": 90,
+      "completed_unique_rows": 69,
+      "completed_gross_value": 243683.58,
+      "dimension_duplicate_key": "S03",
+      "intentional_unmatched_key": "S99",
+      "backup_file_must_contribute_rows": 0,
+      "drift_file_must_not_be_silently_skipped": "TRUE"
+    },
+    "duplicate_key": "S03",
+    "duplicate_rows_identical": true,
+    "unmatched_keys": [
+      "S99"
+    ],
+    "status_counts": {
+      "Completed": 69,
+      "Cancelled": 21
+    },
+    "groups": [
+      {
+        "group": "Bronze",
+        "rows": 32,
+        "completed": 22,
+        "cancelled": 10,
+        "cancel_rate": 0.3125,
+        "completed_gross": 83433.54
+      },
+      {
+        "group": "Gold",
+        "rows": 23,
+        "completed": 19,
+        "cancelled": 4,
+        "cancel_rate": 0.1739,
+        "completed_gross": 70247.17
+      },
+      {
+        "group": "Silver",
+        "rows": 34,
+        "completed": 27,
+        "cancelled": 7,
+        "cancel_rate": 0.2059,
+        "completed_gross": 89308.77
+      },
+      {
+        "group": "UNMATCHED",
+        "rows": 1,
+        "completed": 1,
+        "cancelled": 0,
+        "cancel_rate": 0.0,
+        "completed_gross": 694.1
+      }
+    ]
+  },
+  "B": {
+    "objective": {
+      "approved_monthly_files": 3,
+      "raw_approved_rows": 90,
+      "unique_approved_rows": 90,
+      "completed_unique_rows": 69,
+      "completed_gross_value": 243661.24,
+      "dimension_duplicate_key": "V03",
+      "intentional_unmatched_key": "V98",
+      "backup_file_must_contribute_rows": 0,
+      "drift_file_must_not_be_silently_skipped": "TRUE"
+    },
+    "duplicate_key": "V03",
+    "duplicate_rows_identical": true,
+    "unmatched_keys": [
+      "V98"
+    ],
+    "status_counts": {
+      "Completed": 69,
+      "Cancelled": 21
+    },
+    "groups": [
+      {
+        "group": "Critical",
+        "rows": 25,
+        "completed": 19,
+        "cancelled": 6,
+        "cancel_rate": 0.24,
+        "completed_gross": 53851.36
+      },
+      {
+        "group": "Local",
+        "rows": 26,
+        "completed": 20,
+        "cancelled": 6,
+        "cancel_rate": 0.2308,
+        "completed_gross": 76284.82
+      },
+      {
+        "group": "Standard",
+        "rows": 38,
+        "completed": 29,
+        "cancelled": 9,
+        "cancel_rate": 0.2368,
+        "completed_gross": 103409.21
+      },
+      {
+        "group": "UNMATCHED",
+        "rows": 1,
+        "completed": 1,
+        "cancelled": 0,
+        "cancel_rate": 0.0,
+        "completed_gross": 10115.85
+      }
+    ]
+  },
+  "C": {
+    "objective": {
+      "approved_monthly_files": 3,
+      "raw_approved_rows": 90,
+      "unique_approved_rows": 90,
+      "completed_unique_rows": 69,
+      "completed_gross_value": 243800.13,
+      "dimension_duplicate_key": "T03",
+      "intentional_unmatched_key": "T97",
+      "backup_file_must_contribute_rows": 0,
+      "drift_file_must_not_be_silently_skipped": "TRUE"
+    },
+    "duplicate_key": "T03",
+    "duplicate_rows_identical": true,
+    "unmatched_keys": [
+      "T97"
+    ],
+    "status_counts": {
+      "Completed": 69,
+      "Cancelled": 21
+    },
+    "groups": [
+      {
+        "group": "Metro",
+        "rows": 23,
+        "completed": 19,
+        "cancelled": 4,
+        "cancel_rate": 0.1739,
+        "completed_gross": 70279.82
+      },
+      {
+        "group": "Mixed",
+        "rows": 32,
+        "completed": 23,
+        "cancelled": 9,
+        "cancel_rate": 0.2812,
+        "completed_gross": 84059.52
+      },
+      {
+        "group": "Rural",
+        "rows": 34,
+        "completed": 27,
+        "cancelled": 7,
+        "cancel_rate": 0.2059,
+        "completed_gross": 89460.79
+      },
+      {
+        "group": "UNMATCHED",
+        "rows": 1,
+        "completed": 0,
+        "cancelled": 1,
+        "cancel_rate": 1.0,
+        "completed_gross": 0.0
+      }
+    ]
+  }
+}

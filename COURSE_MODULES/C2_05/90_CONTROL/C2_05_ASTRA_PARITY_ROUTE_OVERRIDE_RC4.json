@@ -1,0 +1,19 @@
+{
+  "module": "C2_05",
+  "version": "ASTRA_PARITY_RC4",
+  "non_gating_module_test": true,
+  "routes": {
+    "start": "00_START/C2_05_START_HERE_ASTRA_RC4.pdf",
+    "teaching": "01_TEACH/C2_05_PYTHON_AUTOMATION_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "01_TEACH/C2_05_QUICK_REVISION_ASTRA_RC4.pdf",
+    "practice": "02_PRACTICE/C2_05_PRACTICE_NOTEBOOK_RC1.ipynb",
+    "practice_data": "02_PRACTICE/C2_05_PRACTICE_DATA_RC1.zip",
+    "mini_lab": "03_MINI_LAB/C2_05_MINI_LAB_WEEKLY_REPORTING_PIPELINE_RC1.ipynb",
+    "module_test": "04_ASSESSMENT/C2_05_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "04_ASSESSMENT/C2_05_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_a_review": "04_ASSESSMENT/REVIEWS/C2_05_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_b_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_05_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_c_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_05_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf"
+  },
+  "state_machine": "PYA1-PYA11 mastery + Weekly Reporting Pipeline Mini-Lab -> optional diagnostic Module Test -> Gate A; Gate B/C explicit fresh retest only"
+}

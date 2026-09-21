@@ -1,0 +1,79 @@
+{
+  "A": {
+    "domain": "Marketplace Sellers",
+    "nonneg": "Finance profitability + Trust fraud/refund risk cannot be hidden",
+    "capacity": "Seller Ops can act on 20 sellers/week",
+    "evidence": [
+      "Seller A: GMV 420,000; refund 8%; fraud flag 18%; contribution margin 16%; on-time ship 92%",
+      "Seller B: 360,000; 3%; 5%; 24%; 88%",
+      "Seller C: 310,000; 10%; 21%; 13%; 74%",
+      "Seller D: 280,000; 2%; 4%; 27%; 96%",
+      "Seller E: 250,000; 4%; 7%; 22%; 90%"
+    ],
+    "limits": [
+      "Fraud outcome lags transactions by up to 14 days (High)",
+      "Seller category mix affects return rates (Medium)",
+      "No controlled evidence that coaching causes GMV improvement (High)"
+    ],
+    "reason": [
+      "GMV-only ranking would favor A/B/C by volume but would hide material Trust/Finance signals; Trust and profitability are explicit non-negotiables.",
+      "Seller C has the highest refund/fraud rates, lowest contribution margin and weakest on-time shipping in this five-seller evidence set; it is a defensible intervention priority, but do not claim a cause without further evidence.",
+      "Seller A combines highest GMV with elevated refund/fraud risk and lower margin than B/D/E; volume does not make the risk disappear.",
+      "Seller D is strongest on margin, refund/fraud and on-time shipping in this set; low intervention priority is defensible, but \"best seller\" depends on the defined decision.",
+      "Fraud lag means current fraud flags may be incomplete; category mix means return-rate comparisons need segmentation before causal/policy conclusions.",
+      "The case contains only five sellers while Ops capacity is 20/week. Do not invent a capacity bottleneck; state whether this sample is complete and ask for the full intervention population if needed.",
+      "Because coaching impact is not controlled, recommend an intervention/measurement plan rather than promising GMV uplift."
+    ]
+  },
+  "B": {
+    "domain": "Inventory Replenishment",
+    "nonneg": "Finance: extra inventory working-capital increase cannot exceed 12%",
+    "capacity": "Procurement MOQ and lead-time constraints",
+    "evidence": [
+      "SKU1: stockout 12%; 18 days inventory; lead 6; MOQ 500; monthly revenue 120,000",
+      "SKU2: 4%; 45 days; lead 3; MOQ 300; revenue 70,000",
+      "SKU3: 21%; 12 days; lead 15; MOQ 800; revenue 180,000",
+      "SKU4: 9%; 30 days; lead 7; MOQ 400; revenue 90,000",
+      "SKU5: 16%; 16 days; lead 10; MOQ 600; revenue 150,000"
+    ],
+    "limits": [
+      "Forecast MAPE rose during festival weeks (High)",
+      "SKU3 lead time based on only 4 recent orders (Medium)",
+      "No exact lost-sales estimate for stockouts (High)"
+    ],
+    "reason": [
+      "SKU3 has the highest stockout rate and revenue, low days inventory, longest observed lead time and highest MOQ; it deserves urgent analysis, but exact order quantity cannot be derived from these fields alone.",
+      "SKU5 is another high stockout/high revenue candidate; SKU1 follows. SKU2 has low stockout and high days inventory, so adding stock there needs strong justification.",
+      "The 12% working-capital cap cannot be numerically tested without unit cost/current inventory value/baseline working-capital information. Make that an explicit Finance-owned input instead of guessing.",
+      "Festival MAPE deterioration weakens point forecasts; use scenarios/guardrails and define an update point rather than stating a single certain demand number.",
+      "SKU3 lead-time evidence is thin (4 orders), so procurement confirmation or sensitivity is appropriate.",
+      "No exact lost-sales estimate means monthly revenue is not a proven amount of revenue saved by avoiding stockouts. Do not state causal/lost-sales impact as fact."
+    ]
+  },
+  "C": {
+    "domain": "Customer Success Renewals",
+    "nonneg": "Finance discount budget max 4% ARR + Product forbids unapproved feature-date promises",
+    "capacity": "CS team can run 10 interventions/week",
+    "evidence": [
+      "Acct1: ARR 250,000; risk .78; tickets 14; NPS 3; current discount 4%",
+      "Acct2: 180,000; .62; 8; NPS 7; 3%",
+      "Acct3: 420,000; .71; 22; NPS 4; 8%",
+      "Acct4: 95,000; .35; 5; NPS 8; 2%",
+      "Acct5: 310,000; .68; 19; NPS 5; 6%"
+    ],
+    "limits": [
+      "Risk score not recalibrated since product launch (High)",
+      "NPS missing for 22% of accounts (Medium)",
+      "Discount impact on renewal is observational, not causal (High)"
+    ],
+    "reason": [
+      "A risk-by-ARR lens makes Acct3, Acct5 and Acct1 reasonable first review candidates, but the stale risk model is a High limitation; do not present the risk scores as calibrated probabilities.",
+      "Acct3 has the largest ARR and many tickets but already shows 8% current discount; Acct5 shows 6%. Clarify what the 4% budget means (portfolio, incremental or per-account) before proposing any discount action.",
+      "Acct1 has the highest listed risk score and low NPS. A service/product investigation is defensible; a discount or feature promise is not automatically justified.",
+      "Product dates cannot be promised without Product approval. Separate product-gap diagnosis from roadmap commitment.",
+      "The observational discount relationship does not establish that discounts cause renewal. Treat discount as a governed option with measurement, not a guaranteed retention lever.",
+      "The sample has five accounts while intervention capacity is 10/week; do not manufacture a capacity conflict. Ask whether this is the full eligible population.",
+      "NPS completeness limitation concerns the wider population even though these five rows contain values; do not infer full-population completeness from this sample."
+    ]
+  }
+}

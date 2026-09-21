@@ -1,0 +1,36 @@
+{
+  "module": "C2_03",
+  "date": "2026-09-20",
+  "status": "RECHECKED_CURRENT_REFERENCES",
+  "preserved_registry": "90_CONTROL/C2_03_SOURCE_VIDEO_REGISTRY_RC1.csv",
+  "checks": [
+    {
+      "url": "https://www.youtube.com/watch?v=4ePNrdxWtY0",
+      "identity": "Chandoo - Learn Data Modelling & Star Schema for Power BI in 20 minutes",
+      "timestamps": "0:00 intro; 2:18 fact/star; 11:50 relationships; 15:35 filter direction; 18:08 evaluation context",
+      "status": "CURRENT_RESULT_VERIFIED"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MMdcczmULrU",
+      "identity": "Chandoo - Power Query Beginner to PRO Masterclass in 30 minutes",
+      "timestamps": "4:54 editor; 17:50 staff-data cleaning; 28:25 bucketing; 33:35 load/refresh",
+      "status": "CURRENT_RESULT_VERIFIED"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-relationships-understand",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-query/best-practices",
+      "status": "CURRENT_MICROSOFT_LEARN"
+    }
+  ]
+}

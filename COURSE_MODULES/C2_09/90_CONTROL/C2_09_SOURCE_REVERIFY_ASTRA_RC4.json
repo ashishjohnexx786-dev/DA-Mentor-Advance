@@ -1,0 +1,25 @@
+{
+  "verified_date": "2026-09-20",
+  "official_study_guide": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+  "current_skills_effective_date": "2026-04-20",
+  "weights": {
+    "Prepare the data": "25-30%",
+    "Model the data": "25-30%",
+    "Visualize and analyze the data": "25-30%",
+    "Manage and secure Power BI": "15-20%"
+  },
+  "pass_score_statement": "Microsoft study guide states a score of 700 or greater is required to pass.",
+  "practice_assessment_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+  "practice_assessment_status": "PL-300 remains listed; Microsoft describes Practice Assessments as free/repeatable diagnostics with rationales and score breakdowns and not a replacement for training or product experience.",
+  "practice_assessment_page_last_updated": "2026-08-31",
+  "video_mapping_action": "Preserved existing Exam Readiness Zone links. Current official study guide remains authoritative if objectives diverge.",
+  "internal_readiness_heuristic": "80% overall and 70% each domain on fresh/changed internal evidence; explicitly not an official Microsoft score conversion.",
+  "course_completion_dependency": false,
+  "de_unlock_dependency": false,
+  "exam_readiness_videos_verified_2026_09_20": {
+    "prepare": "LIVE_CURRENT; chapters include 02:56 Prepare, 03:45 connect, 05:04 profile/clean, 05:53 transform/load, 10:09 recap",
+    "model": "LIVE_CURRENT; 00:15 Model, 00:53 semantic model, 01:54 DAX, 04:14 performance, 07:00 recap",
+    "visualize_analyze": "LIVE_CURRENT; 00:15 domain, 00:55 reports, 03:08 usability/storytelling, 07:39 patterns/trends, 13:02 recap",
+    "manage_secure": "LIVE_CURRENT; 00:19 domain, 00:54 workspaces/items, 06:03 secure/govern, 08:36 recap"
+  }
+}

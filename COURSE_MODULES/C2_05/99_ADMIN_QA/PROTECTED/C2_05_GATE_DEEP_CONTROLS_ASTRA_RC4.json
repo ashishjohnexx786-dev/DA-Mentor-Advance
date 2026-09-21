@@ -1,0 +1,189 @@
+{
+  "A": {
+    "approved_files": [
+      "orders_2026_07.csv",
+      "orders_2026_08.csv"
+    ],
+    "approved_rows": 90,
+    "master_rows": 17,
+    "unique_master_keys": 16,
+    "duplicate_keys": {
+      "C005": 2
+    },
+    "unmatched_keys": {
+      "C999": 1
+    },
+    "total_numeric": 115976.44,
+    "numeric_mean": 1288.6271,
+    "group_controls": {
+      "store": {
+        "rows": 30,
+        "sum": 38827.08
+      },
+      "partner": {
+        "rows": 30,
+        "sum": 38661.17
+      },
+      "web": {
+        "rows": 30,
+        "sum": 38488.19
+      }
+    },
+    "month_controls": {
+      "2026-07": {
+        "rows": 51,
+        "sum": 56470.38
+      },
+      "2026-08": {
+        "rows": 39,
+        "sum": 59506.06
+      }
+    },
+    "files": {
+      "orders_2026_07.csv": {
+        "rows": 45
+      },
+      "orders_2026_08.csv": {
+        "rows": 45
+      }
+    },
+    "malformed_files": [
+      "orders_2026_09_MALFORMED.csv"
+    ],
+    "fanout_trap": {
+      "dup": "C005",
+      "dup_rows": 6,
+      "dup_sum": 6159.34,
+      "unmatched": "C999",
+      "unmatched_sum": 1855.67,
+      "naive_rows": 96,
+      "naive_total": 122135.78
+    }
+  },
+  "B": {
+    "approved_files": [
+      "tickets_2026_06.csv",
+      "tickets_2026_07.csv"
+    ],
+    "approved_rows": 100,
+    "master_rows": 9,
+    "unique_master_keys": 8,
+    "duplicate_keys": {
+      "T03": 2
+    },
+    "unmatched_keys": {
+      "T99": 1
+    },
+    "total_numeric": 3450.0,
+    "numeric_mean": 34.5,
+    "group_controls": {
+      "Open": {
+        "rows": 50,
+        "sum": 1900.0
+      },
+      "Resolved": {
+        "rows": 50,
+        "sum": 1550.0
+      }
+    },
+    "month_controls": {
+      "2026-06": {
+        "rows": 44,
+        "sum": 1567.0
+      },
+      "2026-07": {
+        "rows": 32,
+        "sum": 1111.0
+      },
+      "2026-08": {
+        "rows": 24,
+        "sum": 772.0
+      }
+    },
+    "files": {
+      "tickets_2026_06.csv": {
+        "rows": 50
+      },
+      "tickets_2026_07.csv": {
+        "rows": 50
+      }
+    },
+    "malformed_files": [
+      "tickets_2026_08_MALFORMED.csv"
+    ],
+    "fanout_trap": {
+      "dup": "T03",
+      "dup_rows": 13,
+      "dup_sum": 389.0,
+      "unmatched": "T99",
+      "unmatched_sum": 52.0,
+      "naive_rows": 113,
+      "naive_total": 3839.0
+    }
+  },
+  "C": {
+    "approved_files": [
+      "billing_2026_05.csv",
+      "billing_2026_06.csv"
+    ],
+    "approved_rows": 95,
+    "master_rows": 15,
+    "unique_master_keys": 14,
+    "duplicate_keys": {
+      "A008": 2
+    },
+    "unmatched_keys": {
+      "A999": 1
+    },
+    "total_numeric": 234184.54,
+    "numeric_mean": 2465.1004,
+    "group_controls": {
+      "Paid": {
+        "rows": 63,
+        "sum": 155644.84
+      },
+      "Failed": {
+        "rows": 32,
+        "sum": 78539.7
+      }
+    },
+    "month_controls": {
+      "2026-05": {
+        "rows": 30,
+        "sum": 82303.35
+      },
+      "2026-06": {
+        "rows": 30,
+        "sum": 52597.87
+      },
+      "2026-07": {
+        "rows": 23,
+        "sum": 57878.45
+      },
+      "2026-08": {
+        "rows": 12,
+        "sum": 41404.87
+      }
+    },
+    "files": {
+      "billing_2026_05.csv": {
+        "rows": 48
+      },
+      "billing_2026_06.csv": {
+        "rows": 47
+      }
+    },
+    "malformed_files": [
+      "billing_2026_07_MALFORMED.csv"
+    ],
+    "fanout_trap": {
+      "dup": "A008",
+      "dup_rows": 7,
+      "dup_sum": 15806.68,
+      "unmatched": "A999",
+      "unmatched_sum": 1226.09,
+      "naive_rows": 102,
+      "naive_total": 249991.22
+    }
+  }
+}

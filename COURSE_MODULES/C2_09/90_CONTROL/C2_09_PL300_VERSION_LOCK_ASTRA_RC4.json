@@ -1,0 +1,20 @@
+{
+  "verified_date": "2026-09-20",
+  "official_study_guide": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+  "current_skills_effective_date": "2026-04-20",
+  "weights": {
+    "Prepare the data": "25-30%",
+    "Model the data": "25-30%",
+    "Visualize and analyze the data": "25-30%",
+    "Manage and secure Power BI": "15-20%"
+  },
+  "pass_score_statement": "Microsoft study guide states a score of 700 or greater is required to pass.",
+  "practice_assessment_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+  "practice_assessment_status": "PL-300 remains listed; Microsoft describes Practice Assessments as free/repeatable diagnostics with rationales and score breakdowns and not a replacement for training or product experience.",
+  "practice_assessment_page_last_updated": "2026-08-31",
+  "video_mapping_action": "Preserved existing Exam Readiness Zone links. Current official study guide remains authoritative if objectives diverge.",
+  "internal_readiness_heuristic": "80% overall and 70% each domain on fresh/changed internal evidence; explicitly not an official Microsoft score conversion.",
+  "course_completion_dependency": false,
+  "de_unlock_dependency": false,
+  "exam_readiness_videos_verified": "2026-09-20"
+}

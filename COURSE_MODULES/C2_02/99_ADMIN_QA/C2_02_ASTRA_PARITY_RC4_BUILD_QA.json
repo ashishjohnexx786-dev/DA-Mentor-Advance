@@ -1,0 +1,28 @@
+{
+  "module": "C2_02",
+  "checkpoint": 31,
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_POSTGRESQL_BOUNDARY",
+  "curriculum_lessons": 12,
+  "curriculum_change": "NONE",
+  "preserved_byte_identity_all_pass": true,
+  "stale_route_references_zero": true,
+  "exact_route_pages_pass": true,
+  "lesson_specific_mental_models": 12,
+  "sixteen_stage_units": 12,
+  "all_rc3_uri_targets_retained": true,
+  "assessment": {
+    "quick_revision": true,
+    "non_gating_module_test": true,
+    "protected_module_test_review": true,
+    "deep_gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gate_state_machine_changed": false
+  },
+  "render_qa": "PASS_VISUAL_INSPECTION",
+  "native_postgresql_runtime": "EXTERNAL_SMOKE_REQUIRED_NONBLOCKING_FOR_STATIC_CHECKPOINT",
+  "final_qa": "C2_02_CHECKPOINT31_FINAL_QA.json"
+}

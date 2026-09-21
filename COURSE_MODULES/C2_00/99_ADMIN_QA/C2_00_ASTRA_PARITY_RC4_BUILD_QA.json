@@ -1,0 +1,84 @@
+{
+  "module": "C2_00",
+  "checkpoint": "29",
+  "date": "2026-09-20",
+  "status": "PASS_STATIC_RENDERED_WITH_NATIVE_SPREADSHEET_BOUNDARY",
+  "curriculum_lessons": 8,
+  "lesson_ids": [
+    "SAF1",
+    "SAF2",
+    "SAF3",
+    "SAF4",
+    "SAF5",
+    "SAF6",
+    "SAF7",
+    "SAF8"
+  ],
+  "preserved": {
+    "practice_workbook": true,
+    "mini_lab": true,
+    "gate_A_B_C_fresh_workbooks": true,
+    "practice_review": true,
+    "targeted_remediation_cards": true,
+    "source_video_registry": true
+  },
+  "rebuilt": {
+    "teaching_book": "C2_00_SENIOR_ANALYST_FOUNDATIONS_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "C2_00_QUICK_REVISION_ASTRA_RC4.pdf",
+    "module_test": "C2_00_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "C2_00_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_reviews": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "gate_state_machine_changed": false,
+  "module_test_gating": false,
+  "package_file_count": 26,
+  "render_qa": {
+    "status": "PASS",
+    "dpi": 120,
+    "issues": [],
+    "scope": "all new RC4 PDFs sampled; Gate A/B/C all pages inspected"
+  },
+  "route_qa": {
+    "stale_authoritative_route_refs": 0,
+    "resolved_lesson_pages": {
+      "SAF1": [
+        3,
+        4
+      ],
+      "SAF2": [
+        5,
+        6
+      ],
+      "SAF3": [
+        7,
+        8
+      ],
+      "SAF4": [
+        9,
+        10
+      ],
+      "SAF5": [
+        11,
+        12
+      ],
+      "SAF6": [
+        13,
+        14
+      ],
+      "SAF7": [
+        15,
+        16
+      ],
+      "SAF8": [
+        17,
+        18
+      ]
+    },
+    "learner_book_external_uri_annotations": 5
+  },
+  "native_runtime_boundary": "Spreadsheet behavior on the fresh Gate/practice workbooks is not represented as native-runtime PASS in this environment; preserved source workbook bytes are unchanged."
+}

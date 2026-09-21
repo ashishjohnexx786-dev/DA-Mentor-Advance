@@ -1,0 +1,125 @@
+{
+  "module": "C2_03",
+  "version": "ASTRA_PARITY_RC4",
+  "date": "2026-09-20",
+  "method": "Independent recomputation from supplied CSV gate fixtures; static controls only, Power BI runtime separate",
+  "gates": {
+    "A": {
+      "rows": {
+        "sales": 120,
+        "returns": 6,
+        "product_raw": 10,
+        "product_unique": 9,
+        "customer": 19,
+        "targets": 12
+      },
+      "duplicate_product_ids": [
+        "P04"
+      ],
+      "unknown_sales_product": {
+        "P99": 1
+      },
+      "unknown_returns_product": {},
+      "orders": 60,
+      "order_lines": 120,
+      "gross_sales": 301151.13,
+      "return_amount": 7732.81,
+      "net_if_simple_subtraction": 293418.32,
+      "region_gross": {
+        "East": 63880.45,
+        "North": 84174.12,
+        "South": 77422.2,
+        "West": 75674.36
+      },
+      "region_rows": {
+        "East": 25,
+        "North": 31,
+        "South": 32,
+        "West": 32
+      },
+      "region_units": {
+        "East": 70,
+        "North": 80,
+        "South": 73,
+        "West": 77
+      },
+      "ship_lag_days": {
+        "min": 1,
+        "max": 5,
+        "avg": 3.0
+      },
+      "target_total": 618000.0,
+      "target_key_unique": true,
+      "target_keys": 12
+    },
+    "B": {
+      "rows": {
+        "encounter": 90,
+        "billing": 60,
+        "provider_raw": 9,
+        "provider_unique": 8,
+        "patient": 23,
+        "targets": 9
+      },
+      "duplicate_provider_ids": [
+        "PR03"
+      ],
+      "unknown_encounter_provider": {
+        "PR99": 1
+      },
+      "encounter_status": {
+        "Cancelled": 30,
+        "Completed": 60
+      },
+      "encounter_charge_total": 122665.0,
+      "billing_total": 88257.6,
+      "payment_status": {
+        "Pending": 30,
+        "Paid": 30
+      },
+      "billing_orphan_encounters": [],
+      "visit_discharge_lag": {
+        "min": 0,
+        "max": 3,
+        "avg": 1.5
+      },
+      "target_total": 1152,
+      "target_key_unique": true
+    },
+    "C": {
+      "rows": {
+        "shipments": 100,
+        "events": 233,
+        "hub_raw": 8,
+        "hub_unique": 7,
+        "customer": 17,
+        "targets": 21
+      },
+      "duplicate_hub_ids": [
+        "H02"
+      ],
+      "unknown_shipment_hub": {
+        "H99": 1
+      },
+      "shipment_status": {
+        "Delivered": 67,
+        "Delayed": 33
+      },
+      "charge_total": 102950.0,
+      "event_orphans": [],
+      "events_per_shipment": {
+        "min": 2,
+        "max": 3,
+        "avg": 2.33
+      },
+      "book_delivery_lag": {
+        "min": 1,
+        "max": 6,
+        "avg": 3.5
+      },
+      "delivered_event_date_mismatches": [],
+      "target_total": 3360,
+      "target_key_unique": true
+    }
+  }
+}

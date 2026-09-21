@@ -1,0 +1,13 @@
+{
+  "module": "C2_09",
+  "checkpoint": 38,
+  "active_core_book": "01_CORE_TEACH/C2_09_CAPSTONE_PROMOTION_TEACHING_BOOK_ASTRA_RC4.pdf",
+  "active_pl300_book": "05_PL300_OPTIONAL/C2_09_PL300_SUPPLEMENT_TEACHING_BOOK_RC1.pdf",
+  "quick_revision": "01_CORE_TEACH/C2_09_QUICK_REVISION_ASTRA_RC4.pdf",
+  "non_gating_mastery_check": "03_FINAL_GATE/DIAGNOSTIC_NON_GATING/C2_09_CORE_PRACTICAL_MASTERY_CHECK_ASTRA_RC4.pdf",
+  "protected_mastery_review": "03_FINAL_GATE/DIAGNOSTIC_NON_GATING/C2_09_CORE_PRACTICAL_MASTERY_CHECK_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+  "final_gate_A": "normal_terminal_on_clean_pass",
+  "final_gate_B_C": "fresh_reassessment_only_after_targeted_repair_and_explicit_assignment",
+  "pl300": "optional_separate_lane",
+  "curriculum_change": "NONE"
+}

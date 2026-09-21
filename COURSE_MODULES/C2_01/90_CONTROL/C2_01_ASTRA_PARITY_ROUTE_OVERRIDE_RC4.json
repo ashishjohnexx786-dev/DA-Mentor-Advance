@@ -1,0 +1,17 @@
+{
+  "module": "C2_01",
+  "version": "ASTRA_PARITY_RC4",
+  "non_gating_module_test": true,
+  "routes": {
+    "start": "00_START/C2_01_START_HERE_ASTRA_RC4.pdf",
+    "teaching": "01_TEACH/C2_01_ADVANCED_EXCEL_POWER_QUERY_TEACHING_BOOK_ASTRA_RC4.pdf",
+    "quick_revision": "01_TEACH/C2_01_QUICK_REVISION_ASTRA_RC4.pdf",
+    "practice": "02_PRACTICE/C2_01_PRACTICE_WORKBOOK_RC1.xlsx",
+    "module_test": "04_ASSESSMENT/C2_01_MODULE_TEST_ASTRA_RC4.pdf",
+    "module_test_review": "04_ASSESSMENT/C2_01_MODULE_TEST_PROTECTED_REVIEW_ASTRA_RC4.pdf",
+    "gate_a_review": "04_ASSESSMENT/REVIEWS/C2_01_GATE_A_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_b_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_B/C2_01_GATE_B_REVIEW_PROTECTED_ASTRA_RC4.pdf",
+    "gate_c_review": "04_ASSESSMENT/RETEST_ONLY_DO_NOT_OPEN/GATE_C/C2_01_GATE_C_REVIEW_PROTECTED_ASTRA_RC4.pdf"
+  },
+  "state_machine": "lesson mastery + Mini-Lab -> optional diagnostic Module Test -> Gate A; Gate B/C explicit fresh retest only"
+}
